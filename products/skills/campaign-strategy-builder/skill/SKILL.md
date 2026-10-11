@@ -1,7 +1,7 @@
 ---
 name: campaign-strategy-builder
 description: |
-  Build complete, board ready campaign strategy documents for brands in any market, across FMCG, behaviour change, sports and lifestyle categories, localised through an optional market module, with motion briefs for hero films and short video executions. Trigger whenever the user asks to build a strategy, develop a campaign platform, write a creative brief, develop creative territories or produce a full campaign document, including "build a strategy for...", "give me a campaign platform for...", "develop creative territories for...", "write the insight for...", "create a creative brief for...", or when a brief, deck or research document is uploaded and campaign development is the goal. Also trigger for copy suites, campaign names or execution plans as part of a larger strategy. Use it any time the deliverable is a campaign strategy document or creative brief, even if only part of it is being built.
+  Build complete, board ready campaign strategy documents for brands in any market, across FMCG, behaviour change, sports and lifestyle categories, localised through an optional market module, with motion briefs for hero films and short video executions. Trigger whenever the user asks to build a strategy, develop a campaign platform, write a creative brief, develop creative territories or produce a full campaign document, including "build a strategy for...", "give me a campaign platform for...", "develop creative territories for...", "write the insight for...", "create a creative brief for...", or when a brief, deck or research document is uploaded or pasted (objective, budget, channels, mandatories) and campaign development is the goal. Also trigger for copy suites, campaign names or execution plans as part of a larger strategy. Use it any time the deliverable is a campaign strategy document or creative brief, even if only part of it is being built.
 ---
 
 # Campaign Strategy Document Builder
@@ -12,7 +12,7 @@ Before Step 1, establish the market or markets this campaign is for. Everything 
 
 If the brief does not state a market, ask one question to confirm it, unless the user has already stated their own home market earlier in the conversation, in which case use that without asking again.
 
-Once the market is known, look for `references/markets/<market>.md`. If a file exists, load it and use it as the source of audience, language, media, retail, casting and regulatory detail for the whole document. If no file exists, build the local specificity directly from the brief and from research into that market's audience, media landscape, retail environment, regulatory environment and cultural calendar, never generic filler.
+Once the market is known, look in `references/markets/` for the module whose `market` or `primary_reference` front matter covers it (for example `east-africa.md` covers Kenya, Uganda, Tanzania, Zambia and Rwanda). For a brief spanning two markets, write every local line separately for each. If a file exists, load it and use it as the source of audience, language, media, retail, casting and regulatory detail for the whole document. If no file exists, build the local specificity directly from the brief and from research into that market's audience, media landscape, retail environment, regulatory environment and cultural calendar, never generic filler.
 
 `references/markets/east-africa.md` is supplied as a worked market module, written from Kenya as its fullest reference. `references/markets/TEMPLATE.md` is a blank copy for building a new one.
 
@@ -33,13 +33,16 @@ Read everything provided before asking. Extract from any uploaded brief, deck, r
 2. **Campaign objective**, what behaviour must change and in whom
 3. **Target audience**, or instruct the Audience Persona Builder skill to run first
 4. **Market**, country, city, language context, resolved in the market layer above before continuing
-5. **Mandatories**, legal, regulatory, brand guidelines, claims restrictions
+5. **Mandatories**, legal, regulatory, brand guidelines, claims restrictions. Before writing copy, turn them into a banned word list and an approved claims list in every language and register the copy will use (for example interest, returns, profit, loan, tax, or the word for savings where the licence forbids it), and route every rate, reward or protection claim to the approved list
 6. **Budget tier**, production level (ATL-capable / digital-first / activation-led)
 7. **Campaign window**, seasonal, always-on, event-linked (e.g. a major sporting tournament, a national holiday, a religious observance)
 
+If the user says to proceed without an answer, list each gap as a numbered line in an "Assumptions to confirm" box on the title page. Never leave bracketed placeholders or notes to self in the body.
+
 ### Inferred Defaults (apply once the market is known, unless overridden)
 - **Market**: as resolved in the market layer, never defaulted to any single region
-- **Languages**: English or the market's business language, master, plus a local language adaptation and a youth or street register variant for youth where the market has one, per the market module
+- **Languages**: the brief's mandated first language, else English or the market's business language, as master, plus a local language adaptation and a youth or street register variant for youth where the market has one, per the market module
+- **Document language**: the language the user writes in; consumer copy follows the brief's language mandate
 - **Media mix**: TV + OOH + Digital Social + Radio + Activation (adjust for budget tier and the market's actual media landscape)
 - **Campaign architecture**: Single platform with 3 to 4 creative territories
 - **Copy standard**: Award-submission quality, global award show level ambition
@@ -115,10 +118,12 @@ For each tier: demographics, local neighbourhood or regional context from the ma
 ```
 INSIGHT: [2 to 3 sentences. Present tense. Written as if the consumer said it themselves, their inner voice, not a planner's voice.]
 
-ONE-LINE BRIEF INSIGHT: "[Single sentence. Quotable. Creatively triggering. This is what goes into the brief header.]"
+ONE LINE BRIEF INSIGHT: "[Single sentence. Quotable. Creatively triggering. This is what goes into the brief header.]"
 
 WHY THIS INSIGHT WORKS: [2 to 3 sentences. Strategic rationale, why this truth is true for Tier 1, relevant for Tier 2, and exploitable across media.]
 ```
+
+Develop three candidate insights in this format, recommend one, and give one line on why each of the other two loses. Carry only the recommended insight into Sections 4 to 9.
 
 **Standard:** The one-line brief insight should be able to generate 10 different creative executions. If it only unlocks one, it is not the insight: it is the idea.
 
@@ -165,7 +170,7 @@ consumer feel. Be specific, describe an actual execution, not just a concept dir
 HERO EXECUTION: [Describe the single strongest piece of creative in this territory, 
 TVC, OOH, activation, or social. Include scene/visual direction, copy line, and cast note.]
 
-COPY LINE(S): [1 to 3 lines. In English. Then local language adaptation. Youth or street register variant if youth-targeted, where the market has one.]
+COPY LINE(S): [1 to 3 lines. In the master language: the brief's mandated first language, else the market's business language. Then the local language adaptation. Youth or street register variant if youth targeted, where the market has one.]
 
 BEST FOR: [Which media channel and which audience tier this territory is strongest in.]
 
@@ -182,12 +187,14 @@ land in the stated market that it might not land elsewhere.]
 
 **Master campaign copy:**
 ```
-CAMPAIGN LINE: [English or the market's business language]
-LOCAL LANGUAGE ADAPTATION: [not a translation, a cultural rewrite into the market's dominant local language]
+CAMPAIGN LINE: [the master language, as set by the brief's language mandate]
+LOCAL LANGUAGE ADAPTATION: [not a translation, a cultural rewrite into the market's dominant local language; skip it where the master is already in that language]
 YOUTH OR STREET REGISTER VARIANT: [youth-register version, where the market has one]
 ```
 
 **Per medium: standard copy elements:**
+
+Write copy only for the channels the brief opens. When TV is closed, write the 30 s structure as the hero online film. Channels with no block below (in app, CRM, messaging communities, activation signage) get the closest block and the same tone rules.
 
 **OOH / Billboard:**
 ```
@@ -213,7 +220,7 @@ When the hero film is chosen for production, expand it into a full motion brief 
 OPEN: [First 5 seconds, the hook that stops the dial from turning]
 BODY: [10 to 15 seconds, story or argument]
 CTA: [5 seconds, what to do now]
-SIGN-OFF: [Brand name + campaign line read as VO]
+SIGN OFF: [Brand name + campaign line read as VO]
 ```
 
 **Social (channel-type specific):**
@@ -247,9 +254,10 @@ Key message: [The one thing this channel must communicate]
 Format / spec: [Duration, dimensions, production notes]
 Timing: [When in the campaign window]
 KPI: [What does success look like here]
+Budget: [amount and share of the total]
 ```
 
-**Standard channel set for FMCG, adjust to the market's actual media landscape from the market layer:**
+**Channel set: use the channels the brief opens; with no list, start from this FMCG set and adjust to the market's actual media landscape:**
 - TV (free-to-air channels, name the market's actual broadcasters)
 - Radio (business-language adult contemporary, mass-market local-language stations, youth and vernacular stations, per the market module)
 - OOH (the market's major arterial roads, city centre, and neighbourhood-level boards, named from the market layer)
@@ -262,6 +270,9 @@ KPI: [What does success look like here]
 - Youth campaigns: add the market's leading short video and video-sharing platforms, neighbourhood activations, school gate
 - Premium/luxury: replace mass radio with podcast, add experiential
 - Behaviour change: add community health workers, relevant religious or civic institutions, school curriculum
+- Financial services and apps: add in app, CRM, referral, and agent or community networks
+
+Close the map with a budget table that sums to the brief's budget, a funnel from reach to the objective's number with the ratio assumed at each stage and the cost per objective unit, and a phasing plan across the campaign window with dated cultural moments.
 
 ---
 
@@ -287,10 +298,12 @@ For each hero film, bumper, kinetic social or short vertical video, attach a mot
 ```
 CASTING DIRECTION: [Who is in this campaign, demographics, tone, authenticity notes]
 LOCATION: [Named locations from the stated market, not "urban setting"]
-PALETTE: [Brand colours, hex codes]
+PALETTE: [Brand colours, hex codes, from the client's guidelines. If none were supplied, propose a campaign palette, label it proposed, and name the category colours to avoid]
 PHOTOGRAPHY STYLE: [Photorealistic / editorial / documentary / stylised]
 CAMPAIGN CONSTRAINT FLAGS:
   - [ ] No national flags / jerseys if a sports tournament applies
+  - [ ] Election period: no party colours, candidate imagery or rally footage
+  - [ ] Vehicles: talent rides or drives legally (helmet on, no phone in hand while moving)
   - [ ] Claims compliance (check with legal before lockup)
   - [ ] Child safety protocols if minors featured
   - [ ] Supers / disclaimers required
@@ -298,7 +311,7 @@ CAMPAIGN CONSTRAINT FLAGS:
 
 ---
 
-### SECTION 9: STRATEGIC SIGN-OFF
+### SECTION 9: STRATEGIC SIGN OFF
 *The closing statement that anchors everything.*
 
 **Deliver:**
@@ -327,7 +340,7 @@ NEXT STEPS:
 
 ### Full document delivery
 When building the complete strategy:
-1. Title page: Brand / Campaign name / Date / Prepared by [Agency or author name, ask the user if unknown]
+1. Title page: Brand / Campaign name / Date / Prepared by [Agency or author name; ask once, in the same message as every other missing input]
 2. All 9 sections in sequence, each with a clear heading
 3. Strategic sign-off as the final page
 4. Append: Deck conversion note, how many slides this strategy translates to and which sections map to which slides
@@ -339,11 +352,17 @@ When the user requests a single section (e.g. "write the insight" or "give me th
 - Add a one-line bridge note: what section it connects to next
 - Offer to continue to the next section
 
+### Creative brief (one page)
+When the user asks for a creative brief: brand and objective; Tier 1 audience in two sentences; the one line brief insight; the proposition; campaign name and line; tone in three words; mandatories and banned claims; deliverables and channels; timing and budget. Sections 2 to 4 at full depth, everything else one line each.
+
+### Revisions
+When the user pushes back ("too safe", "too corporate", "more local"), keep the structure and every part not named, rework only what was named, and open with one line on what changed and why.
+
 ### Board-ready formatting rules
 - Each section starts on its own clear heading
-- No bullet lists in narrative sections (Situation Analysis, Insight, Platform Rationale, Sign-Off)
+- No bullet lists in narrative sections (Situation Analysis, Insight, Platform Rationale, Sign Off)
 - Bullet/structured format only for Copy Suite, Channel Map, and Mandatories
-- Copy lines always presented as: `Business language / Local language adaptation / Youth or street register (if applicable)`
+- Copy lines always presented in the brief's mandated language order (for example Swahili first, English second); with no mandate, `Business language / Local language adaptation / Youth or street register (if applicable)`. Where the business and local language are the same, write the master natively, skip the adaptation, and add an English gloss when the reader needs one.
 - Bold the one-line brief insight and the campaign line, always
 - Every section ends with a one-line strategic implication for the creative team
 
@@ -354,13 +373,16 @@ When the user requests a single section (e.g. "write the insight" or "give me th
 Before finalising, verify:
 - [ ] Situation analysis contains one observation the client doesn't already know
 - [ ] Insight is a human tension, not a category fact or research statistic
+- [ ] Three candidate insights developed, one recommended, a line on why each of the others loses
 - [ ] One-line brief insight can unlock 10 different executions
 - [ ] Campaign platform name and line are distinct, not interchangeable
 - [ ] 3 to 4 creative territories feel like siblings, not duplicates
 - [ ] Every copy line works spoken aloud
 - [ ] Local language copy is a cultural rewrite, not a word-for-word translation
 - [ ] Youth or street register variant is authentic to the market's own register, where the market has one
+- [ ] Every consumer line checked against the banned word list in every language and register used
 - [ ] Channel map assigns a specific role and KPI to each channel
+- [ ] Budget table sums to the brief's budget and the funnel reaches the objective's number
 - [ ] Hero executions include production complexity and award potential notes
 - [ ] Every moving hero execution has a motion brief with a beat grid shot list, readable holds and the end frame on a downbeat
 - [ ] Strategic sign-off reads like an award submission opener

@@ -14,6 +14,8 @@ If the brief does not state a market, ask one question to confirm it, unless the
 
 Once the market is known, look for `references/markets/<market>.md`. If a file exists for that market, load it and use it as the source of casting, place, light, language and retail detail for every route. If no file exists for that market, build the local specificity directly from the brief and from research into that market's places, retail environment, media and cultural calendar. Either way, casting is always specific to the named market and described by context, for example a named neighbourhood and the light there at a stated time of year, never by stacking category words like race, gender and age.
 
+When the brief names two or more markets or cities, set each route in one named place and spread the set across them, give each fire immediately route a full variant prompt for the other place, and give the local line per market. Never let one market's casting, language or currency stand in for another's.
+
 `references/markets/east-africa.md` is supplied as a worked market module. `references/markets/TEMPLATE.md` is a blank copy for building a new one.
 
 ## Core Mandate
@@ -47,14 +49,16 @@ Read the whole input before writing anything. Brief, deck, PDF, chat screenshot,
 | Insight | The human truth underneath. If the brief has none, write one and mark it as proposed |
 | Campaign line or lockup | Existing line, existing lockup file, or "to be written" |
 | Audience | Who, age band, role in the household or kitchen or trade, in their own language |
-| Palette | Hex values. Pull from a supplied logo, guideline, or packshot. Never leave colour to the model |
+| Palette | Hex values. Pull from a supplied logo, guideline, or packshot. If none is supplied, propose four or five, mark them proposed, and list the real palette under What is missing. Never leave colour to the model |
 | Channels | Every place the KV must land. This sets the adaptation kit |
 | Mandatories | Client non negotiables. Pack visible, underarms bare, no smiling, WHO six step, dress code |
 | No gos | Category conflicts, competitor cues, banned claims, tournament and flag rules |
 | Reference material | Global KV to evolve, past campaign, reference wall, competitor work |
 | Due date | Drives how many routes get built out in full |
+| Budget | Low budgets get six routes, the minimum viable kit first, and routes that build from one plate or one cheap real shoot |
+| Price and currency | Shelf price and currency per market, if price must show. Never invent one; use a marked placeholder such as KSh XX |
 
-**Then ask, at most, three questions.** Only on axes that would change the work and that the brief genuinely does not answer. Never ask about anything already in the input. If nothing is missing, do not ask. Proceed.
+**Then ask, at most, three questions.** Only on axes that would change the work and that the brief genuinely does not answer. Never ask about anything already in the input. If nothing is missing, do not ask. Proceed. Give each question a working assumption. If the user wants the work now, or sent the brief as one message to run, proceed on the assumptions, mark them in the spine, and list them under What is missing.
 
 ### When there is a global or regional KV to evolve
 
@@ -214,7 +218,7 @@ Written for the default photoreal image model. Prose quality drives the output. 
 
 **Casting by context, never by category.** Do not stack race plus gender plus age. Write "a woman with deep brown skin and short natural hair, photographed in a Nairobi kitchen" for a Kenyan market brief, or "a woman with straight dark hair, photographed in a Mexico City apartment kitchen" for a Mexican one. Same casting outcome, clean pass, no policy trip, and the description is doing the market's work instead of a label.
 
-**Variant pairs where the effect is optional.** With steam and without. Day and night. Pack in scene and pack on plate. Offer both rather than choosing for the user.
+**Variant pairs where the effect is optional.** With steam and without. Day and night. Pack in scene and pack on plate. Offer both rather than choosing for the user. Write each variant as its own full prompt.
 
 ### Standing craft tags
 
@@ -244,16 +248,16 @@ Every route ships with copy. Not placeholder copy. Copy the client could run.
 
 Per route, produce:
 
-- **Headline.** Three options, ranged. One straight, one warm, one that earns a smile
+- **Headline.** Three options, ranged. One straight, one warm, one that earns a smile. Write them in the language the market and the brief call for, never English by default. When the brief mandates two languages, every option carries both lines, and any line the reviewer may not read gets an English gloss
 - **Subline.** One line, the proposition made plain
-- **Endline or campaign line.** If the brief has one, use it verbatim and do not improve it. If it does not, give three
+- **Endline or campaign line.** If the brief has one, use it verbatim and do not improve it. If it does not, write three once for the whole set, ranged elegant, plain and shareable, show them with the spine, and have each route name the one it pairs with. Never write a different endline per route
 - **Pack or proof callout.** The short line that sits by the pack. Since 1979. 8 month cave aged. Kills 99.9 percent of germs
 - **CTA.** Channel appropriate. Different for POS and for social
-- **Local line.** At least the headline, written in the market's dominant local language or its natural street register, with an English gloss alongside it. Natural blend, never translated English, never forced. If the market's brief is already English first with no local vernacular in play, say so and skip it rather than force one
+- **Local line.** At least the headline, written in the market's dominant local language or its natural street register, with an English gloss alongside it. Natural blend, never translated English, never forced. If the market's brief is already English first with no local vernacular in play, say so and skip it rather than force one. When the headlines are already in the local language, use this line for the street or city register instead, for example a second city's own word for the same habit, or say that the headline carries it
 
 ### Copy rules
 
-- **No hyphens and no em dashes anywhere in client facing copy.** Rewrite the sentence instead
+- **No hyphens and no em dashes anywhere in client facing copy.** Rewrite the sentence instead. Where a language's correct spelling needs a hyphen, such as the European Portuguese word for breakfast or a verb with an attached pronoun, rewrite around the word; never drop the hyphen and leave a misspelling
 - Short, punchy, emotive. If a line needs a comma to survive, cut it
 - Local language inflection must be how people actually speak, not how a brand thinks people speak. Test it out loud
 - Comprehension in three to five seconds at the fixture. That is the real brief for shopper work
@@ -265,7 +269,7 @@ Full craft notes, headline patterns and endline patterns in `references/copy-cra
 
 ## Step 7: Adaptation Kit
 
-The master KV is a 4:5 or 1:1 plate. The KV only earns its money when it crops. For each route, give the reprompt or the crop instruction for every channel in the spine.
+The master KV is a 4:5 or 1:1 plate. The KV only earns its money when it crops. For each route, give a crop instruction for every format marked Crop, and a full standalone prompt, built to the Step 5 architecture for that ratio, for every format marked Reprompt. Never write a reprompt as a change note against the master prompt; the user must be able to paste it on its own.
 
 Default set unless the spine says otherwise:
 
@@ -275,7 +279,7 @@ Default set unless the spine says otherwise:
 | Feed post | 1:1 | Tighten to the mechanism. Drop the widest environment |
 | Story and short vertical video | 9:16 | Rebuild vertically. Move the text zone to the upper third, subject to the lower two thirds |
 | OLV end frame | 16:9 | Widen. Text zone moves to a clean side third |
-| Billboard 6x3 | 2:1 | One element only. The mechanism at scale, endline on a clean third. Nothing survives at speed except one idea |
+| Billboard, the market's standard size (6x3 m is 2:1) | 2:1 or as specified | One element only. The mechanism at scale, endline on a clean third. Nothing survives at speed except one idea |
 | Shelf talker | 3:4 tall narrow | Pack plus one visual cue. No environment |
 | Gondola end | 1:2 tall | Vertical world, pack repeated, headline at eye height |
 | Dangler | 1:1 double sided | The mechanism, both faces, no small type |
@@ -285,6 +289,8 @@ Say plainly which formats need a **reprompt** and which are a **crop**. A vertic
 Full channel table with pixel sizes, bleed and safe area in `references/adaptation-kit.md`.
 
 **When the campaign moves.** If the spine lists any moving channel (bumper, animated KV, short vertical video, video end frame, cutdowns), write a **motion brief** for the fire immediately routes, or for the routes the user shortlists. Never for all eight by default. Follow `references/motion-brief.md`: film line, spec, build route, assets, a shot list on the beat grid, sound, on screen text and the poster frame. The motion brief uses the route's own copy suite and local line, so the film and the still say the same thing.
+
+**When the spine lists radio or live activations,** add them from `references/adaptation-kit.md` sections 7 and 8.
 
 ---
 
@@ -296,6 +302,7 @@ The handover to the artworker. Per route, exact and unambiguous:
 - **Logo plate.** Where the wordmark sits, clear space, positive or reversed version
 - **Pack lockup.** Coordinates and scale for dropping the real pack artwork onto the blank label face
 - **Endline lockup.** Position, and whether it sits on the image or on a colour block
+- **Price plate.** When price is mandatory: position, size, currency per market, the recommended retail price line, and a placeholder until the client confirms the figure
 - **Safe area and bleed.** For print and OOH formats
 - **Colour build.** Hex list, and the CMYK note if the route goes to print
 - **Do not.** The two or three things that will break this composition if changed
@@ -312,7 +319,7 @@ Structure:
 - **Spine strip.** The Step 1 table, condensed. So the client sees the brief was read
 - **Reference law table.** Three columns, only if references were supplied
 - **One route article per route** with the full eight part anatomy and a copy button on every prompt and every copy line. Set data-register (safe, strong or wild) and data-name on each article; the sticky route index, numbering and register tags build themselves
-- **Motion brief panel,** inside the route article, only for routes that have one: the spec line, the shot list table on the beat grid, the sound line and the poster frame. Delete the panel from routes without a brief
+- **Motion brief panel,** inside the route article, only for routes that have one: the film line, the spec line, the build route, the assets, the shot list table on the beat grid, the sound line, the text on screen, the lockup and poster frame, and the build first and check before final notes. Delete the panel from routes without a brief
 - **Footer.** Palette hex swatches, standing rules, tool routing, casting note
 
 **Close every delivery with:**

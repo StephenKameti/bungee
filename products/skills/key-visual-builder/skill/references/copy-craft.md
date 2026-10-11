@@ -6,7 +6,7 @@ The KV is half picture, half line. This is the line half.
 
 ## 1. Non negotiables
 
-- **No hyphens. No em dashes. Anywhere in client facing copy.** Rewrite the sentence
+- **No hyphens. No em dashes. Anywhere in client facing copy.** Rewrite the sentence. Where a language's correct spelling needs a hyphen, such as the European Portuguese word for breakfast or a verb with an attached pronoun, rewrite around the word; never drop the hyphen and leave a misspelling
 - Short, punchy, emotive. If a line needs a comma to survive, it needs cutting
 - Never write a claim the brief has not cleared. Flag suspended and pending claims inside the card, do not quietly drop them
 - Never improve a signed single minded proposition or an approved endline. Use it verbatim
@@ -79,6 +79,7 @@ The fastest way to lose a room is a forced or dictionary version of the local la
 | Story | Four words in image. Everything else is a sticker or a swipe |
 | OLV end frame | Endline and pack only. The film did the talking |
 | Press | Headline, subline, proof, then the legal. This is the only place a full sentence belongs |
+| Radio | Said, never read. The mechanism as a sound, the line twice, the price once, 15 or 30 s |
 | Trade and B2B | Lead with the commercial argument, not the emotional one. Yield, cost per portion, shelf life, consistency |
 
 ---

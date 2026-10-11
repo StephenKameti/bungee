@@ -44,8 +44,11 @@ State the call explicitly on every line of every adaptation kit.
 | Billboard 12x4m | 3:1 | Reprompt wide. Subject on one third, endline and pack on the other |
 | Street pole | 1:3 tall | Vertical stack. Pack, mechanism, line. No environment |
 | Backlit lightbox | 4:5 or 1:1 | High key clean register only. Dark registers die in a lightbox |
+| Street furniture 6 sheet (bus shelter, metro, mall) | about 2:3 portrait, 1185 x 1750 mm visible | Backlit, read on foot at 2 to 5 m. Usually a crop of the 4:5 master; lift the grade one stop for the lightbox |
 | Wall wrap or building | Bespoke | Confirm the architectural obstructions before designing |
 | Public transport branding | Long horizontal | Assume a third of the artwork is obscured by windows and doors. Build redundancy. Check the market module for the dominant local transport format, minibus, bus, tram, tuk tuk |
+
+Standard sizes vary by market; confirm them with the media owner. 8x3 m is the roadside standard in some European markets; 12x3 m and 40x10 ft are common in parts of Africa and Asia.
 
 **OOH rule:** cover everything except one element. If the ad still communicates, it is an OOH KV. If not, it is a press ad.
 
@@ -95,7 +98,26 @@ Every moving item gets a motion brief: see `references/motion-brief.md` for the 
 
 ---
 
-## 7. The minimum viable kit
+## 7. Audio
+
+Radio is not a crop or a reprompt. Per route, write a 15 s script in the market's spoken language: the mechanism as a sound effect, the line said twice, the endline, the price said once, about 2.5 words a second. Note the station language; regional and vernacular stations often carry the reach.
+
+---
+
+## 8. Activation and sampling
+
+| Item | Ratio | Call | Notes |
+|---|---|---|---|
+| Gazebo or canopy valance | Long strip | **Designer build** | Two colours, the endline |
+| Stall A board | 2:3 | **Crop** | Read from the walkway at 2 to 4 m |
+| Demo backdrop or roll up | 1:2.5 | **Reprompt** | The bottom 400mm is hidden by the table. Keep it clear |
+| Promoter apron or shirt | Garment | **Designer build** | The endline and one icon, screen printed |
+| Bunting | Small repeat | **Designer build** | One icon, nothing photographic |
+| Take home sampler card | Card | **Designer build** | Front carries the mechanism, back carries the price and the CTA |
+
+---
+
+## 9. The minimum viable kit
 
 When time is short, these five cover 90 percent of a shopper campaign launch in most markets.
 

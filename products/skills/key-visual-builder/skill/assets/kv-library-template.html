@@ -9,6 +9,9 @@
   Fill every {{TOKEN}}. Duplicate the article.route block once per route (6 to 8 routes).
   The route index at the top builds itself from the route cards. Do not hand code it.
   Palette: set --accent to the client primary hex and --accent-ink to a readable colour on it.
+  Set --accent-dark to a lighter tint of the primary that reads on a near black ground, and --accent-dark-ink to a readable colour on it.
+  If the primary is already light, use the same values as --accent and --accent-ink.
+  Every format marked Reprompt gets its own details block with a full prompt. Variant prompts go in the same block.
   {{IMAGE_MODEL}} is the image model the prompts are written for.
   No hyphens or em dashes in any client facing copy. No all caps labels.
 -->
@@ -18,6 +21,8 @@
 :root{
   --accent:#C2410C;        /* client primary */
   --accent-ink:#FFFFFF;    /* text on client primary */
+  --accent-dark:#F08A5D;   /* client primary lifted to read on a dark ground */
+  --accent-dark-ink:#15130F; /* text on the lifted primary */
   --ink:#15130F;--paper:#F5F2EC;--card:#FFFFFF;--line:#E3DDD3;--muted:#736B62;--soft:#EEEAE2;
   --plate:#15130F;--plate-ink:#EDE7DD;
   --safe:#3F7A4C;--strong:#B7791F;--wild:#6D3FD1;
@@ -25,8 +30,8 @@
   --sans:"Hanken Grotesk","Avenir Next","Segoe UI",system-ui,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
   box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#EFE9DF;--paper:#121110;--card:#1B1917;--line:#302C28;--muted:#A39A8F;--soft:#24211E;--plate:#0B0A09}}
-:root[data-theme="dark"]{--ink:#EFE9DF;--paper:#121110;--card:#1B1917;--line:#302C28;--muted:#A39A8F;--soft:#24211E;--plate:#0B0A09}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#EFE9DF;--paper:#121110;--card:#1B1917;--line:#302C28;--muted:#A39A8F;--soft:#24211E;--plate:#0B0A09;--accent:var(--accent-dark);--accent-ink:var(--accent-dark-ink)}}
+:root[data-theme="dark"]{--ink:#EFE9DF;--paper:#121110;--card:#1B1917;--line:#302C28;--muted:#A39A8F;--soft:#24211E;--plate:#0B0A09;--accent:var(--accent-dark);--accent-ink:var(--accent-dark-ink)}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans)}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px 96px}
@@ -69,6 +74,7 @@ section{margin-top:64px}
 .laws th{text-align:left;font-size:13px;font-weight:600;color:var(--muted);padding:0 16px 10px 0;border-bottom:1px solid var(--ink)}
 .laws td{padding:14px 16px 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
 .laws td:first-child{font-weight:600;width:24%}
+.laws th,.laws td{overflow-wrap:anywhere}
 
 /* Route */
 .route{display:grid;grid-template-columns:132px 1fr;gap:0 32px;padding:56px 0;border-top:1px solid var(--line)}
@@ -84,7 +90,7 @@ section{margin-top:64px}
 .arch{font-size:13px;color:var(--muted);margin-top:10px}
 .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:20px;margin-top:28px}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
-.ph{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.ph{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
 .ph h4{margin:0;font-size:15px;font-weight:700}
 .ph small{color:var(--muted);font-size:13px}
 .layout{font-size:15px;margin:0}
@@ -94,7 +100,7 @@ section{margin-top:64px}
 .prompt .txt{display:block;font:400 13.5px/1.75 var(--mono);white-space:pre-wrap;max-height:340px;overflow:auto}
 .btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600}
 .btn:hover{border-color:var(--ink)}
-.btn.on-plate{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+.btn.on-plate{background:var(--plate-ink);color:var(--plate);border-color:transparent}
 .btn.done{background:var(--safe);color:#fff;border-color:transparent}
 
 .copy .cl{display:grid;grid-template-columns:118px 1fr auto;gap:12px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}
@@ -114,6 +120,20 @@ section{margin-top:64px}
 .call{font-size:12.5px;font-weight:600;padding:2px 8px;border-radius:5px;white-space:nowrap}
 .call.crop{background:color-mix(in srgb,var(--safe) 16%,transparent);color:var(--safe)}
 .call.re{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.call.build{background:color-mix(in srgb,var(--strong) 16%,transparent);color:var(--strong)}
+.call.script{background:color-mix(in srgb,var(--wild) 14%,transparent);color:var(--wild)}
+/* Reprompts and variants: one details block each, every one a full standalone prompt */
+.reprompts{grid-column:1/-1;display:grid;gap:14px}
+.reprompts details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px}
+.reprompts summary{cursor:pointer;font-weight:700;font-size:15px}
+.reprompts summary small{font-weight:500;color:var(--muted);margin-left:8px}
+.reprompts .prompt{margin-top:14px}
+/* Endline options, set level, in the brief read back */
+.endl .cl{display:grid;grid-template-columns:96px 1fr auto;gap:12px;align-items:start;padding:8px 0;border-top:1px solid var(--line)}
+.endl .cl:first-child{border-top:0}
+.endl .lbl{font-size:13px;color:var(--muted);padding-top:4px}
+.endl .val{font:400 22px/1.2 var(--serif)}
+.endl .val small{display:block;font:400 13.5px/1.4 var(--sans);color:var(--muted)}
 .build dl{margin:0;display:grid;grid-template-columns:130px 1fr;gap:8px 16px;font-size:14.5px}
 .build dt{color:var(--muted);font-weight:600}.build dd{margin:0}
 /* Motion brief panel (optional, only on routes with a brief) */
@@ -129,6 +149,8 @@ section{margin-top:64px}
 .beats td.tx{font:400 16px/1.25 var(--serif)}
 .motion .snd{margin:12px 0 0;font-size:14px;color:var(--muted)}.motion .snd b{color:var(--ink)}
 .motion .wrap-t{overflow-x:auto}
+.motion dl{margin:14px 0 0;display:grid;grid-template-columns:150px 1fr;gap:6px 16px;font-size:14px}
+.motion dt{color:var(--muted);font-weight:600}.motion dd{margin:0}
 .build .dont{color:#B4312B}
 
 /* Close */
@@ -136,7 +158,7 @@ section{margin-top:64px}
 .close h2{font:400 42px/1 var(--serif);margin:0 0 20px;color:#fff}
 .close ol{margin:0;padding:0;list-style:none;counter-reset:f}
 .close li{counter-increment:f;display:grid;grid-template-columns:40px 1fr;padding:14px 0;border-top:1px solid #2E2A25;font-size:15.5px}
-.close li::before{content:counter(f);font:400 30px/1 var(--serif);color:var(--accent)}
+.close li::before{content:counter(f);font:400 30px/1 var(--serif);color:var(--accent-dark)}
 .close li b{color:#fff}
 .alt{background:var(--accent);color:var(--accent-ink);border-radius:16px;padding:24px}
 .alt span{font-size:13px;font-weight:600;opacity:.8}
@@ -149,12 +171,16 @@ section{margin-top:64px}
 .swi{display:flex;flex-direction:column;gap:6px;font-size:12.5px;color:var(--muted)}
 .swi i{width:84px;height:56px;border-radius:10px;border:1px solid var(--line)}
 .swi b{font:500 12.5px var(--mono);color:var(--ink)}
-.rules{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.rules{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px}
 .rules p{margin:0}
+/* Phone width: let grid children shrink and wide tables scroll inside their panel */
+.route>div,.grid>*{min-width:0}
+.panel{overflow-x:auto}
+.prompt .txt{overflow-wrap:anywhere}
 
 @media (max-width:860px){.cover{grid-template-columns:1fr}.route{grid-template-columns:1fr}.rail{position:static;display:flex;align-items:center;gap:16px;margin-bottom:10px}.no{font-size:72px}.reg{margin:0}
- .grid,.close,.open{grid-template-columns:1fr}.spine{grid-template-columns:1fr}.rules{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.copy .cl{grid-template-columns:1fr auto}.copy .lbl{grid-column:1/-1;padding:0}.build dl{grid-template-columns:1fr}.rules{grid-template-columns:1fr}.kit{font-size:13px}}
+ .grid,.close,.open{grid-template-columns:1fr}.spine{grid-template-columns:1fr}}
+@media (max-width:560px){.copy .cl{grid-template-columns:1fr auto}.copy .lbl{grid-column:1/-1;padding:0}.build dl,.motion dl{grid-template-columns:1fr}.endl .cl{grid-template-columns:1fr auto}.endl .lbl{grid-column:1/-1;padding:0}.kit{font-size:13px}}
 @media print{.index,.btn,.mini{display:none!important}.route{break-inside:avoid-page}.prompt .txt{max-height:none}.rail{position:static}}
 </style>
 </head>
@@ -190,6 +216,14 @@ section{margin-top:64px}
     <div><span>Channels</span>{{CHANNELS}}</div>
     <div><span>Mandatories</span>{{MANDATORIES}}</div>
     <div class="wide"><span>No gos</span>{{NOGOS}}</div>
+    <!-- Endline options: only when the brief has no endline. Three for the whole set; each route names the one it pairs with. -->
+    <div class="wide"><span>Endline options for the set</span>
+      <div class="endl">
+        <div class="cl"><span class="lbl">Elegant</span><span class="val txt">{{ENDLINE_ELEGANT}}<small>{{ENDLINE_ELEGANT_NOTE}}</small></span><button class="mini" data-copy>Copy</button></div>
+        <div class="cl"><span class="lbl">Plain</span><span class="val txt">{{ENDLINE_PLAIN}}<small>{{ENDLINE_PLAIN_NOTE}}</small></span><button class="mini" data-copy>Copy</button></div>
+        <div class="cl"><span class="lbl">Shareable</span><span class="val txt">{{ENDLINE_SHAREABLE}}<small>{{ENDLINE_SHAREABLE_NOTE}}</small></span><button class="mini" data-copy>Copy</button></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -225,6 +259,7 @@ section{margin-top:64px}
 
         <div class="panel copy">
           <div class="ph"><h4>Copy suite</h4></div>
+          <!-- A second mandated language or an English gloss sits in a small tag inside the value; the copy button copies the line without it -->
           <div class="cl"><span class="lbl">Headline A</span><span class="val hl txt">{{HEADLINE_A}}</span><button class="mini" data-copy>Copy</button></div>
           <div class="cl"><span class="lbl">Headline B</span><span class="val hl txt">{{HEADLINE_B}}</span><button class="mini" data-copy>Copy</button></div>
           <div class="cl"><span class="lbl">Headline C</span><span class="val hl txt">{{HEADLINE_C}}</span><button class="mini" data-copy>Copy</button></div>
@@ -232,7 +267,10 @@ section{margin-top:64px}
           <div class="cl"><span class="lbl">Endline</span><span class="val txt">{{ENDLINE}}</span><button class="mini" data-copy>Copy</button></div>
           <div class="cl"><span class="lbl">Proof</span><span class="val txt">{{PROOF}}</span><button class="mini" data-copy>Copy</button></div>
           <div class="cl"><span class="lbl">Call to action</span><span class="val txt">{{CTA}}</span><button class="mini" data-copy>Copy</button></div>
+          <!-- Local line: one row per market when the brief spans two or more -->
           <div class="cl"><span class="lbl">Local line</span><span class="val sw txt">{{LOCAL_LINE}}</span><button class="mini" data-copy>Copy</button></div>
+          <!-- Radio: only when the spine lists radio. One row per market, in that market's spoken language -->
+          <div class="cl"><span class="lbl">Radio, 15 s</span><span class="val txt">{{RADIO_SCRIPT}}</span><button class="mini" data-copy>Copy</button></div>
         </div>
 
         <div style="display:grid;gap:20px;align-content:start">
@@ -242,14 +280,22 @@ section{margin-top:64px}
             <table class="kit">
               <thead><tr><th>Format</th><th>Ratio</th><th>Call</th><th>What changes</th></tr></thead>
               <tbody>
-                <tr><td>Feed post</td><td class="ratio">1:1</td><td><span class="call crop">Crop</span></td><td>{{ADAPT_1}}</td></tr>
-                <tr><td>Vertical story</td><td class="ratio">9:16</td><td><span class="call re">Reprompt</span></td><td>{{ADAPT_2}}</td></tr>
-                <tr><td>Video end frame</td><td class="ratio">16:9</td><td><span class="call re">Reprompt</span></td><td>{{ADAPT_3}}</td></tr>
-                <tr><td>Billboard</td><td class="ratio">2:1</td><td><span class="call re">Reprompt</span></td><td>{{ADAPT_4}}</td></tr>
-                <tr><td>Shelf talker</td><td class="ratio">3:4</td><td><span class="call re">Reprompt</span></td><td>{{ADAPT_5}}</td></tr>
+                <!-- one row per format in the spine; delete what the spine does not list -->
+                <!-- calls: <span class="call crop">Crop</span> <span class="call re">Reprompt</span> <span class="call build">Designer build</span> <span class="call script">Script</span> -->
+                <tr><td>{{FORMAT}}</td><td class="ratio">{{RATIO}}</td><td><span class="call re">Reprompt</span></td><td>{{WHAT_CHANGES}}</td></tr>
               </tbody>
             </table>
           </div>
+        </div>
+
+        <!-- REPROMPTS: one details block per format marked Reprompt, and one per variant. Each holds a full standalone prompt. -->
+        <div class="reprompts">
+          <details><summary>Reprompt: {{FORMAT}} {{RATIO}}<small>Full standalone prompt</small></summary>
+            <div class="prompt">
+              <div class="ph"><h4>{{FORMAT}} {{RATIO}}</h4><small>{{IMAGE_MODEL}}</small><button class="btn on-plate" data-copy>Copy prompt</button></div>
+              <span class="txt">{{FULL_REPROMPT_PROSE_BLOCK}}</span>
+            </div>
+          </details>
         </div>
 
         <div class="panel build" style="grid-column:1/-1">
@@ -259,7 +305,10 @@ section{margin-top:64px}
             <dt>Endline lockup</dt><dd>{{ZONE_ENDLINE}}</dd>
             <dt>Logo plate</dt><dd>{{ZONE_LOGO}}</dd>
             <dt>Pack lockup</dt><dd>{{ZONE_PACK}}</dd>
+            <!-- Price plate: only when price is mandatory. Placeholder per market until the client confirms the figure. -->
+            <dt>Price plate</dt><dd>{{ZONE_PRICE}}</dd>
             <dt>Safe area</dt><dd>{{SAFE_BLEED}}</dd>
+            <dt>Colour build</dt><dd>{{COLOUR_BUILD}}</dd>
             <dt class="dont">Do not</dt><dd>{{DO_NOT}}</dd>
           </dl>
         </div>
@@ -267,7 +316,7 @@ section{margin-top:64px}
         <!-- MOTION BRIEF: keep only on routes that have one (see references/motion-brief.md). Delete this panel otherwise. -->
         <div class="panel motion" style="grid-column:1/-1">
           <div class="ph"><h4>Motion brief</h4><small>{{MOTION_FILM_LINE}}</small></div>
-          <p class="spec"><span><b>{{MOTION_LENGTH}}</b> s</span><span><b>{{MOTION_RATIOS}}</b></span><span><b>{{MOTION_BPM}}</b> BPM</span><span>Route <b>{{MOTION_ROUTE}}</b></span><span>Poster <b>{{MOTION_POSTER}}</b> s</span></p>
+          <p class="spec"><span><b>{{MOTION_LENGTH}}</b> s</span><span><b>{{MOTION_RATIOS}}</b></span><span><b>{{MOTION_FPS}}</b> fps</span><span><b>{{MOTION_BPM}}</b> BPM</span><span>Poster <b>{{MOTION_POSTER}}</b> s</span></p>
           <div class="wrap-t"><table class="beats">
             <thead><tr><th>Bar.beat</th><th>Time</th><th>On screen</th><th>What changes</th><th>Camera</th><th>Sound</th><th>Text and hold</th></tr></thead>
             <tbody>
@@ -276,6 +325,14 @@ section{margin-top:64px}
             </tbody>
           </table></div>
           <p class="snd"><b>Sound.</b> {{MOTION_SOUND}}</p>
+          <dl>
+            <dt>Build route</dt><dd>{{MOTION_ROUTE}}</dd>
+            <dt>Assets</dt><dd>{{MOTION_ASSETS}}</dd>
+            <dt>Text on screen</dt><dd>{{MOTION_TEXT}}</dd>
+            <dt>Lockup and poster</dt><dd>{{MOTION_LOCKUP}}</dd>
+            <dt>Build first</dt><dd>{{MOTION_BUILD_FIRST}}</dd>
+            <dt>Check before final</dt><dd>{{MOTION_CHECK}}</dd>
+          </dl>
         </div>
       </div>
     </div>
@@ -314,6 +371,7 @@ section{margin-top:64px}
   <p>Generated images carry no readable text and no logos. Wordmark, endline and pack artwork are placed in post.</p>
   <p>Pack label faces are generated as blank plates. The designer drops in real artwork.</p>
   <p>Casting is described by context, never by stacked category words.</p>
+  <p>Tool routing: {{TOOL_ROUTING}}</p>
   <p>No hyphens and no em dashes in any client facing copy.</p>
 </div>
 
@@ -335,8 +393,9 @@ section{margin-top:64px}
     var b=e.target.closest("[data-copy]");if(!b)return;
     var root=b.closest(".prompt,.cl");var el=root&&root.querySelector(".txt");if(!el)return;
     var label=b.textContent;
+    var t=el.cloneNode(true);t.querySelectorAll("small").forEach(function(s){s.remove()});
     var done=function(){b.textContent="Copied";b.classList.add("done");setTimeout(function(){b.textContent=label;b.classList.remove("done")},1400)};
-    if(navigator.clipboard){navigator.clipboard.writeText(el.innerText.trim()).then(done).catch(function(){})}
+    if(navigator.clipboard){navigator.clipboard.writeText(t.textContent.trim()).then(done).catch(function(){})}
   });
 })();
 </script>
