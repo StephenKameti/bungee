@@ -19,14 +19,14 @@ Stephen Kameti's independent product line: six Claude skill packs, the Moments 2
 
 Bungee Launch Roadmap, a Claude Docs doc: https://claude.ai/code/artifact/7429fab5-408f-432f-bcec-e18d1f8c2c06
 
-For the docs tools: doc id `7429fab5-408f-432f-bcec-e18d1f8c2c06`, tab `101b4d9f-2ac3`, body node `c4fe92e9-566e`, Status enum `782a8c80-07fd` (Not started, In progress, Done, Slipped). The Weekly tracker table holds three actions per week and a Status dropdown per week. Read the outline first, then only the tables you need.
+For the docs tools: doc id `7429fab5-408f-432f-bcec-e18d1f8c2c06`, tab `101b4d9f-2ac3`, body node `c4fe92e9-566e`, Status enum `782a8c80-07fd` (Not started, In progress, Done, Slipped). The Weekly tracker table (id `mx6y0ad1sw6.18527`) has a Sell track and a Studio track per week, each action marked Me or You, and a Status dropdown per week. Read the outline first, then only the tables you need.
 
-Key dates: store live Sun 1 Nov 2026. Launch Tue 3 Nov 2026. Black Friday offer 27 to 30 Nov. Holiday pause 21 Dec to 3 Jan. Studio beta 1 to 14 Feb 2027. Studio launch Tue 16 Feb 2027.
+Key dates: store live Sun 1 Nov 2026. Products launch Tue 3 Nov 2026. Black Friday offer 27 to 30 Nov. Holiday pause 21 Dec to 3 Jan. Studio beta 4 to 10 Jan 2027. Studio launch Tue 19 Jan 2027. 100 paying Studio workspaces by Mon 19 Apr 2027.
 
 ## Standing rules from Stephen
 
 1. Never name Stephen's employer or any client anywhere in the products, the site or Studio.
-2. No brand mentions in any product: no client brands, no third party brands, no trademarked event names.
+2. No brand mentions in any product: no client brands, no third party brands. One exception Stephen chose on 11 Oct 2026: Moments 2027 keeps the real event names. The films, store pages and posts still leave trademarked event names out.
 3. Every product works for any market in the world. East Africa is a regional module, never the default.
 4. No hyphens or em dashes in document, deck, page or store copy.
 5. Anything designed needs strong design flair.
@@ -41,9 +41,21 @@ Key dates: store live Sun 1 Nov 2026. Launch Tue 3 Nov 2026. Black Friday offer 
 - Real client material.
 - Gmail is for drafts only. Never send.
 
-## Decisions as of 11 Oct 2026
+## Decisions (answered 11 Oct 2026)
 
-Waiting for Stephen's yes: prices, the store (Lemon Squeezy recommended, Gumroad as fallback), the order of work (products first, Studio on 16 Feb). Followed now only for work that is easy to undo: swapping trademarked names in the almanac (keep the original on the `almanac-original` branch), the reversed logo (made, waiting for approval), the Visual Direction Library later. Check the Decisions table in the roadmap for his latest answers before acting on any of these.
+1. Order of work: both tracks together. Products launch 3 Nov, Studio launches 19 Jan.
+2. Moments 2027 keeps the real event names.
+3. Prices: one pack USD 29, all six USD 129, Moments 2027 USD 39 (USD 29 early bird to 30 Nov), Everything USD 149.
+4. Store: Lemon Squeezy, with Paystack alongside for mobile money.
+5. Reversed logo: made, waiting for Stephen's approval.
+6. Visual Direction Library: stays inside the packs, revisit Feb 2027.
+7. Name and tax checks: Stephen, by 30 Oct.
+
+Check the Decisions table in the roadmap for anything newer before acting.
+
+## Studio
+
+Bungee Studio is built in `studio/` (pnpm workspace root, apps and packages live there). Run the prompts in `studio/claude-code/BUILD-PROMPTS.md` in order, one per session, and run the check under each before moving on. Stephen designs in Stitch and approves each milestone; ask him to check milestones in the browser. Keys live in the environment settings, never in the repo.
 
 ## The check in routine (Monday and Thursday)
 
