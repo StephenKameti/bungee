@@ -60,7 +60,7 @@ Bungee Studio is built in `studio/` (pnpm workspace root, apps and packages live
 ## The check in routine (Monday and Thursday)
 
 1. Read `ops/NEEDS-YOU.md`, then the roadmap: the Weekly tracker and the Decisions table. Note anything Stephen changed or answered.
-2. Find this week's row in the tracker and do every action that needs no access from him. Use a branch per task, commit with clear messages, merge to `main` when checks pass.
+2. Find this week's row in the tracker and do every action that needs no access from him. When this week's Me actions are done, start next week's Me actions. Use a branch per task, commit with clear messages, merge to `main` when checks pass.
 3. Update the roadmap: set this week's Status, tick finished items in the step by step sections. Never undo his edits.
 4. Add a dated entry to `ops/STATUS.md`: what was done, where it is, what is next.
 5. Rewrite `ops/NEEDS-YOU.md` as at most three items only Stephen can do, each with a link and a time estimate.
