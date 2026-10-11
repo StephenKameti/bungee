@@ -43,4 +43,4 @@ Standard 180ms, easing cubic-bezier(0.2, 0.8, 0.2, 1). Page enter: fade plus 8px
 Short, confident, warm. Plain words in empty and success states ("Done." "Welcome."), switchable per workspace language. No brand names. No hyphens or em dashes.
 
 ## Bungee logo
-Files in brand/. Colours sampled from the logo: slate #3F414B, lime #BEFD50. The supplied logo is slate on light, so it only sits on Lightbox paper surfaces. The darkroom chrome needs a reversed logo file (white with the lime tick) before the logo can appear there; until then the app shell uses the "Bungee Studio" wordmark in Instrument Serif. Never recolour, stretch or redraw the logo.
+Files in brand/. Colours sampled from the logo: slate #3F414B, lime #BEFD50. The supplied logo is slate on light, so it only sits on Lightbox paper surfaces. On the darkroom chrome use the reversed logo, brand/bungee-logo-reversed-trim.png (white letters with the lime tick). Never recolour, stretch or redraw the logo.
