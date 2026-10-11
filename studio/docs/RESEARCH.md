@@ -33,4 +33,4 @@ Sources: Webby Awards 2026 winners (webbyawards.com), Apple Design Awards 2026 (
 - Sparkle icons and "magic" language. Say what the tool does.
 - Spinners with no information for more than two seconds.
 - Hidden costs discovered after the click.
-- Generic stock people. Every image shows real places in the five markets.
+- Generic stock people. Every image shows real people and places in the markets the brief names.
