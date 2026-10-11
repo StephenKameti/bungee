@@ -13,7 +13,7 @@ For the month-by-month content angles, arcs and avoid lists, see `references/mar
 
 ## Language and code switching
 
-Primary local language: Swahili, alongside English. Code-switch register: Sheng, an urban blend of Swahili, English and street vernacular, dominant among youth audiences, especially in Nairobi.
+Primary local language in Kenya: Swahili, alongside English. Other countries differ; see Languages by country. Code-switch register: Sheng, an urban blend of Swahili, English and street vernacular, dominant among youth audiences, especially in Nairobi.
 
 - Formal register: English, for premium and B2B audiences
 - Mass-market register: Swahili-inflected English or Swahili-led copy, for FMCG and broad reach
@@ -126,4 +126,15 @@ Sports
 
 ## Wider East Africa notes
 
-Uganda (Kampala), Tanzania (Dar es Salaam) and Rwanda (Kigali) share some rhythms with Kenya, salary-date effects, faith calendar, regional sport, but have their own independence and national days, their own language mixes (Luganda and English code-switching in Uganda; Swahili as a stronger first language in Tanzania; Kinyarwanda alongside French and English in Rwanda), and their own hashtag conventions. Do not apply Kenyan hashtags or Sheng to these markets. Regional food and hospitality hashtags worth using where the brief covers that market specifically: #KampalaEats (Uganda), #DarEats (Tanzania). Treat each of these as its own module when the work is specific to it, rather than folding it silently into the Kenya reference.
+Uganda (Kampala), Tanzania (Dar es Salaam) and Rwanda (Kigali) share some rhythms with Kenya, salary-date effects, faith calendar, regional sport, but have their own independence and national days, their own language mixes (Luganda and English code switching in Uganda; Swahili as the first language of business and media in Tanzania; Kinyarwanda alongside French and English in Rwanda), and their own hashtag conventions. Do not apply Kenyan hashtags or Sheng to these markets. Regional food and hospitality hashtags worth using where the brief covers that market specifically: #KampalaEats (Uganda), #DarEats (Tanzania). Treat each of these as its own module when the work is specific to it, rather than folding it silently into the Kenya reference.
+
+## Languages by country
+
+Set the language order from the country, not from Kenya.
+
+- Kenya: English and Swahili are both official. Business and advertising run in English; the local line is Swahili, with Sheng for young urban audiences in Nairobi.
+- Uganda: English leads in business and advertising. Swahili is official but is not the household language in Kampala. Luganda leads in Kampala and the central region, and other regions use their own languages (for example Runyankore in the west, Acholi or Lango in the north, Lusoga in the east). Write the local line in Luganda for Kampala and have a native writer check it.
+- Tanzania: Swahili leads in daily life, media, business and advertising. Write Swahili first and English second, if at all. Coastal and Zanzibar Swahili differ from upcountry speech.
+- Rwanda: Kinyarwanda leads, with English and French in business.
+- Zambia: English leads in business. Bemba, Nyanja and other languages lead by region, not Swahili.
+- Never reuse a Kenyan Sheng line unchanged in another country, and when a brief spans two countries write a local line for each.

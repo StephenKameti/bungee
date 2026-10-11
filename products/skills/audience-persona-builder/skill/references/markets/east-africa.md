@@ -11,7 +11,7 @@ Load this when the brief states Kenya, or another East African market, as the ma
 
 ## Language and code switching
 
-Primary local language: Swahili, alongside English. Code-switch register: Sheng, an urban blend of Swahili, English and street vernacular.
+Primary local language in Kenya: Swahili, alongside English. Other countries differ; see Languages by country. Code-switch register: Sheng, an urban blend of Swahili, English and street vernacular.
 
 - Swahili primary for mass market
 - English/Swahili mix for the upper income tiers (LSM A to B)
@@ -67,3 +67,14 @@ Match the name to the estate and tier. Worked examples: Zawadi for Lavington (LS
 ## Wider East Africa notes
 
 Uganda (Kampala), Tanzania (Dar es Salaam) and Rwanda (Kigali) each have their own neighbourhood geography, tier terminology and peer-network equivalents to chama and estate group chats. Do not reuse the Kenya LSM estate table for these markets, treat each as its own module when the work is specific to it.
+
+## Languages by country
+
+Set the language order from the country, not from Kenya.
+
+- Kenya: English and Swahili are both official. Business and advertising run in English; the local line is Swahili, with Sheng for young urban audiences in Nairobi.
+- Uganda: English leads in business and advertising. Swahili is official but is not the household language in Kampala. Luganda leads in Kampala and the central region, and other regions use their own languages (for example Runyankore in the west, Acholi or Lango in the north, Lusoga in the east). Write the local line in Luganda for Kampala and have a native writer check it.
+- Tanzania: Swahili leads in daily life, media, business and advertising. Write Swahili first and English second, if at all. Coastal and Zanzibar Swahili differ from upcountry speech.
+- Rwanda: Kinyarwanda leads, with English and French in business.
+- Zambia: English leads in business. Bemba, Nyanja and other languages lead by region, not Swahili.
+- Never reuse a Kenyan Sheng line unchanged in another country, and when a brief spans two countries write a local line for each.

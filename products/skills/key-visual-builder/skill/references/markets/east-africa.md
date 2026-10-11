@@ -17,7 +17,7 @@ Cast by context, never by stacked category. Do not write "Black Kenyan woman, la
 - Household and shopper work is usually women led in the casting brief, but confirm with the spine rather than assume
 - Trade and B2B work (distributors, retailers, sales reps) skews male in most FMCG briefs on the ground; do not default to this without checking the brief, and push back if it looks like a lazy assumption rather than a stated fact
 - Groups of three or four read as a real household or friend group; groups of six or more read as stock casting
-- Dress code follows occasion and class register stated in the spine: smart casual for urban middle class settings, uniform or work wear for trade and informal sector settings, kanga or kitenge patterned fabric only when the brief calls for a traditional or festive register, never as generic decoration
+- Dress code follows occasion and class register stated in the spine: smart casual for urban middle class settings, uniform or work wear for trade and informal sector settings, kanga and kitenge as everyday wear for many women at markets, at home and on the coast as well as in festive settings, cast where the scene calls for them and never used as generic decoration
 
 ## Places and settings
 
@@ -43,14 +43,14 @@ Coastal light (Mombasa, the wider coast) is warmer, hazier and more humid lookin
 
 ## Language and local line rules, with examples
 
-The dominant working language of business and advertising is English. The dominant local language for the local line is Swahili, often blended with Sheng, the urban youth vernacular that mixes Swahili, English and Kenyan slang.
+In Kenya, Uganda and Zambia the working language of business and advertising is English; in Tanzania it is Swahili (see Languages by country). In Kenya the local line is Swahili, often blended with Sheng, the urban youth vernacular that mixes Swahili, English and Kenyan slang.
 
 - Blend naturally the way people actually speak: an English sentence with a Swahili beat, or the reverse. Put the Swahili on the emotional line and the English on the functional line
 - Sheng is youth and urban register. Do not reach for it in a brief targeting 35 plus household shoppers or a formal B2B audience unless there is a specific reason
 - Use words that live in kitchens, matatus and markets, not words that live in a dictionary
 - Test the exact audience named in the spine: a line for a 45 year old shopper in a smaller town is not a line for a 22 year old in an affluent Nairobi neighbourhood, even though both are Kenyan
 - Worked examples: "Twende kazi" (let us get to work) as an emotional Swahili beat paired with an English functional line, the shape used for an energy or action proposition. "Haina noma" (it is no big deal, it is fine) as a plain confidence line in Sheng register, the shape used for a reassurance proposition. Swahili carries genuine double meanings and wordplay that do not translate; when a brief's local line depends on one, gloss it in English rather than forcing an English pun into the same line
-- Regional note: Uganda and Tanzania are also Swahili speaking, but local slang, emphasis and code switch differ from Kenyan Sheng. Do not reuse a Kenyan Sheng line unchanged for a Ugandan or Tanzanian brief. Zambia's dominant local languages are Bemba, Nyanja and others depending on region, not Swahili, do not default to Swahili for a Zambian brief. Rwanda's dominant local language is Kinyarwanda, also not Swahili
+- Regional note: see Languages by country below. Uganda and Tanzania do not share Kenya's language order, and Zambia and Rwanda do not default to Swahili.
 
 ## Retail environment
 
@@ -73,3 +73,14 @@ The dominant working language of business and advertising is English. The domina
 Do not build a content calendar from memory. Research the current year's dates before using any of these, since several move on the lunar or agricultural calendar.
 
 Recurring anchors to check for the live year: Jamhuri Day (independence, mid December), Easter, Ramadan and Eid (dates shift yearly), the back to school periods (January and May), the festive season running from late November through December, harvest and planting season markers relevant to agricultural categories, and county or regional cultural events where the brief's specific county is named.
+
+## Languages by country
+
+Set the language order from the country, not from Kenya.
+
+- Kenya: English and Swahili are both official. Business and advertising run in English; the local line is Swahili, with Sheng for young urban audiences in Nairobi.
+- Uganda: English leads in business and advertising. Swahili is official but is not the household language in Kampala. Luganda leads in Kampala and the central region, and other regions use their own languages (for example Runyankore in the west, Acholi or Lango in the north, Lusoga in the east). Write the local line in Luganda for Kampala and have a native writer check it.
+- Tanzania: Swahili leads in daily life, media, business and advertising. Write Swahili first and English second, if at all. Coastal and Zanzibar Swahili differ from upcountry speech.
+- Rwanda: Kinyarwanda leads, with English and French in business.
+- Zambia: English leads in business. Bemba, Nyanja and other languages lead by region, not Swahili.
+- Never reuse a Kenyan Sheng line unchanged in another country, and when a brief spans two countries write a local line for each.

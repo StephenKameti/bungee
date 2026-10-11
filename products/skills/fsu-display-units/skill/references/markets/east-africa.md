@@ -26,7 +26,7 @@ Indoor retail lighting is the dominant condition for most FSU renders (fluoresce
 
 ## Language and local line rules, with examples
 
-Any wordmark or shelf talker text stays blank for the designer, per the standing text lockdown rule, so a local line rarely renders inside the image itself. Where a brief calls for it anyway (a mascot's spoken line represented as a small sign, for example), follow the same rule as the key visual work: English is the working language, Swahili and Sheng are the local register, blended naturally rather than translated, and tested against the specific audience named in the brief. See the key visual builder skill's market module for worked example lines.
+Any wordmark or shelf talker text stays blank for the designer, per the standing text lockdown rule, so a local line rarely renders inside the image itself. Where a brief calls for it anyway (a mascot's spoken line represented as a small sign, for example), follow the same rule as the key visual work: set the language order by country (see Languages by country), with Swahili and Sheng as the Kenyan local register, blended naturally rather than translated, and tested against the specific audience named in the brief. See the key visual builder skill's market module for worked example lines.
 
 ## Retail environment
 
@@ -41,3 +41,14 @@ Not directly applicable to display units beyond the retail environment itself. A
 ## Cultural moments, pointer only
 
 Festive season (late November through December) and back to school periods (January, May) are the two windows most likely to justify a seasonal display unit or a limited time theatrical device. Confirm current year dates before building a calendar around them; several relevant observances (Ramadan, Eid, Easter) move year to year.
+
+## Languages by country
+
+Set the language order from the country, not from Kenya.
+
+- Kenya: English and Swahili are both official. Business and advertising run in English; the local line is Swahili, with Sheng for young urban audiences in Nairobi.
+- Uganda: English leads in business and advertising. Swahili is official but is not the household language in Kampala. Luganda leads in Kampala and the central region, and other regions use their own languages (for example Runyankore in the west, Acholi or Lango in the north, Lusoga in the east). Write the local line in Luganda for Kampala and have a native writer check it.
+- Tanzania: Swahili leads in daily life, media, business and advertising. Write Swahili first and English second, if at all. Coastal and Zanzibar Swahili differ from upcountry speech.
+- Rwanda: Kinyarwanda leads, with English and French in business.
+- Zambia: English leads in business. Bemba, Nyanja and other languages lead by region, not Swahili.
+- Never reuse a Kenyan Sheng line unchanged in another country, and when a brief spans two countries write a local line for each.

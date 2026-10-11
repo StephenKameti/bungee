@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Key Visual Routes · Siku Bright · Win back, Kenya and Uganda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#1F2E7A;        /* client primary */
+  --accent-ink:#F5C400;    /* text on client primary */
+  --ink:#15130F;--paper:#F5F2EC;--card:#FFFFFF;--line:#E3DDD3;--muted:#736B62;--soft:#EEEAE2;
+  --plate:#15130F;--plate-ink:#EDE7DD;
+  --safe:#3F7A4C;--strong:#B7791F;--wild:#6D3FD1;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#EFE9DF;--paper:#121110;--card:#1B1917;--line:#302C28;--muted:#A39A8F;--soft:#24211E;--plate:#0B0A09}}
+:root[data-theme="dark"]{--ink:#EFE9DF;--paper:#121110;--card:#1B1917;--line:#302C28;--muted:#A39A8F;--soft:#24211E;--plate:#0B0A09}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px 96px}
+button{font:inherit;cursor:pointer}
+
+/* Cover */
+.cover{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;padding:72px 0 36px;border-bottom:1px solid var(--ink)}
+.kicker{font-weight:600;font-size:14px;color:var(--muted);margin:0 0 18px}
+.kicker b{color:var(--accent)}
+h1{font:400 clamp(52px,8.5vw,112px)/.92 var(--serif);letter-spacing:-.02em;margin:0}
+h1 em{color:var(--muted)}
+.line{font:italic 400 clamp(22px,2.6vw,30px)/1.2 var(--serif);margin:22px 0 0;max-width:30ch}
+.facts{display:grid;gap:10px;min-width:220px;font-size:14px}
+.facts div{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.facts span{color:var(--muted)}
+.facts strong{font-weight:600;text-align:right}
+.swatchbar{display:flex;height:10px;margin-top:0}
+
+/* Route index */
+.index{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--paper) 90%,transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin:0 -24px;padding:12px 24px;
+  display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.index::-webkit-scrollbar{display:none}
+.index a{flex:none;display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--card);
+  border-radius:999px;padding:6px 14px 6px 6px;font-size:14px;font-weight:500}
+.index a:hover{border-color:var(--ink)}
+.index a i{font:500 12px/1 var(--mono);font-style:normal;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff}
+
+/* Sections */
+section{margin-top:64px}
+.sh{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:20px}
+.sh h2{font:400 36px/1 var(--serif);margin:0}
+.sh p{margin:0;color:var(--muted);font-size:14px}
+.spine{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.spine div{background:var(--card);padding:18px 20px}
+.spine span{display:block;font-size:13px;font-weight:600;color:var(--muted);margin-bottom:4px}
+.spine .wide{grid-column:1/-1}
+.spine .wide p{font:italic 400 24px/1.3 var(--serif);margin:0}
+.laws{width:100%;border-collapse:collapse;font-size:15px}
+.laws th{text-align:left;font-size:13px;font-weight:600;color:var(--muted);padding:0 16px 10px 0;border-bottom:1px solid var(--ink)}
+.laws td{padding:14px 16px 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.laws td:first-child{font-weight:600;width:24%}
+
+/* Route */
+.route{display:grid;grid-template-columns:132px 1fr;gap:0 32px;padding:56px 0;border-top:1px solid var(--line)}
+.route:first-of-type{border-top:0;padding-top:24px}
+.rail{position:sticky;top:96px;align-self:start}
+.no{font:400 104px/.8 var(--serif);letter-spacing:-.04em;color:var(--accent)}
+.reg{display:inline-block;margin-top:14px;font-size:13px;font-weight:600;padding:4px 11px;border-radius:999px;color:#fff}
+.reg.safe{background:var(--safe)}.reg.strong{background:var(--strong)}.reg.wild{background:var(--wild)}
+.route h3{font:400 clamp(40px,5vw,60px)/.98 var(--serif);letter-spacing:-.015em;margin:0 0 16px}
+.idea{font-size:20px;line-height:1.45;margin:0 0 16px;max-width:52ch}
+.why{margin:0;font-size:15px;color:var(--muted);max-width:66ch}
+.why b{color:var(--ink)}
+.arch{font-size:13px;color:var(--muted);margin-top:10px}
+.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:20px;margin-top:28px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.ph{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.ph h4{margin:0;font-size:15px;font-weight:700}
+.ph small{color:var(--muted);font-size:13px}
+.layout{font-size:15px;margin:0}
+
+.prompt{grid-column:1/-1;background:var(--plate);color:var(--plate-ink);border-radius:16px;padding:22px 24px 24px;position:relative}
+.prompt .ph h4{color:#fff}.prompt .ph small{color:#9D958B}
+.prompt .txt{display:block;font:400 13.5px/1.75 var(--mono);white-space:pre-wrap;max-height:340px;overflow:auto}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600}
+.btn:hover{border-color:var(--ink)}
+.btn.on-plate{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+.btn.done{background:var(--safe);color:#fff;border-color:transparent}
+
+.copy .cl{display:grid;grid-template-columns:118px 1fr auto;gap:12px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}
+.copy .cl:first-of-type{border-top:0;padding-top:0}
+.copy .lbl{font-size:13px;color:var(--muted);padding-top:3px}
+.copy .val{font-size:16px}
+.copy .val.hl{font:400 24px/1.15 var(--serif)}
+.copy .val.sw{font:italic 400 20px/1.25 var(--serif);color:var(--accent)}
+.mini{border:0;background:none;color:var(--muted);font-size:13px;font-weight:600;padding:3px 0}
+.mini:hover{color:var(--accent)}
+
+.kit{width:100%;border-collapse:collapse;font-size:14px}
+.kit th{text-align:left;font-size:13px;font-weight:600;color:var(--muted);padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+.kit td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.kit tr:last-child td{border-bottom:0}
+.ratio{font:500 12.5px var(--mono);color:var(--muted)}
+.call{font-size:12.5px;font-weight:600;padding:2px 8px;border-radius:5px;white-space:nowrap}
+.call.crop{background:color-mix(in srgb,var(--safe) 16%,transparent);color:var(--safe)}
+.call.re{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.build dl{margin:0;display:grid;grid-template-columns:130px 1fr;gap:8px 16px;font-size:14.5px}
+.build dt{color:var(--muted);font-weight:600}.build dd{margin:0}
+/* Motion brief panel (optional, only on routes with a brief) */
+.motion .spec{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.motion .spec span{font-size:12.5px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--soft);color:var(--muted)}
+.motion .spec span b{color:var(--ink);font-weight:600}
+.beats{width:100%;border-collapse:collapse;font-size:13.5px}
+.beats th{text-align:left;font-size:12.5px;font-weight:600;color:var(--muted);padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+.beats td{padding:8px 10px 8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.beats tr:last-child td{border-bottom:0}
+.beats td.bb{font:500 12.5px var(--mono);color:var(--accent);white-space:nowrap}
+.beats td.ts{font:500 12.5px var(--mono);color:var(--muted);white-space:nowrap}
+.beats td.tx{font:400 16px/1.25 var(--serif)}
+.motion .snd{margin:12px 0 0;font-size:14px;color:var(--muted)}.motion .snd b{color:var(--ink)}
+.motion .wrap-t{overflow-x:auto}
+.build .dont{color:#B4312B}
+
+/* Close */
+.close{margin-top:72px;background:var(--plate);color:var(--plate-ink);border-radius:22px;padding:clamp(28px,5vw,52px);display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.close h2{font:400 42px/1 var(--serif);margin:0 0 20px;color:#fff}
+.close ol{margin:0;padding:0;list-style:none;counter-reset:f}
+.close li{counter-increment:f;display:grid;grid-template-columns:40px 1fr;padding:14px 0;border-top:1px solid #2E2A25;font-size:15.5px}
+.close li::before{content:counter(f);font:400 30px/1 var(--serif);color:var(--accent)}
+.close li b{color:#fff}
+.alt{background:var(--accent);color:var(--accent-ink);border-radius:16px;padding:24px}
+.alt span{font-size:13px;font-weight:600;opacity:.8}
+.alt h3{font:400 34px/1.05 var(--serif);margin:8px 0 10px}
+.alt p{margin:0}
+.open{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.open ul{margin:0;padding-left:18px}.open li{margin:6px 0}
+.open h2{font:400 30px/1 var(--serif);margin:0 0 14px}
+.sws{display:flex;flex-wrap:wrap;gap:12px}
+.swi{display:flex;flex-direction:column;gap:6px;font-size:12.5px;color:var(--muted)}
+.swi i{width:84px;height:56px;border-radius:10px;border:1px solid var(--line)}
+.swi b{font:500 12.5px var(--mono);color:var(--ink)}
+.rules{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.rules p{margin:0}
+
+@media (max-width:860px){.cover{grid-template-columns:1fr}.route{grid-template-columns:1fr}.rail{position:static;display:flex;align-items:center;gap:16px;margin-bottom:10px}.no{font-size:72px}.reg{margin:0}
+ .grid,.close,.open{grid-template-columns:1fr}.spine{grid-template-columns:1fr}.rules{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.copy .cl{grid-template-columns:1fr auto}.copy .lbl{grid-column:1/-1;padding:0}.build dl{grid-template-columns:1fr}.rules{grid-template-columns:1fr}.kit{font-size:13px}}
+@media print{.index,.btn,.mini{display:none!important}.route{break-inside:avoid-page}.prompt .txt{max-height:none}.rail{position:static}}
+
+/* Additions for this route book: reprompts, extra calls, extra spine rows, dark mode accent */
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent:#F5C400;--accent-ink:#1F2E7A}}
+:root[data-theme="dark"]{--accent:#F5C400;--accent-ink:#1F2E7A}
+.call.build{background:color-mix(in srgb,var(--strong) 16%,transparent);color:var(--strong)}
+.call.script{background:color-mix(in srgb,var(--wild) 14%,transparent);color:var(--wild)}
+.call.master{background:var(--soft);color:var(--muted)}
+.reprompts{grid-column:1/-1;display:grid;gap:14px}
+.reprompts details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px}
+.reprompts summary{cursor:pointer;font-weight:700;font-size:15px}
+.reprompts summary small{font-weight:500;color:var(--muted);margin-left:8px}
+.reprompts .prompt{margin-top:14px}
+.variant{grid-column:1/-1}
+.copy .val small{display:block;font:400 14px/1.4 var(--sans);color:var(--muted);margin-top:4px}
+.copy .flag{margin:12px 0 0;padding:10px 12px;border-radius:10px;background:var(--soft);font-size:14px;color:var(--muted)}
+.spine p.sm{margin:0}
+.spine ul{margin:6px 0 0;padding-left:18px}
+.spine li{margin:4px 0}
+.endl{display:grid;gap:8px;margin-top:6px}
+.endl .cl{display:grid;grid-template-columns:96px 1fr auto;gap:12px;align-items:start;padding:8px 0;border-top:1px solid var(--line)}
+.endl .cl:first-child{border-top:0}
+.endl .val{font:400 22px/1.2 var(--serif)}
+.endl .val small{display:block;font:400 13.5px/1.4 var(--sans);color:var(--muted)}
+.motion dl{margin:14px 0 0;display:grid;grid-template-columns:130px 1fr;gap:6px 16px;font-size:14px}
+.motion dt{color:var(--muted);font-weight:600}.motion dd{margin:0}
+.open ul li{font-size:15px}
+/* Phone width fix: the template lets wide tables push the route column past the screen */
+.route>div,.grid>*,.reprompts>*{min-width:0}
+.panel{overflow-x:auto}
+.prompt .txt{overflow-wrap:anywhere}
+@media (max-width:560px){.kit th:nth-child(2),.kit td:nth-child(2){display:none}.endl .cl{grid-template-columns:1fr auto}.endl .lbl{grid-column:1/-1}.motion dl{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="cover">
+  <div>
+    <p class="kicker">Key visual routes for <b>Siku Bright</b></p>
+    <h1>Siku Bright<br><em>Win back, Kenya and Uganda</em></h1>
+    <p class="line">Siku Bright. Siku saba.<br><small style="font:400 15px/1.4 var(--sans);color:var(--muted)">Siku Bright. Seven days. Proposed endline, pending approval.</small></p>
+  </div>
+  <div class="facts">
+    <div><span>Routes</span><strong>7</strong></div>
+    <div><span>Image model</span><strong>Photoreal model, type model or drone for route 06</strong></div>
+    <div><span>Issued</span><strong>11 October 2026</strong></div>
+    <div><span>Decision by</span><strong>To confirm</strong></div>
+  </div>
+</header>
+<div class="swatchbar"><i style="flex:3;background:#F5C400"></i><i style="flex:2;background:#1F2E7A"></i><i style="flex:2;background:#FAFAF5"></i><i style="flex:1;background:#2F7FD1"></i><i style="flex:1;background:#F2D46B"></i></div>
+<nav class="index" id="index" aria-label="Routes"></nav>
+<section>
+  <div class="sh"><h2>The brief, read back</h2><p>So everyone signs off on the same problem</p></div>
+  <div class="spine">
+    <div class="wide"><span>Single minded proposition</span><p>One bar lasts the whole week&#x27;s wash. (Verbatim.)</p></div>
+    <div><span>Product hero</span>The Siku Bright long laundry bar in its wrapper. Bar size not stated; the claim needs one. To confirm.</div>
+    <div><span>Business problem</span>Switching. Mothers traded down to cheaper bars on shelf price; win them back by moving value from price per bar to price per week.</div>
+    <div><span>Insight (proposed)</span>She switched to save money. But the cheaper bar goes soft in the basin and is a sliver by Wednesday, so she quietly buys again before Saturday. She counts every shilling, so count the week, not the bar.</div>
+    <div><span>Audience</span>Mothers 25 to 45 in Kenya and Uganda running the wash for a family of four to six, buying soap weekly at the market, the duka or the mini mart. In their words: kila shilingi ina kazi yake. (Every shilling has a job.)</div>
+    <div><span>Channels</span>Out of home (roadside billboards), radio, social (feed, status and story, chat app forwards), open air market activations (stall A board, demo backdrop, bunting, aprons, canopy).</div>
+    <div><span>Mandatories</span>Pack shot on every KV. Swahili and English copy. Price point visible.</div>
+    <div><span>Palette</span>Proposed, see the palette lock: Siku Yellow #F5C400, Siku Indigo #1F2E7A, Line White #FAFAF5, Basin Blue #2F7FD1, Bar Cream #F2D46B.</div>
+    <div><span>Budget</span>Low to mid (stated; the spine has no budget row, recorded here). Routes favour one plate or one cheap real shoot, and two colour print for the activation kit.</div>
+    <div class="wide"><span>No gos</span>None stated. Applied: no identifiable competitor bar (the cheaper bar is a plain unbranded grey bar); no comparative claim without a test; no shaming the mother for switching; no poverty set dressing.</div>
+    <div class="wide"><span>Market layer</span><p class="sm">Loaded the East Africa market module supplied with the skill. Kenya is the fullest reference; Uganda diverges on language, see below.</p><ul><li><b>Casting.</b> By context: a woman with deep brown skin and short natural hair under a folded headscarf, photographed in a Kayole courtyard. Household casting is women led because the spine names mothers. No children in frame; their uniforms carry them.</li><li><b>Places.</b> Kenya: Eastlands estates (Kayole, Umoja, Donholm) with shared courtyard washing lines and painted shop walls; Kisumu for a lakeside town. Uganda: Ntinda, Nansana and Mukono around Kampala, swept red earth yards, washing laid on grass to dry. No informal settlement as backdrop.</li><li><b>Light.</b> January dry season: hard, high sun, short crisp shadows, which is what the graphic flat register is built on. Kampala carries a light equatorial haze.</li><li><b>Language.</b> Swahili headline with English, as mandated. Everyday Kenyan Swahili; no Sheng for a 25 to 45 household audience. Uganda diverges: the module calls Uganda Swahili speaking, but in Kampala and the central region Luganda is the household language and English carries most advertising. Swahili stays as mandated; a Luganda line is proposed for native checking and flagged for a client decision.</li><li><b>Retail.</b> Open air markets on market day, dukas, kiosks and neighbourhood mini marts. Long laundry bars are often cut into pieces at the counter. Mobile money at the till; no payment moment is shown.</li><li><b>Media.</b> Billboards read at speed on arterial roads and at a standstill in jams; radio is the strongest reach outside the big towns; chat app status and forwards outrun the feed. Painted shop walls are a real, cheap local medium.</li><li><b>Calendar.</b> Pointer only, confirm the live year: the January back to school period (uniforms washed every evening, the wash load peaks), Easter, Eid, the festive season.</li></ul></div>
+    <div class="wide"><span>Open questions and the working assumption used</span><ul><li>Which bar size carries the claim, and for what household? <b>Assumed:</b> One long bar, a family of five, about seven loads including school uniforms.</li><li>What is the shelf price in Kenya and in Uganda? <b>Assumed:</b> Placeholder plates: KSh XX and USh X,XXX.</li><li>For Uganda, is Swahili the client&#x27;s choice, or can Kampala executions carry Luganda? <b>Assumed:</b> Swahili and English as mandated, plus a proposed Luganda line flagged for a native check.</li></ul></div>
+    <div class="wide"><span>Register held across the set</span>Graphic flat: real objects photographed on flat painted grounds in Siku Yellow and Siku Indigo under hard dry season sun, poster logic, hard short shadows. Loud at 3 m in a market, cheap to print in two colours. One register for all seven routes.</div>
+    <div class="wide"><span>Endline options, campaign level</span><div class="endl"><div class="cl"><span class="lbl">Elegant</span><span class="val txt">Siku Bright. Siku saba.<small>Siku Bright. Seven days. Siku means day, so the name carries the promise. Recommended.</small></span><button class="mini" data-copy>Copy</button></div><div class="cl"><span class="lbl">Plain</span><span class="val txt">Mche mmoja. Wiki nzima.<small>One bar. The whole week.</small></span><button class="mini" data-copy>Copy</button></div><div class="cl"><span class="lbl">Shareable</span><span class="val txt">Nunua mara moja. Fua wiki nzima.<small>Buy once. Wash all week.</small></span><button class="mini" data-copy>Copy</button></div></div></div>
+  </div>
+</section>
+<section>
+  <div class="sh"><h2>The routes</h2><p>Safe, strong and wild, so the room has a real choice</p></div>
+  <article class="route" data-register="safe" data-name="Monday to Sunday">
+    <div class="rail"><div class="no">01</div><span class="reg safe">Safe</span></div>
+    <div>
+      <h3>Monday to Sunday</h3>
+      <p class="idea">The same bar photographed seven times across one week, laid out like a calendar, and on Sunday there is still a piece left.</p>
+      <p class="why"><b>Why it wins.</b> It shows the claim as evidence, day by day, readable in three seconds at a stall.</p>
+      <p class="arch">Product truth · Graphic flat · No people · Pack in scene · Nairobi, Umoja</p>
+      <div class="grid">
+        <div class="prompt">
+          <div class="ph"><h4>Master prompt</h4><small>Photoreal model · 4:5</small><button class="btn on-plate" data-copy>Copy prompt</button></div>
+          <span class="txt">Vertical four by five overhead flat lay photograph, shot straight down onto a flat painted surface in solid Siku Yellow #F5C400 outside a shop in Umoja, Nairobi, under hard midday sun in the January dry season. Below the top 28 percent of the frame, eight objects sit in a precise grid of four across and two down, evenly spaced like the days on a calendar. The first seven are the same laundry bar soap at seven moments of one week, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face: in the top left it is full and sharp edged, and each one after it is a little shorter and softer at the corners, so the seventh, in the lower row, is a small firm piece about a quarter of its first length, edges worn smooth, still enough for one more wash, with a faint sheen of water on it. The eighth position, lower right, holds the same bar still in its wrapper. Each object casts a short hard shadow down and to the right. Light: hard direct midday sun, crisp shadows, the yellow ground flat and even. Palette lock: ground Siku Yellow #F5C400, bars Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, shadows deep indigo black #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 28 percent of the frame is unbroken flat Siku Yellow #F5C400, held clean as the headline zone; a narrow strip of the same yellow under each bar is held clear for the day labels; the bottom 14 percent is unbroken flat Siku Yellow, held clean for the endline and the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic still life product photography, hard direct sun, shot from directly above on 50mm, edge to edge sharp.</span>
+        </div>
+        <div class="panel copy">
+          <div class="ph"><h4>Copy suite</h4><small>Swahili, English beneath</small></div>
+          <div class="cl"><span class="lbl">Headline A, straight</span><span class="val hl txt">Jumatatu mpaka Jumapili. Mche mmoja.<small>Monday to Sunday. One bar.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline B, warm</span><span class="val hl txt">Bado iko Jumapili.<small>Still here on Sunday.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline C, smile</span><span class="val hl txt">Wiki inaisha kabla sabuni haijaisha.<small>The week runs out before the soap does.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Subline</span><span class="val txt">Sabuni ya kufulia inayodumu siku saba.<small>The laundry soap that lasts seven days.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Endline</span><span class="val txt">Siku Bright. Siku saba.<small>The elegant option of three. Siku Bright. Seven days. Siku means day, so the name carries the promise.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Proof</span><span class="val txt">Siku saba za kufua. Mche mmoja.<small>Seven days of washing. One bar.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, market</span><span class="val txt">Uliza Siku Bright sokoni.<small>Ask for Siku Bright at the market.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, social</span><span class="val txt">Sabuni yako inafika Jumatano? Tuambie.<small>Does your soap make it to Wednesday? Tell us.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Local line, Kenya</span><span class="val sw txt">Carried by the Swahili headline.<small>Everyday Kenyan Swahili, no Sheng for a 25 to 45 household audience.</small></span></div>
+          <div class="cl"><span class="lbl">Local line, Uganda</span><span class="val sw txt">Sabbuuni emu, wiiki yonna.<small>One soap, the whole week. Proposed Luganda line for the Kampala and central region executions; a native Luganda writer checks it before use.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Radio, 15 s</span><span class="val txt">SFX: a calendar page torn off, seven times. FVO, counting warmly: Jumatatu. Jumanne. Jumatano. Alhamisi. Ijumaa. Jumamosi. Jumapili. Mche mmoja wa Siku Bright, na bado iko. MVO: Siku Bright. Siku saba. Sasa shilingi XX tu.<small>Monday to Sunday. One Siku Bright bar, and it is still here. Siku Bright. Seven days. Now only XX shillings.</small></span><button class="mini" data-copy>Copy</button></div>
+          <p class="flag"><b>Flag.</b> Claim basis to confirm (bar size, loads per week). The seventh bar is shown as a small piece, never as two thirds of a bar, so the picture never claims more than a week.</p>
+        </div>
+        <div style="display:grid;gap:20px;align-content:start">
+          <div class="panel"><div class="ph"><h4>Layout logic</h4></div><p class="layout">A grid of four across and two down sits on flat yellow: seven stages of the bar plus the wrapped pack in the eighth cell; day labels go under each bar in post; the top 28 percent is the headline; the bottom 14 percent carries the endline and the price plate.</p></div>
+        </div>
+          <div class="panel" style="grid-column:1/-1">
+            <div class="ph"><h4>Adaptation kit</h4><small>Crop or reprompt, called per format</small></div>
+            <table class="kit">
+              <thead><tr><th>Format</th><th>Ratio</th><th>Call</th><th>What changes</th></tr></thead>
+              <tbody>
+                <tr><td>Feed post<br><span class="ratio">2000 x 2000 px</span></td><td class="ratio">1:1</td><td><span class="call crop">Crop</span></td><td>Trim top and bottom; headline zone drops to 18 percent; the grid stays whole.</td></tr>
+                <tr><td>Status and story<br><span class="ratio">1080 x 1920 px, bottom 250 px clear</span></td><td class="ratio">9:16</td><td><span class="call re">Reprompt</span></td><td>Grid turns two across and four down like a calendar page; headline on top, price at the bottom.</td></tr>
+                <tr><td>Chat app forward<br><span class="ratio">1080 x 1350 px, test at thumbnail</span></td><td class="ratio">4:5</td><td><span class="call crop">Crop</span></td><td>The master as it is. Test at thumbnail: if the day labels vanish, drop them and keep the grid.</td></tr>
+                <tr><td>Roadside billboard 6x3 m<br><span class="ratio">viewed at speed or in a jam</span></td><td class="ratio">2:1</td><td><span class="call re">Reprompt</span></td><td>One row of seven across the frame plus the wrapped bar; huge headline above; price at the right.</td></tr>
+                <tr><td>Market stall A board<br><span class="ratio">600 x 900 mm</span></td><td class="ratio">2:3</td><td><span class="call crop">Crop</span></td><td>Crop from the 9:16 plate, not the master: the four across grid cannot lose its sides.</td></tr>
+                <tr><td>Activation backdrop and roll up<br><span class="ratio">850 x 2000 mm, bottom 400 mm hidden by the demo table</span></td><td class="ratio">1:2.5</td><td><span class="call re">Reprompt</span></td><td>One vertical column of seven, Monday at the top; bottom 400 mm clear for the table.</td></tr>
+                <tr><td>Bunting, aprons, canopy valance<br><span class="ratio">screen printed, two colours</span></td><td class="ratio">various</td><td><span class="call build">Designer build</span></td><td>Seven bar icons in a row, Siku Indigo on Siku Yellow, day initials under each. Nothing photographic.</td></tr>
+                <tr><td>Radio<br><span class="ratio">live read or produced spot</span></td><td class="ratio">15 s</td><td><span class="call script">Script</span></td><td>Script in the copy suite: the calendar page tear is the sound of the mechanism.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="reprompts">
+          <details><summary>Reprompt: Status and story 9:16<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Status and story 9:16</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Tall vertical nine by sixteen overhead flat lay photograph, shot straight down onto a flat painted surface in solid Siku Yellow #F5C400 outside a shop in Umoja, Nairobi, under hard midday sun in the January dry season. Below the top 26 percent of the frame, eight objects sit in a precise grid of two across and four down, evenly spaced like a calendar page. The first seven are the same laundry bar soap at seven moments of one week, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face: top left it is full and sharp edged, and each one after it, reading left to right and down, is a little shorter and softer at the corners, so the seventh is a small firm piece about a quarter of its first length, edges worn smooth, still enough for one more wash. The eighth position, bottom right, holds the same bar still in its wrapper. Each object casts a short hard shadow down and to the right. Light: hard direct midday sun, crisp shadows, the yellow ground flat and even. Palette lock: ground Siku Yellow #F5C400, bars Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, shadows deep indigo black #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 26 percent of the frame is unbroken flat Siku Yellow #F5C400, held clean as the headline zone; a narrow strip of yellow under each bar is held clear for the day labels; the bottom 13 percent is plain yellow held clear for the price plate and the interface. 4K. Advertising grade. Top tier international award show craft. Graphic still life product photography, hard direct sun, shot from directly above on 50mm, edge to edge sharp.</span></div>
+          </details>
+          <details><summary>Reprompt: Roadside billboard 2:1<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Roadside billboard 2:1</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Wide two by one overhead flat lay photograph, shot straight down onto a long flat painted surface in solid Siku Yellow #F5C400 outside a shop in Umoja, Nairobi, under hard midday sun in the January dry season. Across the lower 55 percent of the frame, eight objects sit in one straight row, evenly spaced: the first seven are the same laundry bar soap at seven moments of one week, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, full and sharp edged at the left and each one a little shorter and softer, so the seventh is a small firm piece about a quarter of its first length, still enough for one more wash; the eighth, at the right end of the row, is the same bar still in its wrapper. Each object casts a short hard shadow down and to the right. Light: hard direct midday sun, crisp shadows, the yellow ground flat and even. Palette lock: ground Siku Yellow #F5C400, bars Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, shadows deep indigo black #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 40 percent of the frame is unbroken flat Siku Yellow #F5C400, held clean as the headline zone, with the right 22 percent of that band kept for the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic still life product photography, hard direct sun, shot from directly above on 50mm, edge to edge sharp.</span></div>
+          </details>
+          <details><summary>Reprompt: Activation backdrop and roll up 1:2.5<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Activation backdrop and roll up 1:2.5</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Very tall one by two and a half vertical overhead flat lay photograph, shot straight down onto a long flat painted surface in solid Siku Yellow #F5C400 outside a shop in Umoja, Nairobi, under hard midday sun in the January dry season. Down the middle of the frame, from 22 to 82 percent of its height, eight objects sit in one straight vertical column, evenly spaced: the first seven are the same laundry bar soap at seven moments of one week, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, full and sharp edged at the top and each one a little shorter and softer, so the seventh is a small firm piece about a quarter of its first length; the eighth, at the bottom of the column, is the same bar still in its wrapper. Each object casts a short hard shadow down and to the right. Light: hard direct midday sun, crisp shadows, the yellow ground flat and even. Palette lock: ground Siku Yellow #F5C400, bars Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, shadows deep indigo black #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 20 percent of the frame is unbroken flat Siku Yellow #F5C400, held clean as the headline zone, and the bottom 16 percent is plain yellow, held clear because the demo table hides it. 4K. Advertising grade. Top tier international award show craft. Graphic still life product photography, hard direct sun, shot from directly above on 50mm, edge to edge sharp.</span></div>
+          </details>
+        </div>
+        <div class="panel build" style="grid-column:1/-1">
+          <div class="ph"><h4>Designer build sheet</h4><small>Percent of the master frame, x from left, y from top. Type, logo, pack and price go on in post</small></div>
+          <dl>
+            <dt>Text zones</dt><dd>Swahili headline x 6 to 94, y 5 to 18, Siku Indigo #1F2E7A. English line y 19 to 25 at 50 percent size. Day labels Jumatatu to Jumapili under each bar, 2.5 percent of frame height.</dd>
+            <dt>Logo plate</dt><dd>Siku Bright wordmark bottom left, x 5 to 30, y 88 to 96, Siku Indigo on yellow.</dd>
+            <dt>Pack lockup</dt><dd>Real wrapper art onto the blank label face of the wrapped bar in the eighth cell, about x 74 to 94, y 64 to 80; overhead view, so the art goes on flat at 96 percent of the panel width.</dd>
+            <dt>Price plate</dt><dd>Bottom right, x 66 to 95, y 86 to 97: Line White #FAFAF5 rounded tile, Siku Indigo numerals, KSh XX for Kenya and USh X,XXX for Uganda; recommended retail price line beneath at 18 percent of numeral height.</dd>
+            <dt>Endline lockup</dt><dd>Siku Bright. Siku saba. bottom centre, x 32 to 64, y 89 to 95, on the yellow.</dd>
+            <dt>Safe area and bleed</dt><dd>Digital 5 percent. Billboard: media owner spec, keep the price 150 mm inside. A board and roll up 3 mm bleed; roll up bottom 400 mm empty.</dd>
+            <dt>Colour build</dt><dd>#F5C400, #1F2E7A, #FAFAF5, #F2D46B, #141B45. CMYK: Siku Yellow goes green on cheap uncoated stock; specify a process yellow with a touch of magenta and proof it.</dd>
+            <dt class="dont">Do not</dt><dd>Show the seventh bar bigger than a quarter. Add an eighth bar to the billboard row. Put the price inside the grid.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="route" data-register="safe" data-name="Wash Day">
+    <div class="rail"><div class="no">02</div><span class="reg safe">Safe</span></div>
+    <div>
+      <h3>Wash Day</h3>
+      <p class="idea">On Saturday morning a mother stands in front of a line heavy with the family&#x27;s whole week of washing, and the bar on her basin is still a proper bar.</p>
+      <p class="why"><b>Why it wins.</b> The full line and the still solid bar in one frame is the claim, proved by the person who matters.</p>
+      <p class="arch">Hero portrait · Graphic flat · One figure, face present · Pack in scene · Nairobi, Kayole (Uganda variant: Nansana, Kampala)</p>
+      <div class="grid">
+        <div class="prompt">
+          <div class="ph"><h4>Master prompt</h4><small>Photoreal model · 4:5</small><button class="btn on-plate" data-copy>Copy prompt</button></div>
+          <span class="txt">Vertical four by five environmental portrait in the shared courtyard of a walk up block of flats in Kayole, Nairobi, at 10:00 on a Saturday in January, the dry season sun high and hard. A woman with deep brown skin and short natural hair under a folded headscarf in Siku Indigo #1F2E7A, sleeves of her plain cotton blouse pushed to the elbow, stands in the right half of the frame, waist up, facing camera with a level, quietly satisfied look, forearms still wet from the wash. Behind her at shoulder height, a washing line crosses the whole frame heavy with a family&#x27;s week of washing: white school shirts, small grey school trousers, a man&#x27;s blue work overalls, children&#x27;s clothes, towels and a patterned church dress, all clean and hanging still. In the lower left foreground, a round plastic basin in Basin Blue #2F7FD1 holds rinse water, and on its rim rests a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, worn at the corners but still a solid bar; beside the basin stands the same bar in its wrapper. The courtyard wall behind the line is painted flat solid Siku Yellow #F5C400, and the clothes cast hard short shadows onto it; the floor is swept concrete. Light: hard direct sun from high left, crisp shadows, the yellow wall glowing. Palette lock: wall Siku Yellow #F5C400, headscarf and wrapper Siku Indigo #1F2E7A, school shirts Line White #FAFAF5, trousers grey #8C8F94, overalls blue #3C6FB5, children&#x27;s clothes Siku Yellow #F5C400, towels Basin Blue #2F7FD1, church dress printed in Siku Indigo #1F2E7A and Line White #FAFAF5, basin Basin Blue #2F7FD1, bar Bar Cream #F2D46B, concrete #BDB3A3. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 26 percent of the frame is the plain painted wall above the washing line, unbroken flat Siku Yellow #F5C400, held clean as the headline zone, and the lower right 16 percent is plain swept concrete held clear for the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic documentary portrait, hard sun, shot on 50mm, deep focus, natural skin texture.</span>
+        </div>
+        <div class="prompt variant">
+          <div class="ph"><h4>Uganda variant, master 4:5</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div>
+          <span class="txt">Vertical four by five environmental portrait in the swept yard in front of a row of rental rooms in Nansana, on the edge of Kampala, at 10:00 on a Saturday in January, the dry season sun bright through a light haze. A woman with dark brown skin and her hair in neat cornrows, sleeves of her plain cotton blouse pushed to the elbow, stands in the right half of the frame, waist up, facing camera with a level, quietly satisfied look, forearms still wet from the wash. Behind her at shoulder height, a washing line crosses the whole frame heavy with a family&#x27;s week of washing: white school shirts, small khaki school shorts, a man&#x27;s blue work overalls, children&#x27;s clothes, towels and a long patterned gomesi in Siku Yellow #F5C400 and Siku Indigo #1F2E7A, all clean and hanging still. In the lower left foreground, a round plastic basin in Basin Blue #2F7FD1 holds rinse water, and on its rim rests a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, worn at the corners but still a solid bar; beside the basin stands the same bar in its wrapper. The wall of the rooms behind the line is painted flat solid Siku Yellow #F5C400, and the clothes cast hard short shadows onto it; the ground is swept red earth. Light: bright sun from high left through a light haze, crisp shadows, the yellow wall glowing. Palette lock: wall Siku Yellow #F5C400, wrapper Siku Indigo #1F2E7A, school shirts Line White #FAFAF5, shorts khaki #B79F6E, overalls blue #3C6FB5, children&#x27;s clothes Siku Yellow #F5C400, towels Basin Blue #2F7FD1, basin Basin Blue #2F7FD1, bar Bar Cream #F2D46B, earth #B5532F. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 26 percent of the frame is the plain painted wall above the washing line, unbroken flat Siku Yellow #F5C400, held clean as the headline zone, and the lower right 16 percent is plain swept red earth held clear for the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic documentary portrait, hard sun, shot on 50mm, deep focus, natural skin texture.</span>
+        </div>
+        <div class="panel copy">
+          <div class="ph"><h4>Copy suite</h4><small>Swahili, English beneath</small></div>
+          <div class="cl"><span class="lbl">Headline A, straight</span><span class="val hl txt">Wiki nzima ya kufua. Mche mmoja.<small>A whole week of washing. One bar.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline B, warm</span><span class="val hl txt">Kila shilingi ina kazi yake.<small>Every shilling has a job to do.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline C, smile</span><span class="val hl txt">Kamba imejaa. Sabuni bado iko.<small>The line is full. The soap is still here.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Subline</span><span class="val txt">Siku Bright inadumu wiki nzima ya kufua.<small>Siku Bright lasts the whole week&#x27;s wash.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Endline</span><span class="val txt">Siku Bright. Siku saba.<small>The elegant option of three. Siku Bright. Seven days. Siku means day, so the name carries the promise.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Proof</span><span class="val txt">Mche mmoja. Siku saba za kufua.<small>One bar. Seven days of washing.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, market</span><span class="val txt">Rudi kwa Siku Bright. Uliza sokoni.<small>Come back to Siku Bright. Ask at the market.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, social</span><span class="val txt">Tuonyeshe kamba yako ya Jumamosi.<small>Show us your Saturday line.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Local line, Kenya</span><span class="val sw txt">Carried by the Swahili headline.<small>Everyday Kenyan Swahili, no Sheng for a 25 to 45 household audience.</small></span></div>
+          <div class="cl"><span class="lbl">Local line, Uganda</span><span class="val sw txt">Sabbuuni emu, wiiki yonna.<small>One soap, the whole week. Proposed Luganda line for the Kampala and central region executions; a native Luganda writer checks it before use.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Radio, 15 s</span><span class="val txt">SFX: water sloshing in a basin, a wet shirt snapped straight. FVO, a mother, satisfied: Jumamosi. Kamba imejaa. Na sabuni? Bado iko. MVO: Siku Bright. Mche mmoja, wiki nzima ya kufua. Shilingi XX tu. Siku Bright. Siku saba.<small>Saturday. The line is full. And the soap? Still here. Siku Bright. One bar, the whole week&#x27;s wash. Only XX shillings. Siku Bright. Seven days.</small></span><button class="mini" data-copy>Copy</button></div>
+          <p class="flag"><b>Flag.</b> Claim basis to confirm. Expect notes on her expression: level and satisfied, never a grin.</p>
+        </div>
+        <div style="display:grid;gap:20px;align-content:start">
+          <div class="panel"><div class="ph"><h4>Layout logic</h4></div><p class="layout">She stands in the right half, waist up, level gaze to camera; the line crosses behind her at shoulder height; basin, bar and wrapped pack sit lower left; the top 26 percent is the yellow wall above the line for the headline; the lower right 16 percent is clear concrete for the price plate.</p></div>
+        </div>
+          <div class="panel" style="grid-column:1/-1">
+            <div class="ph"><h4>Adaptation kit</h4><small>Crop or reprompt, called per format</small></div>
+            <table class="kit">
+              <thead><tr><th>Format</th><th>Ratio</th><th>Call</th><th>What changes</th></tr></thead>
+              <tbody>
+                <tr><td>Feed post<br><span class="ratio">2000 x 2000 px</span></td><td class="ratio">1:1</td><td><span class="call crop">Crop</span></td><td>Trim top and bottom: face, line and bar stay; headline zone drops to 18 percent.</td></tr>
+                <tr><td>Status and story<br><span class="ratio">1080 x 1920 px, bottom 250 px clear</span></td><td class="ratio">9:16</td><td><span class="call re">Reprompt</span></td><td>She stands in the lower two thirds, the line above her head, basin and bar bottom left.</td></tr>
+                <tr><td>Chat app forward<br><span class="ratio">1080 x 1350 px, test at thumbnail</span></td><td class="ratio">4:5</td><td><span class="call crop">Crop</span></td><td>Master as it is; the bar on the basin must still read at thumbnail size, so test it.</td></tr>
+                <tr><td>Roadside billboard 6x3 m<br><span class="ratio">viewed at speed or in a jam</span></td><td class="ratio">2:1</td><td><span class="call re">Reprompt</span></td><td>The line runs the full width; her in the right third; basin, bar and wrapper in the left third; headline on the wall top left.</td></tr>
+                <tr><td>Market stall A board<br><span class="ratio">600 x 900 mm</span></td><td class="ratio">2:3</td><td><span class="call crop">Crop</span></td><td>Trim about 8 percent from each side; the price plate moves up to sit beside the basin.</td></tr>
+                <tr><td>Activation backdrop and roll up<br><span class="ratio">850 x 2000 mm, bottom 400 mm hidden by the demo table</span></td><td class="ratio">1:2.5</td><td><span class="call re">Reprompt</span></td><td>Full length portrait, basin at her feet, the line above her head; bottom 400 mm clear.</td></tr>
+                <tr><td>Bunting, aprons, canopy valance<br><span class="ratio">screen printed, two colours</span></td><td class="ratio">various</td><td><span class="call build">Designer build</span></td><td>A washing line icon with the bar pegged at the end; promoter aprons in Siku Indigo carrying the endline.</td></tr>
+                <tr><td>Radio<br><span class="ratio">live read or produced spot</span></td><td class="ratio">15 s</td><td><span class="call script">Script</span></td><td>Script in the copy suite: the Saturday wash, said by her.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="reprompts">
+          <details><summary>Reprompt: Status and story 9:16<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Status and story 9:16</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Tall vertical nine by sixteen environmental portrait in the shared courtyard of a walk up block of flats in Kayole, Nairobi, at 10:00 on a Saturday in January, the dry season sun high and hard, the woman in the lower two thirds of the frame. A woman with deep brown skin and short natural hair under a folded headscarf in Siku Indigo #1F2E7A, sleeves of her plain cotton blouse pushed to the elbow, stands in the lower two thirds of the frame, waist up, facing camera with a level, quietly satisfied look, forearms still wet from the wash. Behind her, a washing line crosses the frame above her head, heavy with a family&#x27;s week of washing: white school shirts, small grey school trousers, a man&#x27;s blue work overalls, children&#x27;s clothes, towels and a patterned church dress. In the bottom left, the rim of a round plastic basin in Basin Blue #2F7FD1 holds a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, worn at the corners but still a solid bar, and beside it stands the same bar in its wrapper. The courtyard wall behind the line is painted flat solid Siku Yellow #F5C400, and the clothes cast hard short shadows onto it; the floor is swept concrete. Light: hard direct sun from high left, crisp shadows, the yellow wall glowing. Palette lock: wall Siku Yellow #F5C400, headscarf and wrapper Siku Indigo #1F2E7A, school shirts Line White #FAFAF5, trousers grey #8C8F94, overalls blue #3C6FB5, children&#x27;s clothes Siku Yellow #F5C400, towels Basin Blue #2F7FD1, church dress printed in Siku Indigo #1F2E7A and Line White #FAFAF5, basin Basin Blue #2F7FD1, bar Bar Cream #F2D46B, concrete #BDB3A3. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 26 percent of the frame is the plain painted wall above the line, unbroken flat Siku Yellow #F5C400, held clean as the headline zone, and the bottom 13 percent is plain swept concrete held clear for the price plate and the interface. 4K. Advertising grade. Top tier international award show craft. Graphic documentary portrait, hard sun, shot on 50mm, deep focus, natural skin texture.</span></div>
+          </details>
+          <details><summary>Reprompt: Roadside billboard 2:1<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Roadside billboard 2:1</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Wide two by one environmental photograph in the shared courtyard of a walk up block of flats in Kayole, Nairobi, at 10:00 on a Saturday in January, the dry season sun high and hard, a long washing line crossing the full width of the frame. A woman with deep brown skin and short natural hair under a folded headscarf in Siku Indigo #1F2E7A, sleeves pushed to the elbow, stands in the right third of the frame, waist up, facing camera with a level, quietly satisfied look. The washing line runs behind her across the whole width, heavy with a family&#x27;s week of washing: white school shirts, small grey school trousers, a man&#x27;s blue work overalls, children&#x27;s clothes, towels and a patterned church dress, all clean and hanging still. In the left third, a round plastic basin in Basin Blue #2F7FD1 sits on the ground with a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face resting on its rim, worn at the corners but still a solid bar, and the same bar in its wrapper stands beside it. The courtyard wall behind the line is painted flat solid Siku Yellow #F5C400, and the clothes cast hard short shadows onto it; the floor is swept concrete. Light: hard direct sun from high left, crisp shadows, the yellow wall glowing. Palette lock: wall Siku Yellow #F5C400, headscarf and wrapper Siku Indigo #1F2E7A, school shirts Line White #FAFAF5, trousers grey #8C8F94, overalls blue #3C6FB5, children&#x27;s clothes Siku Yellow #F5C400, towels Basin Blue #2F7FD1, church dress printed in Siku Indigo #1F2E7A and Line White #FAFAF5, basin Basin Blue #2F7FD1, bar Bar Cream #F2D46B, concrete #BDB3A3. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The upper left 40 percent of the frame, the plain wall above the line and the basin, is unbroken flat Siku Yellow #F5C400, held clean as the headline zone, and the lower right 18 percent is plain swept concrete, held clear for the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic documentary portrait, hard sun, shot on 50mm, deep focus, natural skin texture.</span></div>
+          </details>
+          <details><summary>Reprompt: Activation backdrop and roll up 1:2.5<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Activation backdrop and roll up 1:2.5</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Very tall one by two and a half vertical environmental portrait in the shared courtyard of a walk up block of flats in Kayole, Nairobi, at 10:00 on a Saturday in January, the dry season sun high and hard, the woman standing full length in the middle of the frame. A woman with deep brown skin and short natural hair under a folded headscarf in Siku Indigo #1F2E7A stands full length in the middle of the frame, facing camera with a level, quietly satisfied look, a round plastic basin in Basin Blue #2F7FD1 at her feet with a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face resting on its rim, worn at the corners but still a solid bar, and the same bar in its wrapper standing beside it. Above her head, a washing line crosses the frame heavy with a family&#x27;s week of washing: white school shirts, small grey school trousers, a man&#x27;s blue work overalls, children&#x27;s clothes and a patterned church dress. The courtyard wall behind the line is painted flat solid Siku Yellow #F5C400, and the clothes cast hard short shadows onto it; the floor is swept concrete. Light: hard direct sun from high left, crisp shadows, the yellow wall glowing. Palette lock: wall Siku Yellow #F5C400, headscarf and wrapper Siku Indigo #1F2E7A, school shirts Line White #FAFAF5, trousers grey #8C8F94, overalls blue #3C6FB5, children&#x27;s clothes Siku Yellow #F5C400, towels Basin Blue #2F7FD1, church dress printed in Siku Indigo #1F2E7A and Line White #FAFAF5, basin Basin Blue #2F7FD1, bar Bar Cream #F2D46B, concrete #BDB3A3. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 20 percent of the frame is the plain painted wall above the line in flat Siku Yellow #F5C400, held clean as the headline zone, and the bottom 16 percent is plain swept concrete, held clear because the demo table hides it. 4K. Advertising grade. Top tier international award show craft. Graphic documentary portrait, hard sun, shot on 50mm, deep focus, natural skin texture.</span></div>
+          </details>
+        </div>
+        <div class="panel build" style="grid-column:1/-1">
+          <div class="ph"><h4>Designer build sheet</h4><small>Percent of the master frame, x from left, y from top. Type, logo, pack and price go on in post</small></div>
+          <dl>
+            <dt>Text zones</dt><dd>Swahili headline x 6 to 94, y 4 to 16, Siku Indigo on the yellow wall. English line y 17 to 23.</dd>
+            <dt>Logo plate</dt><dd>Siku Bright wordmark top right corner of the wall zone is avoided; it sits bottom left under the basin, x 5 to 28, y 91 to 97, Siku Indigo on concrete.</dd>
+            <dt>Pack lockup</dt><dd>Real wrapper art onto the blank face of the standing wrapped bar beside the basin, about x 30 to 40, y 72 to 88; three quarter view, warp to the wrapper&#x27;s slight curve.</dd>
+            <dt>Price plate</dt><dd>Lower right on the concrete, x 68 to 95, y 84 to 97: Line White tile, Siku Indigo numerals, KSh XX or USh X,XXX, recommended retail price line beneath.</dd>
+            <dt>Endline lockup</dt><dd>Siku Bright. Siku saba. on the wall zone under the English line, x 6 to 50, y 24 to 28, or on a yellow band on the billboard.</dd>
+            <dt>Safe area and bleed</dt><dd>Digital 5 percent; print 3 mm bleed; billboard price 150 mm inside the frame.</dd>
+            <dt>Colour build</dt><dd>#F5C400, #1F2E7A, #FAFAF5, #2F7FD1, #F2D46B, #BDB3A3. CMYK: Basin Blue and Siku Indigo sit close on newsprint; keep the basin lighter.</dd>
+            <dt class="dont">Do not</dt><dd>Put a child in the frame. Let her hold the bar up to camera. Hide the bar behind the basin rim.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="route" data-register="strong" data-name="By Wednesday">
+    <div class="rail"><div class="no">03</div><span class="reg strong">Strong</span></div>
+    <div>
+      <h3>By Wednesday</h3>
+      <p class="idea">Split down the middle on a Wednesday: on the left a plain cheaper bar has melted to a soft sliver in a puddle, on the right the Siku Bright bar is still firm and square.</p>
+      <p class="why"><b>Why it wins.</b> It names the switch without naming anyone: the saving at the till is gone by midweek.</p>
+      <p class="arch">Demonstration split · Graphic flat · No people · Pack in scene · Nairobi, Donholm</p>
+      <div class="grid">
+        <div class="prompt">
+          <div class="ph"><h4>Master prompt</h4><small>Photoreal model · 4:5</small><button class="btn on-plate" data-copy>Copy prompt</button></div>
+          <span class="txt">Vertical four by five still life photograph divided by a hard straight vertical split exactly down the centre, both halves showing the same plain white plastic soap dish at the same angle, photographed from slightly above on a back step in Donholm, Nairobi, on a Wednesday in January. Left half: in the soap dish sits a thin, soft, shapeless sliver of a plain unbranded pale grey laundry bar #C9C7BF, its edges slumped and melted into a cloudy pool of soft soap and water spreading to the dish&#x27;s edges. Right half: in the identical soap dish sits a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, firm, square edged and dry on top, clearly most of a full bar, and beside the dish lies the same bar in its wrapper. The left half&#x27;s ground is a flat drained grey #A3A3A0; the right half&#x27;s ground is a flat painted surface in solid Siku Yellow #F5C400. Light: the drained half is dull, flat and shadowless; the Siku half is hard direct midday sun with a crisp short shadow. Palette lock: drained ground #A3A3A0, unbranded sliver #C9C7BF, Siku ground Siku Yellow #F5C400, Siku bar Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, soap dishes plain white #F1F1EC, shadow #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 26 percent of the frame on both halves is unbroken flat ground, grey #A3A3A0 on the left and Siku Yellow #F5C400 on the right, held clean as the headline zone, and the lower right 18 percent, on the yellow half only, is plain yellow held clear for the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic product photography composite, shot on 100mm, crisp focus on both dishes.</span>
+        </div>
+        <div class="panel copy">
+          <div class="ph"><h4>Copy suite</h4><small>Swahili, English beneath</small></div>
+          <div class="cl"><span class="lbl">Headline A, straight</span><span class="val hl txt">Jumatano. Bado iko.<small>Wednesday. Still going.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline B, warm</span><span class="val hl txt">Ulitaka kuokoa. Tunaelewa.<small>You wanted to save. We get it.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline C, smile</span><span class="val hl txt">Rahisi ni ghali.<small>Cheap is expensive.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Subline</span><span class="val txt">Siku Bright inadumu mpaka Jumapili.<small>Siku Bright lasts all the way to Sunday.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Endline</span><span class="val txt">Mche mmoja. Wiki nzima.<small>The plain option of three. One bar. The whole week.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Proof</span><span class="val txt">Siku saba za kufua.<small>Seven days of washing.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, market</span><span class="val txt">Linganisha mwenyewe sokoni.<small>Compare it yourself at the market.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, social</span><span class="val txt">Sabuni yako iliisha siku gani? Tuambie.<small>What day did your soap run out? Tell us.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Local line, Kenya</span><span class="val sw txt">Carried by the Swahili headline.<small>Everyday Kenyan Swahili, no Sheng for a 25 to 45 household audience.</small></span></div>
+          <div class="cl"><span class="lbl">Local line, Uganda</span><span class="val sw txt">Sabbuuni emu, wiiki yonna.<small>One soap, the whole week. Proposed Luganda line for the Kampala and central region executions; a native Luganda writer checks it before use.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Radio, 15 s</span><span class="val txt">SFX: a tap dripping. FVO 1, fed up: Sabuni imeisha tena. Ni Jumatano tu! FVO 2, kind: Rahisi ni ghali, dada. Jaribu Siku Bright. MVO: Mche mmoja, wiki nzima. Shilingi XX tu. Siku Bright.<small>The soap has run out again. And it is only Wednesday! Cheap is expensive, sister. Try Siku Bright. One bar, the whole week. Only XX shillings. Siku Bright.</small></span><button class="mini" data-copy>Copy</button></div>
+          <p class="flag"><b>Flag.</b> Comparative claim. Suspended until the client&#x27;s wear test against the cheaper bar category is in hand and legal clears it. The grey bar stays plain and unbranded in every format.</p>
+        </div>
+        <div style="display:grid;gap:20px;align-content:start">
+          <div class="panel"><div class="ph"><h4>Layout logic</h4></div><p class="layout">Hard vertical split at the centre; the same soap dish at the same angle on both halves; the headline spans the top 26 percent; the price plate sits lower right on the yellow half only, so the comparison resolves on the brand side.</p></div>
+        </div>
+          <div class="panel" style="grid-column:1/-1">
+            <div class="ph"><h4>Adaptation kit</h4><small>Crop or reprompt, called per format</small></div>
+            <table class="kit">
+              <thead><tr><th>Format</th><th>Ratio</th><th>Call</th><th>What changes</th></tr></thead>
+              <tbody>
+                <tr><td>Feed post<br><span class="ratio">2000 x 2000 px</span></td><td class="ratio">1:1</td><td><span class="call crop">Crop</span></td><td>Trim top and bottom; the split stays centred; headline zone drops to 18 percent.</td></tr>
+                <tr><td>Status and story<br><span class="ratio">1080 x 1920 px, bottom 250 px clear</span></td><td class="ratio">9:16</td><td><span class="call re">Reprompt</span></td><td>Orientation flips: the split turns horizontal, Wednesday sliver on top in grey, the firm bar and pack below on yellow.</td></tr>
+                <tr><td>Chat app forward<br><span class="ratio">1080 x 1350 px, test at thumbnail</span></td><td class="ratio">4:5</td><td><span class="call crop">Crop</span></td><td>Master as it is; at thumbnail the colour split carries it even when the sliver detail goes.</td></tr>
+                <tr><td>Roadside billboard 6x3 m<br><span class="ratio">viewed at speed or in a jam</span></td><td class="ratio">2:1</td><td><span class="call re">Reprompt</span></td><td>Split stays vertical across 2:1: one dish per half at large scale, headline across the top, price on the yellow half.</td></tr>
+                <tr><td>Market stall A board<br><span class="ratio">600 x 900 mm</span></td><td class="ratio">2:3</td><td><span class="call crop">Crop</span></td><td>Trim about 8 percent from each side; the split stays centred.</td></tr>
+                <tr><td>Activation backdrop and roll up<br><span class="ratio">850 x 2000 mm, bottom 400 mm hidden by the demo table</span></td><td class="ratio">1:2.5</td><td><span class="call re">Reprompt</span></td><td>Horizontal split stacked: grey on top, yellow below, price in the yellow band above the table line.</td></tr>
+                <tr><td>Bunting, aprons, canopy valance<br><span class="ratio">screen printed, two colours</span></td><td class="ratio">various</td><td><span class="call build">Designer build</span></td><td>Two colour bunting: a grey drop and a yellow bar icon, alternating. A real demo at the stall does the rest.</td></tr>
+                <tr><td>Radio<br><span class="ratio">live read or produced spot</span></td><td class="ratio">15 s</td><td><span class="call script">Script</span></td><td>Script in the copy suite: two women, one Wednesday.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="reprompts">
+          <details><summary>Reprompt: Status and story 9:16<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Status and story 9:16</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Tall vertical nine by sixteen still life photograph divided by a hard straight horizontal split exactly across the middle, both halves showing the same plain white plastic soap dish at the same angle, photographed from slightly above on a back step in Donholm, Nairobi, on a Wednesday in January. Top half: in the soap dish sits a thin, soft, shapeless sliver of a plain unbranded pale grey laundry bar #C9C7BF, its edges slumped and melted into a cloudy pool of soft soap and water spreading to the dish&#x27;s edges. Bottom half: in the identical soap dish sits a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, firm, square edged and dry on top, clearly most of a full bar, and beside the dish lies the same bar in its wrapper. The top half&#x27;s ground is a flat drained grey #A3A3A0; the bottom half&#x27;s ground is a flat painted surface in solid Siku Yellow #F5C400. Light: the drained half is dull, flat and shadowless; the Siku half is hard direct midday sun with a crisp short shadow. Palette lock: drained ground #A3A3A0, unbranded sliver #C9C7BF, Siku ground Siku Yellow #F5C400, Siku bar Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, soap dishes plain white #F1F1EC, shadow #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 22 percent of the frame is unbroken flat grey #A3A3A0, held clean as the headline zone, and the bottom 15 percent, on the yellow half, is plain Siku Yellow #F5C400 held clear for the price plate and the interface. 4K. Advertising grade. Top tier international award show craft. Graphic product photography composite, shot on 100mm, crisp focus on both dishes.</span></div>
+          </details>
+          <details><summary>Reprompt: Roadside billboard 2:1<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Roadside billboard 2:1</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Wide two by one still life photograph divided by a hard straight vertical split exactly down the centre, both halves showing the same plain white plastic soap dish at the same angle, photographed from slightly above on a back step in Donholm, Nairobi, on a Wednesday in January. Left half: in the soap dish sits a thin, soft, shapeless sliver of a plain unbranded pale grey laundry bar #C9C7BF, its edges slumped and melted into a cloudy pool of soft soap and water. Right half: in the identical soap dish sits a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, firm, square edged and dry on top, clearly most of a full bar, and beside the dish lies the same bar in its wrapper. The left half&#x27;s ground is a flat drained grey #A3A3A0; the right half&#x27;s ground is a flat painted surface in solid Siku Yellow #F5C400. Light: the drained half is dull, flat and shadowless; the Siku half is hard direct midday sun with a crisp short shadow. Palette lock: drained ground #A3A3A0, unbranded sliver #C9C7BF, Siku ground Siku Yellow #F5C400, Siku bar Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, soap dishes plain white #F1F1EC, shadow #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 34 percent of the frame on both halves is unbroken flat ground, grey #A3A3A0 on the left and Siku Yellow #F5C400 on the right, held clean as the headline zone, and the right 20 percent of the yellow half below it is plain yellow held clear for the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic product photography composite, shot on 100mm, crisp focus on both dishes.</span></div>
+          </details>
+          <details><summary>Reprompt: Activation backdrop and roll up 1:2.5<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Activation backdrop and roll up 1:2.5</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Very tall one by two and a half vertical still life photograph divided by a hard straight horizontal split at the middle, both halves showing the same plain white plastic soap dish at the same angle, photographed from slightly above on a back step in Donholm, Nairobi, on a Wednesday in January. Top half: in the soap dish sits a thin, soft, shapeless sliver of a plain unbranded pale grey laundry bar #C9C7BF, melted into a cloudy pool of soft soap and water. Bottom half: in the identical soap dish sits a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, firm, square edged and dry on top, clearly most of a full bar, and beside the dish lies the same bar in its wrapper. The top half&#x27;s ground is a flat drained grey #A3A3A0; the bottom half&#x27;s ground is a flat painted surface in solid Siku Yellow #F5C400. Light: the drained half is dull, flat and shadowless; the Siku half is hard direct midday sun with a crisp short shadow. Palette lock: drained ground #A3A3A0, unbranded sliver #C9C7BF, Siku ground Siku Yellow #F5C400, Siku bar Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, soap dishes plain white #F1F1EC, shadow #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 18 percent of the frame is unbroken flat grey #A3A3A0, held clean as the headline zone, the band from 66 to 84 percent of the height on the yellow half is plain yellow held clear for the price plate, and the bottom 16 percent is plain Siku Yellow #F5C400 held clear because the demo table hides it. 4K. Advertising grade. Top tier international award show craft. Graphic product photography composite, shot on 100mm, crisp focus on both dishes.</span></div>
+          </details>
+        </div>
+        <div class="panel build" style="grid-column:1/-1">
+          <div class="ph"><h4>Designer build sheet</h4><small>Percent of the master frame, x from left, y from top. Type, logo, pack and price go on in post</small></div>
+          <dl>
+            <dt>Text zones</dt><dd>Headline across both halves, x 5 to 95, y 5 to 17, Siku Indigo; Jumatano. sits over the grey, Bado iko. over the yellow. English line y 18 to 24.</dd>
+            <dt>Logo plate</dt><dd>Siku Bright wordmark on the yellow half only, x 56 to 80, y 90 to 96.</dd>
+            <dt>Pack lockup</dt><dd>Real wrapper art onto the blank face of the wrapped bar beside the right dish, about x 58 to 76, y 66 to 80, matching the slightly high angle.</dd>
+            <dt>Price plate</dt><dd>Yellow half only, x 80 to 96, y 82 to 97: Line White tile, Siku Indigo numerals, KSh XX or USh X,XXX, recommended retail price line beneath.</dd>
+            <dt>Endline lockup</dt><dd>Mche mmoja. Wiki nzima. on the yellow half above the logo, x 56 to 94, y 84 to 89.</dd>
+            <dt>Safe area and bleed</dt><dd>Every type element 3 percent clear of the split. Print 3 mm bleed; billboard price 150 mm inside.</dd>
+            <dt>Colour build</dt><dd>#A3A3A0, #C9C7BF, #F5C400, #F2D46B, #1F2E7A, #FAFAF5, #F1F1EC. CMYK: the drained grey must stay neutral, never warm, or it reads as dirty yellow.</dd>
+            <dt class="dont">Do not</dt><dd>Give the grey bar a colour, a wrapper or a shape that matches any real brand. Put the logo or price on the grey half. Run this route before the comparison is cleared.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="route" data-register="strong" data-name="The Line">
+    <div class="rail"><div class="no">04</div><span class="reg strong">Strong</span></div>
+    <div>
+      <h3>The Line</h3>
+      <p class="idea">A washing line carries the family&#x27;s whole week, Monday&#x27;s school shirt to Sunday&#x27;s church dress, and pegged at the end like one more garment is the bar that washed all of it.</p>
+      <p class="why"><b>Why it wins.</b> The week&#x27;s wash and the one bar that did it hang side by side, so the claim reads as a tally.</p>
+      <p class="arch">Occasion tableau · Graphic flat · No people · Pack in scene · Kampala, Ntinda</p>
+      <div class="grid">
+        <div class="prompt">
+          <div class="ph"><h4>Master prompt</h4><small>Photoreal model · 4:5</small><button class="btn on-plate" data-copy>Copy prompt</button></div>
+          <span class="txt">Vertical four by five graphic photograph in a swept compound behind a house in Ntinda, Kampala, at 9:30 on a dry season morning in January, the sun bright through a light equatorial haze. A single straight washing line runs across the frame from left to right a little above the middle. Pegged along it in order, as if Monday to Sunday: a white school shirt, a small grey school skirt, a man&#x27;s blue work shirt, a baby&#x27;s yellow romper, a striped towel, another white school shirt and a long patterned church dress, each clean and hanging still from plain wooden pegs. Pegged at the far right end of the line with two wooden pegs, hanging with total seriousness as if it were one more garment, is a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, used but still a solid bar. On the swept earth in the lower left sits a small woven peg basket, and in it stands the same bar in its wrapper. Behind the line, a flat wall is painted solid Siku Indigo #1F2E7A, and the clothes cast short crisp shadows onto it; the ground is swept red earth. Light: bright hazy sun from the upper right, short crisp shadows. Palette lock: wall Siku Indigo #1F2E7A, white clothes Line White #FAFAF5, grey #8C8F94, work shirt blue #3C6FB5, romper Siku Yellow #F5C400, church dress printed in Siku Yellow #F5C400 and Line White #FAFAF5, bar Bar Cream #F2D46B, striped towel Basin Blue #2F7FD1 and Line White #FAFAF5, earth #B5532F, pegs pale wood #D8C3A0, peg basket natural sisal #CDB58A. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 30 percent of the frame is the plain painted wall above the line, flat Siku Indigo #1F2E7A, unbroken and evenly lit, held clean as the headline zone, and the lower right 16 percent is plain swept red earth held clear for the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic documentary still life, hard sun, shot on 35mm, deep focus, everything sharp.</span>
+        </div>
+        <div class="panel copy">
+          <div class="ph"><h4>Copy suite</h4><small>Swahili, English beneath</small></div>
+          <div class="cl"><span class="lbl">Headline A, straight</span><span class="val hl txt">Nguo zote hizi. Mche mmoja.<small>All these clothes. One bar.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline B, warm</span><span class="val hl txt">Wiki ya familia nzima.<small>The whole family&#x27;s week.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline C, smile</span><span class="val hl txt">Imefanya kazi wiki nzima. Sasa inapumzika.<small>Worked all week. Now it is hanging out.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Subline</span><span class="val txt">Mche mmoja wa Siku Bright, nguo za wiki nzima.<small>One Siku Bright bar for a whole week of family washing.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Endline</span><span class="val txt">Siku Bright. Siku saba.<small>The elegant option of three. Siku Bright. Seven days. Siku means day, so the name carries the promise.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Proof</span><span class="val txt">Siku saba za kufua. Mche mmoja.<small>Seven days of washing. One bar.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, market</span><span class="val txt">Uliza Siku Bright sokoni.<small>Ask for Siku Bright at the market.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, social</span><span class="val txt">Tuonyeshe kamba yako ya wiki.<small>Show us your week on the line.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Local line, Kenya</span><span class="val sw txt">Carried by the Swahili headline.<small>Everyday Kenyan Swahili, no Sheng for a 25 to 45 household audience.</small></span></div>
+          <div class="cl"><span class="lbl">Local line, Uganda</span><span class="val sw txt">Sabbuuni emu, wiiki yonna.<small>One soap, the whole week. Proposed Luganda line for the Kampala and central region executions; a native Luganda writer checks it before use.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Radio, 15 s</span><span class="val txt">SFX: seven clothes pegs clipping onto a line, in rhythm. MVO, one word per peg: Jumatatu. Jumanne. Jumatano. Alhamisi. Ijumaa. Jumamosi. Jumapili. Nguo zote hizi, mche mmoja wa Siku Bright. Shilingi XX tu. Siku Bright. Siku saba.<small>Monday to Sunday. All these clothes, one Siku Bright bar. Only XX shillings. Siku Bright. Seven days.</small></span><button class="mini" data-copy>Copy</button></div>
+          <p class="flag"><b>Flag.</b> Set in Kampala with a Swahili headline as mandated; this is the route where the Luganda decision matters most.</p>
+        </div>
+        <div style="display:grid;gap:20px;align-content:start">
+          <div class="panel"><div class="ph"><h4>Layout logic</h4></div><p class="layout">The line runs across the frame a little above the middle in the order of the week; the pegged bar hangs at the right end; the top 30 percent is flat indigo wall for the headline; the wrapped pack stands in a peg basket lower left; price lower right on the red earth.</p></div>
+        </div>
+          <div class="panel" style="grid-column:1/-1">
+            <div class="ph"><h4>Adaptation kit</h4><small>Crop or reprompt, called per format</small></div>
+            <table class="kit">
+              <thead><tr><th>Format</th><th>Ratio</th><th>Call</th><th>What changes</th></tr></thead>
+              <tbody>
+                <tr><td>Feed post<br><span class="ratio">2000 x 2000 px</span></td><td class="ratio">1:1</td><td><span class="call crop">Crop</span></td><td>Trim top and bottom; the whole line and the pegged bar stay; headline zone drops to 20 percent.</td></tr>
+                <tr><td>Status and story<br><span class="ratio">1080 x 1920 px, bottom 250 px clear</span></td><td class="ratio">9:16</td><td><span class="call re">Reprompt</span></td><td>Two stacked lines, Monday to Thursday above, Friday to Sunday and the pegged bar below.</td></tr>
+                <tr><td>Chat app forward<br><span class="ratio">1080 x 1350 px, test at thumbnail</span></td><td class="ratio">4:5</td><td><span class="call crop">Crop</span></td><td>Master as it is; the pegged bar is the thumbnail hook.</td></tr>
+                <tr><td>Roadside billboard 6x3 m<br><span class="ratio">viewed at speed or in a jam</span></td><td class="ratio">2:1</td><td><span class="call re">Reprompt</span></td><td>One line the full width with the pegged bar at the right end; headline on the wall above.</td></tr>
+                <tr><td>Market stall A board<br><span class="ratio">600 x 900 mm</span></td><td class="ratio">2:3</td><td><span class="call crop">Crop</span></td><td>Trim about 8 percent from each side; the pegged bar must stay, so trim more from the left.</td></tr>
+                <tr><td>Activation backdrop and roll up<br><span class="ratio">850 x 2000 mm, bottom 400 mm hidden by the demo table</span></td><td class="ratio">1:2.5</td><td><span class="call re">Reprompt</span></td><td>Three short stacked lines, the pegged bar ending the bottom one; bottom 400 mm clear.</td></tr>
+                <tr><td>Bunting, aprons, canopy valance<br><span class="ratio">screen printed, two colours</span></td><td class="ratio">various</td><td><span class="call build">Designer build</span></td><td>Real bunting as a washing line: seven cloth garments and a foam bar pegged across the stall. The best activation prop in the set.</td></tr>
+                <tr><td>Radio<br><span class="ratio">live read or produced spot</span></td><td class="ratio">15 s</td><td><span class="call script">Script</span></td><td>Script in the copy suite: seven pegs, seven days.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="reprompts">
+          <details><summary>Reprompt: Status and story 9:16<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Status and story 9:16</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Tall vertical nine by sixteen graphic photograph in a swept compound behind a house in Ntinda, Kampala, at 9:30 on a dry season morning in January, the sun bright through a light equatorial haze. Two straight washing lines cross the frame, one at 34 percent and one at 62 percent of its height. Pegged along the upper line: a white school shirt, a small grey school skirt, a man&#x27;s blue work shirt and a baby&#x27;s yellow romper. Pegged along the lower line: a striped towel, another white school shirt, a long patterned church dress, and at its right end, pegged with two wooden pegs and hanging with total seriousness as if it were one more garment, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, used but still a solid bar. On the swept earth at the bottom left sits a small woven peg basket, and in it stands the same bar in its wrapper. Behind the line, a flat wall is painted solid Siku Indigo #1F2E7A, and the clothes cast short crisp shadows onto it; the ground is swept red earth. Light: bright hazy sun from the upper right, short crisp shadows. Palette lock: wall Siku Indigo #1F2E7A, white clothes Line White #FAFAF5, grey #8C8F94, work shirt blue #3C6FB5, romper Siku Yellow #F5C400, church dress printed in Siku Yellow #F5C400 and Line White #FAFAF5, bar Bar Cream #F2D46B, striped towel Basin Blue #2F7FD1 and Line White #FAFAF5, earth #B5532F, pegs pale wood #D8C3A0, peg basket natural sisal #CDB58A. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 24 percent of the frame is plain painted wall in flat Siku Indigo #1F2E7A, held clean as the headline zone, and the bottom 13 percent is plain swept red earth held clear for the price plate and the interface. 4K. Advertising grade. Top tier international award show craft. Graphic documentary still life, hard sun, shot on 35mm, deep focus, everything sharp.</span></div>
+          </details>
+          <details><summary>Reprompt: Roadside billboard 2:1<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Roadside billboard 2:1</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Wide two by one graphic photograph in a swept compound behind a house in Ntinda, Kampala, at 9:30 on a dry season morning in January, the sun bright through a light equatorial haze. A single straight washing line runs the full width of the frame at 55 percent of its height. Pegged along it in order, as if Monday to Sunday: a white school shirt, a small grey school skirt, a man&#x27;s blue work shirt, a baby&#x27;s yellow romper, a striped towel, another white school shirt and a long patterned church dress, and pegged at the far right end, hanging with total seriousness as if it were one more garment, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, used but still a solid bar. On the swept earth below the left end of the line sits a small woven peg basket, and in it stands the same bar in its wrapper. Behind the line, a flat wall is painted solid Siku Indigo #1F2E7A, and the clothes cast short crisp shadows onto it; the ground is swept red earth. Light: bright hazy sun from the upper right, short crisp shadows. Palette lock: wall Siku Indigo #1F2E7A, white clothes Line White #FAFAF5, grey #8C8F94, work shirt blue #3C6FB5, romper Siku Yellow #F5C400, church dress printed in Siku Yellow #F5C400 and Line White #FAFAF5, bar Bar Cream #F2D46B, striped towel Basin Blue #2F7FD1 and Line White #FAFAF5, earth #B5532F, pegs pale wood #D8C3A0, peg basket natural sisal #CDB58A. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 38 percent of the frame is the plain painted wall above the line in flat Siku Indigo #1F2E7A, held clean as the headline zone, and the lower right 20 percent is plain swept red earth held clear for the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic documentary still life, hard sun, shot on 35mm, deep focus, everything sharp.</span></div>
+          </details>
+          <details><summary>Reprompt: Activation backdrop and roll up 1:2.5<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Activation backdrop and roll up 1:2.5</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Very tall one by two and a half vertical graphic photograph in a swept compound behind a house in Ntinda, Kampala, at 9:30 on a dry season morning in January, the sun bright through a light equatorial haze. Three short washing lines cross the frame one above another, at 26, 46 and 66 percent of its height. Pegged along them in order, as if Monday to Sunday: a white school shirt and a small grey school skirt on the top line; a man&#x27;s blue work shirt, a baby&#x27;s yellow romper and a striped towel on the middle line; another white school shirt, a long patterned church dress and, pegged at the right end and hanging with total seriousness as if it were one more garment, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, on the bottom line. The same bar in its wrapper stands in a small woven peg basket on the earth below. Behind the line, a flat wall is painted solid Siku Indigo #1F2E7A, and the clothes cast short crisp shadows onto it; the ground is swept red earth. Light: bright hazy sun from the upper right, short crisp shadows. Palette lock: wall Siku Indigo #1F2E7A, white clothes Line White #FAFAF5, grey #8C8F94, work shirt blue #3C6FB5, romper Siku Yellow #F5C400, church dress printed in Siku Yellow #F5C400 and Line White #FAFAF5, bar Bar Cream #F2D46B, striped towel Basin Blue #2F7FD1 and Line White #FAFAF5, earth #B5532F, pegs pale wood #D8C3A0, peg basket natural sisal #CDB58A. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 18 percent of the frame is plain painted wall in flat Siku Indigo #1F2E7A, held clean as the headline zone, and the bottom 16 percent is plain swept red earth held clear because the demo table hides it. 4K. Advertising grade. Top tier international award show craft. Graphic documentary still life, hard sun, shot on 35mm, deep focus, everything sharp.</span></div>
+          </details>
+        </div>
+        <div class="panel build" style="grid-column:1/-1">
+          <div class="ph"><h4>Designer build sheet</h4><small>Percent of the master frame, x from left, y from top. Type, logo, pack and price go on in post</small></div>
+          <dl>
+            <dt>Text zones</dt><dd>Headline x 6 to 94, y 5 to 17, Line White #FAFAF5 on the indigo wall. English line y 18 to 25 in Siku Yellow.</dd>
+            <dt>Logo plate</dt><dd>Siku Bright wordmark top right of the wall zone, x 74 to 94, y 26 to 29, Siku Yellow.</dd>
+            <dt>Pack lockup</dt><dd>Real wrapper art onto the blank face of the wrapped bar in the peg basket, about x 8 to 18, y 74 to 88, upright and straight on.</dd>
+            <dt>Price plate</dt><dd>Lower right on the red earth, x 70 to 95, y 84 to 97: Line White tile, Siku Indigo numerals, KSh XX or USh X,XXX, recommended retail price line beneath.</dd>
+            <dt>Endline lockup</dt><dd>Siku Bright. Siku saba. on the earth between basket and price, x 24 to 66, y 90 to 95, Line White.</dd>
+            <dt>Safe area and bleed</dt><dd>Digital 5 percent; print 3 mm bleed; billboard price 150 mm inside.</dd>
+            <dt>Colour build</dt><dd>#1F2E7A, #FAFAF5, #8C8F94, #3C6FB5, #F5C400, #F2D46B, #B5532F. CMYK: Siku Indigo is the big flat here; specify a rich build so it never prints purple.</dd>
+            <dt class="dont">Do not</dt><dd>Reorder the garments away from school shirt first. Unpeg the bar. Add a person; the line is the family.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="route" data-register="strong" data-name="Per Day">
+    <div class="rail"><div class="no">05</div><span class="reg strong">Strong</span></div>
+    <div>
+      <h3>Per Day</h3>
+      <p class="idea">Seven small coins stand on their edges in a row beside one bar, so the price stops being a price per bar and becomes a price per day.</p>
+      <p class="why"><b>Why it wins.</b> The mandatory price becomes the argument: count the week, not the bar.</p>
+      <p class="arch">Object poetry · Graphic flat · No people · Pack in scene · Nairobi, Umoja</p>
+      <div class="grid">
+        <div class="prompt">
+          <div class="ph"><h4>Master prompt</h4><small>Photoreal model · 4:5</small><button class="btn on-plate" data-copy>Copy prompt</button></div>
+          <span class="txt">Vertical four by five still life photograph, low and close on a flat surface painted solid Siku Yellow #F5C400 on a shop step in Umoja, Nairobi, under hard direct midday sun in the January dry season. In the lower half of the frame, the wrapped laundry bar lies flat, angled slightly toward camera. In front of it, in a perfectly straight row running the length of the bar, seven identical small round coins stand upright on their edges, plain brushed brass with smooth unmarked faces, balanced with total seriousness like seven small monuments, each casting a long thin hard shadow to the right across the yellow. Light: one hard direct sun from the left, long thin shadows, the yellow ground flat and even. Palette lock: ground Siku Yellow #F5C400, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, coins brushed brass #C8A456, shadows deep indigo #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 32 percent of the frame is unbroken flat Siku Yellow #F5C400, held clean as the headline zone, and the lower right 16 percent below the bar is plain yellow held clear for the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic object photography with a single hard light, shot on 100mm macro, coins tack sharp.</span>
+        </div>
+        <div class="panel copy">
+          <div class="ph"><h4>Copy suite</h4><small>Swahili, English beneath</small></div>
+          <div class="cl"><span class="lbl">Headline A, straight</span><span class="val hl txt">Shilingi XX kwa siku.<small>XX shillings a day. (Uganda: USh XXX kwa siku.)</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline B, warm</span><span class="val hl txt">Hesabu wiki, si mche.<small>Count the week, not the bar.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline C, smile</span><span class="val hl txt">Siku saba, sarafu saba.<small>Seven days. Seven coins.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Subline</span><span class="val txt">Mche mmoja wa Siku Bright unadumu wiki nzima ya kufua.<small>One Siku Bright bar lasts the whole week&#x27;s wash.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Endline</span><span class="val txt">Siku Bright. Siku saba.<small>The elegant option of three. Siku Bright. Seven days. Siku means day, so the name carries the promise.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Proof</span><span class="val txt">Bei ya mche mmoja: KSh XX. Siku saba za kufua.<small>One bar: KSh XX. Seven days of washing.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, market</span><span class="val txt">Hesabu nasi sokoni.<small>Count it with us at the market.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, social</span><span class="val txt">Gawanya bei kwa saba. Tuambie jibu.<small>Divide the price by seven. Tell us the answer.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Local line, Kenya</span><span class="val sw txt">Carried by the Swahili headline.<small>Everyday Kenyan Swahili, no Sheng for a 25 to 45 household audience.</small></span></div>
+          <div class="cl"><span class="lbl">Local line, Uganda</span><span class="val sw txt">Sabbuuni emu, wiiki yonna.<small>One soap, the whole week. Proposed Luganda line for the Kampala and central region executions; a native Luganda writer checks it before use.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Radio, 15 s</span><span class="val txt">SFX: seven coins dropped on a table, one by one. FVO: Moja, mbili, tatu, nne, tano, sita, saba. Siku saba za kufua kwa mche mmoja wa Siku Bright. Hiyo ni shilingi XX tu kwa siku. MVO: Siku Bright. Siku saba.<small>One to seven. Seven days of washing from one Siku Bright bar. That is only XX shillings a day. Siku Bright. Seven days.</small></span><button class="mini" data-copy>Copy</button></div>
+          <p class="flag"><b>Flag.</b> The per day figure is the shelf price divided by seven and only holds if the claim basis does. It needs the real price in each currency before artwork; round it the way shoppers say it.</p>
+        </div>
+        <div style="display:grid;gap:20px;align-content:start">
+          <div class="panel"><div class="ph"><h4>Layout logic</h4></div><p class="layout">The wrapped bar lies in the lower half on flat yellow; seven coins stand in a row along it; the top 32 percent carries the price per day headline; the shelf price plate sits lower right.</p></div>
+        </div>
+          <div class="panel" style="grid-column:1/-1">
+            <div class="ph"><h4>Adaptation kit</h4><small>Crop or reprompt, called per format</small></div>
+            <table class="kit">
+              <thead><tr><th>Format</th><th>Ratio</th><th>Call</th><th>What changes</th></tr></thead>
+              <tbody>
+                <tr><td>Feed post<br><span class="ratio">2000 x 2000 px</span></td><td class="ratio">1:1</td><td><span class="call crop">Crop</span></td><td>Trim top and bottom; coins and bar stay; headline zone drops to 22 percent.</td></tr>
+                <tr><td>Status and story<br><span class="ratio">1080 x 1920 px, bottom 250 px clear</span></td><td class="ratio">9:16</td><td><span class="call re">Reprompt</span></td><td>The bar lies lengthways up the frame with the coins in a column beside it; headline on top.</td></tr>
+                <tr><td>Chat app forward<br><span class="ratio">1080 x 1350 px, test at thumbnail</span></td><td class="ratio">4:5</td><td><span class="call crop">Crop</span></td><td>Master as it is; the price per day headline must be legible at thumbnail, so keep it to four words.</td></tr>
+                <tr><td>Roadside billboard 6x3 m<br><span class="ratio">viewed at speed or in a jam</span></td><td class="ratio">2:1</td><td><span class="call re">Reprompt</span></td><td>Coins in a long row stretching from the bar; the price per day headline huge across the top.</td></tr>
+                <tr><td>Market stall A board<br><span class="ratio">600 x 900 mm</span></td><td class="ratio">2:3</td><td><span class="call crop">Crop</span></td><td>Trim about 8 percent from each side; the seventh coin must stay.</td></tr>
+                <tr><td>Activation backdrop and roll up<br><span class="ratio">850 x 2000 mm, bottom 400 mm hidden by the demo table</span></td><td class="ratio">1:2.5</td><td><span class="call re">Reprompt</span></td><td>Looking straight down: the bar lengthways, coins lying flat beside it; bottom 400 mm clear.</td></tr>
+                <tr><td>Bunting, aprons, canopy valance<br><span class="ratio">screen printed, two colours</span></td><td class="ratio">various</td><td><span class="call build">Designer build</span></td><td>Seven coin roundels in a row on the bunting, Siku Indigo on Siku Yellow, the per day price on the apron.</td></tr>
+                <tr><td>Radio<br><span class="ratio">live read or produced spot</span></td><td class="ratio">15 s</td><td><span class="call script">Script</span></td><td>Script in the copy suite: seven coins counted aloud.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="reprompts">
+          <details><summary>Reprompt: Status and story 9:16<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Status and story 9:16</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Tall vertical nine by sixteen still life photograph, looking down at a steep angle onto a flat surface painted solid Siku Yellow #F5C400 on a shop step in Umoja, Nairobi, under hard direct midday sun in the January dry season. The wrapped laundry bar lies lengthways up the lower two thirds of the frame, and beside it, in a perfectly straight column running its length, seven identical small round coins stand upright on their edges, plain brushed brass with smooth unmarked faces, balanced with total seriousness like seven small monuments, each casting a long thin hard shadow. Light: one hard direct sun from the left, long thin shadows, the yellow ground flat and even. Palette lock: ground Siku Yellow #F5C400, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, coins brushed brass #C8A456, shadows deep indigo #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 28 percent of the frame is unbroken flat Siku Yellow #F5C400, held clean as the headline zone, and the bottom 13 percent is plain yellow held clear for the price plate and the interface. 4K. Advertising grade. Top tier international award show craft. Graphic object photography with a single hard light, shot on 100mm macro, coins tack sharp.</span></div>
+          </details>
+          <details><summary>Reprompt: Roadside billboard 2:1<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Roadside billboard 2:1</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Wide two by one still life photograph, low and close along a flat surface painted solid Siku Yellow #F5C400 on a shop step in Umoja, Nairobi, under hard direct midday sun in the January dry season. Along the bottom half of the frame, the wrapped laundry bar lies flat at the right, and stretching left from it in a perfectly straight row, seven identical small round coins stand upright on their edges, widely and evenly spaced, plain brushed brass with smooth unmarked faces, balanced with total seriousness like seven small monuments, each casting a long thin hard shadow across the yellow. Light: one hard direct sun from the left, long thin shadows, the yellow ground flat and even. Palette lock: ground Siku Yellow #F5C400, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, coins brushed brass #C8A456, shadows deep indigo #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 46 percent of the frame is unbroken flat Siku Yellow #F5C400, held clean as the headline zone, and the right 22 percent above the bar is plain yellow held clear for the price plate. 4K. Advertising grade. Top tier international award show craft. Graphic object photography with a single hard light, shot on 100mm macro, coins tack sharp.</span></div>
+          </details>
+          <details><summary>Reprompt: Activation backdrop and roll up 1:2.5<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Activation backdrop and roll up 1:2.5</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Very tall one by two and a half vertical still life photograph, looking straight down onto a flat surface painted solid Siku Yellow #F5C400 on a shop step in Umoja, Nairobi, under hard direct midday sun in the January dry season. Down the centre of the frame, from 24 to 80 percent of its height, the wrapped laundry bar lies lengthways, and beside it in a straight column seven identical small round coins lie flat, evenly spaced, plain brushed brass with smooth unmarked faces, each casting a crisp shadow. Light: one hard direct sun from the left, long thin shadows, the yellow ground flat and even. Palette lock: ground Siku Yellow #F5C400, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, coins brushed brass #C8A456, shadows deep indigo #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 20 percent of the frame is unbroken flat Siku Yellow #F5C400, held clean as the headline zone, and the bottom 16 percent is plain yellow held clear because the demo table hides it. 4K. Advertising grade. Top tier international award show craft. Graphic object photography with a single hard light, shot on 100mm macro, coins tack sharp.</span></div>
+          </details>
+        </div>
+        <div class="panel build" style="grid-column:1/-1">
+          <div class="ph"><h4>Designer build sheet</h4><small>Percent of the master frame, x from left, y from top. Type, logo, pack and price go on in post</small></div>
+          <dl>
+            <dt>Text zones</dt><dd>Headline x 6 to 94, y 5 to 20, Siku Indigo; the XX is set 1.3 times the cap height of the words. English line y 21 to 28.</dd>
+            <dt>Logo plate</dt><dd>Siku Bright wordmark bottom left, x 5 to 28, y 90 to 96.</dd>
+            <dt>Pack lockup</dt><dd>Real wrapper art onto the blank label face of the lying bar, about x 18 to 82, y 58 to 72, with low angle perspective; this is the largest pack lockup in the set.</dd>
+            <dt>Price plate</dt><dd>Lower right below the bar, x 70 to 95, y 82 to 97: Line White tile with the shelf price, KSh XX or USh X,XXX, recommended retail price line beneath. The per day figure lives in the headline, the shelf price lives here.</dd>
+            <dt>Endline lockup</dt><dd>Siku Bright. Siku saba. bottom centre, x 30 to 66, y 90 to 95.</dd>
+            <dt>Safe area and bleed</dt><dd>Digital 5 percent; print 3 mm bleed; billboard price 150 mm inside.</dd>
+            <dt>Colour build</dt><dd>#F5C400, #1F2E7A, #FAFAF5, #C8A456, #141B45. CMYK: brass on yellow loses contrast in print; deepen the coin shadows 10 percent.</dd>
+            <dt class="dont">Do not</dt><dd>Use real coin designs. Show more or fewer than seven coins. Run a per day price the client has not signed.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="route" data-register="wild" data-name="Siku Saba">
+    <div class="rail"><div class="no">06</div><span class="reg wild">Wild</span></div>
+    <div>
+      <h3>Siku Saba</h3>
+      <p class="idea">Seen from above, a family&#x27;s whole week of washing spread on the grass to dry forms one giant number seven, with the bar lying at its foot.</p>
+      <p class="why"><b>Why it wins.</b> The number is the claim and the laundry is the proof, and a seven needs no translation in Swahili, English or Luganda.</p>
+      <p class="arch">Type as terrain · Graphic flat · No people · Pack on clean plate · Mukono, outside Kampala</p>
+      <div class="grid">
+        <div class="prompt">
+          <div class="ph"><h4>Master prompt</h4><small>Type rendering model · 4:5</small><button class="btn on-plate" data-copy>Copy prompt</button></div>
+          <span class="txt">Vertical four by five aerial photograph shot straight down from about fifteen metres above a flat, freshly cut green lawn in a family compound in Mukono, outside Kampala, at 11:00 on a dry season morning in January, bright overhead sun with a light haze. Laid out flat on the grass to dry, edge to edge, a whole family&#x27;s week of clean washing forms one giant numeral 7, bold and clean edged, its top bar running across the upper middle of the frame and its stem slanting down to the lower left: white school shirts, grey school uniforms, blue work overalls, bright yellow children&#x27;s clothes, indigo printed cloth, towels and bedsheets, each garment smoothed flat and packed tightly so the numeral reads as one solid shape. At the foot of the stem lies a single a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, small at this height, like a full stop. Each garment casts a very slight crisp shadow on the grass. Light: bright overhead sun through a light haze, even and clear. Palette lock: lawn green #5E8C3A, the numeral built from Line White #FAFAF5 shirts and bedsheets, grey #8C8F94 uniforms, work blue #3C6FB5 overalls and towels, Siku Yellow #F5C400 children&#x27;s clothes and Siku Indigo #1F2E7A printed cloth, bar Bar Cream #F2D46B. The top 22 percent of the frame is unbroken even lawn #5E8C3A, held clean as the headline zone, and the lower right 24 percent is plain even lawn held clear as a clean plate for the pack lockup and the price plate. 4K. Advertising grade. Top tier international award show craft. Aerial documentary photography with graphic precision, shot from a drone at a 24mm equivalent, everything sharp.</span>
+        </div>
+        <div class="panel copy">
+          <div class="ph"><h4>Copy suite</h4><small>Swahili, English beneath</small></div>
+          <div class="cl"><span class="lbl">Headline A, straight</span><span class="val hl txt">Siku saba. Mche mmoja.<small>Seven days. One bar.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline B, warm</span><span class="val hl txt">Wiki nzima, imeanikwa.<small>A whole week, out to dry.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline C, smile</span><span class="val hl txt">Saba. Kwa lugha yoyote.<small>Seven. In any language.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Subline</span><span class="val txt">Mche mmoja wa Siku Bright, wiki nzima ya kufua.<small>One Siku Bright bar, a whole week of washing.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Endline</span><span class="val txt">Nunua mara moja. Fua wiki nzima.<small>The shareable option of three. Buy once. Wash all week.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Proof</span><span class="val txt">Siku saba za kufua.<small>Seven days of washing.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, market</span><span class="val txt">Uliza Siku Bright sokoni.<small>Ask for Siku Bright at the market.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, social</span><span class="val txt">Panga saba yako. Tuonyeshe.<small>Lay out your own seven. Show us.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Local line, Kenya</span><span class="val sw txt">Carried by the Swahili headline.<small>Everyday Kenyan Swahili, no Sheng for a 25 to 45 household audience.</small></span></div>
+          <div class="cl"><span class="lbl">Local line, Uganda</span><span class="val sw txt">Sabbuuni emu, wiiki yonna.<small>One soap, the whole week. Proposed Luganda line for the Kampala and central region executions; a native Luganda writer checks it before use.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Radio, 15 s</span><span class="val txt">SFX: a bedsheet shaken out and laid on grass. FVO: Saba. Seven. Musanvu. Kwa lugha yoyote, mche mmoja wa Siku Bright unafua wiki nzima. MVO: Siku Bright. Siku saba. Shilingi XX tu.<small>Seven, in Swahili, English and Luganda. In any language, one Siku Bright bar washes the whole week. Siku Bright. Seven days. Only XX shillings.</small></span><button class="mini" data-copy>Copy</button></div>
+          <p class="flag"><b>Flag.</b> Readable numeral in the image: shoot it for real with a drone (cheapest and truest on this budget) or generate on a type rendering model. Pairs with the shareable endline so siku saba is not said twice.</p>
+        </div>
+        <div style="display:grid;gap:20px;align-content:start">
+          <div class="panel"><div class="ph"><h4>Layout logic</h4></div><p class="layout">The 7 fills the centre and left of the frame; the bar sits at the foot of its stem like a full stop; the top 22 percent of lawn takes the headline; the lower right 24 percent is a clean plate for the real pack and the price plate.</p></div>
+        </div>
+          <div class="panel" style="grid-column:1/-1">
+            <div class="ph"><h4>Adaptation kit</h4><small>Crop or reprompt, called per format</small></div>
+            <table class="kit">
+              <thead><tr><th>Format</th><th>Ratio</th><th>Call</th><th>What changes</th></tr></thead>
+              <tbody>
+                <tr><td>Feed post<br><span class="ratio">2000 x 2000 px</span></td><td class="ratio">1:1</td><td><span class="call crop">Crop</span></td><td>Trim top and bottom; the 7 stays whole; pack plate shrinks, so the pack moves beside the bar at the foot of the 7.</td></tr>
+                <tr><td>Status and story<br><span class="ratio">1080 x 1920 px, bottom 250 px clear</span></td><td class="ratio">9:16</td><td><span class="call re">Reprompt</span></td><td>A taller 7 filling the middle of the frame; headline on the lawn above, pack and price below.</td></tr>
+                <tr><td>Chat app forward<br><span class="ratio">1080 x 1350 px, test at thumbnail</span></td><td class="ratio">4:5</td><td><span class="call crop">Crop</span></td><td>Master as it is; the 7 is the strongest thumbnail in the set.</td></tr>
+                <tr><td>Roadside billboard 6x3 m<br><span class="ratio">viewed at speed or in a jam</span></td><td class="ratio">2:1</td><td><span class="call re">Reprompt</span></td><td>The 7 stands in the left half; the right half is clean lawn for the headline, pack and price.</td></tr>
+                <tr><td>Market stall A board<br><span class="ratio">600 x 900 mm</span></td><td class="ratio">2:3</td><td><span class="call crop">Crop</span></td><td>Crop from the 9:16 plate: the master&#x27;s 7 loses its top bar if trimmed.</td></tr>
+                <tr><td>Activation backdrop and roll up<br><span class="ratio">850 x 2000 mm, bottom 400 mm hidden by the demo table</span></td><td class="ratio">1:2.5</td><td><span class="call re">Reprompt</span></td><td>A tall 7 from higher up; bottom 400 mm clear.</td></tr>
+                <tr><td>Bunting, aprons, canopy valance<br><span class="ratio">screen printed, two colours</span></td><td class="ratio">various</td><td><span class="call build">Designer build</span></td><td>The 7 as the stall icon: an indigo 7 on yellow bunting. On activation day, lay out a real 7 of laundry at the market entrance.</td></tr>
+                <tr><td>Radio<br><span class="ratio">live read or produced spot</span></td><td class="ratio">15 s</td><td><span class="call script">Script</span></td><td>Script in the copy suite: seven said in three languages.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="reprompts">
+          <details><summary>Reprompt: Status and story 9:16<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Status and story 9:16</h4><small>Type rendering model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Tall vertical nine by sixteen aerial photograph shot straight down from about twenty metres above a flat, freshly cut green lawn in a family compound in Mukono, outside Kampala, at 11:00 on a dry season morning in January, bright overhead sun with a light haze. Laid out flat on the grass to dry, edge to edge, a whole family&#x27;s week of clean washing forms one giant numeral 7 filling the frame from 24 to 84 percent of its height, bold and clean edged, its stem slanting down to the lower left: white school shirts, grey school uniforms, blue work overalls, bright yellow children&#x27;s clothes, indigo printed cloth, towels and bedsheets, each garment smoothed flat and packed tightly so the numeral reads as one solid shape. At the foot of the stem lies a single a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, small at this height, like a full stop. Each garment casts a very slight crisp shadow on the grass. Light: bright overhead sun through a light haze, even and clear. Palette lock: lawn green #5E8C3A, the numeral built from Line White #FAFAF5 shirts and bedsheets, grey #8C8F94 uniforms, work blue #3C6FB5 overalls and towels, Siku Yellow #F5C400 children&#x27;s clothes and Siku Indigo #1F2E7A printed cloth, bar Bar Cream #F2D46B. The top 22 percent of the frame is unbroken even lawn #5E8C3A, held clean as the headline zone, and the bottom 14 percent is plain lawn held clear for the pack lockup, the price plate and the interface. 4K. Advertising grade. Top tier international award show craft. Aerial documentary photography with graphic precision, shot from a drone at a 24mm equivalent, everything sharp.</span></div>
+          </details>
+          <details><summary>Reprompt: Roadside billboard 2:1<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Roadside billboard 2:1</h4><small>Type rendering model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Wide two by one aerial photograph shot straight down from about twenty metres above a long flat freshly cut green lawn in a family compound in Mukono, outside Kampala, at 11:00 on a dry season morning in January, bright overhead sun with a light haze. Laid out flat on the grass to dry, edge to edge, a whole family&#x27;s week of clean washing forms one giant numeral 7 standing in the left half of the frame, its top bar near the top edge and its stem slanting down to the bottom: white school shirts, grey school uniforms, blue work overalls, bright yellow children&#x27;s clothes, indigo printed cloth, towels and bedsheets, each garment smoothed flat and packed tightly so the numeral reads as one solid shape. At the foot of the stem lies a single a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, small at this height, like a full stop. Each garment casts a very slight crisp shadow on the grass. Light: bright overhead sun through a light haze, even and clear. Palette lock: lawn green #5E8C3A, the numeral built from Line White #FAFAF5 shirts and bedsheets, grey #8C8F94 uniforms, work blue #3C6FB5 overalls and towels, Siku Yellow #F5C400 children&#x27;s clothes and Siku Indigo #1F2E7A printed cloth, bar Bar Cream #F2D46B. The right 50 percent of the frame is unbroken even lawn #5E8C3A, held clean for the headline across its upper part and as a clean plate for the pack lockup and the price plate across its lower part. 4K. Advertising grade. Top tier international award show craft. Aerial documentary photography with graphic precision, shot from a drone at a 24mm equivalent, everything sharp.</span></div>
+          </details>
+          <details><summary>Reprompt: Activation backdrop and roll up 1:2.5<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Activation backdrop and roll up 1:2.5</h4><small>Type rendering model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Very tall one by two and a half vertical aerial photograph shot straight down from about twenty five metres above a long flat freshly cut green lawn in a family compound in Mukono, outside Kampala, at 11:00 on a dry season morning in January, bright overhead sun with a light haze. Laid out flat on the grass to dry, edge to edge, a whole family&#x27;s week of clean washing forms one giant numeral 7 filling the frame from 20 to 80 percent of its height, bold and clean edged: white school shirts, grey school uniforms, blue work overalls, bright yellow children&#x27;s clothes, indigo printed cloth, towels and bedsheets, each smoothed flat and packed tightly so the numeral reads as one solid shape. At the foot of the stem lies a single a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face, like a full stop. Each garment casts a very slight crisp shadow on the grass. Light: bright overhead sun through a light haze, even and clear. Palette lock: lawn green #5E8C3A, the numeral built from Line White #FAFAF5 shirts and bedsheets, grey #8C8F94 uniforms, work blue #3C6FB5 overalls and towels, Siku Yellow #F5C400 children&#x27;s clothes and Siku Indigo #1F2E7A printed cloth, bar Bar Cream #F2D46B. The top 18 percent of the frame is unbroken even lawn #5E8C3A, held clean as the headline zone, and the bottom 18 percent is plain lawn held clear for the pack lockup and because the demo table hides its lowest part. 4K. Advertising grade. Top tier international award show craft. Aerial documentary photography with graphic precision, shot from a drone at a 24mm equivalent, everything sharp.</span></div>
+          </details>
+        </div>
+        <div class="panel build" style="grid-column:1/-1">
+          <div class="ph"><h4>Designer build sheet</h4><small>Percent of the master frame, x from left, y from top. Type, logo, pack and price go on in post</small></div>
+          <dl>
+            <dt>Text zones</dt><dd>Headline x 6 to 94, y 4 to 16, Line White #FAFAF5 on the lawn. English line y 17 to 21.</dd>
+            <dt>Logo plate</dt><dd>Siku Bright wordmark on the clean plate, x 62 to 92, y 92 to 97, Line White.</dd>
+            <dt>Pack lockup</dt><dd>Clean plate lower right, x 60 to 95, y 76 to 90: the real wrapped bar packshot lying on the lawn at 14 percent of frame width, with an overhead shadow matched to the noon sun.</dd>
+            <dt>Price plate</dt><dd>Within the clean plate, x 60 to 80, y 78 to 90, beside the packshot: Line White tile, Siku Indigo numerals, KSh XX or USh X,XXX, recommended retail price line beneath.</dd>
+            <dt>Endline lockup</dt><dd>Nunua mara moja. Fua wiki nzima. under the headline, x 6 to 70, y 21 to 25, Line White.</dd>
+            <dt>Safe area and bleed</dt><dd>Digital 5 percent; print 3 mm bleed; billboard price 150 mm inside.</dd>
+            <dt>Colour build</dt><dd>#5E8C3A, #FAFAF5, #8C8F94, #3C6FB5, #F5C400, #1F2E7A, #F2D46B. CMYK: the lawn green is not a brand colour; keep it slightly muted so the yellow garments in the 7 stay the brightest thing.</dd>
+            <dt class="dont">Do not</dt><dd>Let the 7 read as a 1 or an L by thinning the top bar. Add a person to the aerial. Generate the numeral without checking it reads at 300 px.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="route" data-register="wild" data-name="Inside the Bar">
+    <div class="rail"><div class="no">07</div><span class="reg wild">Wild</span></div>
+    <div>
+      <h3>Inside the Bar</h3>
+      <p class="idea">The bar is cut in half and, carved into the soap itself, is a tiny washing line hung with seven small garments: a whole week living inside one bar.</p>
+      <p class="why"><b>Why it wins.</b> It shows the week is already inside the bar when you buy it; the one image here that stops a scroll, and a real soap carver can make it.</p>
+      <p class="arch">World build · Graphic flat · No people · Pack in scene · Kisumu</p>
+      <div class="grid">
+        <div class="prompt">
+          <div class="ph"><h4>Master prompt</h4><small>Photoreal model · 4:5</small><button class="btn on-plate" data-copy>Copy prompt</button></div>
+          <span class="txt">Vertical four by five macro still life photograph on a table top painted flat solid Siku Indigo #1F2E7A, set outdoors in a backyard in Kisumu under hard January sun coming low from the upper left. In the centre of the frame, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face has been cut cleanly in half, the two halves standing slightly apart, and the cut face of the front half, turned to camera, is carved in fine relief like a miniature diorama: a tiny washing line stretched between two carved posts, hung with seven tiny carved garments in a row, a school shirt, small trousers, a work shirt, a baby&#x27;s romper, a towel, another shirt and a long dress, all carved from the same pale soap, with fine soap shavings curled on the table around the base. Behind the two halves, slightly out of focus, lies the same bar in its wrapper, its yellow band catching a bright edge of light. Light: the hard sun rakes across the carving so every tiny garment casts a crisp shadow. Palette lock: ground Siku Indigo #1F2E7A, soap Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, shadows deep indigo #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 30 percent of the frame is unbroken flat Siku Indigo #1F2E7A, held clean as the headline zone, and the lower right 16 percent is plain flat indigo held clear for the price plate. 4K. Advertising grade. Top tier international award show craft. Macro product photography with sculptural detail, shot on 100mm macro at f8, the carving tack sharp.</span>
+        </div>
+        <div class="panel copy">
+          <div class="ph"><h4>Copy suite</h4><small>Swahili, English beneath</small></div>
+          <div class="cl"><span class="lbl">Headline A, straight</span><span class="val hl txt">Wiki nzima iko ndani.<small>The whole week is inside.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline B, warm</span><span class="val hl txt">Ndani ya mche mmoja, wiki ya familia.<small>Inside one bar, your family&#x27;s week.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline C, smile</span><span class="val hl txt">Tumeweka wiki nzima ndani. Ilikuwa kazi.<small>We fit a whole week in here. It took some work.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Subline</span><span class="val txt">Mche mmoja unaodumu wiki nzima ya kufua.<small>One bar that lasts the whole week&#x27;s wash.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Endline</span><span class="val txt">Siku Bright. Siku saba.<small>The elegant option of three. Siku Bright. Seven days. Siku means day, so the name carries the promise.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Proof</span><span class="val txt">Siku saba za kufua. Mche mmoja.<small>Seven days of washing. One bar.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, market</span><span class="val txt">Uliza Siku Bright sokoni.<small>Ask for Siku Bright at the market.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action, social</span><span class="val txt">Mtag mama anayehesabu kila shilingi.<small>Tag a mum who counts every shilling.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Local line, Kenya</span><span class="val sw txt">Carried by the Swahili headline.<small>Everyday Kenyan Swahili, no Sheng for a 25 to 45 household audience.</small></span></div>
+          <div class="cl"><span class="lbl">Local line, Uganda</span><span class="val sw txt">Sabbuuni emu, wiiki yonna.<small>One soap, the whole week. Proposed Luganda line for the Kampala and central region executions; a native Luganda writer checks it before use.</small></span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Radio, 15 s</span><span class="val txt">SFX: a knife slicing through a bar of soap, then fine carving scrapes. FVO, intrigued: Kata mche wa Siku Bright, uone siri yake. Jumatatu mpaka Jumapili, iko ndani. MVO: Siku Bright. Mche mmoja, wiki nzima. Shilingi XX tu.<small>Cut a Siku Bright bar and see its secret. Monday to Sunday, it is inside. Siku Bright. One bar, the whole week. Only XX shillings.</small></span><button class="mini" data-copy>Copy</button></div>
+          <p class="flag"><b>Flag.</b> Build it for real: a soap carver makes the hero in two days and the carving becomes social content. Generated, the seven garments may merge; check each one.</p>
+        </div>
+        <div style="display:grid;gap:20px;align-content:start">
+          <div class="panel"><div class="ph"><h4>Layout logic</h4></div><p class="layout">The two halves sit centre frame with the carved cut face to camera; the wrapped pack lies behind; the top 30 percent is flat indigo for the headline; price lower right.</p></div>
+        </div>
+          <div class="panel" style="grid-column:1/-1">
+            <div class="ph"><h4>Adaptation kit</h4><small>Crop or reprompt, called per format</small></div>
+            <table class="kit">
+              <thead><tr><th>Format</th><th>Ratio</th><th>Call</th><th>What changes</th></tr></thead>
+              <tbody>
+                <tr><td>Feed post<br><span class="ratio">2000 x 2000 px</span></td><td class="ratio">1:1</td><td><span class="call crop">Crop</span></td><td>Trim top and bottom; the carving fills more of the frame, which helps.</td></tr>
+                <tr><td>Status and story<br><span class="ratio">1080 x 1920 px, bottom 250 px clear</span></td><td class="ratio">9:16</td><td><span class="call re">Reprompt</span></td><td>Closer and lower: the halves in the lower two thirds, headline on the indigo above.</td></tr>
+                <tr><td>Chat app forward<br><span class="ratio">1080 x 1350 px, test at thumbnail</span></td><td class="ratio">4:5</td><td><span class="call crop">Crop</span></td><td>Master as it is; at thumbnail the carving becomes texture, so lead the forward with headline A.</td></tr>
+                <tr><td>Roadside billboard 6x3 m<br><span class="ratio">viewed at speed or in a jam</span></td><td class="ratio">2:1</td><td><span class="call re">Reprompt</span></td><td>Halves left of centre, indigo right for the line. Weakest billboard in the set: book it on market roads and in jams, not on fast arterials.</td></tr>
+                <tr><td>Market stall A board<br><span class="ratio">600 x 900 mm</span></td><td class="ratio">2:3</td><td><span class="call crop">Crop</span></td><td>Trim about 8 percent from each side.</td></tr>
+                <tr><td>Activation backdrop and roll up<br><span class="ratio">850 x 2000 mm, bottom 400 mm hidden by the demo table</span></td><td class="ratio">1:2.5</td><td><span class="call re">Reprompt</span></td><td>One carved half standing in the middle, the wrapped bar below; bottom 400 mm clear.</td></tr>
+                <tr><td>Bunting, aprons, canopy valance<br><span class="ratio">screen printed, two colours</span></td><td class="ratio">various</td><td><span class="call build">Designer build</span></td><td>A carved bar in a small glass case on the stall counter, the real prop. Bunting: yellow bar icons on indigo.</td></tr>
+                <tr><td>Radio<br><span class="ratio">live read or produced spot</span></td><td class="ratio">15 s</td><td><span class="call script">Script</span></td><td>Script in the copy suite: the slice and the carving are the sound.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="reprompts">
+          <details><summary>Reprompt: Status and story 9:16<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Status and story 9:16</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Tall vertical nine by sixteen macro still life photograph on a table top painted flat solid Siku Indigo #1F2E7A, set outdoors in a backyard in Kisumu under hard January sun coming low from the upper left, the bar in the lower two thirds of the frame. In the lower two thirds of the frame, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face has been cut cleanly in half, the two halves standing slightly apart, and the cut face of the front half, turned to camera, is carved in fine relief like a miniature diorama: a tiny washing line stretched between two carved posts, hung with seven tiny carved garments in a row, all carved from the same pale soap, with fine soap shavings curled on the table around the base. Behind the two halves, slightly out of focus, lies the same bar in its wrapper, its yellow band catching a bright edge of light. Light: the hard sun rakes across the carving so every tiny garment casts a crisp shadow. Palette lock: ground Siku Indigo #1F2E7A, soap Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, shadows deep indigo #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 28 percent of the frame is unbroken flat Siku Indigo #1F2E7A, held clean as the headline zone, and the bottom 13 percent is plain indigo held clear for the price plate and the interface. 4K. Advertising grade. Top tier international award show craft. Macro product photography with sculptural detail, shot on 100mm macro at f8, the carving tack sharp.</span></div>
+          </details>
+          <details><summary>Reprompt: Roadside billboard 2:1<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Roadside billboard 2:1</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Wide two by one macro still life photograph on a long table top painted flat solid Siku Indigo #1F2E7A, set outdoors in a backyard in Kisumu under hard January sun coming low from the left, the bar left of centre. Left of centre, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face has been cut cleanly in half, the two halves standing slightly apart, and the cut face of the front half, turned to camera, is carved in fine relief like a miniature diorama: a tiny washing line stretched between two carved posts, hung with seven tiny carved garments in a row, all carved from the same pale soap, with fine soap shavings curled on the table around the base. Just behind them, slightly out of focus, lies the same bar in its wrapper, its yellow band catching a bright edge of light. Light: the hard sun rakes across the carving so every tiny garment casts a crisp shadow. Palette lock: ground Siku Indigo #1F2E7A, soap Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, shadows deep indigo #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The right 44 percent of the frame is unbroken flat Siku Indigo #1F2E7A, held clean for the headline across its upper part and the price plate across its lower part. 4K. Advertising grade. Top tier international award show craft. Macro product photography with sculptural detail, shot on 100mm macro at f8, the carving tack sharp.</span></div>
+          </details>
+          <details><summary>Reprompt: Activation backdrop and roll up 1:2.5<small>full standalone prompt</small></summary>
+            <div class="prompt"><div class="ph"><h4>Activation backdrop and roll up 1:2.5</h4><small>Photoreal model</small><button class="btn on-plate" data-copy>Copy prompt</button></div><span class="txt">Very tall one by two and a half vertical macro still life photograph on a table top painted flat solid Siku Indigo #1F2E7A, set outdoors in a backyard in Kisumu under hard January sun from the upper left, the bar in the middle of the frame. In the middle of the frame, a long rectangular laundry bar soap in a dense pale cream yellow #F2D46B with crisp pressed edges and a smooth plain top face cut cleanly in half stands with the cut face of the front half turned to camera, carved in fine relief as a miniature diorama of a washing line hung with seven tiny garments, fine soap shavings curled around its base; below it, the same bar in its wrapper lies at an angle, its yellow band catching a bright edge of light. Light: the hard sun rakes across the carving so every tiny garment casts a crisp shadow. Palette lock: ground Siku Indigo #1F2E7A, soap Bar Cream #F2D46B, wrapper Siku Indigo #1F2E7A and Siku Yellow #F5C400, label panel Line White #FAFAF5, shadows deep indigo #141B45. The wrapped bar is a long rectangular laundry bar in a glossy wrapper in Siku Indigo #1F2E7A with a Siku Yellow #F5C400 band across one end; the front label face is a smooth blank panel in flat Line White #FAFAF5 filling the centre half, evenly lit and turned toward camera. The top 20 percent of the frame is unbroken flat Siku Indigo #1F2E7A, held clean as the headline zone, and the bottom 16 percent is plain indigo held clear because the demo table hides it. 4K. Advertising grade. Top tier international award show craft. Macro product photography with sculptural detail, shot on 100mm macro at f8, the carving tack sharp.</span></div>
+          </details>
+        </div>
+        <div class="panel build" style="grid-column:1/-1">
+          <div class="ph"><h4>Designer build sheet</h4><small>Percent of the master frame, x from left, y from top. Type, logo, pack and price go on in post</small></div>
+          <dl>
+            <dt>Text zones</dt><dd>Headline x 6 to 94, y 5 to 18, Siku Yellow #F5C400 on indigo. English line y 19 to 26 in Line White.</dd>
+            <dt>Logo plate</dt><dd>Siku Bright wordmark bottom left, x 5 to 28, y 90 to 96, Line White.</dd>
+            <dt>Pack lockup</dt><dd>Real wrapper art onto the blank face of the wrapped bar behind the halves, about x 40 to 80, y 46 to 56, softened to the same focus fall off as the plate.</dd>
+            <dt>Price plate</dt><dd>Lower right, x 70 to 95, y 82 to 97: Line White tile, Siku Indigo numerals, KSh XX or USh X,XXX, recommended retail price line beneath.</dd>
+            <dt>Endline lockup</dt><dd>Siku Bright. Siku saba. bottom centre, x 32 to 66, y 90 to 95, Siku Yellow.</dd>
+            <dt>Safe area and bleed</dt><dd>Digital 5 percent; print 3 mm bleed; billboard price 150 mm inside.</dd>
+            <dt>Colour build</dt><dd>#1F2E7A, #F2D46B, #F5C400, #FAFAF5, #141B45. CMYK: the cream soap on indigo is the contrast that sells it; never darken the soap.</dd>
+            <dt class="dont">Do not</dt><dd>Carve more than seven garments. Show the carving smaller than a third of the frame width. Put the price over the carving.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+<section class="close">
+  <div>
+    <h2>Fire these first</h2>
+    <ol>
+      <li><span><b>Wash Day.</b> The human proof: a mother, a full line and a bar that is still a bar. Safest to approve and it runs on every channel in the brief.</span></li>
+      <li><span><b>By Wednesday.</b> The win back argument for switchers, once the comparison is substantiated. It names the switch without naming anyone.</span></li>
+      <li><span><b>Per Day.</b> Turns the mandatory price into the persuasion: divide by seven and the price argument flips.</span></li>
+    </ol>
+  </div>
+  <div class="alt">
+    <span>The disruptive alternate</span>
+    <h3>Siku Saba</h3>
+    <p>Put it beside Wash Day: the claim built as a giant 7 of laundry. A seven reads in Swahili, English and Luganda, it can be shot for real with a drone in one day, and the same stunt can be laid out at the market entrance on activation day.</p>
+  </div>
+</section>
+<div class="open">
+  <div><h2>Still open</h2><ul><li>Bar size and the basis of the claim (household size and loads per week). Every proof line and the By Wednesday comparison are suspended until the client&#x27;s wear test is in hand.</li><li>Shelf price in KES and UGX, the recommended retail price legal line, and whether a fixed price can run on billboards for the whole flight.</li><li>Uganda language: Swahili is mandated, but the household register in Kampala is Luganda. Client decision, and a native Luganda writer for the proposed line.</li><li>Pack artwork, the brand palette and any emboss on the bar. All proposed here; the bar face is generated plain.</li><li>Social format. Social is listed without video; if status video or short video is in scope, say so and motion briefs get written for the fire routes.</li><li>Activation detail: which markets, stall and gazebo sizes, and the demo mechanic, so the backdrop and bunting can be sized.</li><li>Radio: station languages (national Swahili, vernacular stations, Luganda in central Uganda) and spot lengths.</li><li>Decision date.</li></ul></div>
+  <div><h2>Palette lock</h2>
+    <p style="font-size:14px;color:var(--muted);margin:0 0 14px">Proposed. No palette or pack artwork was supplied. Yellow and indigo give the two colour screen print the activation kit needs on a low to mid budget.</p>
+    <div class="sws">
+      <span class="swi"><i style="background:#F5C400"></i><b>#F5C400</b>Siku Yellow</span>
+      <span class="swi"><i style="background:#1F2E7A"></i><b>#1F2E7A</b>Siku Indigo</span>
+      <span class="swi"><i style="background:#FAFAF5"></i><b>#FAFAF5</b>Line White</span>
+      <span class="swi"><i style="background:#2F7FD1"></i><b>#2F7FD1</b>Basin Blue</span>
+      <span class="swi"><i style="background:#F2D46B"></i><b>#F2D46B</b>Bar Cream</span>
+    </div>
+  </div>
+</div>
+<div class="rules">
+  <p>Generated images carry no readable text and no logos; the type as terrain route goes to a type rendering image model or is composited in post. Wordmark, endline, pack artwork and price are placed in post.</p>
+  <p>Pack label faces are generated as smooth blank panels; the designer drops the real artwork onto them at the build sheet coordinates.</p>
+  <p>Tool routing: photoreal scenes, people and pack in scene on the default photoreal image model; readable type on a type rendering image model; any change to an approved master on the photoreal model in image to image mode, one variable per pass, with every brand mark cropped out of the reference first.</p>
+  <p>Casting is described by context, the neighbourhood, the light and the moment, never by stacked category words.</p>
+  <p>No hyphens and no em dashes in any client facing copy.</p>
+</div>
+
+</div>
+<script>
+(function(){
+  var colors={safe:"var(--safe)",strong:"var(--strong)",wild:"var(--wild)"};
+  var nav=document.getElementById("index");
+  document.querySelectorAll("article.route").forEach(function(r,i){
+    var n=String(i+1).padStart(2,"0"),reg=r.getAttribute("data-register")||"safe";
+    r.id="route-"+n;
+    var no=r.querySelector(".no");if(no)no.textContent=n;
+    var tag=r.querySelector(".reg");if(tag){tag.className="reg "+reg;tag.textContent=reg.charAt(0).toUpperCase()+reg.slice(1)}
+    var a=document.createElement("a");a.href="#route-"+n;
+    a.innerHTML='<i style="background:'+colors[reg]+'">'+n+'</i>'+(r.getAttribute("data-name")||("Route "+n));
+    nav.appendChild(a);
+  });
+  document.addEventListener("click",function(e){
+    var b=e.target.closest("[data-copy]");if(!b)return;
+    var root=b.closest(".prompt,.cl");var el=root&&root.querySelector(".txt");if(!el)return;
+    var label=b.textContent;
+    var done=function(){b.textContent="Copied";b.classList.add("done");setTimeout(function(){b.textContent=label;b.classList.remove("done")},1400)};
+    if(navigator.clipboard){navigator.clipboard.writeText(el.innerText.trim()).then(done).catch(function(){})}
+  });
+})();
+</script>
+</body>
+</html>
