@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Key Visual Routes · {{BRAND}} · {{JOB}}</title>
+<!--
+  KEY VISUAL ROUTE BOOK TEMPLATE
+  Fill every {{TOKEN}}. Duplicate the article.route block once per route (6 to 8 routes).
+  The route index at the top builds itself from the route cards. Do not hand code it.
+  Palette: set --accent to the client primary hex and --accent-ink to a readable colour on it.
+  {{IMAGE_MODEL}} is the image model the prompts are written for.
+  No hyphens or em dashes in any client facing copy. No all caps labels.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#C2410C;        /* client primary */
+  --accent-ink:#FFFFFF;    /* text on client primary */
+  --ink:#15130F;--paper:#F5F2EC;--card:#FFFFFF;--line:#E3DDD3;--muted:#736B62;--soft:#EEEAE2;
+  --plate:#15130F;--plate-ink:#EDE7DD;
+  --safe:#3F7A4C;--strong:#B7791F;--wild:#6D3FD1;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#EFE9DF;--paper:#121110;--card:#1B1917;--line:#302C28;--muted:#A39A8F;--soft:#24211E;--plate:#0B0A09}}
+:root[data-theme="dark"]{--ink:#EFE9DF;--paper:#121110;--card:#1B1917;--line:#302C28;--muted:#A39A8F;--soft:#24211E;--plate:#0B0A09}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px 96px}
+button{font:inherit;cursor:pointer}
+
+/* Cover */
+.cover{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;padding:72px 0 36px;border-bottom:1px solid var(--ink)}
+.kicker{font-weight:600;font-size:14px;color:var(--muted);margin:0 0 18px}
+.kicker b{color:var(--accent)}
+h1{font:400 clamp(52px,8.5vw,112px)/.92 var(--serif);letter-spacing:-.02em;margin:0}
+h1 em{color:var(--muted)}
+.line{font:italic 400 clamp(22px,2.6vw,30px)/1.2 var(--serif);margin:22px 0 0;max-width:30ch}
+.facts{display:grid;gap:10px;min-width:220px;font-size:14px}
+.facts div{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.facts span{color:var(--muted)}
+.facts strong{font-weight:600;text-align:right}
+.swatchbar{display:flex;height:10px;margin-top:0}
+
+/* Route index */
+.index{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--paper) 90%,transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin:0 -24px;padding:12px 24px;
+  display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.index::-webkit-scrollbar{display:none}
+.index a{flex:none;display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--card);
+  border-radius:999px;padding:6px 14px 6px 6px;font-size:14px;font-weight:500}
+.index a:hover{border-color:var(--ink)}
+.index a i{font:500 12px/1 var(--mono);font-style:normal;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff}
+
+/* Sections */
+section{margin-top:64px}
+.sh{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:20px}
+.sh h2{font:400 36px/1 var(--serif);margin:0}
+.sh p{margin:0;color:var(--muted);font-size:14px}
+.spine{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.spine div{background:var(--card);padding:18px 20px}
+.spine span{display:block;font-size:13px;font-weight:600;color:var(--muted);margin-bottom:4px}
+.spine .wide{grid-column:1/-1}
+.spine .wide p{font:italic 400 24px/1.3 var(--serif);margin:0}
+.laws{width:100%;border-collapse:collapse;font-size:15px}
+.laws th{text-align:left;font-size:13px;font-weight:600;color:var(--muted);padding:0 16px 10px 0;border-bottom:1px solid var(--ink)}
+.laws td{padding:14px 16px 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.laws td:first-child{font-weight:600;width:24%}
+
+/* Route */
+.route{display:grid;grid-template-columns:132px 1fr;gap:0 32px;padding:56px 0;border-top:1px solid var(--line)}
+.route:first-of-type{border-top:0;padding-top:24px}
+.rail{position:sticky;top:96px;align-self:start}
+.no{font:400 104px/.8 var(--serif);letter-spacing:-.04em;color:var(--accent)}
+.reg{display:inline-block;margin-top:14px;font-size:13px;font-weight:600;padding:4px 11px;border-radius:999px;color:#fff}
+.reg.safe{background:var(--safe)}.reg.strong{background:var(--strong)}.reg.wild{background:var(--wild)}
+.route h3{font:400 clamp(40px,5vw,60px)/.98 var(--serif);letter-spacing:-.015em;margin:0 0 16px}
+.idea{font-size:20px;line-height:1.45;margin:0 0 16px;max-width:52ch}
+.why{margin:0;font-size:15px;color:var(--muted);max-width:66ch}
+.why b{color:var(--ink)}
+.arch{font-size:13px;color:var(--muted);margin-top:10px}
+.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:20px;margin-top:28px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.ph{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.ph h4{margin:0;font-size:15px;font-weight:700}
+.ph small{color:var(--muted);font-size:13px}
+.layout{font-size:15px;margin:0}
+
+.prompt{grid-column:1/-1;background:var(--plate);color:var(--plate-ink);border-radius:16px;padding:22px 24px 24px;position:relative}
+.prompt .ph h4{color:#fff}.prompt .ph small{color:#9D958B}
+.prompt .txt{display:block;font:400 13.5px/1.75 var(--mono);white-space:pre-wrap;max-height:340px;overflow:auto}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600}
+.btn:hover{border-color:var(--ink)}
+.btn.on-plate{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+.btn.done{background:var(--safe);color:#fff;border-color:transparent}
+
+.copy .cl{display:grid;grid-template-columns:118px 1fr auto;gap:12px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}
+.copy .cl:first-of-type{border-top:0;padding-top:0}
+.copy .lbl{font-size:13px;color:var(--muted);padding-top:3px}
+.copy .val{font-size:16px}
+.copy .val.hl{font:400 24px/1.15 var(--serif)}
+.copy .val.sw{font:italic 400 20px/1.25 var(--serif);color:var(--accent)}
+.mini{border:0;background:none;color:var(--muted);font-size:13px;font-weight:600;padding:3px 0}
+.mini:hover{color:var(--accent)}
+
+.kit{width:100%;border-collapse:collapse;font-size:14px}
+.kit th{text-align:left;font-size:13px;font-weight:600;color:var(--muted);padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+.kit td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.kit tr:last-child td{border-bottom:0}
+.ratio{font:500 12.5px var(--mono);color:var(--muted)}
+.call{font-size:12.5px;font-weight:600;padding:2px 8px;border-radius:5px;white-space:nowrap}
+.call.crop{background:color-mix(in srgb,var(--safe) 16%,transparent);color:var(--safe)}
+.call.re{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.build dl{margin:0;display:grid;grid-template-columns:130px 1fr;gap:8px 16px;font-size:14.5px}
+.build dt{color:var(--muted);font-weight:600}.build dd{margin:0}
+/* Motion brief panel (optional, only on routes with a brief) */
+.motion .spec{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.motion .spec span{font-size:12.5px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--soft);color:var(--muted)}
+.motion .spec span b{color:var(--ink);font-weight:600}
+.beats{width:100%;border-collapse:collapse;font-size:13.5px}
+.beats th{text-align:left;font-size:12.5px;font-weight:600;color:var(--muted);padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+.beats td{padding:8px 10px 8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.beats tr:last-child td{border-bottom:0}
+.beats td.bb{font:500 12.5px var(--mono);color:var(--accent);white-space:nowrap}
+.beats td.ts{font:500 12.5px var(--mono);color:var(--muted);white-space:nowrap}
+.beats td.tx{font:400 16px/1.25 var(--serif)}
+.motion .snd{margin:12px 0 0;font-size:14px;color:var(--muted)}.motion .snd b{color:var(--ink)}
+.motion .wrap-t{overflow-x:auto}
+.build .dont{color:#B4312B}
+
+/* Close */
+.close{margin-top:72px;background:var(--plate);color:var(--plate-ink);border-radius:22px;padding:clamp(28px,5vw,52px);display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.close h2{font:400 42px/1 var(--serif);margin:0 0 20px;color:#fff}
+.close ol{margin:0;padding:0;list-style:none;counter-reset:f}
+.close li{counter-increment:f;display:grid;grid-template-columns:40px 1fr;padding:14px 0;border-top:1px solid #2E2A25;font-size:15.5px}
+.close li::before{content:counter(f);font:400 30px/1 var(--serif);color:var(--accent)}
+.close li b{color:#fff}
+.alt{background:var(--accent);color:var(--accent-ink);border-radius:16px;padding:24px}
+.alt span{font-size:13px;font-weight:600;opacity:.8}
+.alt h3{font:400 34px/1.05 var(--serif);margin:8px 0 10px}
+.alt p{margin:0}
+.open{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.open ul{margin:0;padding-left:18px}.open li{margin:6px 0}
+.open h2{font:400 30px/1 var(--serif);margin:0 0 14px}
+.sws{display:flex;flex-wrap:wrap;gap:12px}
+.swi{display:flex;flex-direction:column;gap:6px;font-size:12.5px;color:var(--muted)}
+.swi i{width:84px;height:56px;border-radius:10px;border:1px solid var(--line)}
+.swi b{font:500 12.5px var(--mono);color:var(--ink)}
+.rules{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.rules p{margin:0}
+
+@media (max-width:860px){.cover{grid-template-columns:1fr}.route{grid-template-columns:1fr}.rail{position:static;display:flex;align-items:center;gap:16px;margin-bottom:10px}.no{font-size:72px}.reg{margin:0}
+ .grid,.close,.open{grid-template-columns:1fr}.spine{grid-template-columns:1fr}.rules{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.copy .cl{grid-template-columns:1fr auto}.copy .lbl{grid-column:1/-1;padding:0}.build dl{grid-template-columns:1fr}.rules{grid-template-columns:1fr}.kit{font-size:13px}}
+@media print{.index,.btn,.mini{display:none!important}.route{break-inside:avoid-page}.prompt .txt{max-height:none}.rail{position:static}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="cover">
+  <div>
+    <p class="kicker">Key visual routes for <b>{{CLIENT}}</b></p>
+    <h1>{{BRAND}}<br><em>{{JOB}}</em></h1>
+    <p class="line">{{CAMPAIGN_LINE}}</p>
+  </div>
+  <div class="facts">
+    <div><span>Routes</span><strong>{{ROUTE_COUNT}}</strong></div>
+    <div><span>Image model</span><strong>{{IMAGE_MODEL}}</strong></div>
+    <div><span>Issued</span><strong>{{DATE}}</strong></div>
+    <div><span>Decision by</span><strong>{{DUE_DATE}}</strong></div>
+  </div>
+</header>
+<div class="swatchbar"><i style="flex:3;background:{{HEX_1}}"></i><i style="flex:2;background:{{HEX_2}}"></i><i style="flex:1;background:{{HEX_3}}"></i></div>
+
+<nav class="index" id="index" aria-label="Routes"></nav>
+
+<!-- The brief, read back -->
+<section>
+  <div class="sh"><h2>The brief, read back</h2><p>So everyone signs off on the same problem</p></div>
+  <div class="spine">
+    <div class="wide"><span>Single minded proposition</span><p>{{SMP}}</p></div>
+    <div><span>Product hero</span>{{PRODUCT}}</div>
+    <div><span>Business problem</span>{{PROBLEM}}</div>
+    <div><span>Insight</span>{{INSIGHT}}</div>
+    <div><span>Audience</span>{{AUDIENCE}}</div>
+    <div><span>Channels</span>{{CHANNELS}}</div>
+    <div><span>Mandatories</span>{{MANDATORIES}}</div>
+    <div class="wide"><span>No gos</span>{{NOGOS}}</div>
+  </div>
+</section>
+
+<!-- References and the law taken from each. Delete this section if no references were supplied. -->
+<section>
+  <div class="sh"><h2>What the references taught us</h2><p>The law, not the look</p></div>
+  <table class="laws">
+    <thead><tr><th>Reference</th><th>What it said</th><th>What we did with it</th></tr></thead>
+    <tbody>
+      <tr><td>{{REF_1}}</td><td>{{REF_1_LAW}}</td><td>{{REF_1_USE}}</td></tr>
+      <tr><td>{{REF_2}}</td><td>{{REF_2_LAW}}</td><td>{{REF_2_USE}}</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="sh"><h2>The routes</h2><p>Safe, strong and wild, so the room has a real choice</p></div>
+
+  <!-- ROUTE: duplicate this article 6 to 8 times. data-register: safe / strong / wild -->
+  <article class="route" data-register="safe" data-name="{{ROUTE_NAME}}">
+    <div class="rail"><div class="no">01</div><span class="reg safe">Safe</span></div>
+    <div>
+      <h3>{{ROUTE_NAME}}</h3>
+      <p class="idea">{{ONE_SENTENCE_IDEA}}</p>
+      <p class="why"><b>Why it wins.</b> {{STRATEGY_LINK}}</p>
+      <p class="arch">{{ARCHETYPE}} · {{REGISTER}}</p>
+
+      <div class="grid">
+        <div class="prompt">
+          <div class="ph"><h4>Master prompt</h4><small>{{IMAGE_MODEL}} · 4:5</small><button class="btn on-plate" data-copy>Copy prompt</button></div>
+          <span class="txt">{{FULL_PROMPT_PROSE_BLOCK}}</span>
+        </div>
+
+        <div class="panel copy">
+          <div class="ph"><h4>Copy suite</h4></div>
+          <div class="cl"><span class="lbl">Headline A</span><span class="val hl txt">{{HEADLINE_A}}</span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline B</span><span class="val hl txt">{{HEADLINE_B}}</span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Headline C</span><span class="val hl txt">{{HEADLINE_C}}</span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Subline</span><span class="val txt">{{SUBLINE}}</span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Endline</span><span class="val txt">{{ENDLINE}}</span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Proof</span><span class="val txt">{{PROOF}}</span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Call to action</span><span class="val txt">{{CTA}}</span><button class="mini" data-copy>Copy</button></div>
+          <div class="cl"><span class="lbl">Local line</span><span class="val sw txt">{{LOCAL_LINE}}</span><button class="mini" data-copy>Copy</button></div>
+        </div>
+
+        <div style="display:grid;gap:20px;align-content:start">
+          <div class="panel"><div class="ph"><h4>Layout logic</h4></div><p class="layout">{{LAYOUT_LOGIC}}</p></div>
+          <div class="panel">
+            <div class="ph"><h4>Adaptation kit</h4></div>
+            <table class="kit">
+              <thead><tr><th>Format</th><th>Ratio</th><th>Call</th><th>What changes</th></tr></thead>
+              <tbody>
+                <tr><td>Feed post</td><td class="ratio">1:1</td><td><span class="call crop">Crop</span></td><td>{{ADAPT_1}}</td></tr>
+                <tr><td>Vertical story</td><td class="ratio">9:16</td><td><span class="call re">Reprompt</span></td><td>{{ADAPT_2}}</td></tr>
+                <tr><td>Video end frame</td><td class="ratio">16:9</td><td><span class="call re">Reprompt</span></td><td>{{ADAPT_3}}</td></tr>
+                <tr><td>Billboard</td><td class="ratio">2:1</td><td><span class="call re">Reprompt</span></td><td>{{ADAPT_4}}</td></tr>
+                <tr><td>Shelf talker</td><td class="ratio">3:4</td><td><span class="call re">Reprompt</span></td><td>{{ADAPT_5}}</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel build" style="grid-column:1/-1">
+          <div class="ph"><h4>Designer build sheet</h4><small>Type, logo and pack go on in post</small></div>
+          <dl>
+            <dt>Headline zone</dt><dd>{{ZONE_HEADLINE}}</dd>
+            <dt>Endline lockup</dt><dd>{{ZONE_ENDLINE}}</dd>
+            <dt>Logo plate</dt><dd>{{ZONE_LOGO}}</dd>
+            <dt>Pack lockup</dt><dd>{{ZONE_PACK}}</dd>
+            <dt>Safe area</dt><dd>{{SAFE_BLEED}}</dd>
+            <dt class="dont">Do not</dt><dd>{{DO_NOT}}</dd>
+          </dl>
+        </div>
+
+        <!-- MOTION BRIEF: keep only on routes that have one (see references/motion-brief.md). Delete this panel otherwise. -->
+        <div class="panel motion" style="grid-column:1/-1">
+          <div class="ph"><h4>Motion brief</h4><small>{{MOTION_FILM_LINE}}</small></div>
+          <p class="spec"><span><b>{{MOTION_LENGTH}}</b> s</span><span><b>{{MOTION_RATIOS}}</b></span><span><b>{{MOTION_BPM}}</b> BPM</span><span>Route <b>{{MOTION_ROUTE}}</b></span><span>Poster <b>{{MOTION_POSTER}}</b> s</span></p>
+          <div class="wrap-t"><table class="beats">
+            <thead><tr><th>Bar.beat</th><th>Time</th><th>On screen</th><th>What changes</th><th>Camera</th><th>Sound</th><th>Text and hold</th></tr></thead>
+            <tbody>
+              <!-- one row per change, timed to the beat grid -->
+              <tr><td class="bb">{{BB_1}}</td><td class="ts">{{T_1}}</td><td>{{SCREEN_1}}</td><td>{{CHANGE_1}}</td><td>{{CAMERA_1}}</td><td>{{SOUND_1}}</td><td class="tx">{{TEXT_1}}</td></tr>
+            </tbody>
+          </table></div>
+          <p class="snd"><b>Sound.</b> {{MOTION_SOUND}}</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <!-- duplicate the route above for 02 to 08 -->
+</section>
+
+<section class="close">
+  <div>
+    <h2>Fire these first</h2>
+    <ol>
+      <li><span><b>{{FIRE_1}}.</b> {{FIRE_1_WHY}}</span></li>
+      <li><span><b>{{FIRE_2}}.</b> {{FIRE_2_WHY}}</span></li>
+      <li><span><b>{{FIRE_3}}.</b> {{FIRE_3_WHY}}</span></li>
+    </ol>
+  </div>
+  <div class="alt">
+    <span>The disruptive alternate</span>
+    <h3>{{ALT_NAME}}</h3>
+    <p>{{ALT_WHY}}</p>
+  </div>
+</section>
+
+<div class="open">
+  <div><h2>Still open</h2><ul><li>{{OPEN_1}}</li><li>{{OPEN_2}}</li></ul></div>
+  <div><h2>Palette lock</h2>
+    <div class="sws">
+      <span class="swi"><i style="background:{{HEX_1}}"></i><b>{{HEX_1}}</b>{{HEX_1_NAME}}</span>
+      <span class="swi"><i style="background:{{HEX_2}}"></i><b>{{HEX_2}}</b>{{HEX_2_NAME}}</span>
+      <span class="swi"><i style="background:{{HEX_3}}"></i><b>{{HEX_3}}</b>{{HEX_3_NAME}}</span>
+    </div>
+  </div>
+</div>
+
+<div class="rules">
+  <p>Generated images carry no readable text and no logos. Wordmark, endline and pack artwork are placed in post.</p>
+  <p>Pack label faces are generated as blank plates. The designer drops in real artwork.</p>
+  <p>Casting is described by context, never by stacked category words.</p>
+  <p>No hyphens and no em dashes in any client facing copy.</p>
+</div>
+
+</div>
+<script>
+(function(){
+  var colors={safe:"var(--safe)",strong:"var(--strong)",wild:"var(--wild)"};
+  var nav=document.getElementById("index");
+  document.querySelectorAll("article.route").forEach(function(r,i){
+    var n=String(i+1).padStart(2,"0"),reg=r.getAttribute("data-register")||"safe";
+    r.id="route-"+n;
+    var no=r.querySelector(".no");if(no)no.textContent=n;
+    var tag=r.querySelector(".reg");if(tag){tag.className="reg "+reg;tag.textContent=reg.charAt(0).toUpperCase()+reg.slice(1)}
+    var a=document.createElement("a");a.href="#route-"+n;
+    a.innerHTML='<i style="background:'+colors[reg]+'">'+n+'</i>'+(r.getAttribute("data-name")||("Route "+n));
+    nav.appendChild(a);
+  });
+  document.addEventListener("click",function(e){
+    var b=e.target.closest("[data-copy]");if(!b)return;
+    var root=b.closest(".prompt,.cl");var el=root&&root.querySelector(".txt");if(!el)return;
+    var label=b.textContent;
+    var done=function(){b.textContent="Copied";b.classList.add("done");setTimeout(function(){b.textContent=label;b.classList.remove("done")},1400)};
+    if(navigator.clipboard){navigator.clipboard.writeText(el.innerText.trim()).then(done).catch(function(){})}
+  });
+})();
+</script>
+</body>
+</html>

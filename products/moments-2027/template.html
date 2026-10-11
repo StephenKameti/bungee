@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moments 2027 · Bungee</title>
+<meta name="description" content="A planner's almanac of the dates that move people in every market, with the angle, a hook and what to avoid.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4EFE6;--paper2:#EDE6D9;--card:#FBF8F2;--line:#DED5C6;--ink:#17150F;--ink2:#4A453B;--muted:#7C7466;--focus:#17150F;
+  --holiday:#C07A1E;--religious:#7A4F9F;--cultural:#1E8A6E;--commercial:#D4523A;--sport:#2A5BD7;--seasonal:#6E8A2E;--sensitive:#8E1D1D;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;--sans:"Manrope","Avenir Next","Segoe UI",system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#121110;--paper2:#1A1816;--card:#1C1A17;--line:#2F2B26;--ink:#F1EBE0;--ink2:#CFC6B8;--muted:#9D9486;--focus:#F1EBE0;
+  --holiday:#E39A3A;--religious:#A67ECB;--cultural:#39B592;--commercial:#F07257;--sport:#6C8FF0;--seasonal:#9BB44A;--sensitive:#E46464}}
+:root[data-theme="dark"]{--paper:#121110;--paper2:#1A1816;--card:#1C1A17;--line:#2F2B26;--ink:#F1EBE0;--ink2:#CFC6B8;--muted:#9D9486;--focus:#F1EBE0;
+  --holiday:#E39A3A;--religious:#A67ECB;--cultural:#39B592;--commercial:#F07257;--sport:#6C8FF0;--seasonal:#9BB44A;--sensitive:#E46464}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 132px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.w{max-width:1160px;margin:0 auto;padding:0 24px}
+
+/* Cover */
+.cover{padding:64px 0 40px;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+.kick{font-weight:600;font-size:14px;color:var(--muted);margin:0 0 20px;display:flex;gap:14px;align-items:center}
+.kick b{color:var(--ink)}
+.kick i{width:32px;height:1px;background:var(--ink)}
+.year{font:300 clamp(120px,22vw,300px)/.78 var(--serif);font-variation-settings:"opsz" 144,"SOFT" 60;letter-spacing:-.06em;margin:0}
+.title{font:400 clamp(30px,4.6vw,54px)/1.02 var(--serif);font-variation-settings:"opsz" 144,"SOFT" 40;letter-spacing:-.02em;margin:22px 0 0;max-width:20ch}
+.title em{font-style:italic;font-weight:300}
+.lede{max-width:44ch;color:var(--ink2);font-size:17px;margin:0 0 22px}
+.stats{display:flex;gap:30px}
+.stats div{font:300 44px/1 var(--serif);font-variation-settings:"opsz" 144}
+.stats small{display:block;font:500 13px/1.3 var(--sans);color:var(--muted);margin-top:8px}
+
+/* Year ribbon */
+.ribbon{margin:36px 0 12px;display:grid;grid-template-columns:repeat(12,1fr);gap:8px}
+.ribbon button{background:none;border:0;padding:0;text-align:left;display:flex;flex-direction:column;gap:8px}
+.ribbon .lbl{font-size:12px;font-weight:600;color:var(--muted)}
+.ribbon .bars{display:flex;flex-direction:column-reverse;gap:2px;min-height:96px;justify-content:flex-start}
+.ribbon .bars i{display:block;height:5px;border-radius:2px;opacity:.9}
+.ribbon button:hover .lbl,.ribbon button:focus-visible .lbl{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:16px 22px;padding:14px 0 6px;border-top:1px solid var(--line);font-size:13px;color:var(--ink2)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{width:14px;height:6px;border-radius:2px}
+
+/* Stories */
+.h{font:500 13px/1 var(--sans);color:var(--muted);margin:52px 0 16px;display:flex;align-items:center;gap:14px}
+.h::after{content:"";flex:1;height:1px;background:var(--line)}
+.stories{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.story{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:8px;transition:transform .15s,border-color .15s}
+.story:hover{transform:translateY(-2px);border-color:var(--ink)}
+.story .when{font-size:12.5px;font-weight:700;letter-spacing:.01em}
+.story h3{font:400 24px/1.08 var(--serif);font-variation-settings:"opsz" 60;margin:0;letter-spacing:-.01em}
+.story p{margin:0;font-size:14px;color:var(--ink2)}
+.story .go{margin-top:auto;font-size:13px;font-weight:600;color:var(--muted)}
+
+/* Filter bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;margin:40px -24px 0;padding:12px 24px;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.row+.row{margin-top:8px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 13px;font-size:13.5px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:opacity .15s}
+.chip i{width:9px;height:9px;border-radius:50%;background:var(--c,var(--ink))}
+.chip[aria-pressed="false"]{opacity:.42}
+.chip[aria-pressed="true"]{border-color:var(--ink)}
+.search{flex:1;min-width:200px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 16px;font:inherit}
+.count{font-size:13px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.picks{border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:999px;padding:7px 14px;font-size:13.5px;font-weight:700;display:inline-flex;gap:8px;align-items:center}
+.picks:disabled{opacity:.35;cursor:default}
+.lbl2{font-size:12px;font-weight:700;color:var(--muted);margin-right:4px}
+
+/* Months */
+.month{display:grid;grid-template-columns:190px 1fr;gap:32px;padding:48px 0;border-bottom:1px solid var(--line)}
+.mh{position:sticky;top:150px;align-self:start}
+.mh h2{font:300 54px/.9 var(--serif);font-variation-settings:"opsz" 144,"SOFT" 40;letter-spacing:-.04em;margin:0}
+.mh small{display:block;font-size:13px;color:var(--muted);margin-top:14px}
+.mh .mini{display:flex;gap:3px;margin-top:14px;flex-wrap:wrap}.mh .mini i{width:10px;height:10px;border-radius:3px}
+.list{display:grid;gap:10px}
+.m{background:var(--card);border:1px solid var(--line);border-radius:16px;display:grid;grid-template-columns:6px 118px 1fr auto;overflow:hidden;opacity:0;transform:translateY(10px);transition:opacity .35s ease,transform .35s ease}
+.m.in{opacity:1;transform:none}
+.m .tab{background:var(--c)}
+.d{padding:18px 0 18px 18px}
+.d b{display:block;font:300 40px/1 var(--serif);font-variation-settings:"opsz" 144;letter-spacing:-.04em}
+.d b.r{font-size:26px}.d b small{font:400 .45em var(--sans);color:var(--muted);margin:0 3px;letter-spacing:0}
+.d span{display:block;font-size:12.5px;color:var(--muted);margin-top:4px}
+.body{padding:18px 18px 18px 8px;min-width:0}
+.m h3{font:400 22px/1.2 var(--serif);font-variation-settings:"opsz" 40;margin:0 0 8px;letter-spacing:-.01em}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+.tag{font-size:12px;font-weight:600;padding:2px 8px;border-radius:5px;background:var(--paper2);color:var(--ink2)}
+.tag.c{background:var(--c);color:#fff}.tag.w{background:transparent;border:1px dashed var(--line);color:var(--muted)}
+.m p{margin:0;max-width:70ch;font-size:15px;color:var(--ink2)}
+.hook{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px;padding:10px 14px;border-radius:10px;background:var(--paper2)}
+.hook q{quotes:none;font:italic 400 19px/1.3 var(--serif);font-variation-settings:"opsz" 40,"SOFT" 60;flex:1;min-width:0;color:var(--ink)}
+.cp{border:1px solid var(--line);background:var(--card);border-radius:7px;padding:4px 11px;font-size:12.5px;font-weight:600}
+.cp:hover{border-color:var(--ink)}.cp.ok{background:var(--cultural);color:#fff;border-color:transparent}
+.avoid{margin-top:10px!important;font-size:14px!important}.avoid b{color:var(--sensitive)}
+.star{align-self:start;margin:14px 14px 0 0;border:1px solid var(--line);background:none;border-radius:50%;width:36px;height:36px;display:grid;place-items:center;color:var(--muted)}
+.star:hover{border-color:var(--ink);color:var(--ink)}.star[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.m.sens{border-color:color-mix(in srgb,var(--sensitive) 45%,var(--line))}
+.m.sens .d{background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--sensitive) 10%,transparent) 0 6px,transparent 6px 12px)}
+.empty{padding:80px 0;text-align:center;color:var(--muted)}
+
+footer{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;font-size:14px;color:var(--ink2)}
+footer b{display:block;color:var(--ink);font-weight:700;margin-bottom:6px}footer p{margin:0}
+.sig{margin:40px 0 60px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+
+@media (max-width:900px){.cover{grid-template-columns:1fr;gap:20px}.stories{grid-template-columns:1fr 1fr}.ribbon{gap:5px}.ribbon .bars{min-height:70px}footer{grid-template-columns:1fr}.month{grid-template-columns:1fr;gap:16px;padding:32px 0}.mh{position:static}.mh h2{font-size:42px}}
+@media (max-width:640px){.w{padding:0 18px}.stories{grid-template-columns:1fr}.ribbon{grid-template-columns:repeat(6,1fr)}.m{grid-template-columns:6px 1fr auto}.d{grid-column:2;padding:16px 16px 0;display:flex;align-items:baseline;gap:10px}.d b{font-size:28px}.body{grid-column:2;padding:8px 16px 16px}.star{grid-column:3;grid-row:1}.legend{gap:10px 14px}}
+@media print{.bar,.ribbon,.stories,.h,.cp,.star{display:none!important}body{background:#fff}.m{break-inside:avoid;opacity:1;transform:none}.mh{position:static}}
+</style>
+</head>
+<body>
+<div class="w">
+<header class="cover">
+  <div>
+    <p class="kick"><b>Bungee</b><i></i>Moments, a planner's almanac</p>
+    <p class="year">2027</p>
+    <p class="title">Every date that moves people, <em>in every market.</em></p>
+  </div>
+  <div>
+    <p class="lede">Global holidays, faiths, festivals, sport and shopping seasons, plus regional packs. Each moment carries the angle, a hook to copy and what to avoid.</p>
+    <div class="stats"><div id="sN">0<small>moments</small></div><div id="sR">0<small>regions</small></div><div id="sS">0<small>go quiet dates</small></div></div>
+  </div>
+</header>
+
+<div class="ribbon" id="ribbon" aria-label="The year at a glance"></div>
+<div class="legend" id="legend"></div>
+
+<p class="h">Six stories that shape 2027</p>
+<div class="stories" id="stories"></div>
+
+<div class="bar" id="bar">
+  <div class="row" id="rowR"><span class="lbl2">Regions</span></div>
+  <div class="row" id="rowK"><span class="lbl2">Types</span></div>
+</div>
+
+<main id="out"></main>
+
+<footer>
+  <div><b>Moon and lunar dates</b><p>Islamic, Hindu, Buddhist and East Asian dates follow lunar calendars and are shown on expected days. Keep two versions ready and post after the official announcement in each market.</p></div>
+  <div><b>Moving dates</b><p>Items marked Confirm are set by organisers each year. Governments add and move holidays, so check official notices before booking media.</p></div>
+  <div><b>Go quiet dates</b><p>Remembrance days, elections and anniversaries of tragedy are marked red. No promotional content in that market on those dates. Regional packs add local ones.</p></div>
+</footer>
+<div class="sig"><span>Bungee Moments · 2027 edition</span><span>Single user licence · Local language hooks need a native speaker's check before they run</span></div>
+</div>
+
+<script>
+const D=/*DATA*/;
+const CATS=["Holiday","Religious","Cultural","Commercial","Sport","Seasonal","Sensitive"];
+const CV={Holiday:"var(--holiday)",Religious:"var(--religious)",Cultural:"var(--cultural)",Commercial:"var(--commercial)",Sport:"var(--sport)",Seasonal:"var(--seasonal)",Sensitive:"var(--sensitive)"};
+const MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+const REGIONS=["Worldwide","Americas","Europe","Middle East","Africa","South Asia","Asia Pacific","East Africa"];
+const STORIES=[
+ {when:"February to March",t:"Two fasts, one season",p:"Ramadan and Lent overlap almost entirely. A rare shared season of restraint across faiths.",q:"fast"},
+ {when:"14 February",t:"Super Bowl meets Valentine's",p:"The biggest ad night of the year lands on a date night for the first time.",q:"valentine"},
+ {when:"June to July",t:"Women's World Cup in Brazil",p:"First time in South America. The fastest growing audience in sport.",q:"women's world cup"},
+ {when:"October",t:"The busiest month",p:"High Holidays, Diwali, Rugby and Cricket World Cups, Golden Week and Halloween.",q:"october"},
+ {when:"October to November",t:"Three World Cups",p:"Rugby in Australia, cricket in southern Africa, football's women in Brazil earlier. A year of sport.",q:"world cup"},
+ {when:"December",t:"Hanukkah meets Christmas",p:"Eight nights begin on 24 December. Plan a festive season that includes everyone.",q:"hanukkah"}];
+const st={r:new Set(REGIONS.filter(r=>r!=="East Africa")),k:new Set(CATS),q:"",picks:new Set()};
+try{JSON.parse(localStorage.getItem("bm27")||"[]").forEach(x=>st.picks.add(x))}catch(e){}
+const $=id=>document.getElementById(id);
+const d=x=>new Date(x+"T00:00:00");
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+$("sN").firstChild.nodeValue=D.length;$("sR").firstChild.nodeValue=REGIONS.length;$("sS").firstChild.nodeValue=D.filter(r=>r.category==="Sensitive").length;
+
+// legend
+CATS.forEach(c=>{const s=document.createElement("span");s.innerHTML=`<i style="background:${CV[c]}"></i>${c==="Sensitive"?"Sensitive, go quiet":c}`;$("legend").appendChild(s)});
+STORIES.forEach(s=>{const b=document.createElement("button");b.className="story";b.innerHTML=`<span class="when">${s.when}</span><h3>${s.t}</h3><p>${s.p}</p><span class="go">Show these dates</span>`;
+ b.onclick=()=>{$("q").value=s.q;st.q=s.q;$("rowR").querySelectorAll(".chip").forEach(c=>{c.setAttribute("aria-pressed","true")});REGIONS.forEach(r=>st.r.add(r));render();$("out").scrollIntoView()};$("stories").appendChild(b)});
+
+function chip(host,label,key,set,color){const b=document.createElement("button");b.className="chip";b.setAttribute("aria-pressed",set.has(key));
+ b.innerHTML=(color?`<i style="--c:${color}"></i>`:"")+label;
+ b.onclick=()=>{set.has(key)?set.delete(key):set.add(key);b.setAttribute("aria-pressed",set.has(key));render()};host.appendChild(b);return b}
+REGIONS.forEach(r=>chip($("rowR"),r==="East Africa"?"East Africa pack":r,r,st.r));
+const cnt=document.createElement("span");cnt.className="count";cnt.id="cnt";$("rowR").appendChild(cnt);
+CATS.forEach(c=>chip($("rowK"),c,c,st.k,CV[c]));
+const q=document.createElement("input");q.className="search";q.id="q";q.type="search";q.placeholder="Search moments, hooks, angles";q.setAttribute("aria-label","Search");q.oninput=e=>{st.q=e.target.value.toLowerCase().trim();render()};$("rowK").appendChild(q);
+const pk=document.createElement("button");pk.className="picks";pk.id="pk";pk.onclick=exportPicks;$("rowK").appendChild(pk);
+
+function fmt(r){const a=d(r.start),b=d(r.end),wd=a.toLocaleDateString("en-GB",{weekday:"long"});
+ if(r.start===r.end)return `<b>${a.getDate()}</b><span>${wd}</span>`;
+ if(a.getMonth()===b.getMonth()&&a.getFullYear()===b.getFullYear())return `<b class="r">${a.getDate()}<small>to</small>${b.getDate()}</b><span>From ${wd}</span>`;
+ return `<b>${a.getDate()}</b><span>Until ${b.getDate()} ${MN[b.getMonth()]}</span>`}
+function match(r){return r.regions.some(x=>st.r.has(x))&&st.k.has(r.category)&&(!st.q||JSON.stringify(r).toLowerCase().includes(st.q))}
+function savePicks(){try{localStorage.setItem("bm27",JSON.stringify([...st.picks]))}catch(e){}pk.textContent=`My picks · ${st.picks.size} · Export .ics`;pk.disabled=st.picks.size===0}
+function exportPicks(){const e=s=>s.replace(/\\/g,"\\\\").replace(/,/g,"\\,").replace(/;/g,"\\;").replace(/\n/g,"\\n");
+ const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Bungee//Moments 2027 picks//EN","X-WR-CALNAME:My moments 2027"];
+ D.filter(r=>st.picks.has(r.id)).forEach(r=>{const a=d(r.start),b=new Date(d(r.end).getTime()+864e5),f=x=>x.toISOString().slice(0,10).replace(/-/g,"");
+  L.push("BEGIN:VEVENT",`UID:bungee-pick-${r.id}@bungee`,`DTSTART;VALUE=DATE:${f(a)}`,`DTEND;VALUE=DATE:${f(b)}`,"SUMMARY:"+e(r.title),"DESCRIPTION:"+e(`${r.angle}\nHook: ${r.hook}\nAvoid: ${r.avoid}`),"END:VEVENT")});
+ L.push("END:VCALENDAR");const blob=new Blob([L.join("\r\n")],{type:"text/calendar"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="my-moments-2027.ics";a.click();setTimeout(()=>URL.revokeObjectURL(u),2000)}
+
+let io;
+function render(){
+ const f=D.filter(match);cnt.textContent=`${f.length} of ${D.length}`;
+ const rib=$("ribbon");rib.innerHTML="";
+ MN.forEach((mn,i)=>{const items=f.filter(r=>d(r.start).getMonth()===i);const b=document.createElement("button");b.setAttribute("aria-label",`${mn}, ${items.length} moments`);
+  b.innerHTML=`<span class="bars">${items.map(r=>`<i style="background:${CV[r.category]}" title="${esc(r.title)}"></i>`).join("")}</span><span class="lbl">${mn.slice(0,3)} <span style="font-weight:400">${items.length}</span></span>`;
+  b.onclick=()=>{const t=$("m"+i);t&&t.scrollIntoView()};rib.appendChild(b)});
+ const out=$("out");out.innerHTML="";
+ if(!f.length){out.innerHTML='<p class="empty">Nothing matches. Widen the regions or clear the search.</p>';return}
+ MN.forEach((mn,i)=>{const items=f.filter(r=>d(r.start).getMonth()===i);if(!items.length)return;
+  const sec=document.createElement("section");sec.className="month";sec.id="m"+i;
+  sec.innerHTML=`<div class="mh"><h2>${mn}</h2><small>${items.length} moment${items.length>1?"s":""}</small><div class="mini">${items.map(r=>`<i style="background:${CV[r.category]}"></i>`).join("")}</div></div><div class="list"></div>`;
+  items.forEach(r=>{const a=document.createElement("article");a.className="m"+(r.category==="Sensitive"?" sens":"");a.style.setProperty("--c",CV[r.category]);
+   const tags=`<span class="tag c">${r.category==="Sensitive"?"Sensitive, go quiet":r.category}</span>`+r.regions.map(x=>`<span class="tag">${x}</span>`).join("")+r.countries.map(x=>`<span class="tag">${x}</span>`).join("")+
+    (r.status==="expected"?'<span class="tag w">Expected date</span>':r.status==="confirm"?'<span class="tag w">Confirm date</span>':"");
+   a.innerHTML=`<div class="tab"></div><div class="d">${fmt(r)}</div><div class="body"><h3>${esc(r.title)}</h3><div class="tags">${tags}</div><p>${esc(r.angle)}</p>`+
+    (r.hook?`<div class="hook"><q>${esc(r.hook)}</q><button class="cp">Copy</button></div>`:"")+(r.avoid?`<p class="avoid"><b>Avoid.</b> ${esc(r.avoid)}</p>`:"")+`</div>`+
+    `<button class="star" aria-label="Add to my picks" aria-pressed="${st.picks.has(r.id)}"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.2 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></button>`;
+   const c=a.querySelector(".cp");if(c)c.onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText(r.hook).then(()=>{c.textContent="Copied";c.classList.add("ok");setTimeout(()=>{c.textContent="Copy";c.classList.remove("ok")},1400)}).catch(()=>{})};
+   const s=a.querySelector(".star");s.onclick=()=>{st.picks.has(r.id)?st.picks.delete(r.id):st.picks.add(r.id);s.setAttribute("aria-pressed",st.picks.has(r.id));savePicks()};
+   sec.querySelector(".list").appendChild(a)});out.appendChild(sec)});
+ if(io)io.disconnect();
+ if(matchMedia("(prefers-reduced-motion: reduce)").matches){document.querySelectorAll(".m").forEach(e=>e.classList.add("in"))}
+ else{io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{rootMargin:"0px 0px -6% 0px"});document.querySelectorAll(".m").forEach(e=>io.observe(e))}
+}
+savePicks();render();
+</script>
+</body>
+</html>

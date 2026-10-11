@@ -1,0 +1,392 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face { font-family:"Display"; src:url("assets/fonts/display.woff2") format("woff2"); font-weight:400; font-style:normal; }
+  @font-face { font-family:"Display"; src:url("assets/fonts/display-italic.woff2") format("woff2"); font-weight:400; font-style:italic; }
+  @font-face { font-family:"UI"; src:url("assets/fonts/ui-500.woff2") format("woff2"); font-weight:500; }
+  @font-face { font-family:"UI"; src:url("assets/fonts/ui-600.woff2") format("woff2"); font-weight:600; }
+  @font-face { font-family:"UI"; src:url("assets/fonts/ui-700.woff2") format("woff2"); font-weight:700; }
+  @font-face { font-family:"Mono"; src:url("assets/fonts/mono.woff2") format("woff2"); font-weight:400; }
+  :root { --slate:#3F414B; --lime:#BEFD50; --paper:#F6F6F2; --hair:#DCDDD6; --muted:#5E6069; --sand:#D9D5C7; --steel:#8C93A8; --red:#C8463D; --board:#ECECE5; }
+  html,body { margin:0; background:var(--paper); overflow:hidden; }
+  #stage { position:relative; overflow:hidden; background:var(--paper); color:var(--slate); font-family:"UI",sans-serif; }
+  #cam { position:absolute; inset:0; transform-origin:50% 50%; }
+  .abs { position:absolute; left:50%; top:50%; white-space:nowrap; }
+  .serif { font-family:"Display",serif; font-weight:400; letter-spacing:-0.02em; line-height:.92; }
+  .ui { font-family:"UI",sans-serif; font-weight:600; letter-spacing:-0.005em; }
+  .mono { font-family:"Mono",monospace; }
+  #cord { position:absolute; left:50%; top:50%; width:8px; background:var(--lime); border-radius:4px; }
+  #box { border-radius:32px; box-shadow:0 40px 80px -46px rgba(30,32,40,.38); }
+  #gn { color:#E9EAE3; font-size:760px; line-height:.8; letter-spacing:-0.05em; }
+  .card { background:#fff; border-radius:18px; box-shadow:0 18px 40px -22px rgba(30,32,40,.35); }
+  .tag { display:inline-block; font:600 20px "UI"; padding:5px 12px; border-radius:999px; }
+  .unit { border-radius:10px 10px 4px 4px; transform-origin:50% 100%; }
+  .wrap { white-space:normal; }
+</style></head>
+<body>
+<div id="stage"><div id="cam">
+  <!-- Hook -->
+  <div id="hbar" class="abs" style="background:var(--lime);height:34px;border-radius:6px"></div>
+  <div id="h1" class="abs serif">Brief at six.</div>
+  <div id="h2" class="abs serif">Pitch at <span id="nine">nine.</span></div>
+
+  <!-- Ghost index numeral, behind everything, for depth -->
+  <div id="gn" class="abs serif">01</div>
+  <!-- The one container -->
+  <div id="box" class="abs"></div>
+
+  <!-- Reveal -->
+  <div id="rt" class="abs serif">Six creative skills.</div>
+  <div id="rn" class="abs ui" style="display:grid;grid-template-columns:1fr 1fr;gap:12px 56px;font-size:44px">
+    <span>Key Visual</span><span>Content Calendar</span>
+    <span>Retail Display</span><span>Audience Persona</span>
+    <span>Designed Deck</span><span>Campaign Strategy</span>
+  </div>
+
+  <!-- Labels, one pair per highlight -->
+  <div id="n0" class="abs serif wrap">Key Visual Builder</div><div id="l0" class="abs ui">6 to 8 routes from one brief</div>
+  <div id="n1" class="abs serif wrap">Retail Display Theatre</div><div id="l1" class="abs ui">One device per unit</div>
+  <div id="n2" class="abs serif wrap">Designed Deck Builder</div><div id="l2" class="abs ui">Decks that look designed</div>
+  <div id="n3" class="abs serif wrap">Content Calendar Builder</div><div id="l3" class="abs ui">It knows when to go quiet</div>
+  <div id="n4" class="abs serif wrap">Audience Persona Builder</div><div id="l4" class="abs ui">People, not demographics</div>
+  <div id="n5" class="abs serif wrap">Campaign Strategy Builder</div><div id="l5" class="abs ui">Board ready, in nine sections</div>
+
+  <div id="prog" class="abs" style="display:flex;gap:10px"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <!-- Key Visual: brief splits into routes -->
+  <div id="brief" class="abs card" style="width:250px;height:330px;padding:30px 26px;box-sizing:border-box">
+    <div class="ui" style="font-size:26px">Brief</div>
+    <div style="margin-top:22px;display:grid;gap:14px">
+      <i style="display:block;height:12px;background:var(--hair);border-radius:6px"></i><i style="display:block;height:12px;width:80%;background:var(--hair);border-radius:6px"></i>
+      <i style="display:block;height:12px;background:var(--hair);border-radius:6px"></i><i style="display:block;height:12px;width:60%;background:var(--hair);border-radius:6px"></i>
+    </div>
+  </div>
+  <div id="rc0" class="abs card rc"></div><div id="rc1" class="abs card rc"></div><div id="rc2" class="abs card rc"></div>
+
+  <!-- Retail: a family of units on one material row -->
+  <div id="u0" class="abs unit"></div><div id="u1" class="abs unit"></div><div id="u2" class="abs unit"></div><div id="u3" class="abs unit"></div>
+  <div id="floor" class="abs" style="height:4px;background:var(--slate);border-radius:2px"></div>
+
+  <!-- Deck: plain slide, then designed -->
+  <div id="dplain" class="abs" style="width:600px">
+    <i style="display:block;height:26px;width:62%;background:#C9CAC4;border-radius:5px"></i>
+    <div style="margin-top:34px;display:grid;gap:20px">
+      <i style="display:block;height:14px;width:92%;background:#E1E2DC;border-radius:5px"></i><i style="display:block;height:14px;width:86%;background:#E1E2DC;border-radius:5px"></i>
+      <i style="display:block;height:14px;width:90%;background:#E1E2DC;border-radius:5px"></i><i style="display:block;height:14px;width:70%;background:#E1E2DC;border-radius:5px"></i>
+    </div>
+  </div>
+  <div id="ddes" class="abs" style="width:700px">
+    <div class="mono" style="font-size:20px;color:var(--lime)">Q1 review · 04</div>
+    <div class="serif" style="font-size:96px;color:#fff;margin-top:22px;line-height:.95">Make Monday<br>matter.</div>
+    <i style="display:block;width:150px;height:10px;background:var(--lime);border-radius:5px;margin-top:30px"></i>
+  </div>
+
+  <!-- Calendar -->
+  <div id="cal" class="abs"></div>
+
+  <!-- Persona timeline -->
+  <div id="tline" class="abs" style="width:4px;background:var(--hair);border-radius:2px"></div>
+  <div id="p0" class="abs pstop"></div><div id="p1" class="abs pstop"></div><div id="p2" class="abs pstop"></div><div id="p3" class="abs pstop"></div>
+
+  <!-- Strategy outline -->
+  <div id="outline" class="abs"></div>
+
+  <!-- Any market -->
+  <div id="c0" class="abs serif">Lisbon.</div><div id="c1" class="abs serif">Lagos.</div><div id="c2" class="abs serif">Manila.</div><div id="c3" class="abs serif">Lima.</div>
+  <div id="any" class="abs ui">Built for any market.</div>
+
+  <!-- Lockup -->
+  <div id="logo" class="abs" style="aspect-ratio:1318/411">
+    <img id="mark" src="assets/brand/mark-no-tick.png" style="position:absolute;inset:0;width:100%;height:100%">
+    <img id="tick" src="assets/brand/tick.png" style="position:absolute;inset:0;width:100%;height:100%;transform-origin:64.7% 25%">
+  </div>
+  <div id="endline" class="abs ui" style="font-weight:500">Creative skills for every market.</div>
+
+  <div id="cord" class=""></div>
+</div></div>
+<script src="lib/motion.js"></script>
+<script src="lib/kit.js"></script>
+<script>
+const { clamp, lerp, prog, E, SPRING, spring, keyed, ramp, grid, cue, mulberry32 } = M;
+const { W, H, S, wide, portrait, BUNGEE, C, $, landTime, place, life, slam, keyedColor, cord, fit } = K;
+const b = grid(window.BEATS, 120).beat;
+const LAND = landTime(BUNGEE);
+
+// 1. Timeline on the measured beat grid
+const T = { h1: b(0), h2: b(1), bar: b(2), cordIn: b(3), yank: b(3.3), card: b(4), names: b(5),
+  hi: [b(8), b(12), b(16), b(20), b(24), b(28)], out: b(32), city: [b(32), b(33), b(34), b(35)], cityOut: b(35.45),
+  logo: b(36), tick: b(37), endline: b(38), end: b(42) };
+window.DURATION = +T.end.toFixed(3);
+
+// 2. Sound cues, registered once
+cue(T.h1, "pop"); cue(T.h2, "pop"); cue(T.cordIn, "whoosh", 0.7); cue(T.yank, "whoosh", 0.6); cue(T.card, "thump", 0.8);
+cue(T.names, "tick"); cue(T.names + 0.12, "tick"); cue(T.names + 0.24, "tick");
+T.hi.forEach((t, i) => cue(t, "whoosh", 0.8));
+[0, 1, 2].forEach(i => cue(T.hi[0] + 0.5 + i * 0.125, "pop", 0.8));
+[0, 1, 2, 3].forEach(i => cue(T.hi[1] + 0.25 + i * 0.25, "tick"));
+cue(T.hi[2] + 0.65, "pop");
+[0, 1, 2, 3, 4].forEach(i => cue(T.hi[3] + 0.25 + i * 0.2, "tick", 0.7)); cue(T.hi[3] + 1.25, "thump", 0.55);
+[0, 1, 2, 3].forEach(i => cue(T.hi[4] + 0.25 + i * 0.3, "tick"));
+[0, 1, 2].forEach(i => cue(T.hi[5] + 0.2 + i * 0.27, "tick", 0.6)); cue(T.hi[5] + 1.0, "chime", 0.8);
+cue(T.out - 0.1, "whoosh", 0.5); T.city.forEach(t => cue(t, "pop")); cue(T.cityOut, "whoosh", 0.5);
+cue(T.logo - LAND, "whoosh"); cue(T.logo, "thump"); cue(T.tick, "pop");
+
+// 3. Layout per format (design px, origin at stage centre; short side is 1080)
+const HW = W / S / 2, HH = H / S / 2;
+const LAY = wide
+  ? { box: { x: 420, y: 30 }, txtX: -HW + 130, nameY: -40, lineY: 120, nameW: 720, nameSize: 100, cityY: -60, anyY: 120,
+      logoW: 1000, logoY: -40, endY: 190, hookSize: 230, lineYw: 40, hookW: 1640 }
+  : { box: { x: 0, y: portrait ? 190 : 125 }, txtX: 0, nameY: portrait ? -560 : -380, lineY: portrait ? -455 : -290, nameW: 920, nameSize: 92,
+      cityY: -60, anyY: 120, logoW: 860, logoY: -40, endY: 170, hookSize: 200 };
+// Container states: [time, w, h, radius, colour]
+const BOX = wide ? [
+  [T.card, 1120, 620, 40, C.lime], [T.hi[0], 880, 620, 30, C.board], [T.hi[1], 880, 600, 30, C.board], [T.hi[2], 860, 484, 20, C.white],
+  [T.hi[3], 880, 620, 26, C.white], [T.hi[4], 680, 640, 30, C.white], [T.hi[5], 720, 660, 26, C.white]]
+: [
+  [T.card, 920, portrait ? 900 : 760, 40, C.lime], [T.hi[0], 900, portrait ? 820 : 580, 30, C.board], [T.hi[1], 900, portrait ? 760 : 560, 30, C.board],
+  [T.hi[2], 900, 506, 20, C.white], [T.hi[3], 900, portrait ? 800 : 590, 26, C.white], [T.hi[4], 760, portrait ? 860 : 600, 30, C.white],
+  [T.hi[5], 800, portrait ? 900 : 610, 26, C.white]];
+
+const ROUTES = [["01", "Morning Light", "Strong", "linear-gradient(160deg,#F0D7A8,#C88A4A 62%,#5A3A26)"],
+                ["02", "Full Table", "Safe", "linear-gradient(160deg,#E6E1D4,#9A8F78 70%,#4A4236)"],
+                ["03", "Low Tide", "Wild", "linear-gradient(180deg,#CFDCE4,#7E9AAA 54%,#E2D3B4 55%,#B99C6E)"]];
+const TAGC = { Strong: [C.lime, C.slate], Safe: [C.slate, "#fff"], Wild: ["#fff", C.slate] };
+function measure() {
+  // Hook
+  ["h1", "h2"].forEach(id => fit($(id), wide ? 270 : LAY.hookSize, wide ? LAY.hookW : 920));
+  // Reveal title
+  fit($("rt"), wide ? 150 : 112, wide ? 980 : 820);
+  // Labels
+  for (let i = 0; i < 6; i++) {
+    const n = $("n" + i); n.style.width = LAY.nameW + "px"; n.style.fontSize = LAY.nameSize + "px";
+    n.style.textAlign = wide ? "left" : "center"; if (!wide) { n.style.whiteSpace = "nowrap"; n.style.width = "auto"; fit(n, LAY.nameSize, 920); }
+    const l = $("l" + i); l.style.fontSize = "46px"; l.style.fontWeight = 500; l.style.color = C.muted;
+  }
+  // Route cards
+  ROUTES.forEach((r, i) => {
+    const el = $("rc" + i); el.style.width = "250px"; el.style.height = "340px"; el.style.padding = "14px"; el.style.boxSizing = "border-box";
+    const [bg, fg] = TAGC[r[2]];
+    el.innerHTML = `<div style="height:190px;border-radius:10px;background:${r[3]}"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+      <span class="serif" style="font-size:44px">${r[0]}</span><span class="tag" style="background:${bg};color:${fg};border:2px solid ${C.slate}">${r[2]}</span></div>
+      <div class="serif" style="font-size:34px;margin-top:6px">${r[1]}</div>`;
+  });
+  // Retail units: [w, h, label]
+  [[150, 330], [200, 330], [290, 120], [130, 120]].forEach(([w, h], i) => {
+    const u = $("u" + i); u.style.width = w + "px"; u.style.height = h + "px"; u.style.background = C.slate;
+    const dev = [
+      `<i style="position:absolute;left:34px;right:34px;top:-90px;height:250px;background:var(--lime);border:5px solid var(--slate);border-radius:26px 26px 12px 12px"></i><i style="position:absolute;left:58px;right:58px;top:-118px;height:36px;background:var(--slate);border-radius:6px"></i>`,
+      `<i style="position:absolute;left:14px;right:14px;top:70px;height:6px;background:#fff;opacity:.9"></i><i style="position:absolute;left:14px;right:14px;top:160px;height:6px;background:#fff;opacity:.9"></i><i style="position:absolute;left:14px;right:14px;top:250px;height:6px;background:#fff;opacity:.9"></i>`,
+      `<i style="position:absolute;left:14px;right:14px;top:14px;bottom:34px;background:#fff;border-radius:6px"></i>`,
+      `<i style="position:absolute;left:10px;right:10px;top:-104px;height:104px;border:5px solid var(--slate);border-bottom:0;border-radius:60px 60px 0 0;background:rgba(255,255,255,.6)"></i><i style="position:absolute;left:50px;width:30px;top:-64px;height:60px;background:var(--lime);border-radius:8px"></i>`][i];
+    u.innerHTML = dev + `<i style="position:absolute;left:0;right:0;bottom:0;height:${h > 140 ? 28 : 20}px;background:var(--lime);border-radius:0 0 4px 4px"></i>`;
+  });
+  // Calendar grid
+  const box = BOX[4]; const cw = box[1] - 70, ch = box[2] - 110;
+  const cal = $("cal"); cal.style.width = cw + "px"; cal.style.height = (ch + 50) + "px";
+  const rnd = mulberry32(7), pc = [C.slate, C.lime, C.sand, C.steel];
+  let html = `<div style="display:grid;grid-template-columns:repeat(7,1fr);font:600 22px UI;color:${C.muted};height:40px">` + ["M", "T", "W", "T", "F", "S", "S"].map(d => `<span style="padding-left:10px">${d}</span>`).join("") + `</div>`;
+  html += `<div style="display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(5,1fr);height:${ch}px;gap:6px">`;
+  for (let d = 0; d < 35; d++) {
+    const n = 1 + Math.floor(rnd() * 2);
+    let chips = ""; for (let k = 0; k < n; k++) chips += `<i class="chip r${Math.floor(d / 7)}" style="display:block;height:16px;border-radius:5px;margin-top:6px;background:${pc[Math.floor(rnd() * 4)]}"></i>`;
+    html += `<div id="cell${d}" style="position:relative;border-radius:8px;background:#F3F3EE;padding:6px 8px;overflow:hidden">
+      <div style="font:600 18px UI;color:${C.muted}">${d < 31 ? d + 1 : ""}</div>${d < 31 ? chips : ""}</div>`;
+  }
+  cal.innerHTML = html + `</div>`;
+  // Persona stops
+  [["05:45", "Bus stop, first light"], ["07:10", "Corner shop, bread and credit"], ["13:20", "Market lunch"], ["22:10", "Short video in bed"]].forEach(([tm, pl], i) => {
+    $("p" + i).innerHTML = `<div style="display:flex;align-items:center;gap:22px"><i style="width:22px;height:22px;border-radius:50%;background:var(--lime);border:4px solid var(--slate);box-sizing:border-box"></i>
+      <span class="mono" style="font-size:30px;color:${C.muted}">${tm}</span><span class="ui" style="font-size:36px">${pl}</span></div>`;
+  });
+  // Strategy outline
+  const secs = ["Situation", "Audience", "Insight", "Platform", "Territories", "Copy suite", "Channels", "Executions", "Sign off"];
+  $("outline").innerHTML = secs.map((s, i) => `<div class="orow" id="o${i}" style="display:flex;align-items:center;gap:20px;height:${portrait ? 82 : 58}px;padding:0 18px;border-radius:12px">
+    <span class="mono" style="font-size:24px;color:${C.muted};width:40px">0${i + 1}</span><span class="ui" style="font-size:32px;flex:1">${s}</span>
+    <svg width="30" height="30" viewBox="0 0 30 30"><path id="ok${i}" d="M6 16 L12 22 L24 8" fill="none" stroke="${C.slate}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="30" stroke-dashoffset="30"/></svg></div>`).join("");
+  $("outline").style.width = (BOX[6][1] - 90) + "px";
+  // Any market
+  T.city.forEach((_, i) => fit($("c" + i), wide ? 230 : 190, 920));
+  $("any").style.fontSize = "52px";
+  // Logo and endline
+  $("logo").style.width = LAY.logoW + "px";
+  $("endline").style.fontSize = "48px"; $("endline").style.color = C.slate;
+  // Lime bar under "nine"
+  L.fs = parseFloat($("h2").style.fontSize); L.barDY = L.fs * 0.15; $("hbar").style.height = (L.fs * 0.2) + "px"; const r9 = $("nine"); L.nineX = r9.offsetLeft + r9.offsetWidth / 2 - $("h2").offsetWidth / 2; L.nineW = r9.offsetWidth;
+}
+const L = {};
+
+function boxAt(t) {
+  const k = i => BOX.map(s => [s[0], s[i]]);
+  return { w: keyed(t, k(1), SPRING.smooth), h: keyed(t, k(2), SPRING.smooth), r: keyed(t, k(3), SPRING.smooth), bg: keyedColor(t, BOX.map(s => [s[0], s[4]])) };
+}
+
+// 4. The film is a pure function of t
+window.seek = function (t) {
+  // Camera: slow push on the hook and on the lockup
+  const cam = 1 + 0.03 * E.inOutCubic(prog(t, 0, 1.9)) * (1 - E.inOutCubic(prog(t, 1.7, 0.3))) + 0.04 * E.inOutCubic(prog(t, T.logo, T.end - T.logo));
+  $("cam").style.transform = `scale(${cam})`;
+
+  // HOOK
+  const yank = E.inExpo(prog(t, T.yank - 0.05, 0.3));
+  [["h1", T.h1, -L.fs * 0.5], ["h2", T.h2, L.fs * 0.5]].forEach(([id, t0, y]) => {
+    const s = slam(t, t0);
+    place($(id), 0, y + s.dy - yank * (HH + L.fs * 1.6), s.s, s.o * (1 - yank * 0.2), { blur: s.blur });
+  });
+  const bw = E.outExpo(prog(t, T.bar, 0.35));
+  const hb = $("hbar"); hb.style.width = (L.nineW + 30) * bw + "px";
+  place(hb, L.nineX - (L.nineW + 30) * (1 - bw) / 2, L.fs * 0.5 + L.barDY - yank * (HH + L.fs * 1.6), 1, bw > 0 ? 1 : 0);
+
+  // CORD: drops to the hook, yanks, then carries the card in and out
+  let cy = -2000;
+  const dropIn = spring(t - T.cordIn, BUNGEE);
+  if (t >= T.cordIn && t < T.yank + 0.3) cy = lerp(-HH - 50, -L.fs * 1.02, dropIn) - yank * (HH + L.fs * 1.6);
+  const cardP = spring(t - (T.card - LAND), BUNGEE);
+  const B = boxAt(t), bx = LAY.box.x, byRest = LAY.box.y;
+  const cardIn = t >= T.card - LAND ? cardP : 0;
+  let by = lerp(-HH - B.h / 2 - 60, byRest, cardIn);
+  if (t >= T.card - LAND && t < T.card + 0.6) cy = by - B.h / 2;                 // cord holds the card
+  const cordUp = E.inCubic(prog(t, T.card + 0.45, 0.3));
+  if (t >= T.card + 0.45 && t < T.card + 0.8) cy = lerp(by - B.h / 2, -HH - 320, cordUp);
+  // Lockup cord
+  const logoP = spring(t - (T.logo - LAND), BUNGEE);
+  const LW = LAY.logoW, LH = LW * 411 / 1318;
+  const ly = lerp(-HH - LH, LAY.logoY, logoP);
+  if (t >= T.logo - LAND && t < T.logo + 0.6) cy = ly - LH / 2;
+  if (t >= T.logo + 0.6) cy = lerp(ly - LH / 2, -HH - 320, E.inCubic(prog(t, T.logo + 0.6, 0.35)));
+  const BXc = wide ? keyed(t, [[0, 0], [T.hi[0], bx]], SPRING.smooth) : 0;
+  const cordX = t >= T.logo - 1 ? 0 : t >= T.card - LAND - 0.01 ? BXc : 0;
+  cord($("cord"), cordX, cy, t < T.cordIn ? 0 : 1);
+
+  // THE CONTAINER: lime card, then each highlight's stage, then out
+  const outP = E.inCubic(prog(t, T.out - 0.42, 0.34));
+  const box = $("box");
+  box.style.width = B.w + "px"; box.style.height = B.h + "px"; box.style.borderRadius = B.r + "px"; box.style.background = B.bg;
+  const boxXk = BXc;
+  const boxY = t < T.hi[0] ? by : keyed(t, [[0, byRest], [T.hi[0], byRest]], SPRING.smooth);
+  const BX = wide ? (t < T.card - LAND ? 0 : boxXk) : 0, BY = boxY;
+  place(box, BX, BY, lerp(1, 0.86, outP), t < T.card - LAND ? 0 : 1 - outP);
+
+  // REVEAL on the lime card
+  const rtL = life(t, T.card + 0.05, T.hi[0] - 0.25, 0.3, 0.2);
+  const rtS = slam(t, T.card + 0.05);
+  place($("rt"), BX, BY - (wide ? 110 : (portrait ? 190 : 150)), rtS.s, rtL, { blur: rtS.blur });
+  const rn = $("rn"); rn.style.gridTemplateColumns = portrait ? "1fr" : "1fr 1fr";
+  [...rn.children].forEach((c, i) => { const p = E.outCubic(prog(t, T.names + i * 0.06, 0.28)); c.style.opacity = p; c.style.transform = `translateY(${(1 - p) * 18}px)`; });
+  place(rn, BX, BY + (wide ? 110 : (portrait ? 150 : 120)), 1, life(t, T.names - 0.05, T.hi[0] - 0.25, 0.1, 0.2));
+
+  // LABELS
+  for (let i = 0; i < 6; i++) {
+    const t0 = T.hi[i], t1 = (i < 5 ? T.hi[i + 1] : T.out) - 0.22;
+    const ln = life(t, t0 + 0.12, t1, 0.35, 0.2), sl = spring(t - (t0 + 0.12), SPRING.snappy);
+    const dy = (1 - clamp(sl)) * 28;
+    if (wide) {
+      place($("n" + i), LAY.txtX, LAY.nameY - $("n" + i).offsetHeight / 2 + dy, 1, ln, { anchor: "l" });
+      place($("l" + i), LAY.txtX, LAY.lineYw + dy * 1.4, 1, life(t, t0 + 0.3, t1, 0.35, 0.2), { anchor: "l" });
+    } else {
+      place($("n" + i), 0, LAY.nameY + dy, 1, ln);
+      place($("l" + i), 0, LAY.lineY + dy * 1.4, 1, life(t, t0 + 0.3, t1, 0.35, 0.2));
+    }
+  }
+
+  // GHOST NUMERAL behind the container
+  let gi = -1; T.hi.forEach((h, i) => { if (t >= h) gi = i; });
+  const gnEl = $("gn");
+  if (gi >= 0) {
+    gnEl.textContent = "0" + (gi + 1);
+    const g = slam(t, T.hi[gi], SPRING.smooth), gOut = E.inCubic(prog(t, T.out - 0.42, 0.3));
+    const gx = wide ? BX + 360 : 250, gy = wide ? BY - 230 : BY - (portrait ? 330 : 250);
+    place(gnEl, gx - (t - T.hi[gi]) * 8, gy + g.dy * 2, g.s, Math.min(g.o, 1 - gOut) * life(t, T.hi[gi], (gi < 5 ? T.hi[gi + 1] : T.out) - 0.1, 0.2, 0.1), { blur: g.blur });
+  } else place(gnEl, 0, 0, 1, 0);
+
+  // PROGRESS: six bars, the current skill in lime
+  const pg = $("prog"), pgL = life(t, T.hi[0] + 0.3, T.out - 0.3, 0.3, 0.2);
+  [...pg.children].forEach((c, i) => {
+    const on = t >= T.hi[i] ? spring(t - T.hi[i], SPRING.snappy) : 0, cur = (gi === i);
+    c.style.cssText = `display:block;width:${wide ? 54 : 60}px;height:10px;border-radius:5px;background:${cur ? C.lime : (on > 0.5 ? C.slate : C.hair)};transform:scaleY(${cur ? lerp(1, 1.3, clamp(on)) : 1})`;
+  });
+  if (wide) place(pg, LAY.txtX, LAY.lineYw + 90, 1, pgL, { anchor: "l" }); else place(pg, 0, LAY.lineY + 70, 1, pgL);
+
+  // HIGHLIGHT 1: brief splits into three routes
+  const h0 = T.hi[0], h0e = T.hi[1] - 0.22;
+  const brL = life(t, h0 + 0.15, h0 + 0.55, 0.25, 0.15);
+  place($("brief"), BX, BY, lerp(0.85, 1, spring(t - h0 - 0.15, SPRING.snappy)), brL);
+  ROUTES.forEach((r, i) => {
+    const t0 = h0 + 0.5 + i * 0.125, p = spring(t - t0, SPRING.smooth);
+    const gap = wide ? 270 : 280, rot = [-6, 0, 6][i];
+    place($("rc" + i), BX + lerp(0, (i - 1) * gap, p), BY + lerp(0, i === 1 ? -14 : 8, p), lerp(0.9, 1, clamp(p)), life(t, t0, h0e, 0.2, 0.22), { rot: rot * clamp(p) });
+  });
+
+  // HIGHLIGHT 2: retail family rises floor to counter
+  const h1 = T.hi[1], h1e = T.hi[2] - 0.22, base = BY + (wide ? 230 : (portrait ? 300 : 210));
+  const ux = [-300, -95, 140, 345], uw = [150, 200, 290, 130], uh = [330, 330, 120, 120];
+  for (let i = 0; i < 4; i++) {
+    const t0 = h1 + 0.25 + i * 0.25, p = spring(t - t0, SPRING.snappy);
+    place($("u" + i), BX + ux[i] * (wide ? 0.95 : 1), base - uh[i] / 2, 1, life(t, t0, h1e, 0.12, 0.2), { sy: lerp(0.05, 1, clamp(p)) });
+  }
+  const fl = $("floor"); fl.style.width = (wide ? 780 : 820) + "px";
+  place(fl, BX, base + 2, 1, life(t, h1 + 0.15, h1e, 0.2, 0.2), { sx: E.outExpo(prog(t, h1 + 0.15, 0.4)) });
+
+  // HIGHLIGHT 3: plain slide becomes a designed slide, one container
+  const h2 = T.hi[2], h2e = T.hi[3] - 0.22, sw = t >= h2 + 0.5 ? E.inOutCubic(prog(t, h2 + 0.5, 0.3)) : 0;
+  place($("dplain"), BX, BY, 1, life(t, h2 + 0.15, h2 + 0.5, 0.2, 0.15), { blur: sw * 12 });
+  if (t >= h2 && t < h2e + 0.3) box.style.background = keyedColor(t, [[0, "#FFFFFF"], [h2 + 0.5, C.slate]], SPRING.snappy);
+  const dd = spring(t - (h2 + 0.62), SPRING.snappy);
+  place($("ddes"), BX - (wide ? 40 : 60), BY, lerp(1.06, 1, clamp(dd)), life(t, h2 + 0.62, h2e, 0.3, 0.2), { blur: (1 - clamp(dd)) * 10 });
+
+  // HIGHLIGHT 4: month grid fills by row, one day goes quiet
+  const h3 = T.hi[3], h3e = T.hi[4] - 0.22;
+  place($("cal"), BX, BY, 1, life(t, h3 + 0.15, h3e, 0.25, 0.2));
+  for (let r = 0; r < 5; r++) { const p = E.outCubic(prog(t, h3 + 0.25 + r * 0.2, 0.25)); document.querySelectorAll(".chip.r" + r).forEach(c => { c.style.opacity = p; c.style.transform = `scaleX(${p})`; c.style.transformOrigin = "0 50%"; }); }
+  const red = $("cell17"), rq = E.outCubic(prog(t, h3 + 1.25, 0.3));
+  red.style.background = rq > 0 ? `repeating-linear-gradient(135deg, rgba(200,70,61,${0.28 * rq}) 0 8px, transparent 8px 16px), #F3F3EE` : "#F3F3EE";
+  red.style.boxShadow = rq > 0 ? `inset 0 0 0 ${3 * rq}px ${C.red}` : "none";
+  [...red.querySelectorAll(".chip")].forEach(c => { const g = E.inCubic(prog(t, h3 + 1.3, 0.35)); c.style.transform = `translateX(${g * 160}px)`; c.style.opacity = (1 - g) * clamp((t - h3 - 0.9) * 4); });
+
+  // HIGHLIGHT 5: a day in the life
+  const h4 = T.hi[4], h4e = T.hi[5] - 0.22, tlH = portrait ? 620 : 440;
+  const tl = $("tline"); tl.style.height = tlH * E.outCubic(prog(t, h4 + 0.15, 0.6)) + "px";
+  const tlx = BX - (wide ? 250 : 290);
+  place(tl, tlx, BY - tlH / 2, 1, life(t, h4 + 0.15, h4e, 0.2, 0.2), { anchor: "t" });
+  for (let i = 0; i < 4; i++) {
+    const t0 = h4 + 0.25 + i * 0.3, p = spring(t - t0, SPRING.snappy);
+    place($("p" + i), tlx - 11, BY - tlH / 2 + 30 + i * (tlH - 60) / 3 + (1 - clamp(p)) * 20, 1, life(t, t0, h4e, 0.2, 0.2), { anchor: "l" });
+  }
+
+  // HIGHLIGHT 6: nine sections tick in order, the insight fills lime
+  const h5 = T.hi[5], h5e = T.out - 0.22;
+  place($("outline"), BX, BY, 1, life(t, h5 + 0.12, h5e, 0.25, 0.2));
+  for (let i = 0; i < 9; i++) {
+    const p = E.outCubic(prog(t, h5 + 0.2 + i * 0.09, 0.22));
+    $("ok" + i).setAttribute("stroke-dashoffset", 30 * (1 - p));
+    $("o" + i).style.background = i === 2 ? keyedColor(t, [[0, "#FFFFFF"], [h5 + 1.0, C.lime]], SPRING.snappy) : "transparent";
+  }
+
+  // ANY MARKET
+  T.city.forEach((t0, i) => {
+    const s = slam(t, t0), t1 = i < 3 ? T.city[i + 1] : T.cityOut;
+    const ex = E.inCubic(prog(t, t1 - 0.11, 0.1));
+    place($("c" + i), 0, LAY.cityY + s.dy - ex * 50, s.s, Math.min(s.o, 1 - ex) * (t >= t0 ? 1 : 0), { blur: s.blur + ex * 8 });
+  });
+  const anyS = spring(t - (T.city[0] + 0.1), SPRING.smooth);
+  place($("any"), 0, LAY.anyY + (1 - clamp(anyS)) * 24, 1, life(t, T.city[0] + 0.1, T.cityOut - 0.05, 0.3, 0.15));
+
+  // LOCKUP: the mark lands on the downbeat, the tick snaps on, the endline rises
+  place($("logo"), 0, ly, 1, t >= T.logo - LAND ? 1 : 0, { sy: 1 + 0.05 * clamp((logoP - 1) * 6, -1, 1) });
+  const tp = spring(t - T.tick, SPRING.tiny);
+  $("tick").style.transform = `translateY(${(1 - clamp(tp)) * -60}px) scale(${lerp(0.3, 1, tp)})`;
+  $("tick").style.opacity = clamp(tp * 3);
+  const ep = spring(t - T.endline, SPRING.smooth);
+  place($("endline"), 0, LAY.endY + (1 - clamp(ep)) * 26, 1, clamp(ep * 1.4));
+  return true;
+};
+
+window.ready = Promise.all([
+  ...["400 1em Display", "italic 400 1em Display", "500 1em UI", "600 1em UI", "700 1em UI", "400 1em Mono"].map(f => document.fonts.load(f)),
+  ...[...document.images].map(i => i.decode())
+]).then(() => document.fonts.ready).then(() => {
+  const bad = [...document.fonts].filter(f => f.status === "error").map(f => f.family);
+  if (bad.length) throw new Error("Font files failed to load: " + bad.join(", "));
+  measure(); window.seek(0); return true;
+});
+</script>
+</body></html>

@@ -1,0 +1,7 @@
+Bungee Single User Commercial Licence
+
+You may install and use this skill for your own client and personal work, including paid commercial work. Outputs you create with it are yours.
+
+You may not resell, share, redistribute, upload to a public repository or bundle this skill (or modified versions of it) with other products. Agency and team licences are available separately.
+
+Provided as is, without warranty. Always check AI generated work before it goes to a client or into production.

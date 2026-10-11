@@ -1,0 +1,360 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face { font-family:"Fraunces"; src:url("assets/fonts/fraunces.woff2") format("woff2"); font-weight:100 900; font-style:normal; }
+  @font-face { font-family:"Fraunces"; src:url("assets/fonts/fraunces-italic.woff2") format("woff2"); font-weight:100 900; font-style:italic; }
+  @font-face { font-family:"Manrope"; src:url("assets/fonts/manrope-400.woff2") format("woff2"); font-weight:400; }
+  @font-face { font-family:"Manrope"; src:url("assets/fonts/manrope-500.woff2") format("woff2"); font-weight:500; }
+  @font-face { font-family:"Manrope"; src:url("assets/fonts/manrope-600.woff2") format("woff2"); font-weight:600; }
+  @font-face { font-family:"Manrope"; src:url("assets/fonts/manrope-700.woff2") format("woff2"); font-weight:700; }
+  @font-face { font-family:"UI"; src:url("assets/fonts/ui-500.woff2") format("woff2"); font-weight:500; }
+  :root { --paper:#F4EFE6; --paper2:#EDE6D9; --card:#FBF8F2; --line:#DED5C6; --ink:#17150F; --ink2:#4A453B; --muted:#7C7466;
+          --holiday:#C07A1E; --religious:#7A4F9F; --cultural:#1E8A6E; --commercial:#D4523A; --sport:#2A5BD7; --seasonal:#6E8A2E; --sensitive:#8E1D1D; }
+  html,body { margin:0; background:var(--paper); overflow:hidden; }
+  #stage { position:relative; overflow:hidden; background:var(--paper); color:var(--ink); font-family:"Manrope",sans-serif; }
+  #cam { position:absolute; inset:0; transform-origin:50% 50%; }
+  .abs { position:absolute; left:50%; top:50%; white-space:nowrap; }
+  .fr { font-family:"Fraunces",serif; font-weight:300; font-variation-settings:"opsz" 144,"SOFT" 40; letter-spacing:-0.035em; line-height:.92; }
+  .frl { font-family:"Fraunces",serif; font-weight:300; font-variation-settings:"opsz" 144,"SOFT" 60; letter-spacing:-0.06em; line-height:.78; }
+  .mr { font-family:"Manrope",sans-serif; font-weight:600; }
+  #year span { display:inline-block; }
+  #cord { position:absolute; left:50%; top:50%; width:8px; background:#BEFD50; border-radius:4px; }
+  #tray { background:var(--paper2); border-radius:28px; }
+  .scene { position:absolute; left:50%; top:50%; white-space:normal; }
+  /* Ribbon (the almanac's year at a glance) */
+  #rib { display:grid; grid-template-columns:repeat(12,1fr); }
+  #rib .col { display:flex; flex-direction:column; gap:10px; }
+  #rib .bars { display:flex; flex-direction:column-reverse; gap:3px; justify-content:flex-start; }
+  #rib .bars i { display:block; border-radius:3px; transform-origin:0 50%; }
+  #rib .lbl { font-weight:600; color:var(--muted); }
+  #rib .lbl span { font-weight:400; }
+  /* Chips and kick */
+  .chip { display:inline-flex; align-items:center; gap:14px; border:2px solid var(--line); background:var(--card); border-radius:999px; padding:12px 26px; font:600 34px "Manrope"; }
+  .chip i { width:16px; height:16px; border-radius:50%; display:block; }
+  #kick { display:flex; align-items:center; gap:20px; font:600 28px "Manrope"; color:var(--muted); }
+  #kick i { width:46px; height:2px; background:var(--ink); display:block; }
+  /* Month strip */
+  #ms { display:flex; gap:7px; }
+  #ms div { display:flex; flex-direction:column; align-items:center; gap:8px; width:38px; }
+  #ms i { display:block; width:38px; height:9px; border-radius:3px; background:var(--line); }
+  #ms span { font:700 18px "Manrope"; color:var(--muted); }
+  /* Almanac cards, scaled for video from the page's own CSS */
+  .story { background:var(--card); border:2px solid var(--line); border-radius:22px; }
+  .when { font:700 26px "Manrope"; letter-spacing:.01em; }
+  .m { background:var(--card); border:2px solid var(--line); border-radius:20px; display:grid; grid-template-columns:10px 150px 1fr auto; overflow:hidden; }
+  .m .tab { background:var(--c); }
+  .m .d { padding:20px 0 20px 22px; }
+  .m .d b { display:block; font:300 56px/1 "Fraunces"; font-variation-settings:"opsz" 144; letter-spacing:-.04em; }
+  .m .d b.r { font-size:38px; }
+  .m .d b small { font:400 .45em "Manrope"; color:var(--muted); margin:0 4px; letter-spacing:0; }
+  .m .d span { display:block; font-size:18px; color:var(--muted); margin-top:6px; font-weight:500; }
+  .m .body { padding:20px 22px 20px 8px; min-width:0; }
+  .m h3 { font:400 32px/1.12 "Fraunces"; font-variation-settings:"opsz" 40; margin:0 0 10px; letter-spacing:-.01em; }
+  .tags { display:flex; flex-wrap:wrap; gap:7px; }
+  .tag { font-size:17px; font-weight:600; padding:3px 11px; border-radius:7px; background:var(--paper2); color:var(--ink2); }
+  .tag.c { background:var(--c); color:#fff; } .tag.w { background:transparent; border:2px dashed var(--line); color:var(--muted); }
+  .m p { margin:12px 0 0; font-size:21px; line-height:1.42; color:var(--ink2); font-weight:500; }
+  .m p.avoid b { color:var(--sensitive); }
+  .m.sens { border-color:#C9A9A2; }
+  .m.sens .d { background:repeating-linear-gradient(135deg, rgba(142,29,29,.12) 0 8px, transparent 8px 16px); }
+  .star { align-self:start; margin:18px 18px 0 0; border:2px solid var(--line); border-radius:50%; width:56px; height:56px; display:grid; place-items:center; color:var(--muted); box-sizing:border-box; }
+  .star.on { background:var(--ink); color:var(--paper); border-color:var(--ink); }
+  .picks { border:2px solid var(--ink); background:var(--ink); color:var(--paper); border-radius:999px; padding:12px 24px; font:700 25px "Manrope"; display:inline-block; }
+  .hook { display:flex; align-items:center; gap:14px; margin-top:16px; padding:14px 18px; border-radius:12px; background:var(--paper2); }
+  .hook q { quotes:none; font:italic 400 25px/1.25 "Fraunces"; font-variation-settings:"opsz" 40,"SOFT" 60; flex:1; }
+  .cp { border:2px solid var(--line); background:var(--card); border-radius:9px; padding:5px 13px; font:600 18px "Manrope"; }
+  .file { display:flex; align-items:center; gap:18px; background:var(--card); border:2px solid var(--ink); border-radius:16px; padding:14px 22px 14px 16px; box-shadow:0 18px 30px -18px rgba(23,21,15,.45); }
+  #cursor { width:44px; height:44px; }
+</style></head>
+<body>
+<div id="stage"><div id="cam">
+  <div id="year" class="abs frl"><span>2</span><span>0</span><span>2</span><span>7</span></div>
+  <div id="kick" class="abs"><i></i><span>A planner's almanac</span></div>
+  <div id="sub" class="abs" style="font:italic 300 84px/1 'Fraunces';font-variation-settings:'opsz' 144,'SOFT' 60;letter-spacing:-.02em">is already booked.</div>
+  <div id="rib" class="abs"></div>
+  <div id="cnt" class="abs frl" style="text-align:center">0</div>
+  <div id="cntl" class="abs mr" style="color:var(--muted)">moments</div>
+  <div id="ch0" class="abs chip"><i style="background:var(--cultural)"></i>88 global</div>
+  <div id="ch1" class="abs chip"><i style="background:var(--sport)"></i>8 regions</div>
+  <div id="tray" class="abs"></div>
+  <div id="k0" class="abs mr"></div><div id="h0" class="abs fr"></div>
+  <div id="k1" class="abs mr"></div><div id="h1" class="abs fr"></div>
+  <div id="k2" class="abs mr"></div><div id="h2" class="abs fr"></div>
+  <div id="k3" class="abs mr"></div><div id="h3" class="abs fr"></div>
+  <div id="k4" class="abs mr"></div><div id="h4" class="abs fr"></div>
+  <div id="ms" class="abs"></div>
+  <div id="s0" class="scene"></div><div id="s1" class="scene"></div><div id="s2" class="scene"></div><div id="s3" class="scene"></div><div id="s4" class="scene"></div>
+  <div id="f1" class="abs fr" style="text-align:center">Every date.</div>
+  <div id="f2" class="abs fr" style="text-align:center;font-style:italic">Every market.</div>
+  <div id="logo" class="abs" style="aspect-ratio:1318/411">
+    <img id="mark" src="assets/brand/mark-no-tick.png" style="position:absolute;inset:0;width:100%;height:100%">
+    <img id="tick" src="assets/brand/tick.png" style="position:absolute;inset:0;width:100%;height:100%;transform-origin:64.7% 25%">
+  </div>
+  <div id="endline" class="abs" style="font:500 50px 'UI';color:#3F414B">Moments 2027 <span style="color:#5E6069">·</span> A planner's almanac</div>
+  <svg id="cursor" class="abs" viewBox="0 0 44 44"><path d="M8 4 L8 34 L16 27 L22 40 L28 37 L22 25 L33 25 Z" fill="#17150F" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
+  <div id="cord"></div>
+</div></div>
+<script src="lib/motion.js"></script>
+<script src="lib/kit.js"></script>
+<script>
+const { clamp, lerp, prog, E, SPRING, spring, keyed, grid, cue } = M;
+const { W, H, S, wide, portrait, BUNGEE, C, $, landTime, place, life, slam, keyedColor, cord, fit } = K;
+const square = !wide && !portrait;
+const b = grid(window.BEATS, 120).beat, LAND = landTime(BUNGEE);
+const HW = W / S / 2, HH = H / S / 2;
+const A = { paper: "#F4EFE6", paper2: "#EDE6D9", card: "#FBF8F2", line: "#DED5C6", ink: "#17150F", ink2: "#4A453B", muted: "#7C7466" };
+const CV = { Holiday: "#C07A1E", Religious: "#7A4F9F", Cultural: "#1E8A6E", Commercial: "#D4523A", Sport: "#2A5BD7", Seasonal: "#6E8A2E", Sensitive: "#8E1D1D" };
+
+// ---------- Data: every item below is copied from the shipped almanac (moments-2027.json) ----------
+const MONTHS = [["Holiday","Holiday","Commercial","Holiday","Commercial","Commercial","Holiday","Sport","Sensitive","Holiday","Sensitive"],["Holiday","Cultural","Cultural","Cultural","Cultural","Holiday","Holiday","Religious","Religious","Religious","Religious","Sport","Commercial","Commercial","Holiday","Cultural"],["Cultural","Seasonal","Commercial","Commercial","Religious","Religious","Holiday","Commercial","Cultural","Cultural","Cultural","Holiday","Holiday","Holiday","Holiday"],["Commercial","Commercial","Cultural","Holiday","Sensitive","Cultural","Religious","Sport","Religious","Commercial","Sensitive","Holiday","Holiday","Holiday","Sport"],["Holiday","Holiday","Religious","Cultural","Commercial","Commercial","Religious","Religious","Sport","Religious","Cultural","Holiday"],["Holiday","Cultural","Religious","Sport","Commercial","Commercial","Cultural","Holiday","Commercial","Cultural","Sport","Sport","Commercial","Commercial","Seasonal","Sport","Sensitive","Sport"],["Holiday","Holiday","Cultural","Cultural","Sport","Holiday","Holiday","Holiday","Commercial","Sensitive","Holiday","Sport","Sport","Commercial"],["Commercial","Cultural","Holiday","Cultural","Holiday","Sensitive","Cultural","Religious","Holiday","Religious","Religious"],["Cultural","Religious","Sensitive","Cultural","Cultural","Holiday","Cultural"],["Holiday","Holiday","Sport","Religious","Commercial","Seasonal","Sport","Religious","Holiday","Commercial","Religious","Holiday","Holiday","Religious","Holiday","Holiday","Religious","Sensitive","Religious","Commercial"],["Cultural","Commercial","Cultural","Sensitive","Commercial","Holiday","Commercial","Commercial"],["Sensitive","Commercial","Commercial","Holiday","Holiday","Seasonal","Religious","Holiday","Holiday","Holiday","Holiday","Commercial","Commercial"]];
+const MN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const rng = (a, z) => `<b class="r">${a}<small>to</small>${z}</b>`;
+const OCT = [{ d: rng(1, 3) + "<span>From Friday</span>", t: "Rosh Hashanah", c: "Religious", g: ["Worldwide"] },
+  { d: rng(1, 7) + "<span>From Friday</span>", t: "Golden Week (China)", c: "Holiday", g: ["Asia Pacific"] },
+  { d: rng(27, 31) + "<span>From Wednesday</span>", t: "Diwali", c: "Religious", g: ["South Asia"] },
+  { d: "<b>31</b><span>Sunday</span>", t: "Halloween", c: "Commercial", g: ["Worldwide"] }];
+const NOV = [{ d: rng(1, 2) + "<span>From Monday</span>", t: "Día de los Muertos", c: "Cultural", g: ["Americas"] },
+  { d: "<b>11</b><span>Thursday</span>", t: "Remembrance and Veterans Day", c: "Sensitive", g: ["Europe", "Americas"], p: "Poppies in the Commonwealth, Veterans Day in the US, Armistice in France. Respect only.", avoid: "Sales." },
+  { d: "<b>11</b><span>Thursday</span>", t: "Singles' Day", c: "Commercial", g: ["Asia Pacific"] }];
+const PICKS = [{ d: rng(5, 11) + "<span>From Friday</span>", t: "Lunar New Year, Year of the Goat", c: "Holiday", g: ["Asia Pacific"] },
+  { d: "<b>22</b><span>Monday</span>", t: "Holi", c: "Cultural", g: ["South Asia"], w: "Expected date" },
+  { d: rng(27, 31) + "<span>From Wednesday</span>", t: "Diwali", c: "Religious", g: ["South Asia"] }];
+const STAR = `<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.2 1.3-6.6L2.5 9.4l6.6-.8z"/></svg>`;
+function mcard(r, o = {}) {
+  const tags = `<span class="tag c">${r.c === "Sensitive" ? "Sensitive, go quiet" : r.c}</span>` + r.g.map(x => `<span class="tag">${x}</span>`).join("") + (r.w ? `<span class="tag w">${r.w}</span>` : "");
+  return `<div class="m ${r.c === "Sensitive" ? "sens" : ""} ${o.cls || ""}" style="--c:${CV[r.c]}${o.h3 ? ";" : ""}"><div class="tab"></div><div class="d">${r.d}</div><div class="body"><h3 style="${o.h3 ? "font-size:" + o.h3 + "px" : ""}">${r.t}</h3><div class="tags">${tags}</div>` +
+    (r.p ? `<p>${r.p}</p>` : "") + (r.avoid ? `<p class="avoid"><b>Avoid.</b> ${r.avoid}</p>` : "") + `</div>` + (o.star ? `<div class="star">${STAR}</div>` : "") + `</div>`;
+}
+
+// ---------- Timeline on the measured beat grid ----------
+const T = { d: [b(0), b(1), b(2), b(3)], sub: b(4), rib: b(5), cnt: b(8), chips: b(10), sec: [b(12), b(16), b(20), b(24), b(28)], out: b(32),
+  stars: [b(25), b(25.5), b(26)], pick: b(27), touch: b(30), fin: [b(32), b(33)], logo: b(36), tick: b(37), endline: b(38), end: b(42) };
+window.DURATION = +T.end.toFixed(3);
+
+// ---------- Layout ----------
+const LAY = wide
+  ? { yearFs: 470, yearY: -170, subY: 70, ribY: 300, ribW: 1500, barH: 9, lblFs: 22, cntFs: 400, cntY: -90, cntLY: 200, chY: 300, chX: 170,
+      mastX: -HW + 120, mastY: -HH + 96, mastFs: 72, txtX: -HW + 120, kY: -150, hY: -90, hlSize: 112, txtW: 760, msY: 150,
+      bx: 440, by: 40, bw: 860, box: [[860, 620], [860, 640], [860, 640], [860, 720], [860, 600]], finFs: 170, finY: -120, ribY2: 330, logoW: 1000, endY: 190 }
+  : portrait
+  ? { yearFs: 330, yearY: -270, subY: -50, ribY: 220, ribW: 960, barH: 8, lblFs: 21, cntFs: 330, cntY: -140, cntLY: 170, chY: 300, chX: 0,
+      mastX: -HW + 70, mastY: -HH + 100, mastFs: 64, txtX: 0, kY: -760, hY: -690, hlSize: 118, txtW: 960, msY: -405,
+      bx: 0, by: 220, bw: 960, box: [[960, 760], [960, 1000], [960, 900], [960, 980], [960, 980]], finFs: 150, finY: -230, ribY2: 380, logoW: 860, endY: 170 }
+  : { yearFs: 330, yearY: -230, subY: -40, ribY: 230, ribW: 960, barH: 7, lblFs: 20, cntFs: 300, cntY: -120, cntLY: 150, chY: 260, chX: 170,
+      mastX: -HW + 70, mastY: -HH + 64, mastFs: 52, txtX: 0, kY: -400, hY: -345, hlSize: 84, txtW: 960, msY: -228,
+      bx: 0, by: 150, bw: 960, box: [[960, 560], [960, 600], [960, 600], [960, 680], [960, 600]], finFs: 130, finY: -150, ribY2: 330, logoW: 860, endY: 170 };
+const SEC = [
+  { k: "February to March", h: "Two fasts,|one season.", ms: [1, 2], scene: "story" },
+  { k: "Month by month", h: "October.|The busiest month.", ms: [9], scene: "october" },
+  { k: "11 November", h: "Know when to|say nothing.", ms: [10], scene: "quiet" },
+  { k: "Your picks", h: "Star it.|Export it.", ms: [1, 2, 9], scene: "picks" },
+  { k: "24 and 25 December", h: "Hanukkah|meets Christmas.", ms: [11], scene: "together" }];
+const SCW = i => LAY.box[i][0] - 72, SCH = i => LAY.box[i][1] - 72;
+
+// ---------- Helpers ----------
+const pop = (t, t0, cfg = SPRING.snappy) => clamp(spring(t - t0, cfg));
+const ease = (t, t0, d) => E.outCubic(prog(t, t0, d));
+function setO(el, o, tf) { el.style.opacity = o; el.style.visibility = o <= 0.002 ? "hidden" : "visible"; if (tf != null) el.style.transform = tf; }
+
+// ---------- Scenes ----------
+const G = {};                  // measured geometry for the cursor
+const SCENES = {
+  story: {
+    html: (w, h) => { const cw = w - 88, x = d => +(d / 59 * cw).toFixed(1), ticks = [0, 7, 14, 21, 28, 35, 42, 49, 56];
+      const BH = portrait ? 84 : square ? 60 : 72, fs = portrait ? 32 : square ? 26 : 28, rT = 54, lT = rT + BH + 18, lB = lT + BH, tT = lB + 26, kT = tT + 26, CH = kT + 58;
+      return `<div class="story" style="position:absolute;inset:0;padding:34px 44px;box-sizing:border-box;display:flex;flex-direction:column">
+      <span class="when" style="color:${CV.Religious}">February to March</span>
+      <div style="position:relative;height:${CH}px;margin-top:${portrait ? 50 : 24}px">
+        <span class="mr" style="position:absolute;left:0;top:0;font-size:22px;color:var(--muted)">February</span><span class="mr" style="position:absolute;left:${x(28) + 10}px;top:0;font-size:22px;color:var(--muted)">March</span>
+        <i style="position:absolute;left:${x(28)}px;top:2px;height:${tT + 10}px;width:2px;background:var(--line)"></i>
+        ${ticks.map(d => `<i style="position:absolute;left:${x(d)}px;top:${tT}px;width:2px;height:12px;background:var(--line)"></i>`).join("")}
+        <div class="band" style="position:absolute;left:${x(9)}px;width:${x(37) - x(9)}px;top:${rT - 12}px;height:${lB - rT + 24}px;background:rgba(122,79,159,.12);border-radius:14px;border:2px dashed rgba(122,79,159,.5);box-sizing:border-box"></div>
+        <div class="rb" style="position:absolute;left:${x(7)}px;width:${x(37) - x(7)}px;top:${rT}px;height:${BH}px;background:${CV.Religious};border-radius:12px;display:flex;align-items:center;padding:0 22px;box-sizing:border-box;transform-origin:0 50%"><span class="mr" style="color:#fff;font-size:${fs}px">Ramadan</span></div>
+        <div class="lb" style="position:absolute;left:${x(9)}px;width:${x(55) - x(9)}px;top:${lT}px;height:${BH}px;background:var(--card);border:3px solid ${CV.Religious};border-radius:12px;display:flex;align-items:center;padding:0 22px;box-sizing:border-box;transform-origin:0 50%"><span class="mr" style="color:${CV.Religious};font-size:${fs}px">Lent</span></div>
+        <div class="bk" style="position:absolute;left:${x(9)}px;width:${x(37) - x(9)}px;top:${kT}px;height:12px;border:3px solid ${CV.Religious};border-top:0;border-radius:0 0 6px 6px;box-sizing:border-box"></div>
+        <span class="bl mr" style="position:absolute;left:${(x(9) + x(37)) / 2}px;top:${kT + 22}px;transform:translateX(-50%);font-size:${portrait ? 26 : 22}px;font-weight:700;color:${CV.Religious};white-space:nowrap">Together, 10 Feb to 9 Mar</span>
+      </div>
+      <p class="sp" style="margin:auto 0 0;font:500 ${portrait ? 30 : 24}px/1.4 'Manrope';color:var(--ink2)">Ramadan and Lent overlap almost entirely. A rare shared season of restraint across faiths.</p></div>`; },
+    update(t, t0, t1, el) { const st = el.querySelector(".story"), p = pop(t, t0 + 0.02, SPRING.smooth); setO(st, life(t, t0 + 0.02, t1, 0.16, 0.2), `translateY(${(1 - p) * 50}px)`);
+      const r = el.querySelector(".rb"), l = el.querySelector(".lb"), rp = ease(t, t0 + 0.3, 0.32), lp = ease(t, t0 + 0.55, 0.36);
+      r.style.transform = `scaleX(${rp})`; r.style.opacity = rp > 0 ? 1 : 0; l.style.transform = `scaleX(${lp})`; l.style.opacity = lp > 0 ? 1 : 0;
+      [r, l].forEach(e => e.firstChild.style.opacity = clamp(((e === r ? rp : lp) - 0.5) * 3));
+      const bp = pop(t, t0 + 0.95, SPRING.snappy); setO(el.querySelector(".band"), clamp(bp * 1.5), `scale(${lerp(1.06, 1, bp)})`);
+      const kp = ease(t, t0 + 1.0, 0.25); setO(el.querySelector(".bk"), kp, `scaleX(${lerp(0.3, 1, kp)})`); setO(el.querySelector(".bl"), clamp((t - t0 - 1.05) / 0.2), `translateX(-50%) translateY(${(1 - ease(t, t0 + 1.05, 0.3)) * 10}px)`);
+      setO(el.querySelector(".sp"), life(t, t0 + 0.2, t1 + 0.2, 0.3, 0.2)); },
+    cues: t0 => [[t0 + 0.3, "tick", 0.7], [t0 + 0.55, "tick", 0.7], [t0 + 0.95, "pop", 0.8]] },
+  october: {
+    html: (w, h) => { const mini = MONTHS[9].map(c => `<i style="display:block;width:16px;height:16px;border-radius:4px;background:${CV[c]}"></i>`).join("");
+      const head = `<div class="oh" style="${portrait ? "display:flex;align-items:flex-end;gap:30px;margin-bottom:26px" : "width:220px;flex:none"}"><div><div class="fr" style="font-size:${portrait ? 96 : 68}px;letter-spacing:-.04em;font-variation-settings:'opsz' 144,'SOFT' 40">October</div>
+        <div class="mr" style="font-size:22px;color:var(--muted);margin-top:16px;font-weight:500">20 moments</div></div><div class="mini" style="display:flex;flex-wrap:wrap;gap:5px;margin-top:16px;${portrait ? "width:330px;margin-bottom:6px" : ""}">${mini}</div></div>`;
+      return `<div style="position:absolute;inset:0;display:flex;${portrait ? "flex-direction:column" : "gap:28px"};overflow:hidden">${head}<div class="ol" style="flex:1;display:grid;gap:12px;align-content:start;min-width:0">${OCT.map(r => mcard(r)).join("")}</div></div>`; },
+    update(t, t0, t1, el) { const oh = el.querySelector(".oh"), hp = pop(t, t0 + 0.02, SPRING.smooth); setO(oh, life(t, t0 + 0.02, t1, 0.16, 0.2), `translateY(${(1 - hp) * 30}px)`);
+      el.querySelectorAll(".mini i").forEach((m, i) => { const p = pop(t, t0 + 0.12 + i * 0.025, SPRING.tiny); setO(m, clamp(p * 2) * life(t, t0, t1, 0.01, 0.2), `scale(${lerp(0.2, 1, p)})`); });
+      const ol = el.querySelector(".ol"); ol.style.transform = `translateY(${-28 * E.inOutCubic(prog(t, t0 + 0.9, 1.0))}px)`;
+      el.querySelectorAll(".m").forEach((c, i) => { const s = t0 + 0.15 + i * 0.18, p = pop(t, s); setO(c, life(t, s, t1, 0.1, 0.2), `translateY(${(1 - p) * -70}px) scale(${lerp(0.94, 1, p)})`); }); },
+    cues: t0 => [0, 1, 2, 3].map(i => [t0 + 0.15 + i * 0.18, "tick", 0.8]) },
+  quiet: {
+    html: () => `<div class="ql" style="position:absolute;inset:0;display:grid;gap:14px;align-content:center">${NOV.map((r, i) => mcard(r, { cls: "q" + i })).join("")}</div>`,
+    update(t, t0, t1, el) { const dim = ease(t, t0 + 0.6, 0.35);
+      el.querySelectorAll(".m").forEach((c, i) => { const s = t0 + 0.08 + i * 0.12, p = pop(t, s, SPRING.smooth), f = i === 1, o = life(t, s, t1, 0.14, 0.2) * (f ? 1 : lerp(1, 0.28, dim));
+        const push = f ? 1 + 0.035 * dim : 1 - 0.02 * dim; setO(c, o, `translateY(${(1 - p) * 40 + (f ? 0 : (i === 0 ? -8 : 8) * dim)}px) scale(${push})`);
+        c.style.filter = !f && dim > 0.02 ? `saturate(${1 - dim * 0.8})` : "none"; c.style.boxShadow = f ? `0 ${24 * dim}px ${44 * dim}px -${26 * dim}px rgba(23,21,15,.5)` : "none"; }); },
+    cues: t0 => [[t0 + 0.6, "thump", 0.55]] },
+  picks: {
+    html: () => `<div style="position:absolute;inset:0">
+      <div style="display:flex;justify-content:flex-end"><span class="picks pk">My picks · 0 · Export .ics</span></div>
+      <div class="pl" style="display:grid;gap:12px;margin-top:16px">${PICKS.map(r => mcard(r, { star: true, h3: 30 })).join("")}</div>
+      <div class="file" style="position:absolute;left:50%;top:0"><svg width="44" height="48" viewBox="0 0 44 48"><rect x="3" y="7" width="38" height="38" rx="7" fill="none" stroke="#17150F" stroke-width="3"/><path d="M3 18 H41" stroke="#17150F" stroke-width="3"/><path d="M13 3 V11 M31 3 V11" stroke="#17150F" stroke-width="3" stroke-linecap="round"/><rect x="11" y="25" width="8" height="7" rx="2" fill="#7A4F9F"/><rect x="25" y="25" width="8" height="7" rx="2" fill="#1E8A6E"/><rect x="11" y="35" width="8" height="6" rx="2" fill="#C07A1E"/></svg>
+        <div><div class="mr" style="font-size:25px;font-weight:700">my-moments-2027.ics</div><div class="mr" style="font-size:19px;color:var(--muted);font-weight:500;margin-top:2px">3 moments · ready for any calendar</div></div></div></div>`,
+    update(t, t0, t1, el) { const pk = el.querySelector(".pk"), n = T.stars.filter(s => t >= s).length;
+      pk.textContent = `My picks · ${n} · Export .ics`; setO(pk, life(t, t0 + 0.05, t1, 0.2, 0.2) * (n ? 1 : 0.35), `scale(${(t >= T.pick && t < T.pick + 0.14 ? 0.94 : 1) * (n && T.stars.some(s => t >= s && t < s + 0.12) ? 1.05 : 1)})`);
+      el.querySelectorAll(".m").forEach((c, i) => { const s = t0 + 0.02 + i * 0.1, p = pop(t, s, SPRING.smooth); setO(c, life(t, s, t1, 0.14, 0.2), `translateY(${(1 - p) * 40}px)`);
+        const st = c.querySelector(".star"), on = t >= T.stars[i]; st.classList.toggle("on", on); const sp = on ? spring(t - T.stars[i], SPRING.tiny) : 1; st.style.transform = `scale(${on ? lerp(0.7, 1, sp) : 1})`; });
+      const f = el.querySelector(".file"), fp = t >= T.pick ? spring(t - T.pick - 0.05, BUNGEE) : 0;
+      f.style.transform = `translate(-50%,0) translate(${lerp(G.pk ? G.pk.x : 0, 0, clamp(fp))}px,${lerp(G.pk ? G.pk.y : 0, G.fileY || 0, fp)}px) scale(${lerp(0.4, 1, clamp(fp))}) rotate(${(1 - clamp(fp)) * -6}deg)`;
+      f.style.opacity = t >= T.pick + 0.05 ? Math.min(clamp(fp * 3), life(t, T.pick, t1, 0.01, 0.2)) : 0; f.style.visibility = +f.style.opacity > 0.002 ? "visible" : "hidden"; },
+    cursor: () => [[T.sec[3], 330, 360], ...T.stars.flatMap((s, i) => [[s - 0.14, "star" + i], [s, "star" + i, 1]]), [T.pick - 0.16, "pk"], [T.pick, "pk", 1], [T.pick + 0.4, "pk2"]],
+    cues: t0 => [...T.stars.map(s => [s, "click"]), [T.pick, "click"], [T.pick + 0.08, "whoosh", 0.4], [T.pick + 0.22, "chime", 0.6]] },
+  together: {
+    html: (w, h) => { const cards = [{ day: "24", sub: "Until 1 January", t: "Hanukkah", c: "Religious", q: "Eight nights of light." }, { day: "25", sub: "Saturday", t: "Christmas Day", c: "Holiday", q: "Merry Christmas." }];
+      const cw = portrait ? w : (w - 20) / 2 - 30, ch = portrait ? (h - 40) / 2 - 40 : h - 60;
+      return cards.map((r, i) => `<div class="tg" style="position:absolute;left:50%;top:50%;width:${cw}px;height:${ch}px;margin:${-ch / 2}px 0 0 ${-cw / 2}px;background:var(--card);border:2px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;--c:${CV[r.c]}">
+        <i style="display:block;height:12px;background:${CV[r.c]}"></i><div style="padding:${portrait ? "22px 34px" : "26px 30px"};display:flex;flex-direction:column;flex:1">
+        <div style="display:flex;align-items:baseline;gap:16px"><b style="font:300 ${portrait ? 110 : 120}px/0.9 'Fraunces';font-variation-settings:'opsz' 144;letter-spacing:-.05em">${r.day}</b><span class="mr" style="font-size:21px;color:var(--muted);font-weight:500">${r.sub}</span></div>
+        <h3 style="font:400 ${portrait ? 46 : 42}px/1.1 'Fraunces';font-variation-settings:'opsz' 40;margin:${portrait ? 10 : 18}px 0 12px">${r.t}</h3><div class="tags"><span class="tag c">${r.c}</span><span class="tag">Worldwide</span></div>
+        <div class="hook" style="margin-top:auto"><q>${r.q}</q><span class="cp">Copy</span></div></div></div>`).join("") +
+        `<div class="spark" style="position:absolute;left:50%;top:50%">${[0, 1, 2, 3, 4, 5].map(k => `<i style="position:absolute;left:-2px;top:-2px;width:4px;height:26px;border-radius:2px;background:${CV.Holiday};transform-origin:2px 2px"></i>`).join("")}</div>`; },
+    update(t, t0, t1, el) { const cs = el.querySelectorAll(".tg"), sl = t >= T.touch - LAND ? spring(t - (T.touch - LAND), BUNGEE) : 0;
+      const w = SCW(4), h = SCH(4), cw = portrait ? w : (w - 20) / 2 - 30, ch = portrait ? (h - 40) / 2 - 40 : h - 60;
+      cs.forEach((c, i) => { const s = t0 + 0.04 + i * 0.12, p = pop(t, s, SPRING.smooth), sg = i ? 1 : -1;
+        const apart = (portrait ? ch : cw) / 2 + 70, touch = (portrait ? ch : cw) / 2, d = lerp(apart, touch, sl) * sg;
+        setO(c, life(t, s, t1, 0.14, 0.2), portrait ? `translateY(${d + (1 - p) * 40}px)` : `translateX(${d}px) translateY(${(1 - p) * 50}px) rotate(${sg * (1 - sl) * 2.2}deg)`); });
+      const sp = el.querySelector(".spark"), k = prog(t, T.touch, 0.42), r = 14 + 46 * E.outCubic(k);
+      [...sp.children].forEach((e, i) => { const end = i < 3 ? -1 : 1, px = portrait ? end * (cw / 2 + 10) : 0, py = portrait ? 0 : end * (ch / 2 + 10);
+        const th = (portrait ? (end < 0 ? 90 : 270) : (end < 0 ? 180 : 0)) + ((i % 3) - 1) * 32;
+        e.style.transform = `translate(${px}px,${py}px) rotate(${th}deg) translateY(${r}px) scaleY(${1 - k * 0.8})`; e.style.opacity = k > 0 && k < 1 ? 1 - k : 0; }); },
+    cues: t0 => [[T.touch, "pop", 1], [T.touch, "thump", 0.4]] },
+};
+
+// ---------- Sound cues ----------
+T.d.forEach((t, i) => cue(t, "pop", i === 3 ? 1 : 0.8)); cue(T.d[3] + 0.02, "chime", 0.35);
+cue(T.sub, "thump", 0.8); for (let m = 0; m < 12; m++) cue(T.rib + m * 0.06, "tick", 0.4);
+cue(T.cnt, "whoosh", 0.6); for (let k = 0; k < 7; k++) cue(T.cnt + 0.27 + k * 0.1, "type", 0.5); cue(T.chips, "pop", 0.7); cue(T.chips + 0.15, "pop", 0.7);
+T.sec.forEach((t0, i) => { cue(t0, "whoosh", i === 2 ? 0.35 : 0.6); (SCENES[SEC[i].scene].cues(t0) || []).forEach(c => cue(c[0], c[1], c[2] ?? 1)); });
+cue(T.fin[0], "thump", 0.8); cue(T.fin[1], "pop", 0.7);
+cue(T.logo - LAND, "whoosh"); cue(T.logo, "thump"); cue(T.tick, "pop");
+
+// ---------- Measure ----------
+const L = {};
+function measure() {
+  const yr = $("year"); yr.style.fontSize = LAY.yearFs + "px"; L.yW = yr.offsetWidth; L.yH = yr.offsetHeight;
+  // Ribbon
+  const rb = $("rib"); rb.style.width = LAY.ribW + "px"; rb.style.columnGap = (wide ? 16 : 10) + "px";
+  rb.innerHTML = MONTHS.map((c, m) => `<div class="col"><div class="bars" style="height:${20 * (LAY.barH + 3)}px">${c.map(k => `<i style="height:${LAY.barH}px;background:${CV[k]}"></i>`).join("")}</div><div class="lbl" style="font-size:${LAY.lblFs}px">${MN[m]} <span>${c.length}</span></div></div>`).join("");
+  L.ribH = rb.offsetHeight;
+  $("cnt").style.fontSize = LAY.cntFs + "px"; $("cntl").style.fontSize = (wide ? 44 : 40) + "px";
+  $("kick").style.fontSize = (square ? 22 : 28) + "px";
+  for (let i = 0; i < 5; i++) {
+    const k = $("k" + i); k.textContent = SEC[i].k; k.style.fontSize = (portrait ? 34 : 28) + "px"; k.style.color = A.muted;
+    const h = $("h" + i); h.innerHTML = SEC[i].h.replace("|", square ? " " : "<br>"); h.style.textAlign = wide ? "left" : "center";
+    L.hFs = Math.min(L.hFs || 999, fit(h, LAY.hlSize, wide ? LAY.txtW : 960));
+  }
+  L.hH = 0; for (let i = 0; i < 5; i++) { $("h" + i).style.fontSize = L.hFs + "px"; L.hH = Math.max(L.hH, $("h" + i).offsetHeight); }
+  $("ms").innerHTML = MN.map(m => `<div><i></i><span>${m[0]}</span></div>`).join("");
+  for (let i = 0; i < 5; i++) { const sc = $("s" + i), d = SCENES[SEC[i].scene]; sc.style.width = SCW(i) + "px"; sc.style.height = SCH(i) + "px"; sc.innerHTML = d.html(SCW(i), SCH(i)); }
+  // Cursor targets inside the picks scene, measured before any transform is applied (offsets from scene centre)
+  const s3 = $("s3"), r0 = s3.getBoundingClientRect(), cx = r0.left + r0.width / 2, cy = r0.top + r0.height / 2;
+  const at = e => { const r = e.getBoundingClientRect(); return { x: r.left + r.width / 2 - cx, y: r.top + r.height / 2 - cy, top: r.top - cy, h: r.height }; };   // measured before any transform, so CSS px
+  s3.querySelectorAll(".star").forEach((e, i) => G["star" + i] = at(e));
+  G.pk = at(s3.querySelector(".pk")); G.pk2 = { x: G.pk.x + 60, y: G.pk.y + 160 };
+  const fl = s3.querySelector(".file"), fr = at(fl), pl = at(s3.querySelector(".pl"));
+  G.fileY = Math.min(SCH(3) - fr.h, pl.top + SCH(3) / 2 + pl.h + 24 - 0) ; G.fileY = Math.min(G.fileY, SCH(3) - fr.h + 30);
+  G.pk.y = G.pk.top + SCH(3) / 2;  G.pk.x = G.pk.x;            // file starts at the button
+  G.pkC = at(s3.querySelector(".pk"));
+  $("f1").style.fontSize = $("f2").style.fontSize = LAY.finFs + "px"; L.fFs = Math.min(fit($("f1"), LAY.finFs, wide ? 1500 : 960), fit($("f2"), LAY.finFs, wide ? 1500 : 960));
+  $("f1").style.fontSize = $("f2").style.fontSize = L.fFs + "px";
+  $("logo").style.width = LAY.logoW + "px"; fit($("endline"), portrait ? 56 : 50, wide ? 1400 : 940);
+}
+
+function cursorAt(t) {
+  const d = SCENES.picks, t0 = T.sec[3], t1 = T.sec[4] - 0.2; if (t < t0 || t > t1) return null;
+  const pts = d.cursor().map(k => { if (typeof k[1] === "string") { const g = k[1] === "pk" ? G.pkC : G[k[1]]; return [k[0], g.x, g.y, k[2]]; } return [k[0], k[1], k[2], k[3]]; });
+  const x = keyed(t, pts.map(p => [p[0], p[1]]), SPRING.soft), y = keyed(t, pts.map(p => [p[0], p[2]]), SPRING.soft);
+  const press = pts.some(p => p[3] && t >= p[0] && t < p[0] + 0.12);
+  return { x, y, s: press ? 0.85 : 1, o: life(t, t0 + 0.12, t1, 0.2, 0.18) };
+}
+
+// ---------- The film ----------
+window.seek = function (t) {
+  const cam = 1 + 0.025 * E.inOutCubic(prog(t, 0, 4)) * (1 - E.inOutCubic(prog(t, 3.7, 0.3))) + 0.02 * E.inOutCubic(prog(t, T.fin[0], T.logo - T.fin[0])) * (1 - E.inOutCubic(prog(t, T.logo - 0.4, 0.4))) + 0.04 * E.inOutCubic(prog(t, T.logo, T.end - T.logo));
+  $("cam").style.transform = `scale(${cam})`;
+  $("stage").style.background = keyedColor(t, [[0, A.paper], [T.logo - 0.6, "#F6F6F2"]], SPRING.smooth);
+  // Year: four digits slam on the beat, then the year shrinks into the masthead
+  const mk = LAY.mastFs / LAY.yearFs, mv = t >= T.cnt ? spring(t - T.cnt, SPRING.smooth) : 0;
+  const yx = lerp(0, LAY.mastX + L.yW * mk / 2, mv), yy = lerp(LAY.yearY, LAY.mastY, mv), ys = lerp(1, mk, mv);
+  const yOut = E.inCubic(prog(t, T.logo - 0.7, 0.3));
+  place($("year"), yx, yy, ys, (t >= T.d[0] ? 1 : 0) * (1 - yOut));
+  [...$("year").children].forEach((sp, i) => { const s = slam(t, T.d[i]); sp.style.transform = `translateY(${s.dy * 1.6}px) scale(${s.s})`; sp.style.opacity = s.o; sp.style.filter = s.blur > 0.05 ? `blur(${s.blur}px)` : "none"; });
+  const kx = LAY.mastX + L.yW * mk + 24, ky = LAY.mastY + LAY.mastFs * 0.1;
+  place($("kick"), kx, ky + (1 - ease(t, T.cnt + 0.3, 0.4)) * 14, 1, life(t, T.cnt + 0.3, T.logo - 0.7, 0.35, 0.3), { anchor: "l" });
+  // Sub line and ribbon
+  const ss = spring(t - T.sub, SPRING.smooth);
+  place($("sub"), 0, LAY.subY + (1 - clamp(ss)) * 40 + E.inCubic(prog(t, T.cnt - 0.3, 0.25)) * 30, 1, life(t, T.sub, T.cnt - 0.3, 0.3, 0.25));
+  const ribIn1 = t < T.cnt + 0.4, rT = ribIn1 ? T.rib : T.fin[0] + 0.2, rOut = ribIn1 ? T.cnt - 0.15 : T.logo - 0.6, rY = ribIn1 ? LAY.ribY : LAY.ribY2;
+  const rX = E.inCubic(prog(t, rOut, 0.3));
+  place($("rib"), 0, rY + rX * 60, 1, 1 - rX);
+  $("rib").querySelectorAll(".col").forEach((col, m) => { const c0 = rT + m * (ribIn1 ? 0.06 : 0.04);
+    col.querySelectorAll(".bars i").forEach((bar, k) => { const p = ease(t, c0 + k * 0.008, 0.14); bar.style.transform = `scaleX(${p})`; bar.style.opacity = p > 0 ? 0.92 : 0; });
+    const lb = col.querySelector(".lbl"); lb.style.opacity = clamp((t - c0) / 0.2); });
+  // Counter
+  const cl = life(t, T.cnt + 0.2, T.sec[0] - 0.28, 0.25, 0.25), cs = slam(t, T.cnt + 0.2, SPRING.smooth);
+  $("cnt").textContent = Math.round(160 * E.outCubic(prog(t, T.cnt + 0.25, 0.75)));
+  place($("cnt"), 0, LAY.cntY + cs.dy, cs.s * lerp(1, 0.92, E.inCubic(prog(t, T.sec[0] - 0.28, 0.25))), cl, { blur: cs.blur });
+  place($("cntl"), 0, LAY.cntY + LAY.cntLY + (1 - ease(t, T.cnt + 0.4, 0.4)) * 20, 1, life(t, T.cnt + 0.4, T.sec[0] - 0.28, 0.3, 0.25));
+  [0, 1].forEach(i => { const s0 = T.chips + i * 0.15, p = pop(t, s0); const x = wide || square ? (i ? 1 : -1) * LAY.chX : 0, y = LAY.chY + (wide || square ? 0 : i * 100);
+    place($("ch" + i), x, y + (1 - p) * 30, lerp(0.8, 1, p), life(t, s0, T.sec[0] - 0.28, 0.12, 0.25)); });
+  // Tray: one container that morphs through the five sections
+  const BX = LAY.bx, bk = i => T.sec.map((t0, j) => [t0, LAY.box[j][i]]);
+  const bw = keyed(t, bk(0)), bh = keyed(t, bk(1)), tin = t >= T.sec[0] ? spring(t - T.sec[0], SPRING.smooth) : 0, tout = E.inCubic(prog(t, T.out - 0.42, 0.34));
+  const pulse = T.sec.slice(1).reduce((m, h) => m + Math.sin(Math.PI * prog(t, h - 0.08, 0.42)) * 0.025, 0);
+  const tr = $("tray"); tr.style.width = bw + "px"; tr.style.height = bh + "px";
+  place(tr, BX + (wide ? (1 - tin) * 240 : 0), LAY.by + (wide ? 0 : (1 - tin) * 160), lerp(0.92, 1, clamp(tin)) * lerp(1, 0.9, tout) * (1 - pulse), t < T.sec[0] ? 0 : clamp(tin * 2) * (1 - tout));
+  // Section headlines, kicker and month strip
+  let si = -1; T.sec.forEach((s, i) => { if (t >= s) si = i; }); if (t >= T.out) si = -1;
+  for (let i = 0; i < 5; i++) {
+    const t0 = T.sec[i], t1 = (i < 4 ? T.sec[i + 1] : T.out) - 0.22, sl = spring(t - (t0 + 0.1), SPRING.snappy), dy = (1 - clamp(sl)) * 30;
+    const kL = life(t, t0 + 0.08, t1, 0.3, 0.2), hL = life(t, t0 + 0.12, t1, 0.35, 0.2), h = $("h" + i);
+    if (wide) { place($("k" + i), LAY.txtX, LAY.kY + dy, 1, kL, { anchor: "l" }); place(h, LAY.txtX, LAY.hY + h.offsetHeight / 2 + dy * 1.3, 1, hL, { anchor: "l" }); }
+    else { place($("k" + i), 0, LAY.kY + dy, 1, kL); place(h, 0, LAY.hY + h.offsetHeight / 2 + dy * 1.3, 1, hL); }
+    const sc = $("s" + i); SCENES[SEC[i].scene].update(t, t0, t1, sc); place(sc, BX, LAY.by, 1 - pulse * 0.5, t >= t0 - 0.01 && t < t1 + 0.25 ? 1 : 0);
+  }
+  const msY = wide ? LAY.hY + L.hH + 56 : LAY.msY;
+  place($("ms"), wide ? LAY.txtX : 0, msY, 1, life(t, T.sec[0] + 0.3, T.out - 0.3, 0.3, 0.2), { anchor: wide ? "l" : "c" });
+  [...$("ms").children].forEach((c, m) => { const on = si >= 0 && SEC[si].ms.includes(m); c.firstChild.style.background = on ? A.ink : A.line; c.lastChild.style.color = on ? A.ink : A.muted;
+    c.firstChild.style.transform = `scaleY(${on ? 1 + 0.6 * (1 - clamp(spring(t - T.sec[si] - 0.2, SPRING.tiny))) : 1})`; });
+  // Cursor
+  const cu = cursorAt(t); if (cu) place($("cursor"), BX + cu.x + 14, LAY.by + cu.y + 18, cu.s, cu.o); else place($("cursor"), 0, 0, 1, 0);
+  // Final line
+  [["f1", T.fin[0], -1], ["f2", T.fin[1], 1]].forEach(([id, t0, sg]) => { const s = slam(t, t0, SPRING.smooth), o = E.inCubic(prog(t, T.logo - 0.62, 0.3));
+    place($(id), 0, LAY.finY + sg * L.fFs * 0.5 + s.dy - o * 40, s.s, Math.min(s.o, 1 - o) * (t >= t0 ? 1 : 0), { blur: s.blur + o * 6 }); });
+  // Lockup: the cord drops the Bungee mark on the downbeat
+  const logoP = spring(t - (T.logo - LAND), BUNGEE), LW = LAY.logoW, LH = LW * 411 / 1318, ly = lerp(-HH - LH, -40, logoP);
+  let cy = -9999;
+  if (t >= T.logo - LAND && t < T.logo + 0.6) cy = ly - LH / 2;
+  if (t >= T.logo + 0.6) cy = lerp(ly - LH / 2, -HH - 320, E.inCubic(prog(t, T.logo + 0.6, 0.35)));
+  cord($("cord"), 0, cy, t >= T.logo - LAND - 0.2 ? 1 : 0);
+  place($("logo"), 0, ly, 1, t >= T.logo - LAND ? 1 : 0, { sy: 1 + 0.05 * clamp((logoP - 1) * 6, -1, 1) });
+  const tp = spring(t - T.tick, SPRING.tiny); $("tick").style.transform = `translateY(${(1 - clamp(tp)) * -60}px) scale(${lerp(0.3, 1, tp)})`; $("tick").style.opacity = clamp(tp * 3);
+  const ep = spring(t - T.endline, SPRING.smooth); place($("endline"), 0, LAY.endY + (1 - clamp(ep)) * 26, 1, clamp(ep * 1.4));
+  return true;
+};
+window.ready = Promise.all([
+  ...["300 1em Fraunces", "400 1em Fraunces", "italic 300 1em Fraunces", "italic 400 1em Fraunces", "400 1em Manrope", "500 1em Manrope", "600 1em Manrope", "700 1em Manrope", "500 1em UI"].map(f => document.fonts.load(f)),
+  ...[...document.images].map(i => i.decode())
+]).then(() => document.fonts.ready).then(() => {
+  const bad = [...document.fonts].filter(f => f.status === "error").map(f => f.family);
+  if (bad.length) throw new Error("Font files failed to load: " + bad.join(", "));
+  measure(); window.seek(0); return true;
+});
+</script>
+</body></html>

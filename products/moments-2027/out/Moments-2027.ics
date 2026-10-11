@@ -1,0 +1,1445 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bungee//Moments 2027//EN
+X-WR-CALNAME:Bungee Moments 2027
+BEGIN:VEVENT
+UID:bungee-2027-m000@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:New Year's Day
+DESCRIPTION:A Friday start\, so a long weekend almost everywhere. Fresh starts sell\, but January budgets are thin. Pair ambition with value.\nHook: New year. Same you\, better plan.\nAvoid: Resolution shaming. Anything that makes people feel behind on day one.\nRegions: Worldwide
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m001@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[EA] New Year's Day
+DESCRIPTION:Fresh start energy\, but money is tight after December. Pair aspiration with value.\nHook: Mwaka mpya\, mipango mipya.\nAvoid: Heavy party or spend big content. The December hangover is financial as much as anything.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m002@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270201
+SUMMARY:Dry January and Veganuary
+DESCRIPTION:Alcohol free\, plant based and wellness brands own the month. Retail and hospitality can play too with alternatives\, not lectures.\nHook: Thirty one days. Zero pressure.\nAvoid: Preachy tone. Mocking people who drop out mid month.\nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m003@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
+SUMMARY:[EA] Day after New Year
+DESCRIPTION:Rwanda gets a second day. Family visits and slow living content.\nHook: Another day with the people who matter.\nAvoid: \nRegions: East Africa\nMarkets: Rwanda
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m004@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270116
+SUMMARY:[EA] Back to school
+DESCRIPTION:Lunchboxes\, uniforms\, school fees stress\, the first drop off. Big for FMCG\, banks and telcos.\nHook: New term\, same hustle\, fresh start.\nAvoid: Assuming every family can afford the full list. Confirm each ministry's term dates.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Zambia\, Rwanda
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m005@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270201
+SUMMARY:[EA] Njaanuary season
+DESCRIPTION:The longest month. Brands that admit it and offer real value earn trust fast.\nHook: Njaanuary imefika. Tuko pamoja.\nAvoid: Mocking people who are broke. Laugh with them\, never at them.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Zambia\, Rwanda
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m006@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:[EA] Zanzibar Revolution Day
+DESCRIPTION:Island pride and heritage. Institutional tone works best.\nHook: Zanzibar\, tunakusherehekea.\nAvoid: Political commentary. Keep it about people and place.\nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m007@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270201
+SUMMARY:Australian Open
+DESCRIPTION:Two weeks of late night and early morning viewing across time zones. Summer in the south\, sofa season in the north.\nHook: Serve first.\nAvoid: Using tournament marks without rights.\nRegions: Asia Pacific\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m008@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Australia Day
+DESCRIPTION:A contested date for many Australians. Brands that speak should do so with care or not at all.\nHook: \nAvoid: Flag waving promotions. Read the room in Australia this year.\nRegions: Asia Pacific
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m009@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:[EA] NRM Liberation Day
+DESCRIPTION:A political anniversary. Most brands should acknowledge lightly or sit it out.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Uganda
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m010@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270128
+SUMMARY:Holocaust Remembrance Day
+DESCRIPTION:International day of remembrance. Institutional messages only.\nHook: \nAvoid: Any commercial content. Pause scheduled posts in markets where the day is observed.\nRegions: Worldwide
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m011@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[EA] Heroes' Day (Umunsi w'Intwari)
+DESCRIPTION:Honour\, sacrifice\, national values. Respectful institutional posts only.\nHook: Tribute to the heroes who built Rwanda.\nAvoid: Sales\, discounts or jokes.\nRegions: East Africa\nMarkets: Rwanda
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m012@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270301
+SUMMARY:Black History Month (US and Canada)
+DESCRIPTION:Credible only with real stories\, real creators and money behind it. Audiences check.\nHook: Celebrate the makers\, not the moment.\nAvoid: A colour swap on the logo and nothing else.\nRegions: Americas
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m013@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270301
+SUMMARY:[EA] Ncwala ceremony (Eastern Province)
+DESCRIPTION:Ngoni first fruits ceremony near Chipata. Strong heritage content for Zambian brands.\nHook: The first harvest belongs to everyone.\nAvoid: Using sacred ritual imagery as a costume. Work with the organisers.\nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m014@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270301
+SUMMARY:[EA] Zanzibar music festival season
+DESCRIPTION:The islands host one of the continent's best loved music festivals. Lifestyle\, drinks and travel brands.\nHook: Zanzibar sounds different.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m015@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270210
+SUMMARY:Carnival and Mardi Gras
+DESCRIPTION:Rio\, Salvador\, New Orleans\, Venice\, Trinidad\, Cologne. Colour\, music\, street food and joy before Lent. Mardi Gras falls on 9 February.\nHook: Five days. Zero regrets.\nAvoid: Costume as caricature. Borrowing cultural dress you do not understand.\nRegions: Americas\, Europe
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m016@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270212
+SUMMARY:Lunar New Year\, Year of the Goat
+DESCRIPTION:6 February is the day. A week of travel\, family\, red packets and gifting across East and South East Asia and the diaspora worldwide. The biggest human migration of the year.\nHook: Home is where the year begins.\nAvoid: Mixing up zodiac animals. Assuming everyone calls it Chinese New Year\; use Lunar New Year in mixed markets.\nRegions: Asia Pacific\, Worldwide
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m017@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Waitangi Day
+DESCRIPTION:New Zealand's national day. Reflective as much as celebratory.\nHook: \nAvoid: \nRegions: Asia Pacific
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m018@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270310
+SUMMARY:Ramadan
+DESCRIPTION:Expected start 8 February\, moon sighting confirms. Iftar tables\, generosity\, night time commerce and family. Nearly two billion people adjust their days.\nHook: Ramadan Kareem. The table is bigger this month.\nAvoid: Daytime food indulgence aimed at fasting audiences. Posting greetings before the official start.\nRegions: Worldwide
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m019@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270310
+SUMMARY:[EA] Ramadhan
+DESCRIPTION:Iftar tables\, generosity\, night markets on the coast. Food\, telco and banking brands lead. Moon sighting sets the exact start.\nHook: Ramadhan Kareem. Futari ni ya familia.\nAvoid: Daytime food indulgence content aimed at Muslim audiences. Never make fasting a joke.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m020@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270328
+SUMMARY:Lent
+DESCRIPTION:Ash Wednesday 10 February. Forty days of restraint for many Christians. In 2027 Lent and Ramadan overlap almost entirely\, a rare shared season of discipline.\nHook: Two fasts. One season.\nAvoid: Ignoring one faith's calendar in a mixed market.\nRegions: Worldwide
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m021@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270326
+SUMMARY:[EA] Lent (Ash Wednesday 10 Feb)
+DESCRIPTION:2027 insight: Lent and Ramadhan run almost side by side. Two faiths fasting in the same weeks is a rare unity story.\nHook: Two fasts. One season. Tuko pamoja.\nAvoid: Picking one faith's calendar and ignoring the other in the same market.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m022@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Super Bowl LXI
+DESCRIPTION:Inglewood\, California\, 14 February. The biggest advertising night in the world lands on Valentine's Day for the first time. Snacks\, beer\, betting\, streaming and the ads themselves.\nHook: Game night. Date night. Same night.\nAvoid: Using league marks or the game's name in ads without rights. Say the big game.\nRegions: Americas\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m023@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Valentine's Day
+DESCRIPTION:A Sunday inside both Lent and Ramadan\, and Super Bowl Sunday in the United States. Love for friends\, family and self works harder than candlelit clichés this year.\nHook: Love\, plural.\nAvoid: Alienating singles. Heavy indulgence aimed at fasting audiences.\nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m024@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:[EA] Valentine's Day
+DESCRIPTION:Falls on a Sunday inside both Lent and Ramadhan. Love for family\, friends and self works better than candlelit dinners this year.\nHook: Mapenzi ni vitendo.\nAvoid: Alienating singles. Pushing indulgence to fasting audiences.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m025@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270217
+SUMMARY:[EA] Archbishop Janani Luwum Day
+DESCRIPTION:Faith\, courage and conscience. Reflective tone.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Uganda
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m026@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Lantern Festival
+DESCRIPTION:Closes the Lunar New Year period. Lanterns\, sweet rice balls\, reunion.\nHook: Light the last lantern.\nAvoid: \nRegions: Asia Pacific
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m027@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270416
+SUMMARY:[EA] Kuomboka ceremony (Western Province)
+DESCRIPTION:The Litunga's royal barge moves to higher ground. Date is set by the Barotse Royal Establishment when the floods are right.\nHook: When the water rises\, a kingdom moves.\nAvoid: Announcing a date before the royal establishment does.\nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m028@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270601
+SUMMARY:[EA] Long rains
+DESCRIPTION:Comfort food\, home care\, mosquito protection\, planting season upcountry. Use the weather as creative terrain.\nHook: Mvua imefika. Tuko ndani.\nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda
+CATEGORIES:Seasonal
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m029@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:International Women's Day
+DESCRIPTION:A public holiday in many countries. Real names\, real stories\, real pay data. Audiences call out empty gestures within minutes.\nHook: Name her. Pay her. Promote her.\nAvoid: Pink filters and a stock quote.\nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m030@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:[EA] International Women's Day
+DESCRIPTION:Public holiday in Uganda and Zambia. Real stories and real names\, not slogans.\nHook: Yeye ndiye nguzo.\nAvoid: Pink filters and a generic quote. East African audiences call it out fast.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m031@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270311
+SUMMARY:Eid al Fitr
+DESCRIPTION:Expected 9 or 10 March by moon sighting. New clothes\, sweets\, family visits and gifting from Jakarta to London to Lagos. Keep two versions ready.\nHook: Eid Mubarak. Sweetness\, shared.\nAvoid: Posting a day early. Wait for the announcement in each market.\nRegions: Worldwide
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m032@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270311
+SUMMARY:[EA] Eid al Fitr
+DESCRIPTION:Public holiday. New clothes\, family lunches\, coastal celebrations. Moon sighting confirms the day\, so keep two versions ready.\nHook: Idd Mubarak. Sherehe ni ya wote.\nAvoid: Posting the greeting a day early. Wait for the official announcement.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m033@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:[EA] Youth Day
+DESCRIPTION:Young Zambians\, jobs\, ambition\, creativity. Telco and education brands.\nHook: The future is already here.\nAvoid: \nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m034@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Mothering Sunday (UK and Ireland)
+DESCRIPTION:The fourth Sunday of Lent. Flowers\, cards\, meals. Include every kind of mother and be gentle with those grieving.\nHook: For the one who showed up.\nAvoid: Assuming everyone has a mother to celebrate.\nRegions: Europe
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m035@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:St Patrick's Day
+DESCRIPTION:Ireland's day\, celebrated loudly across the diaspora. Hospitality\, drinks and green everything.\nHook: Green all day.\nAvoid: Drunk stereotypes.\nRegions: Europe\, Americas\, Worldwide
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m036@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270322
+SUMMARY:Nowruz
+DESCRIPTION:Persian New Year at the spring equinox\, celebrated across Iran\, Afghanistan\, Central Asia\, the Caucasus and the diaspora. Spring cleaning\, the Haft Sin table\, renewal.\nHook: Nowruz Mubarak. Everything new.\nAvoid: Confusing Nowruz with Lunar New Year or with Islamic holidays.\nRegions: Middle East\, Asia Pacific\, Worldwide
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m037@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:Holi
+DESCRIPTION:The festival of colours across India\, Nepal and the diaspora. Joy\, mess\, forgiveness\, spring.\nHook: Colour outside the lines.\nAvoid: Colour powder imagery on white skin only. Cast the people who actually celebrate.\nRegions: South Asia\, Worldwide
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m038@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:[EA] Good Friday
+DESCRIPTION:Start of the Easter weekend. Reflective in the morning\, road trips by afternoon.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m039@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270328
+SUMMARY:[EA] Holy Saturday
+DESCRIPTION:Zambia's four day Easter. Family and travel.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m040@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+SUMMARY:Easter Sunday
+DESCRIPTION:Western Easter. Good Friday 26 March and Easter Monday 29 March are public holidays in much of Europe\, Africa\, Australia and the Americas. Chocolate\, family lunches\, spring travel.\nHook: Something good is rising.\nAvoid: Irreverent humour on Good Friday.\nRegions: Worldwide
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m041@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270330
+SUMMARY:[EA] Easter Sunday and Easter Monday
+DESCRIPTION:Primary FMCG and hospitality window. Family lunches\, travel upcountry and to the coast.\nHook: Pasaka njema. Meza imejaa.\nAvoid: Irreverent humour on Good Friday.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m042@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:April Fools' Day
+DESCRIPTION:High engagement for fake launches with a clear reveal by noon. Best for playful brands.\nHook: We launched it. Or did we?\nAvoid: Fake health\, safety or money claims. Anything that looks like a scam.\nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m043@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[EA] April Fools' Day
+DESCRIPTION:High engagement for fake launches with a clear reveal. Best for fun FMCG brands.\nHook: We launched it. Or did we?\nAvoid: Fake health or money claims. Anything that looks like a scam.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m044@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270406
+SUMMARY:Qingming (Tomb Sweeping Day)
+DESCRIPTION:Families honour ancestors across China\, Taiwan\, Hong Kong and the diaspora. Quiet\, respectful.\nHook: \nAvoid: Promotions tied to the day.\nRegions: Asia Pacific
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m045@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:[EA] Karume Day
+DESCRIPTION:Remembers Zanzibar's first president. Institutional tone.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m046@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:[EA] Kwibuka 33 begins
+DESCRIPTION:Commemoration of the 1994 Genocide against the Tutsi. A week of mourning\, then 100 days of remembrance to 4 July. Only respectful institutional messages using the official theme.\nHook: Kwibuka 33. We remember.\nAvoid: Any promotion\, product\, humour or bright colours. Pause scheduled campaigns in Rwanda this week.\nRegions: East Africa\nMarkets: Rwanda
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m047@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270416
+SUMMARY:Songkran
+DESCRIPTION:Thai New Year water festival. Bangkok's streets become a water fight. Travel\, drinks\, sun care.\nHook: Get soaked.\nAvoid: Treating a spiritual new year as only a party.\nRegions: Asia Pacific
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m048@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:Vaisakhi
+DESCRIPTION:Sikh new year and harvest festival\, also Punjabi\, Tamil\, Bengali and other South Asian new years fall this week.\nHook: Harvest\, home\, hope.\nAvoid: \nRegions: South Asia\, Worldwide
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m049@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270504
+SUMMARY:World Snooker Championship centenary
+DESCRIPTION:Sheffield's Crucible marks 100 years. Niche but beloved in the UK\, Ireland\, China and beyond.\nHook: \nAvoid: \nRegions: Europe
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m050@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270430
+SUMMARY:Passover
+DESCRIPTION:Begins at sunset 21 April. Family seders\, matzah\, freedom stories. Late this year because 5787 is a leap year.\nHook: Next year\, together.\nAvoid: Leavened food promotions aimed at observant audiences.\nRegions: Worldwide
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m051@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:Earth Day
+DESCRIPTION:Credible only with real action to show: numbers\, suppliers\, commitments. Everything else reads as greenwash.\nHook: Show the receipts.\nAvoid: Greenwashing. A leaf on the logo.\nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m052@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:ANZAC Day
+DESCRIPTION:Remembrance in Australia and New Zealand. Dawn services. Respectful tone only.\nHook: \nAvoid: Sales tied to the day.\nRegions: Asia Pacific
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m053@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY:[EA] Union Day (Muungano)
+DESCRIPTION:63 years of Tanganyika and Zanzibar together. Unity and pride.\nHook: Muungano wetu\, fahari yetu.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m054@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
+SUMMARY:[EA] Kenneth Kaunda Day
+DESCRIPTION:Legacy\, unity\, humility. KK's white handkerchief is an iconic cue\, used with respect.\nHook: One Zambia\, One Nation.\nAvoid: Caricature.\nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m055@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270506
+SUMMARY:Golden Week (Japan)
+DESCRIPTION:A string of national holidays. Domestic travel\, leisure\, family.\nHook: Seven days of somewhere else.\nAvoid: \nRegions: Asia Pacific
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m056@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270502
+SUMMARY:NFL Draft
+DESCRIPTION:Washington DC hosts for the first time since 1940. Fandom\, hope\, merchandise.\nHook: \nAvoid: \nRegions: Americas
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m057@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:International Workers' Day
+DESCRIPTION:A Saturday. Public holiday in most of the world outside North America. Celebrate the people who make things.\nHook: Made by hands.\nAvoid: \nRegions: Worldwide
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m058@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[EA] Labour Day
+DESCRIPTION:Falls on a Saturday. Celebrate workers\, from boda riders to nurses.\nHook: Asante kwa jasho lako.\nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m059@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Orthodox Easter
+DESCRIPTION:Five weeks after Western Easter this year. Greece\, Russia\, Ukraine\, Serbia\, Ethiopia\, Egypt's Copts and the diaspora.\nHook: Christos Anesti.\nAvoid: Assuming Easter is over.\nRegions: Europe\, Middle East
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m060@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+SUMMARY:Cinco de Mayo
+DESCRIPTION:Big in the United States\, modest in Mexico. Food\, drinks\, music.\nHook: \nAvoid: Sombrero stereotypes. Confusing it with Mexican Independence Day.\nRegions: Americas
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m061@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Mother's Day (most markets)
+DESCRIPTION:Second Sunday of May in the US\, Canada\, Australia\, most of Europe\, Asia and Africa. One of the biggest gifting days of the year.\nHook: She knew first.\nAvoid: Assuming everyone has a mother to celebrate. Add a gentle line for those grieving.\nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m062@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:[EA] Mother's Day
+DESCRIPTION:Big gifting and emotion moment. Include mothers of every kind.\nHook: Mama\, asante.\nAvoid: Assuming everyone has a mother to celebrate. Add a gentle note for those grieving.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m063@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270518
+SUMMARY:Eid al Adha
+DESCRIPTION:Expected 16 or 17 May. Sacrifice\, sharing\, feeding neighbours. Public holidays across the Muslim world.\nHook: Share the blessing.\nAvoid: Posting before moon sighting confirmation.\nRegions: Worldwide
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m064@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270518
+SUMMARY:[EA] Eid al Adha
+DESCRIPTION:Sacrifice\, sharing\, feeding neighbours. Food and FMCG sharing packs.\nHook: Idd Mubarak. Shiriki baraka.\nAvoid: Posting before the official moon sighting.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m065@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270607
+SUMMARY:French Open
+DESCRIPTION:Clay season in Paris.\nHook: \nAvoid: \nRegions: Europe\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m066@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+SUMMARY:Vesak
+DESCRIPTION:Buddha Day across Sri Lanka\, Thailand\, Vietnam\, Indonesia\, Korea and beyond. Lanterns\, offerings\, kindness.\nHook: Light for everyone.\nAvoid: Buddha imagery as decor.\nRegions: Asia Pacific\, South Asia
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m067@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270526
+SUMMARY:Africa Day
+DESCRIPTION:Pan African pride across the continent and the diaspora. A public holiday in some countries.\nHook: One continent. One home.\nAvoid: \nRegions: Africa\, Worldwide
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m068@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270526
+SUMMARY:[EA] Africa Day
+DESCRIPTION:Public holiday in Zambia. Pan African pride builds naturally into the June football championship.\nHook: One continent. One home.\nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m069@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:[EA] Madaraka Day
+DESCRIPTION:64 years of self rule. Ownership\, progress\, Kenyan made.\nHook: Madaraka ni yetu.\nAvoid: \nRegions: East Africa\nMarkets: Kenya
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m070@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270701
+SUMMARY:Pride Month
+DESCRIPTION:Credible only with year round action and internal proof. Audiences track which brands go quiet in hostile markets.\nHook: Every day. Everywhere.\nAvoid: Rainbow logos in some markets and silence in others.\nRegions: Worldwide
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m071@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270604
+SUMMARY:[EA] Uganda Martyrs' Day
+DESCRIPTION:Millions walk to Namugongo\, some for weeks from Kenya\, Tanzania and Rwanda. Faith\, endurance\, hospitality along the route. Water and FMCG sampling is common and welcome.\nHook: Every step is a prayer.\nAvoid: Commercial noise inside the shrine grounds.\nRegions: East Africa\nMarkets: Uganda
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m072@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270605
+DTEND;VALUE=DATE:20270606
+SUMMARY:Champions League final
+DESCRIPTION:Madrid\, 5 June. The biggest club football night of the year.\nHook: Ninety minutes. Whole cities.\nAvoid: Using competition marks without rights.\nRegions: Europe\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m073@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270605
+DTEND;VALUE=DATE:20270606
+SUMMARY:World Environment Day
+DESCRIPTION:Real action only.\nHook: \nAvoid: Greenwashing.\nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m074@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270605
+DTEND;VALUE=DATE:20270606
+SUMMARY:[EA] World Environment Day
+DESCRIPTION:Credible only if the brand has real action to show.\nHook: \nAvoid: Greenwashing.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m075@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270609
+DTEND;VALUE=DATE:20270610
+SUMMARY:Dragon Boat Festival
+DESCRIPTION:Races\, rice dumplings\, family across China\, Hong Kong\, Taiwan\, Singapore\, Malaysia.\nHook: Row together.\nAvoid: \nRegions: Asia Pacific
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m076@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270609
+DTEND;VALUE=DATE:20270610
+SUMMARY:[EA] National Heroes' Day
+DESCRIPTION:Ordinary heroes work well: teachers\, mothers\, boda riders.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Uganda
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m077@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270616
+DTEND;VALUE=DATE:20270617
+SUMMARY:[EA] Day of the African Child
+DESCRIPTION:Children's rights\, education\, play. Kids and education brands.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m078@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270619
+DTEND;VALUE=DATE:20270620
+SUMMARY:Juneteenth
+DESCRIPTION:Freedom day in the United States. Community\, history\, Black owned business.\nHook: \nAvoid: Sales framing.\nRegions: Americas
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m079@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270619
+DTEND;VALUE=DATE:20270719
+SUMMARY:Africa Cup of Nations
+DESCRIPTION:Kenya\, Uganda and Tanzania host the continent's championship. Fan zones\, watch parties\, telco data\, food and drink across Africa and the diaspora.\nHook: The whole continent\, one screen.\nAvoid: Using the tournament's marks or name commercially without rights.\nRegions: Africa\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m080@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270619
+DTEND;VALUE=DATE:20270718
+SUMMARY:[EA] Africa's football championship comes home
+DESCRIPTION:The continental nations championship returns to East Africa for the first time since 1976\, with Kenya\, Uganda and Tanzania as the first ever triple hosts. Watch parties\, fan zones\, nyama choma\, betting\, telco data\, beer\, FMCG multipacks. Group stage 19 to 30 June\, final 17 July. Plan six months ahead.\nHook: Karibu nyumbani\, Afrika.\nAvoid: Using the tournament's official name\, logos or marks commercially without rights. Build around fans\, not the trademark.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m081@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:Father's Day (most markets)
+DESCRIPTION:Third Sunday of June in the US\, UK\, Canada\, France\, India\, Japan\, most of Africa. Lands inside the Women's World Cup and the Africa Cup of Nations.\nHook: Dad\, the match is yours.\nAvoid: \nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m082@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:[EA] Father's Day
+DESCRIPTION:Lands inside the championship group stage. Dads\, football and food in one frame.\nHook: Baba\, mechi ni yako leo.\nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m083@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+SUMMARY:Summer solstice and International Yoga Day
+DESCRIPTION:Longest day in the north\, shortest in the south. Wellness\, outdoor\, travel.\nHook: Longest light.\nAvoid: \nRegions: Worldwide
+CATEGORIES:Seasonal
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m084@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270624
+DTEND;VALUE=DATE:20270726
+SUMMARY:FIFA Women's World Cup
+DESCRIPTION:Brazil hosts\, the first time in South America. 32 teams\, eight cities\, final at the Maracanã on 25 July. The fastest growing audience in sport.\nHook: Watch her win.\nAvoid: Using tournament marks without rights. Treating it as the small version of the men's game.\nRegions: Americas\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m085@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:[EA] Anniversary of the 2024 protests
+DESCRIPTION:A painful date for many young Kenyans. Most brands should stay quiet and pause cheerful posts.\nHook: \nAvoid: Promotional content\, jokes or borrowing protest imagery.\nRegions: East Africa\nMarkets: Kenya
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m086@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270628
+DTEND;VALUE=DATE:20270712
+SUMMARY:Wimbledon
+DESCRIPTION:Strawberries\, queues\, rain delays and the most prestigious fortnight in tennis.\nHook: Quiet\, please.\nAvoid: \nRegions: Europe\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m087@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:Canada Day
+DESCRIPTION:National day. Summer\, fireworks\, cottages.\nHook: \nAvoid: \nRegions: Americas
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m088@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:[EA] Independence Day
+DESCRIPTION:65 years. Institutional and proud.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Rwanda
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m089@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270801
+SUMMARY:[EA] Umutomboko ceremony (Luapula)
+DESCRIPTION:Lunda victory dance at Mwansabombwe. Heritage content.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m090@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270801
+SUMMARY:[EA] Zanzibar film festival season
+DESCRIPTION:Film\, art and travel audiences.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m091@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270726
+SUMMARY:Tour de France
+DESCRIPTION:Grand Départ from Edinburgh\, then three weeks through France. Endurance\, scenery\, breakfast television.\nHook: Every hill counts.\nAvoid: \nRegions: Europe\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m092@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270704
+DTEND;VALUE=DATE:20270705
+SUMMARY:Independence Day (US)
+DESCRIPTION:A Sunday\, so Monday off. Grills\, fireworks\, summer's peak retail weekend.\nHook: Light it up.\nAvoid: \nRegions: Americas
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m093@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270704
+DTEND;VALUE=DATE:20270706
+SUMMARY:[EA] Liberation Day (Kwibohora 33)
+DESCRIPTION:Ends the Kwibuka period. Renewal\, progress\, a rebuilt nation. Falls on a Sunday\, so Monday is likely off.\nHook: Kwibohora 33.\nAvoid: \nRegions: East Africa\nMarkets: Rwanda
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m094@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270705
+DTEND;VALUE=DATE:20270707
+SUMMARY:[EA] Heroes' Day and Unity Day
+DESCRIPTION:Long weekend. Remembrance then togetherness.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m095@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270707
+DTEND;VALUE=DATE:20270708
+SUMMARY:[EA] Saba Saba (Dar es Salaam International Trade Fair)
+DESCRIPTION:Tanzania's biggest trade fair. Prime activation ground for FMCG\, banks and telcos.\nHook: Twende Sabasaba.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m096@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270707
+DTEND;VALUE=DATE:20270708
+SUMMARY:[EA] Saba Saba (Kenya)
+DESCRIPTION:Kenya marks it as a day of pro democracy protests. Tone down in Kenya even while Tanzania celebrates.\nHook: \nAvoid: Cross posting Tanzanian trade fair content to Kenyan audiences.\nRegions: East Africa\nMarkets: Kenya
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m097@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270714
+DTEND;VALUE=DATE:20270715
+SUMMARY:Bastille Day
+DESCRIPTION:France's national day.\nHook: \nAvoid: \nRegions: Europe
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m098@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270719
+SUMMARY:The Open Championship
+DESCRIPTION:Golf's oldest major returns to St Andrews.\nHook: \nAvoid: \nRegions: Europe\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m099@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270722
+DTEND;VALUE=DATE:20270809
+SUMMARY:Pan American Games
+DESCRIPTION:Lima\, Peru. Regional multi sport\, big in Latin America.\nHook: \nAvoid: \nRegions: Americas
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m100@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270729
+DTEND;VALUE=DATE:20270803
+SUMMARY:[EA] Zambia Agricultural and Commercial Show
+DESCRIPTION:Lusaka's big showground week around Farmers' Day. Activations and B2B.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m101@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270801
+DTEND;VALUE=DATE:20270916
+SUMMARY:Back to school (northern hemisphere)
+DESCRIPTION:The second biggest retail season after the festive period in the US and Europe. Stationery\, tech\, uniforms\, lunchboxes.\nHook: New term. Fresh page.\nAvoid: Assuming every family can afford the full list.\nRegions: Americas\, Europe
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m102@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270801
+DTEND;VALUE=DATE:20270901
+SUMMARY:[EA] Likumbi Lya Mize (North Western)
+DESCRIPTION:Luvale ceremony famous for makishi masquerades.\nHook: \nAvoid: Using masks as decoration. They carry deep meaning.\nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m103@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270802
+DTEND;VALUE=DATE:20270803
+SUMMARY:[EA] Farmers' Day
+DESCRIPTION:Farmers as heroes. Agri\, banking and FMCG.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m104@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270806
+DTEND;VALUE=DATE:20270807
+SUMMARY:[EA] Umuganura Day
+DESCRIPTION:National harvest thanksgiving. Sharing\, family\, first fruits.\nHook: Umuganura mwiza.\nAvoid: \nRegions: East Africa\nMarkets: Rwanda
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m105@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270808
+DTEND;VALUE=DATE:20270809
+SUMMARY:[EA] Nane Nane (Farmers' Day)
+DESCRIPTION:Agricultural shows across regions. Agri\, seeds\, finance\, telco.\nHook: Mkulima ni shujaa.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m106@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270810
+DTEND;VALUE=DATE:20270811
+SUMMARY:[EA] Kenya General Election
+DESCRIPTION:Expect a public holiday and a tense few weeks either side. Messages of peace only if the brand has earned the right. Many brands pause paid social from late July.\nHook: Kura yako\, sauti yako. Amani kwanza.\nAvoid: Party colours (yellow\, orange and others)\, candidate lookalikes\, political jokes\, anything that reads as taking sides.\nRegions: East Africa\nMarkets: Kenya
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m107@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270813
+DTEND;VALUE=DATE:20270817
+SUMMARY:Obon
+DESCRIPTION:Japan honours ancestors. Travel home\, lanterns\, dance.\nHook: \nAvoid: \nRegions: Asia Pacific
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m108@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:Assumption Day
+DESCRIPTION:Public holiday in France\, Italy\, Spain\, Poland\, much of Latin America. Peak European holiday week.\nHook: \nAvoid: \nRegions: Europe\, Americas
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m109@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:India Independence Day
+DESCRIPTION:Tricolour pride. Institutional tone.\nHook: \nAvoid: \nRegions: South Asia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m110@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:[EA] Assumption Day
+DESCRIPTION:Catholic holiday. Family and faith.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Rwanda
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m111@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:[EA] Maulid (Prophet's Birthday)
+DESCRIPTION:Public holiday in Tanzania. Lamu and the Kenyan coast hold famous Maulid celebrations.\nHook: Maulid njema.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania\, Kenya
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m112@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20271001
+SUMMARY:[EA] Kwita Izina (gorilla naming)
+DESCRIPTION:Conservation and tourism pride. Travel\, hospitality and eco brands.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Rwanda
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m113@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
+SUMMARY:Ganesh Chaturthi
+DESCRIPTION:Ten days of processions and sweets in Maharashtra and beyond.\nHook: \nAvoid: \nRegions: South Asia
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m114@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+SUMMARY:September 11 anniversary
+DESCRIPTION:Remembrance in the United States. Most brands should go quiet.\nHook: \nAvoid: Any promotional content in the US.\nRegions: Americas\, Worldwide
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m115@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:Mid Autumn Festival and Chuseok
+DESCRIPTION:Mooncakes\, lanterns and family reunions across China\, Vietnam\, Korea (Chuseok\, 14 to 16 September)\, Singapore and Malaysia. Premium gifting season.\nHook: Under the same moon.\nAvoid: Generic mooncake packaging. This is a premium design moment.\nRegions: Asia Pacific
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m116@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20271016
+SUMMARY:Hispanic Heritage Month (US)
+DESCRIPTION:Real creators\, real stories\, real spend.\nHook: \nAvoid: A translated tagline and nothing else.\nRegions: Americas
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m117@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270916
+DTEND;VALUE=DATE:20270917
+SUMMARY:Mexican Independence Day
+DESCRIPTION:El Grito. The real national day\, not 5 May.\nHook: Viva.\nAvoid: \nRegions: Americas
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m118@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270918
+DTEND;VALUE=DATE:20271004
+SUMMARY:Oktoberfest
+DESCRIPTION:Munich\, plus copies worldwide. Beer\, pretzels\, brass bands.\nHook: Prost.\nAvoid: Drink responsibly messaging is part of the brief\, not an afterthought.\nRegions: Europe\, Worldwide
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m119@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271002
+SUMMARY:Nigeria Independence Day
+DESCRIPTION:Africa's largest market celebrates.\nHook: Naija\, forward.\nAvoid: \nRegions: Africa
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m120@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271008
+SUMMARY:Golden Week (China)
+DESCRIPTION:National Day holiday. Hundreds of millions travel. Tourism\, retail\, luxury.\nHook: Seven days\, one country on the move.\nAvoid: \nRegions: Asia Pacific
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m121@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271114
+SUMMARY:Men's Rugby World Cup
+DESCRIPTION:Australia hosts 24 teams for the first time. Six weeks of rugby across seven cities.\nHook: Go all out.\nAvoid: Using tournament marks without rights.\nRegions: Asia Pacific\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m122@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271004
+SUMMARY:Rosh Hashanah
+DESCRIPTION:Jewish New Year begins at sunset 1 October. Apples\, honey\, reflection. Late this year.\nHook: Sweet year ahead.\nAvoid: Promotional content aimed at observant audiences on the holy days.\nRegions: Worldwide
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m123@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271201
+SUMMARY:[EA] KCSE exams\, final ever sitting
+DESCRIPTION:2027 is expected to be the last KCSE. A once only moment: the final class. Education\, telco\, FMCG goodwill.\nHook: The last class. Make it count.\nAvoid: Adding exam pressure. Confirm dates with KNEC.\nRegions: East Africa\nMarkets: Kenya
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m124@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271216
+SUMMARY:[EA] Short rains
+DESCRIPTION:Second planting\, comfort food\, home care.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania
+CATEGORIES:Seasonal
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m125@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271004
+DTEND;VALUE=DATE:20271122
+SUMMARY:Men's Cricket World Cup
+DESCRIPTION:South Africa\, Zimbabwe and Namibia host. Huge in South Asia\, the UK\, Australia and the diaspora.\nHook: Seven weeks of cricket.\nAvoid: Using tournament marks without rights.\nRegions: Africa\, South Asia\, Worldwide
+CATEGORIES:Sport
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m126@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271006
+DTEND;VALUE=DATE:20271011
+SUMMARY:Durga Puja and Dussehra
+DESCRIPTION:Pandals in Kolkata\, Navratri dance in Gujarat\, Dussehra effigies. Ten days of festival across India.\nHook: \nAvoid: \nRegions: South Asia
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m127@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271009
+DTEND;VALUE=DATE:20271010
+SUMMARY:[EA] Independence Day
+DESCRIPTION:65 years of independence. National pride\, black\, yellow and red\, the crested crane.\nHook: For God and My Country.\nAvoid: \nRegions: East Africa\nMarkets: Uganda
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m128@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271010
+DTEND;VALUE=DATE:20271011
+SUMMARY:World Mental Health Day
+DESCRIPTION:Credible only with real support: benefits\, resources\, honest conversation.\nHook: Say it out loud.\nAvoid: Wellness platitudes.\nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m129@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271010
+DTEND;VALUE=DATE:20271012
+SUMMARY:Yom Kippur
+DESCRIPTION:Begins at sunset 10 October. The holiest day of the Jewish year\, a full fast.\nHook: \nAvoid: Anything commercial.\nRegions: Worldwide
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m130@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271010
+DTEND;VALUE=DATE:20271012
+SUMMARY:[EA] Mazingira Day
+DESCRIPTION:Tree planting and clean ups. Falls on a Sunday\, Monday off. Only credible with real action.\nHook: Panda mti\, panda kesho.\nAvoid: Greenwashing.\nRegions: East Africa\nMarkets: Kenya
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m131@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271014
+DTEND;VALUE=DATE:20271015
+SUMMARY:[EA] Nyerere Day
+DESCRIPTION:Mwalimu's legacy\, education\, humility. Reflective tone.\nHook: Mwalimu\, tunakuenzi.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m132@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271018
+DTEND;VALUE=DATE:20271019
+SUMMARY:[EA] National Day of Prayer
+DESCRIPTION:Prayer\, fasting and reconciliation. Respectful tone only.\nHook: \nAvoid: Promotions.\nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m133@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271020
+DTEND;VALUE=DATE:20271021
+SUMMARY:[EA] Mashujaa Day
+DESCRIPTION:Heroes old and new. Everyday heroes land best. First big national day after the election\, so unity matters.\nHook: Shujaa ni wewe.\nAvoid: \nRegions: East Africa\nMarkets: Kenya
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m134@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271024
+DTEND;VALUE=DATE:20271026
+SUMMARY:[EA] Independence Day
+DESCRIPTION:63 years. Copper\, green and orange\, the eagle. Sunday\, Monday off.\nHook: One Zambia\, One Nation.\nAvoid: \nRegions: East Africa\nMarkets: Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m135@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271027
+DTEND;VALUE=DATE:20271101
+SUMMARY:Diwali
+DESCRIPTION:Dhanteras 27 October\, Diwali 29 October. Lights\, sweets\, gold\, gifting across India\, Nepal\, Sri Lanka\, Singapore\, the UK\, the Gulf and the diaspora. India's biggest retail season.\nHook: Light wins.\nAvoid: Firework noise complaints in the copy. Generic diya clip art.\nRegions: South Asia\, Worldwide
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m136@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:[EA] Anniversary of the 2025 election
+DESCRIPTION:A difficult date for many Tanzanians. Keep brand content low key.\nHook: \nAvoid: Political references or celebratory posts.\nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m137@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:[EA] Diwali
+DESCRIPTION:Strong in the South Asian communities of Nairobi\, Mombasa\, Kampala and Dar. Food\, gifting\, gold.\nHook: Happy Diwali.\nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Tanzania\, Uganda
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m138@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271031
+DTEND;VALUE=DATE:20271101
+SUMMARY:Halloween
+DESCRIPTION:A Sunday. Costumes\, sweets\, horror streaming. Growing fast outside the US.\nHook: Scary good.\nAvoid: \nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m139@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271103
+SUMMARY:Día de los Muertos
+DESCRIPTION:Mexico and the diaspora honour the dead with ofrendas\, marigolds and food. Deeply meaningful\, often commercialised badly.\nHook: Remember them loudly.\nAvoid: Sugar skull face paint as a costume.\nRegions: Americas
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m140@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271201
+SUMMARY:Movember
+DESCRIPTION:Men's health\, moustaches\, fundraising.\nHook: Grow something good.\nAvoid: \nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m141@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271201
+SUMMARY:[EA] Lamu Cultural Festival
+DESCRIPTION:Dhow races\, donkey races\, Swahili heritage. Travel and lifestyle.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Kenya
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m142@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271111
+DTEND;VALUE=DATE:20271112
+SUMMARY:Remembrance and Veterans Day
+DESCRIPTION:Poppies in the Commonwealth\, Veterans Day in the US\, Armistice in France. Respect only.\nHook: \nAvoid: Sales.\nRegions: Europe\, Americas
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m143@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271111
+DTEND;VALUE=DATE:20271112
+SUMMARY:Singles' Day
+DESCRIPTION:The largest shopping day on earth\, centred on China and spreading across South East Asia.\nHook: Treat yourself. Nobody's watching.\nAvoid: \nRegions: Asia Pacific\, Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m144@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271125
+DTEND;VALUE=DATE:20271126
+SUMMARY:Thanksgiving (US)
+DESCRIPTION:Family tables and the start of the festive retail season.\nHook: Pass it down.\nAvoid: \nRegions: Americas
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m145@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271126
+DTEND;VALUE=DATE:20271127
+SUMMARY:[EA] Black Friday
+DESCRIPTION:Now a full week in Nairobi and Kampala e-commerce. Real discounts only.\nHook: \nAvoid: Fake discounts. Audiences screenshot the before price.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m146@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271126
+DTEND;VALUE=DATE:20271130
+SUMMARY:Black Friday to Cyber Monday
+DESCRIPTION:Now a week long in most markets. Real discounts only\, audiences screenshot the before price.\nHook: Real price. Real drop.\nAvoid: Fake discounts.\nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m147@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271201
+DTEND;VALUE=DATE:20271202
+SUMMARY:World AIDS Day
+DESCRIPTION:Awareness and solidarity. Institutional and health brands.\nHook: \nAvoid: Casual tone.\nRegions: Worldwide
+CATEGORIES:Sensitive
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m148@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271201
+DTEND;VALUE=DATE:20271225
+SUMMARY:Festive season
+DESCRIPTION:Gifting\, travel home\, parties\, year end bonuses. Peak for retail\, travel\, food and drink worldwide.\nHook: Home for it.\nAvoid: Assuming everyone celebrates Christmas\, travels\, or has family to go home to.\nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m149@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271201
+DTEND;VALUE=DATE:20271225
+SUMMARY:[EA] Festive season and the trip upcountry
+DESCRIPTION:Bonuses\, shopping lists\, buses to shags\, homecoming. Peak for FMCG\, telco\, mobile money\, travel.\nHook: Ocha season imeanza.\nAvoid: Assuming everyone travels or has family to go home to.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m150@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271209
+DTEND;VALUE=DATE:20271210
+SUMMARY:[EA] Independence Day (Uhuru)
+DESCRIPTION:66 years. Freedom and unity.\nHook: Uhuru na Umoja.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m151@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271212
+DTEND;VALUE=DATE:20271214
+SUMMARY:[EA] Jamhuri Day
+DESCRIPTION:64 years of independence. Sunday\, Monday likely off. Pride meets festive spend.\nHook: Kenya ni yetu.\nAvoid: \nRegions: East Africa\nMarkets: Kenya
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m152@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271221
+DTEND;VALUE=DATE:20271222
+SUMMARY:Winter solstice and Dongzhi
+DESCRIPTION:Shortest day in the north\, midsummer in the south. Dongzhi dumplings in East Asia.\nHook: Longest night. Warmest table.\nAvoid: \nRegions: Worldwide
+CATEGORIES:Seasonal
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m153@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271224
+DTEND;VALUE=DATE:20280102
+SUMMARY:Hanukkah
+DESCRIPTION:Eight nights beginning at sunset 24 December\, overlapping Christmas this year.\nHook: Eight nights of light.\nAvoid: \nRegions: Worldwide
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m154@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+SUMMARY:Christmas Day
+DESCRIPTION:A Saturday. Family\, faith\, food and generosity in most of the world\; an ordinary day in some markets.\nHook: Merry Christmas.\nAvoid: \nRegions: Worldwide
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m155@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+SUMMARY:[EA] Christmas Day
+DESCRIPTION:Falls on a Saturday. Family feasts\, church\, generosity.\nHook: Krismasi njema.\nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m156@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271228
+SUMMARY:Boxing Day and Kwanzaa
+DESCRIPTION:Sales in the Commonwealth\, Kwanzaa begins in the US\, the second Christmas day in Europe. Monday off in many markets.\nHook: \nAvoid: \nRegions: Europe\, Africa\, Asia Pacific\, Americas
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m157@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271228
+SUMMARY:[EA] Boxing Day
+DESCRIPTION:Sunday this year\, so Monday is likely off in several markets. Leftovers\, rest\, visiting.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda
+CATEGORIES:Holiday
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m158@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+SUMMARY:New Year's Eve
+DESCRIPTION:A Friday. Countdowns\, parties\, resolutions. Drink responsibly messaging matters.\nHook: Countdown together.\nAvoid: \nRegions: Worldwide
+CATEGORIES:Commercial
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m159@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+SUMMARY:[EA] New Year's Eve
+DESCRIPTION:Crossover services\, parties\, countdowns. Drink responsibly messaging matters.\nHook: Tuvuke pamoja.\nAvoid: \nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Rwanda\, Zambia
+CATEGORIES:Commercial
+END:VEVENT
+END:VCALENDAR

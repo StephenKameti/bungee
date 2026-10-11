@@ -1,0 +1,13 @@
+dist/
+node_modules/
+.env
+.env.*
+films/*/out/
+films/*/review/*
+!films/*/review/REVIEW_LOG.md
+films/*/cues.json
+films/*/timeline.json
+films/*/audio/sfx_*
+films/*/audio/mix_*
+.DS_Store
+__pycache__/

@@ -1,0 +1,1049 @@
+{
+ "edition": 2027,
+ "markets": [
+  "KE",
+  "UG",
+  "TZ",
+  "RW",
+  "ZM"
+ ],
+ "moments": [
+  {
+   "start": "2027-01-01",
+   "end": "2027-01-01",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "New Year's Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Fresh start energy, but money is tight after December. Pair aspiration with value.",
+   "hook": "Mwaka mpya, mipango mipya.",
+   "avoid": "Heavy party or spend big content. The December hangover is financial as much as anything."
+  },
+  {
+   "start": "2027-01-02",
+   "end": "2027-01-02",
+   "countries": [
+    "RW"
+   ],
+   "title": "Day after New Year",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Rwanda gets a second day. Family visits and slow living content.",
+   "hook": "Another day with the people who matter.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-01-04",
+   "end": "2027-01-31",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "ZM",
+    "RW"
+   ],
+   "title": "Njaanuary season",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "The longest month. Brands that admit it and offer real value earn trust fast.",
+   "hook": "Njaanuary imefika. Tuko pamoja.",
+   "avoid": "Mocking people who are broke. Laugh with them, never at them."
+  },
+  {
+   "start": "2027-01-04",
+   "end": "2027-01-15",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "ZM",
+    "RW"
+   ],
+   "title": "Back to school",
+   "category": "Commercial",
+   "date_status": "confirm",
+   "angle": "Lunchboxes, uniforms, school fees stress, the first drop off. Big for FMCG, banks and telcos.",
+   "hook": "New term, same hustle, fresh start.",
+   "avoid": "Assuming every family can afford the full list. Confirm each ministry's term dates."
+  },
+  {
+   "start": "2027-01-12",
+   "end": "2027-01-12",
+   "countries": [
+    "TZ"
+   ],
+   "title": "Zanzibar Revolution Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Island pride and heritage. Institutional tone works best.",
+   "hook": "Zanzibar, tunakusherehekea.",
+   "avoid": "Political commentary. Keep it about people and place."
+  },
+  {
+   "start": "2027-01-26",
+   "end": "2027-01-26",
+   "countries": [
+    "UG"
+   ],
+   "title": "NRM Liberation Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "A political anniversary. Most brands should acknowledge lightly or sit it out.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-02-01",
+   "end": "2027-02-01",
+   "countries": [
+    "RW"
+   ],
+   "title": "Heroes' Day (Umunsi w'Intwari)",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Honour, sacrifice, national values. Respectful institutional posts only.",
+   "hook": "Tribute to the heroes who built Rwanda.",
+   "avoid": "Sales, discounts or jokes."
+  },
+  {
+   "start": "2027-02-08",
+   "end": "2027-03-09",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Ramadhan",
+   "category": "Religious",
+   "date_status": "expected",
+   "angle": "Iftar tables, generosity, night markets on the coast. Food, telco and banking brands lead. Moon sighting sets the exact start.",
+   "hook": "Ramadhan Kareem. Futari ni ya familia.",
+   "avoid": "Daytime food indulgence content aimed at Muslim audiences. Never make fasting a joke."
+  },
+  {
+   "start": "2027-02-10",
+   "end": "2027-03-25",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Lent (Ash Wednesday 10 Feb)",
+   "category": "Religious",
+   "date_status": "fixed",
+   "angle": "2027 insight: Lent and Ramadhan run almost side by side. Two faiths fasting in the same weeks is a rare unity story.",
+   "hook": "Two fasts. One season. Tuko pamoja.",
+   "avoid": "Picking one faith's calendar and ignoring the other in the same market."
+  },
+  {
+   "start": "2027-02-14",
+   "end": "2027-02-14",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Valentine's Day",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "Falls on a Sunday inside both Lent and Ramadhan. Love for family, friends and self works better than candlelit dinners this year.",
+   "hook": "Mapenzi ni vitendo.",
+   "avoid": "Alienating singles. Pushing indulgence to fasting audiences."
+  },
+  {
+   "start": "2027-02-16",
+   "end": "2027-02-16",
+   "countries": [
+    "UG"
+   ],
+   "title": "Archbishop Janani Luwum Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Faith, courage and conscience. Reflective tone.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-02-01",
+   "end": "2027-02-28",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Ncwala ceremony (Eastern Province)",
+   "category": "Cultural",
+   "date_status": "confirm",
+   "angle": "Ngoni first fruits ceremony near Chipata. Strong heritage content for Zambian brands.",
+   "hook": "The first harvest belongs to everyone.",
+   "avoid": "Using sacred ritual imagery as a costume. Work with the organisers."
+  },
+  {
+   "start": "2027-02-01",
+   "end": "2027-02-28",
+   "countries": [
+    "TZ"
+   ],
+   "title": "Zanzibar music festival season",
+   "category": "Cultural",
+   "date_status": "confirm",
+   "angle": "The islands host one of the continent's best loved music festivals. Lifestyle, drinks and travel brands.",
+   "hook": "Zanzibar sounds different.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-03-08",
+   "end": "2027-03-08",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "International Women's Day",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "Public holiday in Uganda and Zambia. Real stories and real names, not slogans.",
+   "hook": "Yeye ndiye nguzo.",
+   "avoid": "Pink filters and a generic quote. East African audiences call it out fast."
+  },
+  {
+   "start": "2027-03-09",
+   "end": "2027-03-10",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW"
+   ],
+   "title": "Eid al Fitr",
+   "category": "Religious",
+   "date_status": "expected",
+   "angle": "Public holiday. New clothes, family lunches, coastal celebrations. Moon sighting confirms the day, so keep two versions ready.",
+   "hook": "Idd Mubarak. Sherehe ni ya wote.",
+   "avoid": "Posting the greeting a day early. Wait for the official announcement."
+  },
+  {
+   "start": "2027-03-12",
+   "end": "2027-03-12",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Youth Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Young Zambians, jobs, ambition, creativity. Telco and education brands.",
+   "hook": "The future is already here.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-03-01",
+   "end": "2027-05-31",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW"
+   ],
+   "title": "Long rains",
+   "category": "Seasonal",
+   "date_status": "fixed",
+   "angle": "Comfort food, home care, mosquito protection, planting season upcountry. Use the weather as creative terrain.",
+   "hook": "Mvua imefika. Tuko ndani.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-03-01",
+   "end": "2027-04-15",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Kuomboka ceremony (Western Province)",
+   "category": "Cultural",
+   "date_status": "confirm",
+   "angle": "The Litunga's royal barge moves to higher ground. Date is set by the Barotse Royal Establishment when the floods are right.",
+   "hook": "When the water rises, a kingdom moves.",
+   "avoid": "Announcing a date before the royal establishment does."
+  },
+  {
+   "start": "2027-03-26",
+   "end": "2027-03-26",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Good Friday",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Start of the Easter weekend. Reflective in the morning, road trips by afternoon.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-03-27",
+   "end": "2027-03-27",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Holy Saturday",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Zambia's four day Easter. Family and travel.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-03-28",
+   "end": "2027-03-29",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Easter Sunday and Easter Monday",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Primary FMCG and hospitality window. Family lunches, travel upcountry and to the coast.",
+   "hook": "Pasaka njema. Meza imejaa.",
+   "avoid": "Irreverent humour on Good Friday."
+  },
+  {
+   "start": "2027-04-01",
+   "end": "2027-04-01",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "April Fools' Day",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "High engagement for fake launches with a clear reveal. Best for fun FMCG brands.",
+   "hook": "We launched it. Or did we?",
+   "avoid": "Fake health or money claims. Anything that looks like a scam."
+  },
+  {
+   "start": "2027-04-07",
+   "end": "2027-04-07",
+   "countries": [
+    "RW"
+   ],
+   "title": "Kwibuka 33 begins",
+   "category": "Sensitive",
+   "date_status": "fixed",
+   "angle": "Commemoration of the 1994 Genocide against the Tutsi. A week of mourning, then 100 days of remembrance to 4 July. Only respectful institutional messages using the official theme.",
+   "hook": "Kwibuka 33. We remember.",
+   "avoid": "Any promotion, product, humour or bright colours. Pause scheduled campaigns in Rwanda this week."
+  },
+  {
+   "start": "2027-04-07",
+   "end": "2027-04-07",
+   "countries": [
+    "TZ"
+   ],
+   "title": "Karume Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Remembers Zanzibar's first president. Institutional tone.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-04-26",
+   "end": "2027-04-26",
+   "countries": [
+    "TZ"
+   ],
+   "title": "Union Day (Muungano)",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "63 years of Tanganyika and Zanzibar together. Unity and pride.",
+   "hook": "Muungano wetu, fahari yetu.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-04-28",
+   "end": "2027-04-28",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Kenneth Kaunda Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Legacy, unity, humility. KK's white handkerchief is an iconic cue, used with respect.",
+   "hook": "One Zambia, One Nation.",
+   "avoid": "Caricature."
+  },
+  {
+   "start": "2027-05-01",
+   "end": "2027-05-01",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Labour Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Falls on a Saturday. Celebrate workers, from boda riders to nurses.",
+   "hook": "Asante kwa jasho lako.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-05-09",
+   "end": "2027-05-09",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Mother's Day",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "Big gifting and emotion moment. Include mothers of every kind.",
+   "hook": "Mama, asante.",
+   "avoid": "Assuming everyone has a mother to celebrate. Add a gentle note for those grieving."
+  },
+  {
+   "start": "2027-05-16",
+   "end": "2027-05-17",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW"
+   ],
+   "title": "Eid al Adha",
+   "category": "Religious",
+   "date_status": "expected",
+   "angle": "Sacrifice, sharing, feeding neighbours. Food and FMCG sharing packs.",
+   "hook": "Idd Mubarak. Shiriki baraka.",
+   "avoid": "Posting before the official moon sighting."
+  },
+  {
+   "start": "2027-05-25",
+   "end": "2027-05-25",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Africa Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Public holiday in Zambia. Pan African pride builds naturally into the June football championship.",
+   "hook": "One continent. One home.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-06-01",
+   "end": "2027-06-01",
+   "countries": [
+    "KE"
+   ],
+   "title": "Madaraka Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "64 years of self rule. Ownership, progress, Kenyan made.",
+   "hook": "Madaraka ni yetu.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-06-03",
+   "end": "2027-06-03",
+   "countries": [
+    "UG"
+   ],
+   "title": "Uganda Martyrs' Day",
+   "category": "Religious",
+   "date_status": "fixed",
+   "angle": "Millions walk to Namugongo, some for weeks from Kenya, Tanzania and Rwanda. Faith, endurance, hospitality along the route. Water and FMCG sampling is common and welcome.",
+   "hook": "Every step is a prayer.",
+   "avoid": "Commercial noise inside the shrine grounds."
+  },
+  {
+   "start": "2027-06-05",
+   "end": "2027-06-05",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "World Environment Day",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "Credible only if the brand has real action to show.",
+   "hook": "",
+   "avoid": "Greenwashing."
+  },
+  {
+   "start": "2027-06-09",
+   "end": "2027-06-09",
+   "countries": [
+    "UG"
+   ],
+   "title": "National Heroes' Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Ordinary heroes work well: teachers, mothers, boda riders.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-06-16",
+   "end": "2027-06-16",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Day of the African Child",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "Children's rights, education, play. Kids and education brands.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-06-19",
+   "end": "2027-07-17",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Africa's football championship comes home",
+   "category": "Sport",
+   "date_status": "fixed",
+   "angle": "The continental nations championship returns to East Africa for the first time since 1976, with Kenya, Uganda and Tanzania as the first ever triple hosts. Watch parties, fan zones, nyama choma, betting, telco data, beer, FMCG multipacks. Group stage 19 to 30 June, final 17 July. Plan six months ahead.",
+   "hook": "Karibu nyumbani, Afrika.",
+   "avoid": "Using the tournament's official name, logos or marks commercially without rights. Build around fans, not the trademark."
+  },
+  {
+   "start": "2027-06-20",
+   "end": "2027-06-20",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Father's Day",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "Lands inside the championship group stage. Dads, football and food in one frame.",
+   "hook": "Baba, mechi ni yako leo.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-06-25",
+   "end": "2027-06-25",
+   "countries": [
+    "KE"
+   ],
+   "title": "Anniversary of the 2024 protests",
+   "category": "Sensitive",
+   "date_status": "fixed",
+   "angle": "A painful date for many young Kenyans. Most brands should stay quiet and pause cheerful posts.",
+   "hook": "",
+   "avoid": "Promotional content, jokes or borrowing protest imagery."
+  },
+  {
+   "start": "2027-07-01",
+   "end": "2027-07-01",
+   "countries": [
+    "RW"
+   ],
+   "title": "Independence Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "65 years. Institutional and proud.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-07-04",
+   "end": "2027-07-05",
+   "countries": [
+    "RW"
+   ],
+   "title": "Liberation Day (Kwibohora 33)",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Ends the Kwibuka period. Renewal, progress, a rebuilt nation. Falls on a Sunday, so Monday is likely off.",
+   "hook": "Kwibohora 33.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-07-05",
+   "end": "2027-07-06",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Heroes' Day and Unity Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Long weekend. Remembrance then togetherness.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-07-07",
+   "end": "2027-07-07",
+   "countries": [
+    "TZ"
+   ],
+   "title": "Saba Saba (Dar es Salaam International Trade Fair)",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "Tanzania's biggest trade fair. Prime activation ground for FMCG, banks and telcos.",
+   "hook": "Twende Sabasaba.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-07-07",
+   "end": "2027-07-07",
+   "countries": [
+    "KE"
+   ],
+   "title": "Saba Saba (Kenya)",
+   "category": "Sensitive",
+   "date_status": "fixed",
+   "angle": "Kenya marks it as a day of pro democracy protests. Tone down in Kenya even while Tanzania celebrates.",
+   "hook": "",
+   "avoid": "Cross posting Tanzanian trade fair content to Kenyan audiences."
+  },
+  {
+   "start": "2027-07-01",
+   "end": "2027-07-31",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Umutomboko ceremony (Luapula)",
+   "category": "Cultural",
+   "date_status": "confirm",
+   "angle": "Lunda victory dance at Mwansabombwe. Heritage content.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-07-01",
+   "end": "2027-07-31",
+   "countries": [
+    "TZ"
+   ],
+   "title": "Zanzibar film festival season",
+   "category": "Cultural",
+   "date_status": "confirm",
+   "angle": "Film, art and travel audiences.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-07-29",
+   "end": "2027-08-02",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Zambia Agricultural and Commercial Show",
+   "category": "Commercial",
+   "date_status": "confirm",
+   "angle": "Lusaka's big showground week around Farmers' Day. Activations and B2B.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-08-02",
+   "end": "2027-08-02",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Farmers' Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Farmers as heroes. Agri, banking and FMCG.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-08-06",
+   "end": "2027-08-06",
+   "countries": [
+    "RW"
+   ],
+   "title": "Umuganura Day",
+   "category": "Cultural",
+   "date_status": "fixed",
+   "angle": "National harvest thanksgiving. Sharing, family, first fruits.",
+   "hook": "Umuganura mwiza.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-08-08",
+   "end": "2027-08-08",
+   "countries": [
+    "TZ"
+   ],
+   "title": "Nane Nane (Farmers' Day)",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Agricultural shows across regions. Agri, seeds, finance, telco.",
+   "hook": "Mkulima ni shujaa.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-08-10",
+   "end": "2027-08-10",
+   "countries": [
+    "KE"
+   ],
+   "title": "Kenya General Election",
+   "category": "Sensitive",
+   "date_status": "fixed",
+   "angle": "Expect a public holiday and a tense few weeks either side. Messages of peace only if the brand has earned the right. Many brands pause paid social from late July.",
+   "hook": "Kura yako, sauti yako. Amani kwanza.",
+   "avoid": "Party colours (yellow, orange and others), candidate lookalikes, political jokes, anything that reads as taking sides."
+  },
+  {
+   "start": "2027-08-15",
+   "end": "2027-08-15",
+   "countries": [
+    "RW"
+   ],
+   "title": "Assumption Day",
+   "category": "Religious",
+   "date_status": "fixed",
+   "angle": "Catholic holiday. Family and faith.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-08-15",
+   "end": "2027-08-15",
+   "countries": [
+    "TZ",
+    "KE"
+   ],
+   "title": "Maulid (Prophet's Birthday)",
+   "category": "Religious",
+   "date_status": "expected",
+   "angle": "Public holiday in Tanzania. Lamu and the Kenyan coast hold famous Maulid celebrations.",
+   "hook": "Maulid njema.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-08-01",
+   "end": "2027-08-31",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Likumbi Lya Mize (North Western)",
+   "category": "Cultural",
+   "date_status": "confirm",
+   "angle": "Luvale ceremony famous for makishi masquerades.",
+   "hook": "",
+   "avoid": "Using masks as decoration. They carry deep meaning."
+  },
+  {
+   "start": "2027-09-01",
+   "end": "2027-09-30",
+   "countries": [
+    "RW"
+   ],
+   "title": "Kwita Izina (gorilla naming)",
+   "category": "Cultural",
+   "date_status": "confirm",
+   "angle": "Conservation and tourism pride. Travel, hospitality and eco brands.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-10-09",
+   "end": "2027-10-09",
+   "countries": [
+    "UG"
+   ],
+   "title": "Independence Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "65 years of independence. National pride, black, yellow and red, the crested crane.",
+   "hook": "For God and My Country.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-10-10",
+   "end": "2027-10-11",
+   "countries": [
+    "KE"
+   ],
+   "title": "Mazingira Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Tree planting and clean ups. Falls on a Sunday, Monday off. Only credible with real action.",
+   "hook": "Panda mti, panda kesho.",
+   "avoid": "Greenwashing."
+  },
+  {
+   "start": "2027-10-01",
+   "end": "2027-11-30",
+   "countries": [
+    "KE"
+   ],
+   "title": "KCSE exams, final ever sitting",
+   "category": "Commercial",
+   "date_status": "confirm",
+   "angle": "2027 is expected to be the last KCSE. A once only moment: the final class. Education, telco, FMCG goodwill.",
+   "hook": "The last class. Make it count.",
+   "avoid": "Adding exam pressure. Confirm dates with KNEC."
+  },
+  {
+   "start": "2027-10-01",
+   "end": "2027-12-15",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ"
+   ],
+   "title": "Short rains",
+   "category": "Seasonal",
+   "date_status": "fixed",
+   "angle": "Second planting, comfort food, home care.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-10-14",
+   "end": "2027-10-14",
+   "countries": [
+    "TZ"
+   ],
+   "title": "Nyerere Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Mwalimu's legacy, education, humility. Reflective tone.",
+   "hook": "Mwalimu, tunakuenzi.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-10-18",
+   "end": "2027-10-18",
+   "countries": [
+    "ZM"
+   ],
+   "title": "National Day of Prayer",
+   "category": "Religious",
+   "date_status": "fixed",
+   "angle": "Prayer, fasting and reconciliation. Respectful tone only.",
+   "hook": "",
+   "avoid": "Promotions."
+  },
+  {
+   "start": "2027-10-20",
+   "end": "2027-10-20",
+   "countries": [
+    "KE"
+   ],
+   "title": "Mashujaa Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Heroes old and new. Everyday heroes land best. First big national day after the election, so unity matters.",
+   "hook": "Shujaa ni wewe.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-10-24",
+   "end": "2027-10-25",
+   "countries": [
+    "ZM"
+   ],
+   "title": "Independence Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "63 years. Copper, green and orange, the eagle. Sunday, Monday off.",
+   "hook": "One Zambia, One Nation.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-10-29",
+   "end": "2027-10-29",
+   "countries": [
+    "KE",
+    "TZ",
+    "UG"
+   ],
+   "title": "Diwali",
+   "category": "Religious",
+   "date_status": "expected",
+   "angle": "Strong in the South Asian communities of Nairobi, Mombasa, Kampala and Dar. Food, gifting, gold.",
+   "hook": "Happy Diwali.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-10-29",
+   "end": "2027-10-29",
+   "countries": [
+    "TZ"
+   ],
+   "title": "Anniversary of the 2025 election",
+   "category": "Sensitive",
+   "date_status": "fixed",
+   "angle": "A difficult date for many Tanzanians. Keep brand content low key.",
+   "hook": "",
+   "avoid": "Political references or celebratory posts."
+  },
+  {
+   "start": "2027-11-26",
+   "end": "2027-11-26",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Black Friday",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "Now a full week in Nairobi and Kampala e-commerce. Real discounts only.",
+   "hook": "",
+   "avoid": "Fake discounts. Audiences screenshot the before price."
+  },
+  {
+   "start": "2027-11-01",
+   "end": "2027-11-30",
+   "countries": [
+    "KE"
+   ],
+   "title": "Lamu Cultural Festival",
+   "category": "Cultural",
+   "date_status": "confirm",
+   "angle": "Dhow races, donkey races, Swahili heritage. Travel and lifestyle.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-12-01",
+   "end": "2027-12-24",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Festive season and the trip upcountry",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "Bonuses, shopping lists, buses to shags, homecoming. Peak for FMCG, telco, mobile money, travel.",
+   "hook": "Ocha season imeanza.",
+   "avoid": "Assuming everyone travels or has family to go home to."
+  },
+  {
+   "start": "2027-12-09",
+   "end": "2027-12-09",
+   "countries": [
+    "TZ"
+   ],
+   "title": "Independence Day (Uhuru)",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "66 years. Freedom and unity.",
+   "hook": "Uhuru na Umoja.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-12-12",
+   "end": "2027-12-13",
+   "countries": [
+    "KE"
+   ],
+   "title": "Jamhuri Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "64 years of independence. Sunday, Monday likely off. Pride meets festive spend.",
+   "hook": "Kenya ni yetu.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-12-25",
+   "end": "2027-12-25",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "Christmas Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Falls on a Saturday. Family feasts, church, generosity.",
+   "hook": "Krismasi njema.",
+   "avoid": ""
+  },
+  {
+   "start": "2027-12-26",
+   "end": "2027-12-27",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW"
+   ],
+   "title": "Boxing Day",
+   "category": "Holiday",
+   "date_status": "fixed",
+   "angle": "Sunday this year, so Monday is likely off in several markets. Leftovers, rest, visiting.",
+   "hook": "",
+   "avoid": ""
+  },
+  {
+   "start": "2027-12-31",
+   "end": "2027-12-31",
+   "countries": [
+    "KE",
+    "UG",
+    "TZ",
+    "RW",
+    "ZM"
+   ],
+   "title": "New Year's Eve",
+   "category": "Commercial",
+   "date_status": "fixed",
+   "angle": "Crossover services, parties, countdowns. Drink responsibly messaging matters.",
+   "hook": "Tuvuke pamoja.",
+   "avoid": ""
+  }
+ ]
+}
