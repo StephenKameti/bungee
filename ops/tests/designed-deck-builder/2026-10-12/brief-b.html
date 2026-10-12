@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kariakoo Ledger Prompt Library</title>
+<style>
+:root{--bg:#f6f4ef;--ink:#1c1c1a;--muted:#5d5b55;--card:#fff;--line:#dcd8cf;--plate:#1c1c1a;--plate-ink:#f6f4ef;--accent:#0E4D2E;--hot:#F2A900;--hot-ink:#1c1c1a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141413;--ink:#ecebe6;--muted:#a9a69d;--card:#1e1e1c;--line:#34332f;--plate:#0b0b0a;--plate-ink:#ecebe6;--accent:#F2A900}}
+:root[data-theme="dark"]{--bg:#141413;--ink:#ecebe6;--muted:#a9a69d;--card:#1e1e1c;--line:#34332f;--plate:#0b0b0a;--plate-ink:#ecebe6;--accent:#F2A900}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,sans-serif}
+main{max-width:1080px;margin:0 auto;padding:0 16px 64px}
+.mast{padding:48px 0 24px;border-bottom:2px solid var(--ink)}
+.mast small{letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.mast h1{font-size:clamp(34px,7vw,72px);line-height:1;margin:8px 0 12px;letter-spacing:-.02em}
+.mast p{margin:0 0 16px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:99px;padding:4px 10px 4px 4px;font-size:13px;background:var(--card)}
+.chip i{width:20px;height:20px;border-radius:50%;border:1px solid var(--line)}code{font-size:12px}
+.box{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--hot);padding:16px 20px;margin:24px 0;border-radius:6px;overflow-x:auto}
+.box h2{margin:0 0 8px;font-size:18px}
+.act h2{font-size:clamp(22px,4vw,30px);margin:48px 0 16px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px;margin:0 0 20px;min-width:0}
+.card header{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}
+.num{font-size:40px;font-weight:800;line-height:1;color:var(--accent)}.card h3{margin:0;font-size:22px;flex:1;min-width:140px}
+.badges{display:flex;gap:6px}.badge{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--ink);padding:2px 8px;border-radius:99px}
+.badge.heavy{background:var(--hot);border-color:var(--hot);color:var(--hot-ink)}
+.why{color:var(--muted);font-style:italic}
+.plate{position:relative;background:var(--plate);color:var(--plate-ink);border-radius:6px;padding:48px 16px 16px}
+.plate pre{margin:0;white-space:pre-wrap;word-break:break-word;font:14px/1.6 ui-monospace,monospace}
+.copy{position:absolute;top:10px;right:10px;background:var(--plate-ink);color:var(--plate);border:0;border-radius:4px;padding:6px 12px;font-weight:700;cursor:pointer}
+.fix{border-top:1px dashed var(--line);padding-top:12px;font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:6px;margin:8px 0;padding:12px 16px}summary{font-weight:700;cursor:pointer}
+.md{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-top:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+footer{margin-top:48px;border-top:2px solid var(--ink);padding-top:16px}
+</style></head><body><main>
+<section class="mast"><small>Designed deck prompt library</small><h1>Kariakoo Ledger</h1>
+<p>Kipaji Alizeti trade roadshow deck, Dar es Salaam. 11 slide prompts. Palette proposed, replace with the real codes.</p>
+<div class="chips"><span class="chip"><i style="background:#F2A900"></i>Kipaji Sun <code>#F2A900</code></span><span class="chip"><i style="background:#0E4D2E"></i>Deep Green <code>#0E4D2E</code></span><span class="chip"><i style="background:#FFF6E0"></i>Cream <code>#FFF6E0</code></span><span class="chip"><i style="background:#1A1A17"></i>Ink <code>#1A1A17</code></span></div></section>
+<div class="box"><h2>Attach these every time</h2><p>Image 1, the Kipaji logo file. Image 2, the photo of the four packs. After the cover is approved, Image 3, the approved cover render, and add this line to every later prompt: &quot;Image 3 is the approved style reference; match its design system.&quot;</p></div>
+<div class="box"><h2>Copy flags</h2><p>Every change below is already applied in the prompts. Revert any of them by editing the quoted text in that slide's prompt.</p>
+<table>
+<thead>
+<tr>
+<th>Slide</th>
+<th>As sent</th>
+<th>In the prompts</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>03</td>
+<td>"Kipaji Alizetti"</td>
+<td>"Kipaji Alizeti"</td>
+<td>Brand name misspelled.</td>
+</tr>
+<tr>
+<td>05</td>
+<td>"Wholeseller price"</td>
+<td>"Wholesale price"</td>
+<td>Typo.</td>
+</tr>
+<tr>
+<td>05</td>
+<td>250 ml margin "TSh 3,400"</td>
+<td>"TSh 4,300"</td>
+<td>Two digits swapped: TSh 28,800 less TSh 24,500 is TSh 4,300. Confirm with finance before the roadshow.</td>
+</tr>
+<tr>
+<td>08</td>
+<td>Comment from Baraka</td>
+<td>"Mbezi" added as a seventh pin</td>
+<td>Comment actioned; the comment text is removed from the slide.</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Comment from Neema, add the government quality mark</td>
+<td>Not added</td>
+<td>Flagged, not actioned: a real certification mark must come from the authority's own file and be cleared for use. Attach it as an extra image when you have it.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Claims to clear before the roadshow:</strong></p>
+<ul>
+<li>Slide 04: "Yameongezwa Vitamini A na D." needs the fortification certificate. "Hayana kolesteroli." / "Cholesterol free." is a claim regulators often treat as misleading on a plant oil; legal to confirm or cut. Rendered as sent.</li>
+<li>Slide 09: the quote needs Mama Rehema's written consent to be used. Rendered as sent.</li>
+</ul></div>
+<details><summary>Market layer</summary><div class="md"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What the market layer sets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Market</td>
+<td>Dar es Salaam, Tanzania, for brand and audience. East Africa module loaded. Its Languages by country section sets the order: Swahili leads daily life, media, business and advertising, so Swahili first and English second, as the deck already does. No Sheng: this is a trade audience, and Sheng is a Kenyan register.</td>
+</tr>
+<tr>
+<td>Texture</td>
+<td>Researched, since the module's street texture is Nairobi's. Kariakoo, the city's wholesale heart: narrow lanes of stacked cartons, porters pulling loaded handcarts, hand painted wooden shop signs, carbon copy invoice books on wooden counters. Daladala minibuses and bajaji three wheelers carry the street colour. Dukas with painted fronts in every ward.</td>
+</tr>
+<tr>
+<td>Retail and price</td>
+<td>Wholesale by the carton, retail by the piece. Kadogo packs drive daily buying; mama lishe food vendors buy small every morning. Mobile money is the default way to pay a supplier and at the till. Prices in Tanzanian shillings, written TSh 4,500.</td>
+</tr>
+<tr>
+<td>Typography</td>
+<td>Swahili sets like English in a display face: no diacritics, but long agglutinated words (linalompata, wanafunzi) break badly at narrow widths, so give Swahili lines width and keep each under about 15 words.</td>
+</tr>
+<tr>
+<td>Casting and light</td>
+<td>By context: a woman in her forties in a printed kitenge headwrap behind her duka counter in Temeke at 07:00. January is the short dry season: hot, humid, hard white coastal light, haze off the harbour by midday.</td>
+</tr>
+<tr>
+<td>Regulatory</td>
+<td>Module: health and nutrition claims need a cleared substantiation line before they are rendered. "Fortified with Vitamins A and D" needs the fortification certificate behind it. "Cholesterol free" is true of every plant oil, and a claim that implies a rival lacks it is often ruled misleading; flag it. A government quality mark is placed only from the authority's own file, with permission.</td>
+</tr>
+</tbody>
+</table></div></details><details><summary>Brand Sheet</summary><div class="md"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What the prompts use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Colours</td>
+<td>Proposed, none supplied: Kipaji Sun #F2A900, Deep Green #0E4D2E, Cream #FFF6E0, Ink #1A1A17. Replace with the real codes when they arrive; the prompts change in one place per mood.</td>
+</tr>
+<tr>
+<td>Logo</td>
+<td>The word "Kipaji" in a bold rounded serif with a small sunflower over the i. Image 1 in every prompt, placed as provided, never redrawn.</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>The four packs: 100 ml and 250 ml pouches, a 1 litre bottle and a 3 litre jerrycan, sunflower yellow labels with green. Image 2 in every prompt that shows them.</td>
+</tr>
+<tr>
+<td>Typography</td>
+<td>Brand face not supplied. Described in image language: a heavy rounded slab serif for headlines, echoing the logo and the precision of a good sign painter; a clean typewriter mono for figures and body.</td>
+</tr>
+<tr>
+<td>Brand world</td>
+<td>Everyday, dependable, proud of small sizes. Category convention for cooking oil: golden pour shots, smiling families at the table, sunflower fields. Worth breaking for a trade audience who care about margin and stock that moves.</td>
+</tr>
+</tbody>
+</table></div></details><details><summary>Design language</summary><div class="md"><p>Three languages were considered. Working unattended, the run picks the strongest and states it here.</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>One sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Kariakoo Ledger</strong> (picked)</td>
+<td>The deck speaks the wholesaler's own media: ruled order books and carbon copy invoices for the numbers, hand painted Kariakoo shop signs for the big moments.</td>
+</tr>
+<tr>
+<td>Mama Lishe Gold</td>
+<td>Flash lit dawn documentary of food vendors frying in big pans, oil catching the light, the copy set in the steam.</td>
+</tr>
+<tr>
+<td>Ubao Pure</td>
+<td>Every slide a hand painted shop board, the whole deck as a street of signs.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why Kariakoo Ledger.</strong> A wholesaler judges a supplier by the numbers and by whether stock moves. The ledger is where he does that sum every evening; the painted sign is where Kariakoo announces anything worth knowing. Mama Lishe Gold is the consumer's story and belongs in the consumer launch. Ubao Pure is loud on every slide and has nowhere quiet for the margin table.</p>
+<p><strong>Devices:</strong> ruled ledger pages with faint blue lines and a sheet of blue carbon paper (texture); heavy rounded slab serif for headlines, typewriter mono for figures (type behaviour); flat early light documentary of Kariakoo lanes with fine grain (photo treatment); hand painted wooden signboards carrying the loud lines (structure); one hand painted Kipaji Sun brush stroke per slide under the key line, the only accent.</p>
+<p><strong>Two moods:</strong></p>
+<ul>
+<li><strong>Daftari</strong> (quiet, content slides 02, 03, 04, 05, 06, 07, 08, 09): the order book on a wooden shop counter.</li>
+<li><strong>Ubao</strong> (loud, slides 01, 10, 11): Kariakoo itself, full bleed, with the line painted on a shop signboard.</li>
+</ul>
+<p><strong>Content through medium:</strong> the margin table is the ledger page (05); the offer is a filled carbon copy invoice slip (06); the support kit is laid out on the counter, each item with a paper tag (07); the distributor map is drawn in ballpoint across a ledger double page (08).</p></div></details><details><summary>Production questions</summary><div class="md"><p>Asked as one round; working unattended, the run proceeds on the defaults.</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Default used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Target image model</td>
+<td>The image model with the strongest text rendering and the best preservation of attached brand assets.</td>
+</tr>
+<tr>
+<td>Copy handling</td>
+<td>Verbatim everything, with the copy flags in section 2. The 31 word Swahili body on slide 02 is broken into three stacked lines, word for word.</td>
+</tr>
+<tr>
+<td>Pure table slide (05)</td>
+<td>Rendered in image as the ledger page: four short rows.</td>
+</tr>
+<tr>
+<td>Aspect</td>
+<td>16:9.</td>
+</tr>
+</tbody>
+</table></div></details>
+<section class="act"><h2>Act 1: The market and the range</h2>
+<article class="card" id="s01">
+  <header><span class="num">01</span><h3>Cover</h3><div class="badges"><span class="badge">Ubao</span></div></header>
+  <p class="why">the roadshow opens in the place every wholesaler in the room buys from, with the brand announced the way Kariakoo announces everything, on a painted board.</p>
+  <div class="plate"><button class="copy" data-target="p01">Copy prompt</button><pre id="p01">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo and Image 2 is the Kipaji Alizeti pack family. Place both exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Ubao mood. A full bleed documentary photograph of a narrow Kariakoo wholesale lane in Dar es Salaam at 06:30 in January, walls of stacked cartons, a porter&#x27;s handcart, hard white early light with long shadows, warm grade, fine film grain. Type is a heavy rounded slab serif for headlines, hand painted onto wooden shop signboards in Deep Green #0E4D2E on Cream #FFF6E0, with a clean typewriter mono for small lines, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: the lane runs from the bottom right into depth at the left. Across the upper half, fixed above a shop front, a long wooden signboard painted Cream with the headline &quot;Kipaji Alizeti&quot; huge in Deep Green, and beneath it on the same board &quot;Mafuta ya kupikia ya kila siku.&quot; with &quot;Everyday cooking oil.&quot; smaller under that. The Kipaji Sun stroke runs under &quot;Kipaji Alizeti&quot;. On a stack of cartons at bottom right, the four packs from Image 2 lined up. Bottom left, two small typewriter lines in Cream on a dark strip of shadow: &quot;Roadshow ya Wauzaji, Dar es Salaam, Januari 2027&quot; and &quot;Trade Roadshow, Dar es Salaam, January 2027&quot;. The logo from Image 1 is small at the top left corner of the slide.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article>
+<article class="card" id="s02">
+  <header><span class="num">02</span><h3>Soko</h3><div class="badges"><span class="badge">Daftari</span><span class="badge heavy">HEAVY</span></div></header>
+  <p class="why">the market shift written up as the first page of a wholesaler&#x27;s order book, his own habit of noting what moved today.</p>
+  <div class="plate"><button class="copy" data-target="p02">Copy prompt</button><pre id="p02">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo. Place it exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Daftari mood. The slide is an open wholesale order book lying on a worn wooden shop counter, ruled pages in Cream #FFF6E0 with faint blue lines and a red margin, a sheet of blue carbon paper peeking from under one page, flat even early light, fine film grain. Type is a heavy rounded slab serif for headlines in Deep Green #0E4D2E and a clean typewriter mono for body and figures in Ink #1A1A17, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: the book fills the frame, slightly rotated. Left page, top: the headline &quot;Mteja ananunua kidogo, kila siku.&quot; large in slab serif, and beneath it &quot;Shoppers buy small, every day.&quot; smaller; the Kipaji Sun stroke runs under the Swahili headline. Right page, three typewriter lines on three ruled lines with space between them: &quot;Mama lishe, familia na wanafunzi wananunua mafuta kwa kipimo kidogo kila siku&quot; then &quot;kwa sababu pesa inaingia kidogo kidogo,&quot; then &quot;na duka lenye kipimo sahihi ndilo linalompata mteja huyo kila asubuhi bila kukosa.&quot; In the lower right of the right page, a small square photograph clipped to the book: a mama lishe pouring oil into a wide pan at a roadside stall at dawn. The logo is small at the bottom left of the left page.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  <p class="fix"><strong>Fix strategy.</strong> one body line per edit, top to bottom, then the headline: &quot;Keep everything identical. On the right page, the third line must read exactly: &#x27;na duka lenye kipimo sahihi ndilo linalompata mteja huyo kila asubuhi bila kukosa.&#x27;&quot;</p>
+</article>
+<article class="card" id="s03">
+  <header><span class="num">03</span><h3>Vipimo</h3><div class="badges"><span class="badge">Daftari</span><span class="badge heavy">HEAVY</span></div></header>
+  <p class="why">four sizes, four price tags tied on the real packs; the shopkeeper reads the price where his customer will.</p>
+  <div class="plate"><button class="copy" data-target="p03">Copy prompt</button><pre id="p03">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo and Image 2 is the Kipaji Alizeti pack family. Place both exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Daftari mood. The slide is an open wholesale order book lying on a worn wooden shop counter, ruled pages in Cream #FFF6E0 with faint blue lines and a red margin, a sheet of blue carbon paper peeking from under one page, flat even early light, fine film grain. Type is a heavy rounded slab serif for headlines in Deep Green #0E4D2E and a clean typewriter mono for body and figures in Ink #1A1A17, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: top third, across the open book, the headline &quot;Vipimo vinne. Kila mfuko, kila mteja.&quot; in slab serif, and beneath it &quot;Four sizes for every pocket.&quot; smaller, the Kipaji Sun stroke under the Swahili line. Under that, small in typewriter mono: &quot;Kipaji Alizeti&quot;. Bottom two thirds, the four packs from Image 2 standing in a row on the counter in front of the book, smallest at the left, each with a Cream paper price tag tied on with string, the tag in typewriter mono, two lines each, the price in bold. Tag 1: &quot;100 ml pakiti&quot; &quot;TSh 500&quot;. Tag 2: &quot;250 ml pakiti&quot; &quot;TSh 1,200&quot;. Tag 3: &quot;Lita 1 chupa&quot; &quot;TSh 4,500&quot;. Tag 4: &quot;Lita 3 dumu&quot; &quot;TSh 13,000&quot;. The logo is small at the top right of the book.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  <p class="fix"><strong>Fix strategy.</strong> prices first, tag by tag, one tag per edit: &quot;Keep everything identical. Tag 4 must read exactly: &#x27;Lita 3 dumu&#x27; &#x27;TSh 13,000&#x27;.&quot; Then the headline.</p>
+</article>
+<article class="card" id="s04">
+  <header><span class="num">04</span><h3>Ubora</h3><div class="badges"><span class="badge">Daftari</span></div></header>
+  <p class="why">one bottle and two short lines; quality claims read strongest when nothing competes with them.</p>
+  <div class="plate"><button class="copy" data-target="p04">Copy prompt</button><pre id="p04">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo and Image 2 is the Kipaji Alizeti pack family. Place both exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Daftari mood. The slide is an open wholesale order book lying on a worn wooden shop counter, ruled pages in Cream #FFF6E0 with faint blue lines and a red margin, a sheet of blue carbon paper peeking from under one page, flat even early light, fine film grain. Type is a heavy rounded slab serif for headlines in Deep Green #0E4D2E and a clean typewriter mono for body and figures in Ink #1A1A17, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: right half, the 1 litre bottle from Image 2 standing on the counter, close, light catching the oil. Left half, the open book with two lines in slab serif, generous space between them: &quot;Yameongezwa Vitamini A na D.&quot; and &quot;Hayana kolesteroli.&quot; Beneath each, its English line in typewriter mono: &quot;Fortified with Vitamins A and D.&quot; and &quot;Cholesterol free.&quot; The Kipaji Sun stroke runs under &quot;Yameongezwa Vitamini A na D.&quot; The logo is small at the bottom left of the book.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article></section><section class="act"><h2>Act 2: The money</h2>
+<article class="card" id="s05">
+  <header><span class="num">05</span><h3>Faida</h3><div class="badges"><span class="badge">Daftari</span><span class="badge heavy">HEAVY</span></div></header>
+  <p class="why">the margin is written where a wholesaler writes margins, in his own ruled book, column by column.</p>
+  <div class="plate"><button class="copy" data-target="p05">Copy prompt</button><pre id="p05">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo. Place it exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Daftari mood. The slide is an open wholesale order book lying on a worn wooden shop counter, ruled pages in Cream #FFF6E0 with faint blue lines and a red margin, a sheet of blue carbon paper peeking from under one page, flat even early light, fine film grain. Type is a heavy rounded slab serif for headlines in Deep Green #0E4D2E and a clean typewriter mono for body and figures in Ink #1A1A17, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: the book is seen straight from above, filling the frame. Across the top of both pages, the headline &quot;Faida yako kwa kila katoni.&quot; in slab serif and &quot;Your margin per carton.&quot; smaller beneath. Below, a ruled ledger table across both pages in typewriter mono, four columns and a header row. Header: &quot;Kipimo / Size&quot; | &quot;Bei ya jumla / Wholesale price&quot; | &quot;Bei ya rejareja / Retail value&quot; | &quot;Faida / Margin&quot;. Row 1: &quot;100 ml (vipande 48)&quot; | &quot;TSh 20,400&quot; | &quot;TSh 24,000&quot; | &quot;TSh 3,600&quot;. Row 2: &quot;250 ml (vipande 24)&quot; | &quot;TSh 24,500&quot; | &quot;TSh 28,800&quot; | &quot;TSh 4,300&quot;. Row 3: &quot;Lita 1 (chupa 12)&quot; | &quot;TSh 47,000&quot; | &quot;TSh 54,000&quot; | &quot;TSh 7,000&quot;. Row 4: &quot;Lita 3 (dumu 4)&quot; | &quot;TSh 45,600&quot; | &quot;TSh 52,000&quot; | &quot;TSh 6,400&quot;. The Faida column is in bold and the Kipaji Sun stroke runs under &quot;TSh 7,000&quot;. The logo is small at the bottom right.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  <p class="fix"><strong>Fix strategy.</strong> every figure first, row by row, one row per edit: &quot;Keep everything identical. In row 2 the four cells must read exactly: &#x27;250 ml (vipande 24)&#x27; &#x27;TSh 24,500&#x27; &#x27;TSh 28,800&#x27; &#x27;TSh 4,300&#x27;.&quot; Then the header row. Fallback: regenerate with the ruled table empty and set the figures as live text.</p>
+</article>
+<article class="card" id="s06">
+  <header><span class="num">06</span><h3>Ofa</h3><div class="badges"><span class="badge">Daftari</span><span class="badge heavy">HEAVY</span></div></header>
+  <p class="why">the offer arrives as the invoice he will actually sign, the carbon copy still in the book.</p>
+  <div class="plate"><button class="copy" data-target="p06">Copy prompt</button><pre id="p06">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo. Place it exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Daftari mood. The slide is an open wholesale order book lying on a worn wooden shop counter, ruled pages in Cream #FFF6E0 with faint blue lines and a red margin, a sheet of blue carbon paper peeking from under one page, flat even early light, fine film grain. Type is a heavy rounded slab serif for headlines in Deep Green #0E4D2E and a clean typewriter mono for body and figures in Ink #1A1A17, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: centre, a carbon copy invoice slip torn half out of the book, slightly lifted, the blue carbon sheet visible beneath. On the slip, the headline &quot;Nunua katoni 10, pata 1 bure.&quot; large in slab serif, and &quot;Buy 10 cartons, get 1 free.&quot; beneath; the Kipaji Sun stroke runs under the Swahili line. Below on the slip, two lines in typewriter mono: &quot;Lipa kwa simu, pokea mzigo kesho.&quot; and &quot;Pay by mobile money, delivery next day.&quot; Right of the slip, a phone lying face up on the counter, its screen showing one large green tick. Bottom left on the book page, two small typewriter lines: &quot;Pre-order kwa simu.&quot; and &quot;Ofa inaisha 28 Februari 2027.&quot; The logo is small at the top left.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  <p class="fix"><strong>Fix strategy.</strong> numbers first (&quot;10&quot;, &quot;1&quot;, &quot;28&quot;, &quot;2027&quot;), then the slip lines top to bottom, then the two small lines, one per edit.</p>
+</article>
+<article class="card" id="s07">
+  <header><span class="num">07</span><h3>Msaada</h3><div class="badges"><span class="badge">Daftari</span></div></header>
+  <p class="why">the support kit laid out on the counter like a delivery being checked in, each piece tagged.</p>
+  <div class="plate"><button class="copy" data-target="p07">Copy prompt</button><pre id="p07">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo and Image 2 is the Kipaji Alizeti pack family. Place both exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Daftari mood. The slide is an open wholesale order book lying on a worn wooden shop counter, ruled pages in Cream #FFF6E0 with faint blue lines and a red margin, a sheet of blue carbon paper peeking from under one page, flat even early light, fine film grain. Type is a heavy rounded slab serif for headlines in Deep Green #0E4D2E and a clean typewriter mono for body and figures in Ink #1A1A17, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: top left on the open book, the headline &quot;Tunakusaidia kuuza.&quot; in slab serif and &quot;We help you sell.&quot; beneath; the Kipaji Sun stroke runs under the Swahili line. The rest of the counter, seen from above, holds four items laid out neatly in a grid, each with a Cream paper tag in typewriter mono: a folded Deep Green and Kipaji Sun kiosk umbrella, tag &quot;Mwavuli wa kibanda&quot;; a roll of plain Kipaji Sun shelf strips, tag &quot;Stika za rafu&quot;; a blank Cream price board with a Deep Green frame, tag &quot;Bango la bei&quot;; a neat bundle of twenty 100 ml pouches from Image 2 tied with string, tag &quot;Sampuli 20 za 100 ml kwa kila duka jipya&quot;. The logo is small at the bottom right.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article>
+<article class="card" id="s08">
+  <header><span class="num">08</span><h3>Wasambazaji</h3><div class="badges"><span class="badge">Daftari</span><span class="badge heavy">HEAVY</span></div></header>
+  <p class="why">the route to market drawn the way a sales rep draws it for a new customer, in ballpoint across the book.</p>
+  <div class="plate"><button class="copy" data-target="p08">Copy prompt</button><pre id="p08">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo. Place it exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Daftari mood. The slide is an open wholesale order book lying on a worn wooden shop counter, ruled pages in Cream #FFF6E0 with faint blue lines and a red margin, a sheet of blue carbon paper peeking from under one page, flat even early light, fine film grain. Type is a heavy rounded slab serif for headlines in Deep Green #0E4D2E and a clean typewriter mono for body and figures in Ink #1A1A17, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: top left, the headline &quot;Wasambazaji wetu Dar es Salaam.&quot; in slab serif and &quot;Our distributors across Dar es Salaam.&quot; beneath; the Kipaji Sun stroke runs under the Swahili line. Across both pages, a simple map of Dar es Salaam drawn in blue ballpoint over the ruled lines: the coastline on the right, the harbour inlet, a few main roads as single lines. Seven Deep Green round pins, each with a small typewriter label: &quot;Kariakoo&quot; at the centre near the harbour, &quot;Ilala&quot; just south west of it, &quot;Kinondoni&quot; to the north, &quot;Mbezi&quot; further north west, &quot;Ubungo&quot; to the west, &quot;Temeke&quot; to the south, &quot;Mbagala&quot; furthest south. The logo is small at the bottom right.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  <p class="fix"><strong>Fix strategy.</strong> one pin label per edit, starting with &quot;Mbezi&quot;, the new one: &quot;Keep everything identical. The label on the north western pin must read exactly: &#x27;Mbezi&#x27;.&quot;</p>
+</article></section><section class="act"><h2>Act 3: Proof and close</h2>
+<article class="card" id="s09">
+  <header><span class="num">09</span><h3>Sauti ya duka</h3><div class="badges"><span class="badge">Daftari</span></div></header>
+  <p class="why">a shopkeeper the room knows by type, in her own duka, saying the one thing they all want to hear.</p>
+  <div class="plate"><button class="copy" data-target="p09">Copy prompt</button><pre id="p09">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo and Image 2 is the Kipaji Alizeti pack family. Place both exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Daftari mood. The slide is an open wholesale order book lying on a worn wooden shop counter, ruled pages in Cream #FFF6E0 with faint blue lines and a red margin, a sheet of blue carbon paper peeking from under one page, flat even early light, fine film grain. Type is a heavy rounded slab serif for headlines in Deep Green #0E4D2E and a clean typewriter mono for body and figures in Ink #1A1A17, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: left half, a photograph clipped to the book: a woman in her forties in a printed kitenge headwrap behind her duka counter in Temeke at 07:00, shelves of small packs behind her, the 100 ml pouch from Image 2 in her hand, a direct, easy look. Right half, the open book with the quote in slab serif over two lines: &quot;Pakiti ya 100 ml imeleta wateja wapya kila asubuhi.&quot; and beneath it in typewriter mono &quot;The 100 ml pack brings new customers every morning.&quot; Below, small: &quot;— Mama Rehema, Duka la Rehema, Temeke&quot;. The Kipaji Sun stroke runs under &quot;wateja wapya&quot;. The logo is small at the bottom right.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article>
+<article class="card" id="s10">
+  <header><span class="num">10</span><h3>Wazo kuu</h3><div class="badges"><span class="badge">Ubao</span></div></header>
+  <p class="why">the big idea painted high over a Kariakoo lane, where the room will picture it on the way home.</p>
+  <div class="plate"><button class="copy" data-target="p10">Copy prompt</button><pre id="p10">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo. Place it exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Ubao mood. A full bleed documentary photograph of a narrow Kariakoo wholesale lane in Dar es Salaam at 06:30 in January, walls of stacked cartons, a porter&#x27;s handcart, hard white early light with long shadows, warm grade, fine film grain. Type is a heavy rounded slab serif for headlines, hand painted onto wooden shop signboards in Deep Green #0E4D2E on Cream #FFF6E0, with a clean typewriter mono for small lines, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: looking up the lane from low down, one huge Cream signboard spans the lane between two buildings in the upper half, painted with &quot;Kila tone lina kazi.&quot; in Deep Green, enormous, and beneath it on the same board &quot;Every drop earns its place.&quot; at a third of the size. The Kipaji Sun stroke runs under &quot;Kila tone lina kazi.&quot; Below, the lane busy and soft with movement, a porter crossing. The logo is small at the bottom right.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article>
+<article class="card" id="s11">
+  <header><span class="num">11</span><h3>Mwisho</h3><div class="badges"><span class="badge">Ubao</span></div></header>
+  <p class="why">one word and one object: a duka shutter going up at dawn and a single bottle on the counter, the first sale of the day.</p>
+  <div class="plate"><button class="copy" data-target="p11">Copy prompt</button><pre id="p11">Design a 16:9 presentation slide in Kariakoo Ledger style. Image 1 is the Kipaji logo and Image 2 is the Kipaji Alizeti pack family. Place both exactly as provided, never redrawn.
+
+Style: Kariakoo Ledger, Ubao mood. A full bleed documentary photograph of a narrow Kariakoo wholesale lane in Dar es Salaam at 06:30 in January, walls of stacked cartons, a porter&#x27;s handcart, hard white early light with long shadows, warm grade, fine film grain. Type is a heavy rounded slab serif for headlines, hand painted onto wooden shop signboards in Deep Green #0E4D2E on Cream #FFF6E0, with a clean typewriter mono for small lines, the same two families on every slide. The single accent is one hand painted brush stroke in Kipaji Sun #F2A900 under the key line, the only yellow stroke on the slide.
+
+Layout: a duka front in the lane, its metal shutter half rolled up, early light spilling onto the wooden counter where the 1 litre bottle from Image 2 stands alone. Above the shutter, a Cream signboard painted with &quot;Tuanze leo.&quot; huge in Deep Green, with the Kipaji Sun stroke beneath, and &quot;Let&#x27;s start today.&quot; smaller under it. Bottom left, small typewriter line in Cream on the shadowed wall: &quot;Simu: +255 700 000 000&quot;. The logo sits at the right end of the signboard, small.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article></section>
+<footer><p><strong>Run order:</strong> lock the look with the cover first and generate it until it is loved. Then the light slides (04, 07, 09, 10, 11, 02). Heavy slides last (03, 05, 06, 08).</p>
+<p><strong>Style consistency:</strong> run one image model chat session per act so the conversation holds the style. Attach the approved cover as Image 3 on every later prompt and add "Image 3 is the approved style reference; match its design system." Keep the same attachments on every message, edits included.</p>
+<p><strong>Repair rules:</strong> repair beats regeneration. One zone per edit: "Keep everything identical. In [zone] the text must read exactly: '…'". Numbers get proofread first. After 5 to 7 edit rounds, restart from the best frame. A Swahili reader proofs every line on every render.</p>
+<p><strong>Rescue edit</strong> for a render that drifts generic: "Add heavy film grain, rougher textures. Change no text."</p></footer>
+</main>
+<script>
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
+ const t=document.getElementById(b.dataset.target).textContent;
+ const done=()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy prompt',1400)};
+ try{navigator.clipboard.writeText(t).then(done,done)}catch(e){done()}
+}));
+</script></body></html>

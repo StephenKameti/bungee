@@ -15,11 +15,11 @@ Who this market's decks are actually speaking to and how they read a room. Cover
 
 ## Language and copy rules
 
-The working language of business and design in this market, and the local language or register a deck's rendered copy should carry. Cover: how the two blend naturally in real speech and print, which register (formal, youth slang, regional dialect) fits which audience, at least two worked example lines with an English gloss, and how local-language type actually renders and reads in this script (spacing, diacritics, character behaviour in a display face) so image-model text rendering does not break it.
+The working language of business and design in this market, and the local language or register a deck's rendered copy should carry. Cover: how the two blend naturally in real speech and print, which register (formal, youth slang, regional dialect) fits which audience, at least two worked example lines with an English gloss, and how local language type actually renders and reads in this script (spacing, diacritics, character behaviour in a display face) so image model text rendering does not break it.
 
 ## Media and channels
 
-Which channels actually carry design and distribution in this market: the dominant chat or social forwarding behaviour, how out-of-home is actually viewed, any channel with outsized reach a global default list would miss, and anything about local print, broadcast or outdoor production worth designing decks around.
+Which channels actually carry design and distribution in this market: the dominant chat or social forwarding behaviour, how out of home is actually viewed, any channel with outsized reach a global default list would miss, and anything about local print, broadcast or outdoor production worth designing decks around.
 
 ## Retail and price
 
@@ -35,4 +35,4 @@ Do not hardcode dates from memory, since public holidays, religious observances 
 
 ## Regulatory notes
 
-Claims, disclosure and category rules that affect what a deck can render as on-slide copy: health and efficacy claim limits, alcohol or age-restricted category rules, financial services disclosure norms, advertising standards body requirements, and anything else that would need legal sign-off before the rendered copy ships.
+Claims, disclosure and category rules that affect what a deck can render as on slide copy: health and efficacy claim limits, alcohol or age restricted category rules, financial services disclosure norms, advertising standards body requirements, and anything else that would need legal sign off before the rendered copy ships.

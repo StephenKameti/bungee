@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Danji Bulletin Prompt Library</title>
+<style>
+:root{--bg:#f6f4ef;--ink:#1c1c1a;--muted:#5d5b55;--card:#fff;--line:#dcd8cf;--plate:#1c1c1a;--plate-ink:#f6f4ef;--accent:#0B4F4C;--hot:#FF5A3C;--hot-ink:#ffffff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141413;--ink:#ecebe6;--muted:#a9a69d;--card:#1e1e1c;--line:#34332f;--plate:#0b0b0a;--plate-ink:#ecebe6;--accent:#FF5A3C}}
+:root[data-theme="dark"]{--bg:#141413;--ink:#ecebe6;--muted:#a9a69d;--card:#1e1e1c;--line:#34332f;--plate:#0b0b0a;--plate-ink:#ecebe6;--accent:#FF5A3C}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,sans-serif}
+main{max-width:1080px;margin:0 auto;padding:0 16px 64px}
+.mast{padding:48px 0 24px;border-bottom:2px solid var(--ink)}
+.mast small{letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.mast h1{font-size:clamp(34px,7vw,72px);line-height:1;margin:8px 0 12px;letter-spacing:-.02em}
+.mast p{margin:0 0 16px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:99px;padding:4px 10px 4px 4px;font-size:13px;background:var(--card)}
+.chip i{width:20px;height:20px;border-radius:50%;border:1px solid var(--line)}code{font-size:12px}
+.box{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--hot);padding:16px 20px;margin:24px 0;border-radius:6px;overflow-x:auto}
+.box h2{margin:0 0 8px;font-size:18px}
+.act h2{font-size:clamp(22px,4vw,30px);margin:48px 0 16px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px;margin:0 0 20px;min-width:0}
+.card header{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}
+.num{font-size:40px;font-weight:800;line-height:1;color:var(--accent)}.card h3{margin:0;font-size:22px;flex:1;min-width:140px}
+.badges{display:flex;gap:6px}.badge{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--ink);padding:2px 8px;border-radius:99px}
+.badge.heavy{background:var(--hot);border-color:var(--hot);color:var(--hot-ink)}
+.why{color:var(--muted);font-style:italic}
+.plate{position:relative;background:var(--plate);color:var(--plate-ink);border-radius:6px;padding:48px 16px 16px}
+.plate pre{margin:0;white-space:pre-wrap;word-break:break-word;font:14px/1.6 ui-monospace,monospace}
+.copy{position:absolute;top:10px;right:10px;background:var(--plate-ink);color:var(--plate);border:0;border-radius:4px;padding:6px 12px;font-weight:700;cursor:pointer}
+.fix{border-top:1px dashed var(--line);padding-top:12px;font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:6px;margin:8px 0;padding:12px 16px}summary{font-weight:700;cursor:pointer}
+.md{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-top:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+footer{margin-top:48px;border-top:2px solid var(--ink);padding-top:16px}
+</style></head><body><main>
+<section class="mast"><small>Designed deck prompt library</small><h1>Danji Bulletin</h1>
+<p>Mulgyeol Refill partner deck, Seoul. 11 slide prompts.</p>
+<div class="chips"><span class="chip"><i style="background:#0B4F4C"></i>Deep Teal <code>#0B4F4C</code></span><span class="chip"><i style="background:#EEF4EF"></i>Foam <code>#EEF4EF</code></span><span class="chip"><i style="background:#FF5A3C"></i>Signal Coral <code>#FF5A3C</code></span><span class="chip"><i style="background:#1C1F1E"></i>Ink <code>#1C1F1E</code></span></div></section>
+<div class="box"><h2>Attach these every time</h2><p>Image 1, the Mulgyeol Refill logo file. Image 2, the photo of the refill station. After the cover is approved, Image 3, the approved cover render, and add this line to every later prompt: &quot;Image 3 is the approved style reference; match its design system.&quot;</p></div>
+<div class="box"><h2>Copy flags</h2><p>Every change below is already applied in the prompts. Revert any of them by editing the quoted text in that slide's prompt.</p>
+<table>
+<thead>
+<tr>
+<th>Slide</th>
+<th>As sent</th>
+<th>In the prompts</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>03</td>
+<td>"Six everyday refils."</td>
+<td>"Six everyday refills."</td>
+<td>Typo.</td>
+</tr>
+<tr>
+<td>03</td>
+<td>"Open 24 hours in your complex's shared space."</td>
+<td>"Open 24 hours in your complex's common area."</td>
+<td>Comment from Jiwoo Han actioned; the comment text is removed from the slide.</td>
+</tr>
+<tr>
+<td>06</td>
+<td>"412 housholds"</td>
+<td>"412 households"</td>
+<td>Typo; it also appears beside a number, so a council would notice.</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Comment from Minseo Oh</td>
+<td>Bottles number is the hero</td>
+<td>Comment actioned; the comment text is removed from the slide.</td>
+</tr>
+<tr>
+<td>04</td>
+<td>"Three steps — no new plastic."</td>
+<td>"Three steps. No new plastic."</td>
+<td>Em dash rewritten as a full stop.</td>
+</tr>
+<tr>
+<td>07</td>
+<td>"A zero-waste corner residents can see."</td>
+<td>"A zero waste corner residents can see."</td>
+<td>Hyphen rewritten as an open compound.</td>
+</tr>
+<tr>
+<td>09</td>
+<td>"— Ms Park, Building 102, pilot complex"</td>
+<td>"Ms Park, Building 102, pilot complex"</td>
+<td>Dash removed; the attribution sits on its own line.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sums:</strong> every figure checked against the others (412 households, 1,240 bottles, 68%, ₩4,100, 3%, the six prices). Nothing to flag.</p>
+<p><strong>Claims to clear before the deck is presented:</strong></p>
+<ul>
+<li>Slide 02: "A family of four empties around 9 plastic bottles of cleaning and care products a month." Needs a source line. Rendered as sent.</li>
+<li>Slide 06: all three pilot figures need the pilot report behind them. Rendered as sent.</li>
+<li>Slide 07: "A zero waste corner residents can see." An environmental claim under Korea's labelling rules. Rendered as sent.</li>
+</ul></div>
+<details><summary>Market layer</summary><div class="md"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What the market layer sets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Market</td>
+<td>Seoul, South Korea. Home market and audience market are the same: residents' councils (입주자대표회의) and management offices (관리사무소) of Seoul apartment complexes. No <code>references/markets/</code> file exists for Korea, so this layer is built from research into Seoul's visual culture, retail and rules.</td>
+</tr>
+<tr>
+<td>Visual vernacular</td>
+<td>The apartment complex (단지) is the world of this deck. Its own graphic language: building numbers painted huge on the white gable ends of every block; the brushed steel notice board in each lift lobby, with A4 notices held by round magnets and stamped by the management office; colour coded recycling cages in the car park on the complex's weekly sorting evening; clear volume based waste bags.</td>
+</tr>
+<tr>
+<td>Retail and payment</td>
+<td>Card and phone tap payment are standard at every till; a refill station paid by phone tap fits the habit. Prices in won with VAT included, written ₩380 style.</td>
+</tr>
+<tr>
+<td>Typography</td>
+<td>Hangul sets as square syllable blocks and reads well in a bold clean gothic (sans) with a little extra spacing. Condensing Hangul hurts it; keep Korean lines in a normal width gothic and let Latin carry any condensed or rounded display behaviour. Pair the two at matched cap and syllable height.</td>
+</tr>
+<tr>
+<td>Hangul in image models</td>
+<td>Image models render Hangul less reliably than Latin. Every Korean line stays short (under about 12 syllables where the copy allows), sits in its own zone so it can be repaired alone, and gets a native proofread on every render.</td>
+</tr>
+<tr>
+<td>Casting and light</td>
+<td>By context: a woman in her fifties with a neat silver bob and a grey cardigan in the lift lobby of building 102 at late morning. The deck is pitched in late autumn: ginkgo leaves bright yellow on complex paths, blue hour arriving before 18:00, cool clear air.</td>
+</tr>
+<tr>
+<td>Regulatory</td>
+<td>Environmental claims ("zero waste", "eco friendly", plastic saved) fall under Korea's environmental labelling and advertising rules, which have been tightened against greenwashing. Any number or green claim on a slide needs a source line or softer wording before the deck goes to a council.</td>
+</tr>
+</tbody>
+</table></div></details><details><summary>Brand Sheet</summary><div class="md"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What the prompts use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Colours</td>
+<td>Deep Teal #0B4F4C (primary), Foam #EEF4EF (ground), Signal Coral #FF5A3C (accent), Ink #1C1F1E (text). All from the brief; no conflict.</td>
+</tr>
+<tr>
+<td>Logo</td>
+<td>Lowercase rounded wordmark "mulgyeol" with three short wave lines over the u, Korean name 물결 리필 beneath. Image 1 in every prompt, placed as provided, never redrawn.</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>The refill station: a tall white steel cabinet with a Deep Teal front panel, six stainless nozzles in a row, a weighing plate and a small screen. Image 2 in every prompt that shows it. Residents bring their own bottles, so no branded bottle is shown.</td>
+</tr>
+<tr>
+<td>Typography</td>
+<td>Brand face not supplied. Described in image language: a heavy rounded geometric sans for Latin, a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same families for body.</td>
+</tr>
+<tr>
+<td>Brand world</td>
+<td>Start up, practical, neighbourly. Category convention for refill and green brands: leaves, kraft paper, hand lettering, soft greens. That is the code worth breaking.</td>
+</tr>
+</tbody>
+</table></div></details><details><summary>Design language</summary><div class="md"><p>Three languages were considered. Working unattended, the run picks the strongest and states it here.</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>One sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Danji Bulletin</strong> (picked)</td>
+<td>The deck lives on the apartment complex's own media: A4 notices on the lift lobby's steel board for the argument, and the giant painted building numbers on the gable walls for the big moments.</td>
+</tr>
+<tr>
+<td>Euljiro Proof</td>
+<td>Risograph proofs from Seoul's old print alleys, misregistered teal and coral, crop marks and colour bars, every slide a press check.</td>
+</tr>
+<tr>
+<td>Rinse Cycle</td>
+<td>Hyper clean macro photography of liquid falling from stainless nozzles, the copy floating in the pour.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why Danji Bulletin.</strong> The audience is a residents' council. The notice board is the medium they already trust and read every day, and the painted block number is the most Seoul thing on any complex. Every refill deck in the category is leaves and kraft paper; this one looks like the building itself is talking. Euljiro Proof is beautiful but speaks to designers, not councils. Rinse Cycle is the category's own cliché with better lighting.</p>
+<p><strong>Devices:</strong> steel notice board and A4 sheets held by round magnets (structure); flat daylight documentary photography with fine film grain (photo treatment); heavy rounded Latin sans with a bold Hangul gothic (type behaviour); giant gable numerals carrying the deck's big numbers (structure, loud mode); one Signal Coral round stamp reading "채움" (fill) per slide, the only accent.</p>
+<p><strong>Two moods:</strong></p>
+<ul>
+<li><strong>Notice</strong> (quiet, content slides 02, 03, 04, 05, 07, 08, 09): the lift lobby notice board.</li>
+<li><strong>Gable</strong> (loud, slides 01, 06, 10, 11): the complex itself at blue hour, full bleed photography, painted numerals.</li>
+</ul>
+<p><strong>Content through medium:</strong> prices as the label strip on the station's six nozzles (05); the partner table as an official management office notice with ruled rows (07); the timeline as a lift button panel where the floors are weeks (08); the pilot's bottle count painted as a building number on a gable wall (06).</p></div></details><details><summary>Production questions</summary><div class="md"><p>Each question has a default. The brief came as one message to run, so the run proceeds on the defaults, stated here up front.</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Default used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Target image model</td>
+<td>The image model with the strongest text rendering and the best preservation of attached brand assets.</td>
+</tr>
+<tr>
+<td>Copy handling</td>
+<td>Verbatim everything, with the copy flags in section 2. The 38 word body on slide 02 is broken into four stacked lines, word for word, and the 16 word fact line into two.</td>
+</tr>
+<tr>
+<td>Pure table slide (07)</td>
+<td>Rendered in image as an official notice: six short rows.</td>
+</tr>
+<tr>
+<td>Aspect</td>
+<td>16:9.</td>
+</tr>
+</tbody>
+</table></div></details>
+<section class="act"><h2>Act 1: The problem and the answer</h2>
+<article class="card" id="s01">
+  <header><span class="num">01</span><h3>Cover</h3><div class="badges"><span class="badge">Gable</span></div></header>
+  <p class="why">the complex is the hero, and the year sits where a building number would, so the council sees their own buildings before they read a word.</p>
+  <div class="plate"><button class="copy" data-target="p01">Copy prompt</button><pre id="p01">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo and Image 2 is the Mulgyeol refill station. Place both exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Gable mood. A full bleed documentary photograph of a Seoul apartment complex at blue hour in late November, white fifteen storey blocks, lit windows, ginkgo leaves bright yellow on the paths, a cool clean grade with fine film grain. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Foam #EEF4EF or Deep Teal #0B4F4C. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: the white gable end of one block fills the right two thirds of the frame, shot slightly from below, with a giant numeral &quot;2027&quot; painted on it in Deep Teal #0B4F4C in the exact manner of a Seoul building number. The left third is a calm band of dusk sky and path. Top left, the logo from Image 1, small, in Foam. Middle left, the Korean headline &quot;병은 그대로, 채우기만.&quot; very large, and directly beneath it the English line &quot;Keep the bottle. Refill the rest.&quot; at half that size. Bottom left, two small lines stacked: &quot;Apartment Partner Programme 2027&quot; and &quot;아파트 파트너 프로그램 2027&quot;. The Signal Coral stamp &quot;채움&quot; sits pressed slightly crooked over the corner of the English line.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article>
+<article class="card" id="s02">
+  <header><span class="num">02</span><h3>The problem</h3><div class="badges"><span class="badge">Notice</span><span class="badge heavy">HEAVY</span></div></header>
+  <p class="why">the problem is shown where it happens, in the recycling cage, and the long body is split into three short notice lines so each one renders and repairs alone.</p>
+  <div class="plate"><button class="copy" data-target="p02">Copy prompt</button><pre id="p02">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo. Place it exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Notice mood. The slide is a brushed steel lift lobby notice board in a Seoul apartment complex in flat daylight, holding crisp matte A4 sheets in Foam #EEF4EF fixed by round magnets in Deep Teal #0B4F4C. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Ink #1C1F1E on paper; fine film grain, faint glare on the steel, generous empty board around every sheet. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: left half, a large landscape photograph pinned to the board with four magnets: a car park recycling cage on sorting evening, clear bags packed with empty detergent, shampoo and dish soap bottles, flat documentary light. Right half, one A4 notice. At its top the headline &quot;Our recycling bins are full of bottles we could have kept.&quot; in heavy Ink type, and beneath it &quot;분리수거함은 다시 쓸 수 있던 병으로 가득합니다.&quot; smaller. Below a hairline, four short stacked lines in regular weight: &quot;Every week, Seoul households carry bags of empty detergent,&quot; then &quot;shampoo and dish soap bottles to the recycling area,&quot; then &quot;and most of those bottles were perfectly good containers&quot; then &quot;that only needed refilling instead of being thrown away and replaced.&quot; At the foot of the notice, set apart in bold over two lines: &quot;A family of four empties around 9 plastic bottles&quot; and &quot;of cleaning and care products a month.&quot; The coral stamp sits on the number 9. The logo is small at the bottom right of the board.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  <p class="fix"><strong>Fix strategy.</strong> repair in this order, one zone per edit. 1, the bold foot line, numbers first (&quot;9&quot;). 2, the Korean headline. 3, the four body lines, one per edit. Edit form: &quot;Keep everything identical. On the notice, the fourth body line must read exactly: &#x27;that only needed refilling instead of being thrown away and replaced.&#x27;&quot;</p>
+</article>
+<article class="card" id="s03">
+  <header><span class="num">03</span><h3>Meet Mulgyeol</h3><div class="badges"><span class="badge">Notice</span></div></header>
+  <p class="why">a new notice going up on the board is exactly how a complex meets something new.</p>
+  <div class="plate"><button class="copy" data-target="p03">Copy prompt</button><pre id="p03">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo and Image 2 is the Mulgyeol refill station. Place both exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Notice mood. The slide is a brushed steel lift lobby notice board in a Seoul apartment complex in flat daylight, holding crisp matte A4 sheets in Foam #EEF4EF fixed by round magnets in Deep Teal #0B4F4C. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Ink #1C1F1E on paper; fine film grain, faint glare on the steel, generous empty board around every sheet. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: one fresh A4 notice sits slightly right of centre, newer and whiter than the board around it, two blank older sheets partly visible at the far left edge. On the notice, top: the logo from Image 1. Then the headline &quot;A refill station that lives where you live.&quot; large, and beneath it &quot;우리 단지 안의 리필 스테이션.&quot; Then three short lines stacked with generous space: &quot;Six everyday refills.&quot; &quot;Pay by the gram.&quot; &quot;Open 24 hours in your complex&#x27;s common area.&quot; Pinned overlapping the notice&#x27;s lower left corner, a square photograph of the station from Image 2 standing in a bright lobby corner. The coral stamp sits on &quot;Pay by the gram.&quot;
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article>
+<article class="card" id="s04">
+  <header><span class="num">04</span><h3>How it works</h3><div class="badges"><span class="badge">Notice</span></div></header>
+  <p class="why">three steps as three notices in a row, the order you would read them waiting for the lift.</p>
+  <div class="plate"><button class="copy" data-target="p04">Copy prompt</button><pre id="p04">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo. Place it exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Notice mood. The slide is a brushed steel lift lobby notice board in a Seoul apartment complex in flat daylight, holding crisp matte A4 sheets in Foam #EEF4EF fixed by round magnets in Deep Teal #0B4F4C. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Ink #1C1F1E on paper; fine film grain, faint glare on the steel, generous empty board around every sheet. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: across the top of the board, the headline &quot;Three steps. No new plastic.&quot; printed in heavy Ink type on a long strip of Foam paper. Below it, three portrait A4 notices in a row with equal gaps. Each carries a huge Deep Teal numeral at the top, a small square photograph in the middle, and two lines at the bottom. Notice one: &quot;1&quot;, a hand holding an empty clean bottle, &quot;Bring any clean bottle&quot; and &quot;빈 병을 가져오세요&quot;. Notice two: &quot;2&quot;, a stainless nozzle filling a clear bottle, &quot;Fill what you need&quot; and &quot;필요한 만큼 채우세요&quot;. Notice three: &quot;3&quot;, a phone tapping a reader on a weighing plate, &quot;Pay by weight, tap your phone&quot; and &quot;무게만큼 결제하세요&quot;. The coral stamp sits on notice three. The logo is small at the bottom right of the board.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article></section><section class="act"><h2>Act 2: The offer</h2>
+<article class="card" id="s05">
+  <header><span class="num">05</span><h3>On tap</h3><div class="badges"><span class="badge">Notice</span><span class="badge heavy">HEAVY</span></div></header>
+  <p class="why">the price list is the station&#x27;s own nozzle label strip, so the prices are read where the residents will read them.</p>
+  <div class="plate"><button class="copy" data-target="p05">Copy prompt</button><pre id="p05">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo and Image 2 is the Mulgyeol refill station. Place both exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Notice mood. The slide is a brushed steel lift lobby notice board in a Seoul apartment complex in flat daylight, holding crisp matte A4 sheets in Foam #EEF4EF fixed by round magnets in Deep Teal #0B4F4C. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Ink #1C1F1E on paper; fine film grain, faint glare on the steel, generous empty board around every sheet. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: top third, an A4 notice in landscape across the board with the headline &quot;Six refills. Priced by the gram.&quot; and beneath it &quot;여섯 가지 리필, 그램 단위 가격.&quot; Bottom two thirds, a close straight on photograph of the station&#x27;s front from Image 2, the six stainless nozzles in one row, and under each nozzle a white label card in a row of six, each card holding three short lines. Card 1: &quot;Laundry liquid&quot; &quot;세탁세제&quot; &quot;₩380 / 100 g&quot;. Card 2: &quot;Fabric softener&quot; &quot;섬유유연제&quot; &quot;₩320 / 100 g&quot;. Card 3: &quot;Dish soap&quot; &quot;주방세제&quot; &quot;₩290 / 100 g&quot;. Card 4: &quot;Shampoo&quot; &quot;샴푸&quot; &quot;₩690 / 100 g&quot;. Card 5: &quot;Body wash&quot; &quot;바디워시&quot; &quot;₩590 / 100 g&quot;. Card 6: &quot;Multi surface cleaner&quot; &quot;다용도 세정제&quot; &quot;₩260 / 100 g&quot;. Prices in heavy type, the largest thing on each card. Bottom right corner, small: &quot;Prices include VAT.&quot; The coral stamp sits on card 3. The logo is small at the top right.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  <p class="fix"><strong>Fix strategy.</strong> numbers first, card by card from 1 to 6, one card per edit: &quot;Keep everything identical. On card 4 the text must read exactly: &#x27;Shampoo&#x27; &#x27;샴푸&#x27; &#x27;₩690 / 100 g&#x27;.&quot; Then the Korean headline, then &quot;Prices include VAT.&quot; If a card keeps failing after three edits, regenerate with only that card&#x27;s label blank and set it as live text.</p>
+</article>
+<article class="card" id="s06">
+  <header><span class="num">06</span><h3>Pilot results</h3><div class="badges"><span class="badge">Gable</span><span class="badge heavy">HEAVY</span></div></header>
+  <p class="why">the number boards remember is painted on a building, the size a building number is, which is the size this result deserves.</p>
+  <div class="plate"><button class="copy" data-target="p06">Copy prompt</button><pre id="p06">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo. Place it exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Gable mood. A full bleed documentary photograph of a Seoul apartment complex at blue hour in late November, white fifteen storey blocks, lit windows, ginkgo leaves bright yellow on the paths, a cool clean grade with fine film grain. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Foam #EEF4EF or Deep Teal #0B4F4C. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: one white gable end fills the centre of the frame, straight on, and the giant numeral &quot;1,240&quot; is painted across it in Deep Teal #0B4F4C exactly like a building number. Directly beneath the numeral, on the wall, the line &quot;bottles kept out of the bin&quot; in Deep Teal at a quarter of its height. Top left, small in Foam: &quot;Pilot complex, Mapo District, 412 households, 90 days&quot;. Bottom band across the dusk path, two short facts side by side in Foam: left &quot;68% of households refilled twice or more&quot;, right &quot;₩4,100 average saving per household per month&quot;. The coral stamp sits beside the numeral&#x27;s last digit. The logo is small at the bottom right.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  <p class="fix"><strong>Fix strategy.</strong> numbers first: &quot;1,240&quot;, then &quot;68%&quot;, then &quot;₩4,100&quot;, then &quot;412&quot;. One zone per edit: &quot;Keep everything identical. On the gable wall the numeral must read exactly: &#x27;1,240&#x27;.&quot;</p>
+</article>
+<article class="card" id="s07">
+  <header><span class="num">07</span><h3>What your complex gets</h3><div class="badges"><span class="badge">Notice</span><span class="badge heavy">HEAVY</span></div></header>
+  <p class="why">an offer to a council arrives as an official notice with ruled rows, the format every management office already signs.</p>
+  <div class="plate"><button class="copy" data-target="p07">Copy prompt</button><pre id="p07">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo. Place it exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Notice mood. The slide is a brushed steel lift lobby notice board in a Seoul apartment complex in flat daylight, holding crisp matte A4 sheets in Foam #EEF4EF fixed by round magnets in Deep Teal #0B4F4C. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Ink #1C1F1E on paper; fine film grain, faint glare on the steel, generous empty board around every sheet. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: one large landscape A4 notice, centred, an official form with fine Deep Teal hairline rules. Header: &quot;What your complex gets.&quot; large and &quot;단지에 돌아가는 혜택&quot; beneath. Then a ruled table of six rows and two columns, the left column bold, the right regular. Row 1: &quot;Station and install&quot; | &quot;Free, fitted in one day&quot;. Row 2: &quot;Management fee credit&quot; | &quot;3% of station sales, credited monthly&quot;. Row 3: &quot;Recycling report&quot; | &quot;Monthly, bottles and kilograms kept out of the bin&quot;. Row 4: &quot;Upkeep&quot; | &quot;Cleaned and restocked twice a week&quot;. Row 5: &quot;Lobby poster&quot; | &quot;A zero waste corner residents can see&quot;. Row 6: &quot;Contract&quot; | &quot;12 months, cancel with 30 days notice&quot;. The coral stamp is pressed over the right end of row 1, slightly crooked, like a management office approval. The logo is small at the bottom right of the notice.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  <p class="fix"><strong>Fix strategy.</strong> numbers first (&quot;3%&quot;, &quot;12&quot;, &quot;30&quot;), then row by row, one row per edit: &quot;Keep everything identical. In row 2 the right column must read exactly: &#x27;3% of station sales, credited monthly&#x27;.&quot; Fallback: regenerate with the six right hand cells blank and set them as live text.</p>
+</article></section><section class="act"><h2>Act 3: Proof and close</h2>
+<article class="card" id="s08">
+  <header><span class="num">08</span><h3>Timeline</h3><div class="badges"><span class="badge">Notice</span><span class="badge heavy">HEAVY</span></div></header>
+  <p class="why">the lift button panel is the complex&#x27;s own timeline; each floor is a week, and the lit buttons are the milestones.</p>
+  <div class="plate"><button class="copy" data-target="p08">Copy prompt</button><pre id="p08">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo. Place it exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Notice mood. The slide is a brushed steel lift lobby notice board in a Seoul apartment complex in flat daylight, holding crisp matte A4 sheets in Foam #EEF4EF fixed by round magnets in Deep Teal #0B4F4C. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Ink #1C1F1E on paper; fine film grain, faint glare on the steel, generous empty board around every sheet. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: left third, an A4 notice with the headline &quot;From vote to first refill in 6 weeks.&quot; large and &quot;결정부터 첫 리필까지 6주.&quot; beneath. Right two thirds, a close photograph of a brushed steel lift button panel set into the board, one vertical column of six round buttons numbered 1 to 6 from the bottom up. Buttons 1, 2, 4 and 6 glow Deep Teal #0B4F4C; 3 and 5 are unlit. Beside each lit button, a small engraved steel plate: beside 1 &quot;Week 1 Council vote&quot;, beside 2 &quot;Week 2 Site visit&quot;, beside 4 &quot;Week 4 Install&quot;, beside 6 &quot;Week 6 Launch day&quot;. The coral stamp sits on the plate beside button 6. The logo is small at the bottom right of the board.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  <p class="fix"><strong>Fix strategy.</strong> button numerals first, then plates from 1 to 6, one plate per edit: &quot;Keep everything identical. The plate beside button 4 must read exactly: &#x27;Week 4 Install&#x27;.&quot;</p>
+</article>
+<article class="card" id="s09">
+  <header><span class="num">09</span><h3>Resident</h3><div class="badges"><span class="badge">Notice</span></div></header>
+  <p class="why">one real neighbour, in the lobby where councils meet her, says it better than any figure.</p>
+  <div class="plate"><button class="copy" data-target="p09">Copy prompt</button><pre id="p09">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo. Place it exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Notice mood. The slide is a brushed steel lift lobby notice board in a Seoul apartment complex in flat daylight, holding crisp matte A4 sheets in Foam #EEF4EF fixed by round magnets in Deep Teal #0B4F4C. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Ink #1C1F1E on paper; fine film grain, faint glare on the steel, generous empty board around every sheet. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: left half, a large portrait photograph pinned to the board: a woman in her fifties with a neat silver bob and a grey cardigan, in the lift lobby of building 102 at late morning, holding a clear refill bottle at her side, a calm half smile. Right half, one A4 notice carrying the quote in heavy type over three lines: &quot;I stopped buying bottles in March.&quot; then &quot;My recycling bag got lighter,&quot; then &quot;and so did my bills.&quot; Beneath it, small, on its own line: &quot;Ms Park, Building 102, pilot complex&quot;. The coral stamp sits at the end of the quote. The logo is small at the bottom right of the board.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article>
+<article class="card" id="s10">
+  <header><span class="num">10</span><h3>Big idea</h3><div class="badges"><span class="badge">Gable</span></div></header>
+  <p class="why">the one line the council should repeat at their next meeting, given the whole sky.</p>
+  <div class="plate"><button class="copy" data-target="p10">Copy prompt</button><pre id="p10">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo. Place it exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Gable mood. A full bleed documentary photograph of a Seoul apartment complex at blue hour in late November, white fifteen storey blocks, lit windows, ginkgo leaves bright yellow on the paths, a cool clean grade with fine film grain. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Foam #EEF4EF or Deep Teal #0B4F4C. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: low angle from the path, the blocks in the lower third, a deep clear blue hour sky filling the upper two thirds. In the sky, the line &quot;The cleanest bottle is the one you already own.&quot; very large in Foam, set over two lines. Beneath it, &quot;가장 깨끗한 병은, 이미 가진 병입니다.&quot; at half the size. Centred in the foreground on the path among the ginkgo leaves, one empty clear plastic bottle, standing upright, lit by a lobby window. The coral stamp sits beside the bottle. The logo is small at the bottom right.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article>
+<article class="card" id="s11">
+  <header><span class="num">11</span><h3>Close</h3><div class="badges"><span class="badge">Gable</span></div></header>
+  <p class="why">one word and one object: the station glowing in a lobby at night, waiting.</p>
+  <div class="plate"><button class="copy" data-target="p11">Copy prompt</button><pre id="p11">Design a 16:9 presentation slide in Danji Bulletin style. Image 1 is the Mulgyeol Refill logo and Image 2 is the Mulgyeol refill station. Place both exactly as provided, never redrawn.
+
+Style: Danji Bulletin, Gable mood. A full bleed documentary photograph of a Seoul apartment complex at blue hour in late November, white fifteen storey blocks, lit windows, ginkgo leaves bright yellow on the paths, a cool clean grade with fine film grain. Type is a heavy rounded geometric sans for Latin and a bold clean Hangul gothic with generous spacing for Korean, regular weights of the same two families for small lines, the same two families on every slide. Text is Foam #EEF4EF or Deep Teal #0B4F4C. The single accent is one round rubber stamp in Signal Coral #FF5A3C reading &quot;채움&quot;, the only coral on the slide.
+
+Layout: seen from the path outside, the glass doors of a lift lobby glowing warm at night, and inside, the station from Image 2 standing alone, lit. The left third is dark building wall. On it, very large in Foam, &quot;함께 채워요.&quot; and beneath it &quot;Let&#x27;s fill your complex first.&quot; at half the size. Bottom left, small: &quot;partners@mulgyeol.example&quot;. The coral stamp sits pressed on the glass door. The logo sits above the Korean line, small.
+
+Editorial print quality, 2K, all text spelled exactly as quoted, no other text, no watermarks.</pre></div>
+  
+</article></section>
+<footer><p><strong>Run order:</strong> lock the look with the cover first and generate it until it is loved. Then the light slides (03, 04, 09, 10, 11, 02). Heavy slides last (05, 06, 07, 08).</p>
+<p><strong>Style consistency:</strong> run one image model chat session per act so the conversation holds the style. Attach the approved cover as Image 3 on every later prompt and add "Image 3 is the approved style reference; match its design system." Keep the same attachments on every message, edits included.</p>
+<p><strong>Repair rules:</strong> repair beats regeneration. One zone per edit: "Keep everything identical. In [zone] the text must read exactly: '…'". Numbers get proofread first. After 5 to 7 edit rounds, restart from the best frame. A native Korean reader proofs every Hangul line on every render. If a Hangul line keeps failing after three edits, regenerate with that panel empty and set the line as live text.</p>
+<p><strong>Rescue edit</strong> for a render that drifts generic, written for Danji Bulletin: "Crisper matte paper, harder flat daylight, sheets squared to the board, building numerals sharper and larger. Change no text."</p></footer>
+</main>
+<script>
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
+ const t=document.getElementById(b.dataset.target).textContent;
+ const done=()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy prompt',1400)};
+ try{navigator.clipboard.writeText(t).then(done,done)}catch(e){done()}
+}));
+</script></body></html>
