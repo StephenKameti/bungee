@@ -61,7 +61,7 @@ SUNDAY:    Quiet, warm, family. Rest content. "Good Sunday" vibes.
 
 ```
 JAN 1     New Year's Day, aspirational content, new beginnings
-JAN 2-7   First full week back, return to routine content
+JAN 2 to 7   First full week back, return to routine content
 FEB 14    Valentine's Day, couples + family content (not just romantic)
 MAR 8     International Women's Day, women-centred brands lead here
 APR 1     April Fools Day, brand prank content (high engagement)
@@ -70,7 +70,8 @@ MAY 1     Labour Day / Workers Day, "hustle" content, worker appreciation
 MAY (2nd) Mother's Day, highest-engagement Sunday of the year for family brands
 JUN 1     Madaraka Day, national pride content
 JUL to AUG   Long school holiday, children, family, leisure brands activate
-OCT 10    Huduma Day
+OCT 10    Public holiday whose name has changed several times (Moi Day,
+          Huduma Day, Mazingira Day from 2024); confirm the current name
 OCT 20    Mashujaa Day, heroes, inspiration, pride
 DEC 12    Jamhuri Day, national identity, Kenya love
 DEC 25    Christmas, family, food, rest, gifts
@@ -78,6 +79,31 @@ DEC 26 to 31 Year-end / festive, nostalgia, review, new year prep
 ```
 
 Confirm current year dates for any moveable observance (Easter included) before building a calendar around them.
+
+### Islamic calendar, across the region
+
+Eid al Fitr is a public holiday in Kenya, Tanzania, Uganda and Rwanda; Eid al Adha in Kenya, Tanzania and Uganda; Maulid in Tanzania. Ramadan moves about 11 days earlier each year and dates are set by moon sighting (2027: Ramadan from about 8 February, Eid al Fitr about 10 March; 2028: Ramadan from about 28 January, Eid al Fitr about 27 February; confirm each year). On the coast (Mombasa, Lamu, Dar es Salaam, Tanga, Zanzibar) and in many city neighbourhoods Ramadan shapes the whole month: futari (the evening meal) tables, daku (the pre dawn meal), posting around sunset and after it, no daytime eating content that mocks the fast, and Eid as the biggest family day of the year.
+
+### Fixed dates by country (confirm the current gazette each year)
+
+```
+TANZANIA  JAN 12 Zanzibar Revolution Day · APR 7 Karume Day · APR 26
+          Union Day · JUL 7 Saba Saba · AUG 8 Nane Nane, farmers' day
+          · OCT 14 Nyerere Day, remembrance of the founding president,
+          reflective, never promotional · DEC 9 Independence Day
+UGANDA    JAN 26 Liberation Day (political, keep brands out) · FEB 16
+          Janani Luwum Day · MAR 8 Women's Day, a public holiday · JUN 3
+          Martyrs' Day, the Namugongo pilgrimage, reverent · JUN 9
+          Heroes' Day · OCT 9 Independence Day
+RWANDA    FEB 1 Heroes' Day · APR 7 Kwibuka, the start of the national
+          week of mourning (7 to 13 April) and a 100 day remembrance
+          period: no promotional, celebratory or entertainment content
+          in that week, and a restrained tone through the 100 days ·
+          JUL 1 Independence Day · JUL 4 Liberation Day · AUG (first
+          Friday) Umuganura, harvest day · Last Saturday of each month,
+          Umuganda community work morning: most activity stops until
+          about midday, so post after it
+```
 
 ## Sporting calendar anchors
 
@@ -102,7 +128,7 @@ No promotional content on national days of mourning, disaster remembrance dates,
 
 ```
 General
-#NairobiLife #KenyaTwitter #NairobiTwitter #MadeInKenya #KenyaDaily
+#NairobiLife #Kenya254 #NairobiDaily #MadeInKenya #KenyaDaily
 #NairobiFoodie #NairobiEats #KenyaOnline #NairobiMoms #NairobiYouth
 
 FMCG / household
@@ -122,7 +148,18 @@ National moments
 
 Sports
 #KenyaFootball #SportKenya #KenyaRugby
+
+Tanzania (never Kenyan tags)
+#DarEsSalaam #DarEats #Bongo #Tanzania #MadeInTanzania #MapishiYaKitanzania
+
+Uganda
+#Kampala #KampalaEats #Uganda #MadeInUganda
+
+Rwanda
+#Kigali #Rwanda #MadeInRwanda
 ```
+
+These are starting points. Check that a tag is live and used in the way you intend before building a month around it.
 
 ## Wider East Africa notes
 

@@ -43,6 +43,31 @@ Festive      The year-end holiday season and a new year's eve moment,
              markets, reward consistency rather than a first appearance
 ```
 
+## Moveable faith and lunar dates (check every month)
+
+These move against the solar calendar every year, so a fixed list misses them. Before building any month, check whether one of these falls in it or in the week before, confirm the exact local date for the year, and flag any date set by moon sighting as provisional.
+
+```
+Ramadan      A month of daytime fasting, about 11 days earlier each
+             year, start and end set by moon sighting. Shapes the whole
+             month where Muslims are many: post food near the evening
+             meal and after it, shift posting times, keep content
+             welcoming to those not fasting
+Eid al Fitr  The feast that ends Ramadan, one to three days, often a
+             public holiday; date confirmed only the evening before
+Eid al Adha  About 70 days after Eid al Fitr; family, sharing, food
+Lunar new    Late January to mid February in markets on the Chinese,
+year         Korean or Vietnamese lunar calendar; often a multi day
+             holiday with travel home and gifting
+Diwali       October or November; lights, sweets, gifting, family
+Holi         February or March; colour, play, spring
+Vesak        April to June; quiet and reflective in Buddhist markets
+Passover, Rosh Hashanah, Yom Kippur   Spring and early autumn; Yom
+             Kippur is a fast, treat it as a quiet day
+Easter       Western and Orthodox dates differ most years; Good Friday
+             is a quiet day in many Christian markets
+```
+
 ## Sensitive moments (always a rule, not a suggestion)
 
 No promotional content on remembrance days, disaster anniversaries, election dates, or protest or uprising anniversaries specific to the market. These dates are not listed here because they are market-specific, find them in the market module, in the brief, or through direct research before finalising any calendar. When a sensitive date falls inside the target month and no module covers it, ask rather than guess.

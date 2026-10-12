@@ -38,6 +38,7 @@ Read the brief or conversation before asking. Extract what you can, then request
 5. **Campaign or content theme**, any active campaign the calendar should serve
 6. **Posting frequency**, how many posts per week (default: 3 per week on anchor days)
 7. **Mandatories**, any legal, brand, or product claims restrictions
+8. **Prices, offers and brand facts**, prices in local currency, offer dates, stock, history, prizes and service promises. Use only what the brief gives. Where a post needs one that is missing, write a marked placeholder such as TSh [price, to confirm] and list it under Open items. Never invent a sell out, an anniversary, a delivery time or a prize.
 
 ### Inferred Defaults (apply unless overridden)
 - **Anchor posting days**: Monday, Wednesday, Friday
@@ -45,13 +46,15 @@ Read the brief or conversation before asking. Extract what you can, then request
 - **Language**: the market's primary language, plus any code-switch or slang register the market module or brief calls for
 - **Cultural context**: this market's public holidays, sporting events, and neighbourhood-level or community-level social rhythms, baked in
 - **Image generation approach**: use an image model suited to photorealistic people and lifestyle scenes, a separate one suited to product and flat-lay work, and a separate one suited to cinematic or editorial imagery, matched to what the user's own stack supports
-- **Hashtag strategy**: 8 to 12 tags per post, a mix of brand hashtag, category hashtag, and this market's own cultural hashtags
+- **Hashtag strategy**: the count set per platform in Step 5, a mix of brand hashtag, category hashtag, and this market's own cultural hashtags
 
 ---
 
 ## Step 2: Content Architecture
 
 Every calendar is built on the 4-Pillar model. Assign each post a pillar before writing. No more than 40% of posts in any single pillar.
+
+Weeks run Monday to Sunday. A part week of three days or fewer at either end of the month joins the week next to it.
 
 ### The 4 Pillars
 
@@ -71,10 +74,10 @@ Tips, how-tos, explanations, behind-the-scenes, "did you know" content. Builds t
 | Brand Type | P1 Brand | P2 Lifestyle | P3 Community | P4 Education |
 |---|---|---|---|---|
 | FMCG mass market | 30% | 35% | 20% | 15% |
-| Hospitality / restaurant | 35% | 30% | 25% | 10% |
+| Hospitality / restaurant | 30% | 35% | 25% | 10% |
 | Lifestyle / fashion | 25% | 40% | 25% | 10% |
 | Health / behaviour change | 20% | 25% | 25% | 30% |
-| B2B / institutional | 35% | 15% | 20% | 30% |
+| B2B / institutional | 30% | 15% | 20% | 35% |
 
 ---
 
@@ -82,9 +85,11 @@ Tips, how-tos, explanations, behind-the-scenes, "did you know" content. Builds t
 
 Apply this every month before writing any posts. Cultural moments are mandatory anchors, brands that ignore them feel irrelevant.
 
-Load the moments file for the markets in the brief: global moments plus the market's own moments. Start from `references/global-cultural-moments.md` for the moments that recur across many markets in some form (new year, a romantic or gifting occasion, international women's day, a major spring holiday period, a labour or workers day, a mother's or father's day equivalent, a major national day, a major faith or harvest calendar date, a year-end shopping event, the year-end holiday season). Then layer in `references/markets/<market>.md` for that market's own fixed dates, sporting anchors, monthly rhythms and weekly moments. Where a market module exists, its dates and framing take precedence over the generic dataset, since exact dates, moveable dates, and local weight all vary by market.
+Load the moments file for the markets in the brief: global moments plus the market's own moments. Start from `references/global-cultural-moments.md` for the moments that recur across many markets in some form (new year, a romantic or gifting occasion, international women's day, a major spring holiday period, a labour or workers day, a mother's or father's day equivalent, a major national day, a major faith or harvest calendar date, a year-end shopping event, the year-end holiday season). Then layer in `references/markets/<market>.md` for that market's own fixed dates, sporting anchors, monthly rhythms and weekly moments. Where a market module exists, its dates and framing take precedence over the generic dataset, since exact dates, moveable dates, and local weight all vary by market. A module never lists every date: always check the target month for the moveable faith and lunar dates in the global file, and for the country's own dates when the module covers it only in outline.
 
 Sensitive moments, remembrance days, disaster anniversaries, election dates, protest anniversaries, are always a rule, not a suggestion: no promotional content on those dates in that market. Check the market module and the brief for these dates before scheduling, and when in doubt, ask or research rather than guess.
+
+**Quiet days.** On a sensitive date, or a day of worship the market keeps solemn (Good Friday, a remembrance day, a national day of mourning), post nothing promotional and pause paid posts. Either leave the day silent or post one plain line with no product, no CTA and no hashtags, and move the anchor slot to the nearest suitable day. The anchor day and CTA rules do not apply to a quiet day. Show it in the calendar as a quiet day, so nobody fills the gap.
 
 ### Example: East Africa (Kenya)
 See `references/markets/east-africa.md` for the full fixed annual moments list, monthly social rhythms, sporting anchors and hashtag sets, and `references/markets/east-africa-calendar.md` for the month-by-month content angles and arcs.
@@ -112,9 +117,14 @@ cultural moment if relevant.]
 [Hashtags on a separate line at the end: #Brand #Category #Market #Cultural]
 
 VISUAL DIRECTION:
-[Shot type + subject + environment + lighting + colour + text zone + tool]
-[Written as a pasteable image generation prompt]
+[A full standalone image prompt, pasteable on its own: ratio in words,
+shot type, subject, place, season and time of day, light, the feed
+look palette written out with hex, the text zone as a percent of the
+frame, and the tool. Never "as post 3" or "same scene".]
 [Specify: with text overlay OR no text overlay, both options if relevant]
+[The real pack and logo are placed in design. In the prompt a pack is
+a plain shape in the brand colours with a smooth blank label panel
+and no lettering.]
 
 POSTING TIME: [Specific, e.g. "Friday 5:30 PM"]
 FORMAT: [Feed post / Short video / Story / Carousel, with specs if short video/Carousel]
@@ -138,9 +148,12 @@ POSTER FRAME: [time in seconds]
 
 Apply these format rules per platform type. Never write the same caption for every platform. If the market module names a locally dominant platform not covered below, follow the closest matching format type and note the local platform explicitly.
 
+Word counts are English words. Languages that fold more meaning into a word or are written without spaces (Korean, Japanese, Chinese, Thai, Swahili and others) match the length of the English gloss, not the literal count. Short, punchy and emotive beats long: every caption earns each line.
+
 ### Photo and stories feed platform
 ```
-Length: 150 to 300 words for feed posts (longer if storytelling).
+Length: 40 to 120 words for feed posts. One storytelling post a
+        week may run to 200. The first line carries the post.
         Stories: 3 to 5 words max visible text.
 Opener: First line must be a scroll-stopper, no "We are excited to..."
 Structure: Hook → Story or context → CTA → Hashtags (last line)
@@ -149,13 +162,13 @@ Hashtag count: 8 to 12. Mix: brand (1), campaign (1 to 2), category (2 to 3),
 Language: Match brand register, formal for upper income tiers,
           the market's mass-market inflected language for broad reach,
           youth code-switch register for youth-first brands
-Short video caption: Shorter, 50 to 100 words. Hook in first 3 words
+Short video caption: Shorter, 30 to 80 words. Hook in first 3 words
               (visible before the "more" cut)
 ```
 
 ### Short video platform
 ```
-Length: 100 to 150 words max
+Length: 30 to 80 words
 Opener: First 3 words = the hook. This determines if they watch.
 Tone: Direct, unpolished, real. Less brand voice, more human voice.
 Hashtags: 4 to 6. Include trending local hashtags for this market's
@@ -219,7 +232,7 @@ These rules apply across all platforms and all brands:
 **Always:**
 - Write the caption aloud before finalising, if it sounds like a press release, rewrite it
 - Include one specific local reference per week (a neighbourhood, a food, a cultural habit, a known moment), sourced from the market module or research, never invented
-- End every caption with a clear CTA, even soft ones ("Drop your answer below" counts)
+- End every caption with a clear CTA, even soft ones ("Drop your answer below" counts), except on a quiet day (Step 3)
 - Use the correct language register for the market: formal use of the market's official or business language for premium and B2B, the market's own mass-market colloquial blend for FMCG, and the market's youth code-switch register for youth-first brands. For example, in Kenya this is formal English for premium, Swahili-inflected English for FMCG mass market, and Sheng for youth brands; in the Philippines the equivalent pattern is formal English for premium, Taglish for FMCG mass market, and youth-coined slang for youth brands.
 
 **Local-language caption rules:**
@@ -235,18 +248,20 @@ These rules apply across all platforms and all brands:
 ### Deliver as a full monthly calendar
 
 Structure:
-1. **Calendar overview**, brand, month, platform(s), total post count, pillar split, key cultural moments flagged
+1. **Calendar overview**, brand, month, platform(s), total post count, pillar split, key cultural moments flagged, quiet days, dates still to confirm, and the feed look: four or five hex colours (from the brand, or proposed and marked proposed), one light and grade, one type zone rule. Every visual prompt writes the feed look out in full, so the month hangs together as one grid
 2. **Week-by-week breakdown**, each week as a section with its cultural context note
 3. **Per-post entries**, all six components, every post
 4. **Hashtag master list**, brand hashtags + category hashtags + this market's own cultural hashtags to rotate
 5. **Image production priority**, which 5 posts to brief to the designer first (usually the highest-reach moments: end-of-week posts, cultural moment posts, campaign hero posts)
+6. **Open items**, every placeholder price, unconfirmed date, prize or claim the client must confirm
 
 ### Visual format
-Deliver as an interactive widget with:
-- Week tabs or expandable week sections
-- Per-post card: date / day / pillar badge / theme / caption block / visual direction / time
-- Copy button on each caption
-- Cultural moment flags highlighted in a distinct colour
+Deliver one self contained HTML file:
+- Tabs for the overview, each week, the hashtag list, image priority and open items
+- Per-post card carrying every component: number, date and day, pillar badge, theme, platform, format, posting time, CTA, caption, visual direction, motion brief where there is one, and any messaging broadcast
+- Copy button on every caption, broadcast, visual prompt and motion brief
+- Cultural moment flags highlighted in a distinct colour; quiet days shown as their own card
+- Readable at 390 px phone width with no sideways scroll, in light and dark mode
 
 ### When building a single post or small set
 - Deliver full per-post architecture for each requested post
@@ -262,10 +277,11 @@ Before finalising, verify every post has:
 - [ ] Caption written in full, not a summary or placeholder
 - [ ] Caption does not open with brand name, "We are excited", or a hashtag
 - [ ] Local-language captions are a cultural rewrite, not a translation
-- [ ] Visual direction is a pasteable prompt, not a vague description
+- [ ] Visual direction is a full standalone prompt with the feed look hex palette, and any pack has a blank label panel
+- [ ] No invented price, offer, history, prize or promise; placeholders listed under Open items
 - [ ] Posting time specified
-- [ ] CTA included
-- [ ] This market's cultural moment anchors used for all relevant dates, and sensitive dates avoided
+- [ ] CTA included, except on a quiet day
+- [ ] This market's cultural moment anchors used for all relevant dates, moveable faith dates checked, sensitive dates avoided and quiet days marked
 - [ ] Platform-specific format applied (short video vs feed, length, hashtag count)
 - [ ] Every short video, story or animated post has a compact motion brief, with the hook on screen in the first 2 seconds and a sound off test
 - [ ] At least 1 community post per week

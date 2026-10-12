@@ -34,7 +34,7 @@ Tied to this market's own working day and commute pattern.
 
 ## Fixed annual moments
 
-Date-by-date list of this market's own fixed public holidays, faith or harvest calendar dates, and culturally significant days, with the content angle each one supports. Flag every moveable date and note that current-year dates get confirmed before use.
+Date-by-date list of this market's own fixed public holidays, faith or harvest calendar dates, and culturally significant days, with the content angle each one supports. Flag every moveable date and note that current-year dates get confirmed before use. List the moveable faith and lunar dates observed here (for example Ramadan and the Eids, the lunar new year, Diwali, Easter) and what each does to posting times and tone.
 
 ## Sporting calendar anchors
 
