@@ -19,6 +19,7 @@ Cast by context, never by stacked category. Do not write "Black Kenyan people on
 - Large modern chain supermarkets exist mainly in urban malls and higher income neighbourhoods; describe generically ("a large modern supermarket chain") rather than naming a retailer
 - Open air markets, kiosks and small independent shops are a major channel outside major cities and for lower cost categories; a display unit brief for this channel needs a much smaller, more rugged format, not a scaled down version of the mall unit
 - Outside Nairobi, Mombasa's coastal retail carries warmer, more humid feeling light and a different architectural texture; do not reuse Nairobi's retail texture unchanged
+- Outside Kenya, research the named city rather than reusing Kenyan texture. Two starting points: in Dar es Salaam, small shops often serve through a steel grille window, goods hang on the grille, power cuts are frequent and Swahili leads every line; in Kampala, the small trade runs through roadside kiosks and arcade shops, and English and Luganda lead. Describe chains generically in every country
 
 ## Light and season
 
@@ -26,7 +27,7 @@ Indoor retail lighting is the dominant condition for most FSU renders (fluoresce
 
 ## Language and local line rules, with examples
 
-Any wordmark or shelf talker text stays blank for the designer, per the standing text lockdown rule, so a local line rarely renders inside the image itself. Where a brief calls for it anyway (a mascot's spoken line represented as a small sign, for example), follow the same rule as the key visual work: set the language order by country (see Languages by country), with Swahili and Sheng as the Kenyan local register, blended naturally rather than translated, and tested against the specific audience named in the brief. See the key visual builder skill's market module for worked example lines.
+Any wordmark or shelf talker text stays blank for the designer, per the standing text lockdown rule, so a local line rarely renders inside the image itself. Where a brief calls for it anyway (a mascot's spoken line represented as a small sign, for example), set the language order by country (see Languages by country), with Swahili and Sheng as the Kenyan local register, blended naturally rather than translated, tested against the specific audience named in the brief, and checked by a native writer from that city before artwork.
 
 ## Retail environment
 
