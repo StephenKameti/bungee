@@ -23,7 +23,7 @@ How natural and retail lighting differ across this market's regions and seasons,
 
 ## Language and local line rules, with examples
 
-Note that generated units keep all printed panels and shelf talkers blank for the designer by default. Fill this section only if the brief calls for a rendered local line (a mascot's sign, a spoken line represented visually); otherwise note that it defers to the matching key visual market module, if one exists.
+Note that generated units keep all printed panels and shelf talkers blank for the designer by default. Fill this section only if the brief calls for a rendered local line (a mascot's sign, a spoken line represented visually): the language order, the local register, and who must check a line before artwork. Otherwise note that every panel stays blank.
 
 ## Retail environment
 

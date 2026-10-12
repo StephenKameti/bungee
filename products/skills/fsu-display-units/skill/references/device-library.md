@@ -16,15 +16,15 @@ The unit IS the pack at 1.5 to 2.5 m. Not a poster of the pack, a dimensional, e
 A single suspended moment of use: the drop mid fall, the pour mid stream, the crumble mid air, lather mid rise. Rendered glossy and lit as the jewel of the unit, held on slim brass arms or hidden mounts.
 
 - **Best at:** medium units and counter glorifiers. The moment must be readable in half a second from ten metres.
-- **Cost tier:** medium-high (resin/acrylic sculpt plus mount).
+- **Cost tier:** medium to high (resin/acrylic sculpt plus mount).
 - **Prompt language:** "a single giant suspended drop, perfectly formed, glossy and translucent, catching the light, frozen mid fall"; give the motion a destination ("falls toward a shallow stone bowl where soft concentric ripple rings are carved as if the surface had just been touched").
 - **Watch for:** one moment only. A drop AND a splash AND a pour is noise. In the honesty flags, note the suspended element needs rigging.
 
 ## 3. Campaign device in 3D
 
-Translate the campaign's key visual mechanic into an object: the campaign mirror becomes a real mirror arch with shelf wings; the campaign doorway becomes a walk-up portal; a mascot becomes a sculpted greeter. This is the device that makes a unit ownable, competitors can copy a glorifier, they cannot copy your campaign.
+Translate the campaign's key visual mechanic into an object: the campaign mirror becomes a real mirror arch with shelf wings; the campaign doorway becomes a walk up portal; a mascot becomes a sculpted greeter. This is the device that makes a unit ownable, competitors can copy a glorifier, they cannot copy your campaign.
 
-- **Best at:** any size; scales down well (a full-length mirror arch becomes a counter vanity mirror).
+- **Best at:** any size; scales down well (a full length mirror arch becomes a counter vanity mirror).
 - **Cost tier:** varies with the device.
 - **Prompt language:** build the interaction in: "a person looking into the mirror sees themselves framed by the full range"; "the shopper becomes the key visual while standing at the shelf."
 - **Watch for:** overuse across the wider campaign. If the device already appears at six other touchpoints, choose a different family for retail or the campaign has one idea instead of a platform. Say so.
@@ -40,7 +40,7 @@ Internal glow, a halo ring, a lit horizon line, a product floating in a circle o
 
 ## 5. Narrative structure
 
-The form of the unit draws the product story in space. A regimen as ascending platforms. A continuous lacquered ribbon folding into shelves, one per step of the ritual. A left-to-right journey from raw ingredient to finished product. The unit teaches by standing there.
+The form of the unit draws the product story in space. A regimen as ascending platforms. A continuous lacquered ribbon folding into shelves, one per step of the ritual. A left to right journey from raw ingredient to finished product. The unit teaches by standing there.
 
 - **Best at:** ranges with a genuine sequence (skincare routines, cooking steps, before/during/after). Do not force a narrative onto a range that has none.
 - **Cost tier:** medium.
