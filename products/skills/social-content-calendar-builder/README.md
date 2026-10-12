@@ -1,6 +1,6 @@
 # Social Content Calendar Builder by Bungee
 
-Complete monthly social calendars for any brand in any market: pillars, platform specific posts, captions in the market's languages a compact motion brief for every short video post, and a cultural moments layer that knows when to go quiet. Ships with the East Africa market module; add your own from the template.
+Complete monthly social calendars for any brand in any market: pillars, platform specific posts, captions in the market's languages, a compact motion brief for every short video post, and a cultural moments layer that tracks moveable feasts and knows when to go quiet. Prices and claims come from your brief, never invented. Ships with the East Africa market module; add your own from the template.
 
 ## What is in the box
 * `social-content-calendar-builder.zip`: the Claude skill, ready to upload

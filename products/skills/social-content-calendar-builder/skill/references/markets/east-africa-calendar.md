@@ -7,6 +7,8 @@ primary_reference: Kenya
 
 Companion file to `references/markets/east-africa.md`, which holds the fixed annual moments list, weekly and monthly rhythms, sporting anchors, hashtag sets and language rules. This file gives the fuller month-by-month content angles, arcs and avoid lists. Read the relevant month section before building any calendar for this market.
 
+The months below are written from Kenya and follow the solar calendar only. Ramadan and the two Eids move about 11 days earlier each year and can fall in any month: check the Islamic calendar section of `east-africa.md` first, and when Ramadan falls in the month, let it set the posting rhythm, above all on the coast and in Tanzania. For Tanzania, Uganda and Rwanda, take national dates from the fixed dates by country in `east-africa.md`, not from the Kenyan dates here.
+
 ---
 
 ## JANUARY
@@ -146,7 +148,7 @@ Companion file to `references/markets/east-africa.md`, which holds the fixed ann
 **Key moments:**
 - Oct 1, International Coffee Day. Coffee brands, hospitality, and lifestyle brands activate. Kenyan coffee is a source of national pride, use it.
 - Oct 10, World Mental Health Day. Handle with care. Authentic storytelling only, no brand washing.
-- Oct 10, Huduma Day (public holiday).
+- Oct 10, public holiday (named Mazingira Day from 2024; confirm the current name).
 - Oct 20, Mashujaa Day (Heroes Day). National pride content. Stories of Kenyan heroes, community, innovation, resilience. More personal and story-driven than Madaraka Day.
 - Oct 31, a global costume/novelty observance with low Kenyan cultural resonance for mass market, stronger for premium/youth brands with international audiences.
 
