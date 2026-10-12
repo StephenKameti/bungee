@@ -8,7 +8,7 @@ Turn any brief into 6 to 8 distinct campaign Key Visual routes for any market, e
 * `LICENSE.txt`: your licence
 
 ## Install (2 minutes)
-1. Open Claude and go to your Skills settings (skills need a paid plan with code execution on).
+1. Open Claude and go to your Skills settings (skills work on every Claude plan, Free included, with code execution and file creation on).
 2. Upload `key-visual-builder.zip`.
 3. Start a new chat. The skill switches on by itself when your request matches.
 
