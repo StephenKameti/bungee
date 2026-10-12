@@ -19,7 +19,7 @@ In Kenya, Uganda and Zambia the working language of business and design is Engli
 
 ## Media and channels
 
-Chat app forwarding is a genuine distribution channel for a designed slide cropped out of a deck, so test legibility at forwarded thumbnail size. Billboards and street level out of home are viewed at speed from vehicles on arterial roads or at a stationary glance in traffic, both worth designing text zones around if a deck slide will be adapted to that format. Matatu (the shared minibus system, usually vividly branded) and boda boda (motorcycle taxi) culture is a genuine source of graphic texture, hand painted lettering, sticker collage, bold vivid colour blocking, worth drawing on for a challenger or youth brand's design language rather than importing wholesale. Radio remains a strong reach medium outside major urban centres.
+Chat app forwarding is a genuine distribution channel for a designed slide cropped out of a deck, so test legibility at forwarded thumbnail size. Billboards and street level out of home are viewed at speed from vehicles on arterial roads or at a stationary glance in traffic, both worth designing text zones around if a deck slide will be adapted to that format. Matatu (the shared minibus system, usually vividly branded) and boda boda (motorcycle taxi) culture is a genuine source of graphic texture, hand painted lettering, sticker collage, bold vivid colour blocking, worth drawing on for a challenger or youth brand's design language rather than importing wholesale. In Tanzania the shared minibus is the daladala and the three wheeler the bajaji; Dar es Salaam's wholesale texture centres on Kariakoo, not on any Nairobi reference. Radio remains a strong reach medium outside major urban centres.
 
 ## Retail and price
 
@@ -35,7 +35,7 @@ Research the current year's dates before using any of these, several move on the
 
 ## Regulatory notes
 
-Alcohol and tobacco categories carry advertising restrictions on audience, watershed and imagery that a deck's slide copy and casting must observe. Health, hygiene and efficacy claims (kills a stated percentage of germs, clinically proven) need a cleared substantiation line before they are rendered as on-slide copy, flag any unverified claim rather than rendering it. Sponsorship and tournament work carries flag and jersey restrictions when a major sporting event is involved. Child safety protocols apply whenever a minor appears in casting.
+Alcohol and tobacco categories carry advertising restrictions on audience, watershed and imagery that a deck's slide copy and casting must observe. Health, hygiene and efficacy claims (kills a stated percentage of germs, clinically proven) need a cleared substantiation line before they are rendered as on slide copy, flag any unverified claim rather than rendering it. Sponsorship and tournament work carries flag and jersey restrictions when a major sporting event is involved. Child safety protocols apply whenever a minor appears in casting.
 
 ## Languages by country
 

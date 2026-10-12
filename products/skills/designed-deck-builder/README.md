@@ -1,6 +1,6 @@
 # Designed Deck Builder by Bungee
 
-Turn a plain deck into image prompts that generate fully designed slides, copy included, in a design language invented for that brand and its market. Consistent typography across every slide, comments actioned before design starts.
+Turn a plain deck into image prompts that generate fully designed slides, copy included, in a design language invented for that brand and its market. One locked type system across every slide. Comments and copy fixes actioned before design starts.
 
 ## What is in the box
 * `designed-deck-builder.zip`: the Claude skill, ready to upload
@@ -18,7 +18,7 @@ Turn a plain deck into image prompts that generate fully designed slides, copy i
 * Give me designed slide prompts for a 12 slide investor deck
 
 ## Markets
-Name the market in your request and the skill builds everything local from it: casting, places, language, channels, prices and cultural dates. To make a market permanent, copy `references/markets/TEMPLATE.md` inside the skill, fill it in, and save it as `references/markets/<your-market>.md`. The East Africa module is included as a worked example.
+Name the market in your request and the skill builds everything local from it: textures, street and retail references, casting, places, prices, how local language copy renders, and the claim rules on slide copy. To make a market permanent, copy `references/markets/TEMPLATE.md` inside the skill, fill it in, and save it as `references/markets/<your-market>.md`. The East Africa module is included as a worked example.
 
 ## Getting the best results
 * Attach whatever you have: brief, deck, logo, pack shots, reference images. The skill reads them.
