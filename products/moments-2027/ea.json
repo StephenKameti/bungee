@@ -60,7 +60,6 @@
    "end": "2027-01-15",
    "countries": [
     "KE",
-    "UG",
     "TZ",
     "ZM",
     "RW"
@@ -70,7 +69,7 @@
    "date_status": "confirm",
    "angle": "Lunchboxes, uniforms, school fees stress, the first drop off. Big for FMCG, banks and telcos.",
    "hook": "New term, same hustle, fresh start.",
-   "avoid": "Assuming every family can afford the full list. Confirm each ministry's term dates."
+   "avoid": "Assuming every family can afford the full list. Kenya opens 4 January. Uganda opens in February, so plan it separately. Confirm each ministry's term dates."
   },
   {
    "start": "2027-01-12",
@@ -189,15 +188,15 @@
    "avoid": "Using sacred ritual imagery as a costume. Work with the organisers."
   },
   {
-   "start": "2027-02-01",
-   "end": "2027-02-28",
+   "start": "2027-03-19",
+   "end": "2027-03-21",
    "countries": [
     "TZ"
    ],
    "title": "Zanzibar music festival season",
    "category": "Cultural",
-   "date_status": "confirm",
-   "angle": "The islands host one of the continent's best loved music festivals. Lifestyle, drinks and travel brands.",
+   "date_status": "fixed",
+   "angle": "The islands host one of the continent's best loved music festivals, set for 19 to 21 March, after Ramadhan and Eid. Lifestyle, drinks and travel brands.",
    "hook": "Zanzibar sounds different.",
    "avoid": ""
   },
@@ -658,8 +657,8 @@
    "avoid": ""
   },
   {
-   "start": "2027-07-01",
-   "end": "2027-07-31",
+   "start": "2027-06-15",
+   "end": "2027-07-15",
    "countries": [
     "TZ"
    ],
@@ -668,10 +667,10 @@
    "date_status": "confirm",
    "angle": "Film, art and travel audiences.",
    "hook": "",
-   "avoid": ""
+   "avoid": "Confirm the dates with the organisers. The 2026 edition ran in late June."
   },
   {
-   "start": "2027-07-29",
+   "start": "2027-07-28",
    "end": "2027-08-02",
    "countries": [
     "ZM"
@@ -749,7 +748,7 @@
    "avoid": ""
   },
   {
-   "start": "2027-08-15",
+   "start": "2027-08-14",
    "end": "2027-08-15",
    "countries": [
     "TZ",
@@ -758,7 +757,7 @@
    "title": "Maulid (Prophet's Birthday)",
    "category": "Religious",
    "date_status": "expected",
-   "angle": "Public holiday in Tanzania. Lamu and the Kenyan coast hold famous Maulid celebrations.",
+   "angle": "Expected 14 or 15 August by moon sighting. Public holiday in Tanzania. Lamu and the Kenyan coast hold famous Maulid celebrations.",
    "hook": "Maulid njema.",
    "avoid": ""
   },
@@ -823,7 +822,7 @@
    "title": "KCSE exams, final ever sitting",
    "category": "Commercial",
    "date_status": "confirm",
-   "angle": "2027 is expected to be the last KCSE. A once only moment: the final class. Education, telco, FMCG goodwill.",
+   "angle": "KNEC confirms 2027 is the last KCSE. A once only moment: the final class. Education, telco, FMCG goodwill.",
    "hook": "The last class. Make it count.",
    "avoid": "Adding exam pressure. Confirm dates with KNEC."
   },
@@ -904,7 +903,7 @@
    ],
    "title": "Diwali",
    "category": "Religious",
-   "date_status": "expected",
+   "date_status": "fixed",
    "angle": "Strong in the South Asian communities of Nairobi, Mombasa, Kampala and Dar. Food, gifting, gold.",
    "hook": "Happy Diwali.",
    "avoid": ""
@@ -950,7 +949,7 @@
    "date_status": "confirm",
    "angle": "Dhow races, donkey races, Swahili heritage. Travel and lifestyle.",
    "hook": "",
-   "avoid": ""
+   "avoid": "Fixing a date early. The 2026 edition moved to December to avoid Maulidi, so confirm 2027 with the county."
   },
   {
    "start": "2027-12-01",

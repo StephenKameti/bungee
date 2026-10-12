@@ -44,7 +44,7 @@ DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270116
 SUMMARY:[EA] Back to school
-DESCRIPTION:Lunchboxes\, uniforms\, school fees stress\, the first drop off. Big for FMCG\, banks and telcos.\nHook: New term\, same hustle\, fresh start.\nAvoid: Assuming every family can afford the full list. Confirm each ministry's term dates.\nRegions: East Africa\nMarkets: Kenya\, Uganda\, Tanzania\, Zambia\, Rwanda
+DESCRIPTION:Lunchboxes\, uniforms\, school fees stress\, the first drop off. Big for FMCG\, banks and telcos.\nHook: New term\, same hustle\, fresh start.\nAvoid: Assuming every family can afford the full list. Kenya opens 4 January. Uganda opens in February\, so plan it separately. Confirm each ministry's term dates.\nRegions: East Africa\nMarkets: Kenya\, Tanzania\, Zambia\, Rwanda
 CATEGORIES:Commercial
 END:VEVENT
 BEGIN:VEVENT
@@ -131,15 +131,6 @@ END:VEVENT
 BEGIN:VEVENT
 UID:bungee-2027-m014@bungee
 DTSTAMP:20260928T000000Z
-DTSTART;VALUE=DATE:20270201
-DTEND;VALUE=DATE:20270301
-SUMMARY:[EA] Zanzibar music festival season
-DESCRIPTION:The islands host one of the continent's best loved music festivals. Lifestyle\, drinks and travel brands.\nHook: Zanzibar sounds different.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania
-CATEGORIES:Cultural
-END:VEVENT
-BEGIN:VEVENT
-UID:bungee-2027-m015@bungee
-DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270210
 SUMMARY:Carnival and Mardi Gras
@@ -147,7 +138,7 @@ DESCRIPTION:Rio\, Salvador\, New Orleans\, Venice\, Trinidad\, Cologne. Colour\,
 CATEGORIES:Cultural
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m016@bungee
+UID:bungee-2027-m015@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270212
@@ -156,7 +147,7 @@ DESCRIPTION:6 February is the day. A week of travel\, family\, red packets and g
 CATEGORIES:Holiday
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m017@bungee
+UID:bungee-2027-m016@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
@@ -165,7 +156,7 @@ DESCRIPTION:New Zealand's national day. Reflective as much as celebratory.\nHook
 CATEGORIES:Holiday
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m018@bungee
+UID:bungee-2027-m017@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270310
@@ -174,7 +165,7 @@ DESCRIPTION:Expected start 8 February\, moon sighting confirms. Iftar tables\, g
 CATEGORIES:Religious
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m019@bungee
+UID:bungee-2027-m018@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270310
@@ -183,7 +174,7 @@ DESCRIPTION:Iftar tables\, generosity\, night markets on the coast. Food\, telco
 CATEGORIES:Religious
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m020@bungee
+UID:bungee-2027-m019@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270210
 DTEND;VALUE=DATE:20270328
@@ -192,7 +183,7 @@ DESCRIPTION:Ash Wednesday 10 February. Forty days of restraint for many Christia
 CATEGORIES:Religious
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m021@bungee
+UID:bungee-2027-m020@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270210
 DTEND;VALUE=DATE:20270326
@@ -201,7 +192,7 @@ DESCRIPTION:2027 insight: Lent and Ramadhan run almost side by side. Two faiths 
 CATEGORIES:Religious
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m022@bungee
+UID:bungee-2027-m021@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
@@ -210,7 +201,7 @@ DESCRIPTION:Inglewood\, California\, 14 February. The biggest advertising night 
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m023@bungee
+UID:bungee-2027-m022@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
@@ -219,7 +210,7 @@ DESCRIPTION:A Sunday inside both Lent and Ramadan\, and Super Bowl Sunday in the
 CATEGORIES:Commercial
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m024@bungee
+UID:bungee-2027-m023@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
@@ -228,7 +219,7 @@ DESCRIPTION:Falls on a Sunday inside both Lent and Ramadhan. Love for family\, f
 CATEGORIES:Commercial
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m025@bungee
+UID:bungee-2027-m024@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270216
 DTEND;VALUE=DATE:20270217
@@ -237,7 +228,7 @@ DESCRIPTION:Faith\, courage and conscience. Reflective tone.\nHook: \nAvoid: \nR
 CATEGORIES:Holiday
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m026@bungee
+UID:bungee-2027-m025@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
@@ -246,7 +237,7 @@ DESCRIPTION:Closes the Lunar New Year period. Lanterns\, sweet rice balls\, reun
 CATEGORIES:Cultural
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m027@bungee
+UID:bungee-2027-m026@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270416
@@ -255,7 +246,7 @@ DESCRIPTION:The Litunga's royal barge moves to higher ground. Date is set by the
 CATEGORIES:Cultural
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m028@bungee
+UID:bungee-2027-m027@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270601
@@ -264,7 +255,7 @@ DESCRIPTION:Comfort food\, home care\, mosquito protection\, planting season upc
 CATEGORIES:Seasonal
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m029@bungee
+UID:bungee-2027-m028@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270308
 DTEND;VALUE=DATE:20270309
@@ -273,7 +264,7 @@ DESCRIPTION:A public holiday in many countries. Real names\, real stories\, real
 CATEGORIES:Commercial
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m030@bungee
+UID:bungee-2027-m029@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270308
 DTEND;VALUE=DATE:20270309
@@ -282,7 +273,7 @@ DESCRIPTION:Public holiday in Uganda and Zambia. Real stories and real names\, n
 CATEGORIES:Commercial
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m031@bungee
+UID:bungee-2027-m030@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270311
@@ -291,7 +282,7 @@ DESCRIPTION:Expected 9 or 10 March by moon sighting. New clothes\, sweets\, fami
 CATEGORIES:Religious
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m032@bungee
+UID:bungee-2027-m031@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270311
@@ -300,7 +291,7 @@ DESCRIPTION:Public holiday. New clothes\, family lunches\, coastal celebrations.
 CATEGORIES:Religious
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m033@bungee
+UID:bungee-2027-m032@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270312
 DTEND;VALUE=DATE:20270313
@@ -309,7 +300,7 @@ DESCRIPTION:Young Zambians\, jobs\, ambition\, creativity. Telco and education b
 CATEGORIES:Holiday
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m034@bungee
+UID:bungee-2027-m033@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
@@ -318,12 +309,21 @@ DESCRIPTION:The fourth Sunday of Lent. Flowers\, cards\, meals. Include every ki
 CATEGORIES:Commercial
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m035@bungee
+UID:bungee-2027-m034@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270318
 SUMMARY:St Patrick's Day
 DESCRIPTION:Ireland's day\, celebrated loudly across the diaspora. Hospitality\, drinks and green everything.\nHook: Green all day.\nAvoid: Drunk stereotypes.\nRegions: Europe\, Americas\, Worldwide
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m035@bungee
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270322
+SUMMARY:[EA] Zanzibar music festival season
+DESCRIPTION:The islands host one of the continent's best loved music festivals\, set for 19 to 21 March\, after Ramadhan and Eid. Lifestyle\, drinks and travel brands.\nHook: Zanzibar sounds different.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania
 CATEGORIES:Cultural
 END:VEVENT
 BEGIN:VEVENT
@@ -339,9 +339,9 @@ BEGIN:VEVENT
 UID:bungee-2027-m037@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270322
-DTEND;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
 SUMMARY:Holi
-DESCRIPTION:The festival of colours across India\, Nepal and the diaspora. Joy\, mess\, forgiveness\, spring.\nHook: Colour outside the lines.\nAvoid: Colour powder imagery on white skin only. Cast the people who actually celebrate.\nRegions: South Asia\, Worldwide
+DESCRIPTION:Holika Dahan bonfires on the night of 22 March\, colours on 23 March in India. The festival of colours across India\, Nepal and the diaspora. Joy\, mess\, forgiveness\, spring.\nHook: Colour outside the lines.\nAvoid: Colour powder imagery on white skin only. Cast the people who actually celebrate.\nRegions: South Asia\, Worldwide
 CATEGORIES:Cultural
 END:VEVENT
 BEGIN:VEVENT
@@ -449,7 +449,7 @@ DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270417
 DTEND;VALUE=DATE:20270504
 SUMMARY:World Snooker Championship centenary
-DESCRIPTION:Sheffield's Crucible marks 100 years. Niche but beloved in the UK\, Ireland\, China and beyond.\nHook: \nAvoid: \nRegions: Europe
+DESCRIPTION:The championship turns 100\, and Sheffield's Crucible hosts it for a 51st straight year. Niche but beloved in the UK\, Ireland\, China and beyond.\nHook: \nAvoid: \nRegions: Europe
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
@@ -602,7 +602,7 @@ DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270520
 DTEND;VALUE=DATE:20270521
 SUMMARY:Vesak
-DESCRIPTION:Buddha Day across Sri Lanka\, Thailand\, Vietnam\, Indonesia\, Korea and beyond. Lanterns\, offerings\, kindness.\nHook: Light for everyone.\nAvoid: Buddha imagery as decor.\nRegions: Asia Pacific\, South Asia
+DESCRIPTION:20 May in India\, Singapore and most markets\; a few national calendars differ\, so check locally. Buddha Day across Sri Lanka\, Thailand\, Vietnam\, Indonesia\, Korea and beyond. Lanterns\, offerings\, kindness.\nHook: Light for everyone.\nAvoid: Buddha imagery as decor.\nRegions: Asia Pacific\, South Asia
 CATEGORIES:Religious
 END:VEVENT
 BEGIN:VEVENT
@@ -698,6 +698,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:bungee-2027-m077@bungee
 DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270716
+SUMMARY:[EA] Zanzibar film festival season
+DESCRIPTION:Film\, art and travel audiences.\nHook: \nAvoid: Confirm the dates with the organisers. The 2026 edition ran in late June.\nRegions: East Africa\nMarkets: Tanzania
+CATEGORIES:Cultural
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m078@bungee
+DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270616
 DTEND;VALUE=DATE:20270617
 SUMMARY:[EA] Day of the African Child
@@ -705,7 +714,7 @@ DESCRIPTION:Children's rights\, education\, play. Kids and education brands.\nHo
 CATEGORIES:Commercial
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m078@bungee
+UID:bungee-2027-m079@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270619
 DTEND;VALUE=DATE:20270620
@@ -714,16 +723,16 @@ DESCRIPTION:Freedom day in the United States. Community\, history\, Black owned 
 CATEGORIES:Cultural
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m079@bungee
+UID:bungee-2027-m080@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270619
-DTEND;VALUE=DATE:20270719
+DTEND;VALUE=DATE:20270718
 SUMMARY:Africa Cup of Nations
 DESCRIPTION:Kenya\, Uganda and Tanzania host the continent's championship. Fan zones\, watch parties\, telco data\, food and drink across Africa and the diaspora.\nHook: The whole continent\, one screen.\nAvoid: Using the tournament's marks or name commercially without rights.\nRegions: Africa\, Worldwide
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m080@bungee
+UID:bungee-2027-m081@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270619
 DTEND;VALUE=DATE:20270718
@@ -732,7 +741,7 @@ DESCRIPTION:The continental nations championship returns to East Africa for the 
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m081@bungee
+UID:bungee-2027-m082@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270620
 DTEND;VALUE=DATE:20270621
@@ -741,7 +750,7 @@ DESCRIPTION:Third Sunday of June in the US\, UK\, Canada\, France\, India\, Japa
 CATEGORIES:Commercial
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m082@bungee
+UID:bungee-2027-m083@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270620
 DTEND;VALUE=DATE:20270621
@@ -750,7 +759,7 @@ DESCRIPTION:Lands inside the championship group stage. Dads\, football and food 
 CATEGORIES:Commercial
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m083@bungee
+UID:bungee-2027-m084@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270621
 DTEND;VALUE=DATE:20270622
@@ -759,7 +768,7 @@ DESCRIPTION:Longest day in the north\, shortest in the south. Wellness\, outdoor
 CATEGORIES:Seasonal
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m084@bungee
+UID:bungee-2027-m085@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270624
 DTEND;VALUE=DATE:20270726
@@ -768,7 +777,7 @@ DESCRIPTION:Brazil hosts\, the first time in South America. 32 teams\, eight cit
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m085@bungee
+UID:bungee-2027-m086@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270625
 DTEND;VALUE=DATE:20270626
@@ -777,7 +786,7 @@ DESCRIPTION:A painful date for many young Kenyans. Most brands should stay quiet
 CATEGORIES:Sensitive
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m086@bungee
+UID:bungee-2027-m087@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270628
 DTEND;VALUE=DATE:20270712
@@ -786,7 +795,7 @@ DESCRIPTION:Strawberries\, queues\, rain delays and the most prestigious fortnig
 CATEGORIES:Sport
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m087@bungee
+UID:bungee-2027-m088@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
@@ -795,7 +804,7 @@ DESCRIPTION:National day. Summer\, fireworks\, cottages.\nHook: \nAvoid: \nRegio
 CATEGORIES:Holiday
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m088@bungee
+UID:bungee-2027-m089@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
@@ -804,21 +813,12 @@ DESCRIPTION:65 years. Institutional and proud.\nHook: \nAvoid: \nRegions: East A
 CATEGORIES:Holiday
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m089@bungee
+UID:bungee-2027-m090@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270801
 SUMMARY:[EA] Umutomboko ceremony (Luapula)
 DESCRIPTION:Lunda victory dance at Mwansabombwe. Heritage content.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Zambia
-CATEGORIES:Cultural
-END:VEVENT
-BEGIN:VEVENT
-UID:bungee-2027-m090@bungee
-DTSTAMP:20260928T000000Z
-DTSTART;VALUE=DATE:20270701
-DTEND;VALUE=DATE:20270801
-SUMMARY:[EA] Zanzibar film festival season
-DESCRIPTION:Film\, art and travel audiences.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Tanzania
 CATEGORIES:Cultural
 END:VEVENT
 BEGIN:VEVENT
@@ -905,7 +905,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:bungee-2027-m100@bungee
 DTSTAMP:20260928T000000Z
-DTSTART;VALUE=DATE:20270729
+DTSTART;VALUE=DATE:20270728
 DTEND;VALUE=DATE:20270803
 SUMMARY:[EA] Zambia Agricultural and Commercial Show
 DESCRIPTION:Lusaka's big showground week around Farmers' Day. Activations and B2B.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Zambia
@@ -977,6 +977,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:bungee-2027-m108@bungee
 DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20270814
+DTEND;VALUE=DATE:20270816
+SUMMARY:[EA] Maulid (Prophet's Birthday)
+DESCRIPTION:Expected 14 or 15 August by moon sighting. Public holiday in Tanzania. Lamu and the Kenyan coast hold famous Maulid celebrations.\nHook: Maulid njema.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania\, Kenya
+CATEGORIES:Religious
+END:VEVENT
+BEGIN:VEVENT
+UID:bungee-2027-m109@bungee
+DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270815
 DTEND;VALUE=DATE:20270816
 SUMMARY:Assumption Day
@@ -984,7 +993,7 @@ DESCRIPTION:Public holiday in France\, Italy\, Spain\, Poland\, much of Latin Am
 CATEGORIES:Religious
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m109@bungee
+UID:bungee-2027-m110@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270815
 DTEND;VALUE=DATE:20270816
@@ -993,21 +1002,12 @@ DESCRIPTION:Tricolour pride. Institutional tone.\nHook: \nAvoid: \nRegions: Sout
 CATEGORIES:Holiday
 END:VEVENT
 BEGIN:VEVENT
-UID:bungee-2027-m110@bungee
+UID:bungee-2027-m111@bungee
 DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20270815
 DTEND;VALUE=DATE:20270816
 SUMMARY:[EA] Assumption Day
 DESCRIPTION:Catholic holiday. Family and faith.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Rwanda
-CATEGORIES:Religious
-END:VEVENT
-BEGIN:VEVENT
-UID:bungee-2027-m111@bungee
-DTSTAMP:20260928T000000Z
-DTSTART;VALUE=DATE:20270815
-DTEND;VALUE=DATE:20270816
-SUMMARY:[EA] Maulid (Prophet's Birthday)
-DESCRIPTION:Public holiday in Tanzania. Lamu and the Kenyan coast hold famous Maulid celebrations.\nHook: Maulid njema.\nAvoid: \nRegions: East Africa\nMarkets: Tanzania\, Kenya
 CATEGORIES:Religious
 END:VEVENT
 BEGIN:VEVENT
@@ -1115,7 +1115,7 @@ DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20271001
 DTEND;VALUE=DATE:20271201
 SUMMARY:[EA] KCSE exams\, final ever sitting
-DESCRIPTION:2027 is expected to be the last KCSE. A once only moment: the final class. Education\, telco\, FMCG goodwill.\nHook: The last class. Make it count.\nAvoid: Adding exam pressure. Confirm dates with KNEC.\nRegions: East Africa\nMarkets: Kenya
+DESCRIPTION:KNEC confirms 2027 is the last KCSE. A once only moment: the final class. Education\, telco\, FMCG goodwill.\nHook: The last class. Make it count.\nAvoid: Adding exam pressure. Confirm dates with KNEC.\nRegions: East Africa\nMarkets: Kenya
 CATEGORIES:Commercial
 END:VEVENT
 BEGIN:VEVENT
@@ -1130,7 +1130,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:bungee-2027-m125@bungee
 DTSTAMP:20260928T000000Z
-DTSTART;VALUE=DATE:20271004
+DTSTART;VALUE=DATE:20271002
 DTEND;VALUE=DATE:20271122
 SUMMARY:Men's Cricket World Cup
 DESCRIPTION:South Africa\, Zimbabwe and Namibia host. Huge in South Asia\, the UK\, Australia and the diaspora.\nHook: Seven weeks of cricket.\nAvoid: Using tournament marks without rights.\nRegions: Africa\, South Asia\, Worldwide
@@ -1277,7 +1277,7 @@ DTSTAMP:20260928T000000Z
 DTSTART;VALUE=DATE:20271101
 DTEND;VALUE=DATE:20271201
 SUMMARY:[EA] Lamu Cultural Festival
-DESCRIPTION:Dhow races\, donkey races\, Swahili heritage. Travel and lifestyle.\nHook: \nAvoid: \nRegions: East Africa\nMarkets: Kenya
+DESCRIPTION:Dhow races\, donkey races\, Swahili heritage. Travel and lifestyle.\nHook: \nAvoid: Fixing a date early. The 2026 edition moved to December to avoid Maulidi\, so confirm 2027 with the county.\nRegions: East Africa\nMarkets: Kenya
 CATEGORIES:Cultural
 END:VEVENT
 BEGIN:VEVENT

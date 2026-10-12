@@ -85,7 +85,6 @@
    ],
    "countries": [
     "Kenya",
-    "Uganda",
     "Tanzania",
     "Zambia",
     "Rwanda"
@@ -96,7 +95,7 @@
    "status": "confirm",
    "angle": "Lunchboxes, uniforms, school fees stress, the first drop off. Big for FMCG, banks and telcos.",
    "hook": "New term, same hustle, fresh start.",
-   "avoid": "Assuming every family can afford the full list. Confirm each ministry's term dates.",
+   "avoid": "Assuming every family can afford the full list. Kenya opens 4 January. Uganda opens in February, so plan it separately. Confirm each ministry's term dates.",
    "id": "m004"
   },
   {
@@ -259,24 +258,6 @@
    "id": "m013"
   },
   {
-   "start": "2027-02-01",
-   "end": "2027-02-28",
-   "regions": [
-    "East Africa"
-   ],
-   "countries": [
-    "Tanzania"
-   ],
-   "pack": "East Africa",
-   "title": "Zanzibar music festival season",
-   "category": "Cultural",
-   "status": "confirm",
-   "angle": "The islands host one of the continent's best loved music festivals. Lifestyle, drinks and travel brands.",
-   "hook": "Zanzibar sounds different.",
-   "avoid": "",
-   "id": "m014"
-  },
-  {
    "start": "2027-02-05",
    "end": "2027-02-09",
    "regions": [
@@ -291,7 +272,7 @@
    "angle": "Rio, Salvador, New Orleans, Venice, Trinidad, Cologne. Colour, music, street food and joy before Lent. Mardi Gras falls on 9 February.",
    "hook": "Five days. Zero regrets.",
    "avoid": "Costume as caricature. Borrowing cultural dress you do not understand.",
-   "id": "m015"
+   "id": "m014"
   },
   {
    "start": "2027-02-05",
@@ -308,7 +289,7 @@
    "angle": "6 February is the day. A week of travel, family, red packets and gifting across East and South East Asia and the diaspora worldwide. The biggest human migration of the year.",
    "hook": "Home is where the year begins.",
    "avoid": "Mixing up zodiac animals. Assuming everyone calls it Chinese New Year; use Lunar New Year in mixed markets.",
-   "id": "m016"
+   "id": "m015"
   },
   {
    "start": "2027-02-06",
@@ -324,7 +305,7 @@
    "angle": "New Zealand's national day. Reflective as much as celebratory.",
    "hook": "",
    "avoid": "",
-   "id": "m017"
+   "id": "m016"
   },
   {
    "start": "2027-02-08",
@@ -340,7 +321,7 @@
    "angle": "Expected start 8 February, moon sighting confirms. Iftar tables, generosity, night time commerce and family. Nearly two billion people adjust their days.",
    "hook": "Ramadan Kareem. The table is bigger this month.",
    "avoid": "Daytime food indulgence aimed at fasting audiences. Posting greetings before the official start.",
-   "id": "m018"
+   "id": "m017"
   },
   {
    "start": "2027-02-08",
@@ -362,7 +343,7 @@
    "angle": "Iftar tables, generosity, night markets on the coast. Food, telco and banking brands lead. Moon sighting sets the exact start.",
    "hook": "Ramadhan Kareem. Futari ni ya familia.",
    "avoid": "Daytime food indulgence content aimed at Muslim audiences. Never make fasting a joke.",
-   "id": "m019"
+   "id": "m018"
   },
   {
    "start": "2027-02-10",
@@ -378,7 +359,7 @@
    "angle": "Ash Wednesday 10 February. Forty days of restraint for many Christians. In 2027 Lent and Ramadan overlap almost entirely, a rare shared season of discipline.",
    "hook": "Two fasts. One season.",
    "avoid": "Ignoring one faith's calendar in a mixed market.",
-   "id": "m020"
+   "id": "m019"
   },
   {
    "start": "2027-02-10",
@@ -400,7 +381,7 @@
    "angle": "2027 insight: Lent and Ramadhan run almost side by side. Two faiths fasting in the same weeks is a rare unity story.",
    "hook": "Two fasts. One season. Tuko pamoja.",
    "avoid": "Picking one faith's calendar and ignoring the other in the same market.",
-   "id": "m021"
+   "id": "m020"
   },
   {
    "start": "2027-02-14",
@@ -417,7 +398,7 @@
    "angle": "Inglewood, California, 14 February. The biggest advertising night in the world lands on Valentine's Day for the first time. Snacks, beer, betting, streaming and the ads themselves.",
    "hook": "Game night. Date night. Same night.",
    "avoid": "Using league marks or the game's name in ads without rights. Say the big game.",
-   "id": "m022"
+   "id": "m021"
   },
   {
    "start": "2027-02-14",
@@ -433,7 +414,7 @@
    "angle": "A Sunday inside both Lent and Ramadan, and Super Bowl Sunday in the United States. Love for friends, family and self works harder than candlelit clichés this year.",
    "hook": "Love, plural.",
    "avoid": "Alienating singles. Heavy indulgence aimed at fasting audiences.",
-   "id": "m023"
+   "id": "m022"
   },
   {
    "start": "2027-02-14",
@@ -455,7 +436,7 @@
    "angle": "Falls on a Sunday inside both Lent and Ramadhan. Love for family, friends and self works better than candlelit dinners this year.",
    "hook": "Mapenzi ni vitendo.",
    "avoid": "Alienating singles. Pushing indulgence to fasting audiences.",
-   "id": "m024"
+   "id": "m023"
   },
   {
    "start": "2027-02-16",
@@ -473,7 +454,7 @@
    "angle": "Faith, courage and conscience. Reflective tone.",
    "hook": "",
    "avoid": "",
-   "id": "m025"
+   "id": "m024"
   },
   {
    "start": "2027-02-20",
@@ -489,7 +470,7 @@
    "angle": "Closes the Lunar New Year period. Lanterns, sweet rice balls, reunion.",
    "hook": "Light the last lantern.",
    "avoid": "",
-   "id": "m026"
+   "id": "m025"
   },
   {
    "start": "2027-03-01",
@@ -507,7 +488,7 @@
    "angle": "The Litunga's royal barge moves to higher ground. Date is set by the Barotse Royal Establishment when the floods are right.",
    "hook": "When the water rises, a kingdom moves.",
    "avoid": "Announcing a date before the royal establishment does.",
-   "id": "m027"
+   "id": "m026"
   },
   {
    "start": "2027-03-01",
@@ -528,7 +509,7 @@
    "angle": "Comfort food, home care, mosquito protection, planting season upcountry. Use the weather as creative terrain.",
    "hook": "Mvua imefika. Tuko ndani.",
    "avoid": "",
-   "id": "m028"
+   "id": "m027"
   },
   {
    "start": "2027-03-08",
@@ -544,7 +525,7 @@
    "angle": "A public holiday in many countries. Real names, real stories, real pay data. Audiences call out empty gestures within minutes.",
    "hook": "Name her. Pay her. Promote her.",
    "avoid": "Pink filters and a stock quote.",
-   "id": "m029"
+   "id": "m028"
   },
   {
    "start": "2027-03-08",
@@ -566,7 +547,7 @@
    "angle": "Public holiday in Uganda and Zambia. Real stories and real names, not slogans.",
    "hook": "Yeye ndiye nguzo.",
    "avoid": "Pink filters and a generic quote. East African audiences call it out fast.",
-   "id": "m030"
+   "id": "m029"
   },
   {
    "start": "2027-03-09",
@@ -582,7 +563,7 @@
    "angle": "Expected 9 or 10 March by moon sighting. New clothes, sweets, family visits and gifting from Jakarta to London to Lagos. Keep two versions ready.",
    "hook": "Eid Mubarak. Sweetness, shared.",
    "avoid": "Posting a day early. Wait for the announcement in each market.",
-   "id": "m031"
+   "id": "m030"
   },
   {
    "start": "2027-03-09",
@@ -603,7 +584,7 @@
    "angle": "Public holiday. New clothes, family lunches, coastal celebrations. Moon sighting confirms the day, so keep two versions ready.",
    "hook": "Idd Mubarak. Sherehe ni ya wote.",
    "avoid": "Posting the greeting a day early. Wait for the official announcement.",
-   "id": "m032"
+   "id": "m031"
   },
   {
    "start": "2027-03-12",
@@ -621,7 +602,7 @@
    "angle": "Young Zambians, jobs, ambition, creativity. Telco and education brands.",
    "hook": "The future is already here.",
    "avoid": "",
-   "id": "m033"
+   "id": "m032"
   },
   {
    "start": "2027-03-14",
@@ -637,7 +618,7 @@
    "angle": "The fourth Sunday of Lent. Flowers, cards, meals. Include every kind of mother and be gentle with those grieving.",
    "hook": "For the one who showed up.",
    "avoid": "Assuming everyone has a mother to celebrate.",
-   "id": "m034"
+   "id": "m033"
   },
   {
    "start": "2027-03-17",
@@ -655,6 +636,24 @@
    "angle": "Ireland's day, celebrated loudly across the diaspora. Hospitality, drinks and green everything.",
    "hook": "Green all day.",
    "avoid": "Drunk stereotypes.",
+   "id": "m034"
+  },
+  {
+   "start": "2027-03-19",
+   "end": "2027-03-21",
+   "regions": [
+    "East Africa"
+   ],
+   "countries": [
+    "Tanzania"
+   ],
+   "pack": "East Africa",
+   "title": "Zanzibar music festival season",
+   "category": "Cultural",
+   "status": "fixed",
+   "angle": "The islands host one of the continent's best loved music festivals, set for 19 to 21 March, after Ramadhan and Eid. Lifestyle, drinks and travel brands.",
+   "hook": "Zanzibar sounds different.",
+   "avoid": "",
    "id": "m035"
   },
   {
@@ -677,7 +676,7 @@
   },
   {
    "start": "2027-03-22",
-   "end": "2027-03-22",
+   "end": "2027-03-23",
    "regions": [
     "South Asia",
     "Worldwide"
@@ -686,8 +685,8 @@
    "pack": "Global",
    "title": "Holi",
    "category": "Cultural",
-   "status": "expected",
-   "angle": "The festival of colours across India, Nepal and the diaspora. Joy, mess, forgiveness, spring.",
+   "status": "fixed",
+   "angle": "Holika Dahan bonfires on the night of 22 March, colours on 23 March in India. The festival of colours across India, Nepal and the diaspora. Joy, mess, forgiveness, spring.",
    "hook": "Colour outside the lines.",
    "avoid": "Colour powder imagery on white skin only. Cast the people who actually celebrate.",
    "id": "m037"
@@ -903,8 +902,8 @@
    "pack": "Global",
    "title": "World Snooker Championship centenary",
    "category": "Sport",
-   "status": "confirm",
-   "angle": "Sheffield's Crucible marks 100 years. Niche but beloved in the UK, Ireland, China and beyond.",
+   "status": "fixed",
+   "angle": "The championship turns 100, and Sheffield's Crucible hosts it for a 51st straight year. Niche but beloved in the UK, Ireland, China and beyond.",
    "hook": "",
    "avoid": "",
    "id": "m049"
@@ -1199,8 +1198,8 @@
    "pack": "Global",
    "title": "Vesak",
    "category": "Religious",
-   "status": "expected",
-   "angle": "Buddha Day across Sri Lanka, Thailand, Vietnam, Indonesia, Korea and beyond. Lanterns, offerings, kindness.",
+   "status": "fixed",
+   "angle": "20 May in India, Singapore and most markets; a few national calendars differ, so check locally. Buddha Day across Sri Lanka, Thailand, Vietnam, Indonesia, Korea and beyond. Lanterns, offerings, kindness.",
    "hook": "Light for everyone.",
    "avoid": "Buddha imagery as decor.",
    "id": "m066"
@@ -1361,7 +1360,7 @@
    "pack": "Global",
    "title": "Dragon Boat Festival",
    "category": "Cultural",
-   "status": "expected",
+   "status": "fixed",
    "angle": "Races, rice dumplings, family across China, Hong Kong, Taiwan, Singapore, Malaysia.",
    "hook": "Row together.",
    "avoid": "",
@@ -1386,6 +1385,24 @@
    "id": "m076"
   },
   {
+   "start": "2027-06-15",
+   "end": "2027-07-15",
+   "regions": [
+    "East Africa"
+   ],
+   "countries": [
+    "Tanzania"
+   ],
+   "pack": "East Africa",
+   "title": "Zanzibar film festival season",
+   "category": "Cultural",
+   "status": "confirm",
+   "angle": "Film, art and travel audiences.",
+   "hook": "",
+   "avoid": "Confirm the dates with the organisers. The 2026 edition ran in late June.",
+   "id": "m077"
+  },
+  {
    "start": "2027-06-16",
    "end": "2027-06-16",
    "regions": [
@@ -1405,7 +1422,7 @@
    "angle": "Children's rights, education, play. Kids and education brands.",
    "hook": "",
    "avoid": "",
-   "id": "m077"
+   "id": "m078"
   },
   {
    "start": "2027-06-19",
@@ -1421,11 +1438,11 @@
    "angle": "Freedom day in the United States. Community, history, Black owned business.",
    "hook": "",
    "avoid": "Sales framing.",
-   "id": "m078"
+   "id": "m079"
   },
   {
    "start": "2027-06-19",
-   "end": "2027-07-18",
+   "end": "2027-07-17",
    "regions": [
     "Africa",
     "Worldwide"
@@ -1438,7 +1455,7 @@
    "angle": "Kenya, Uganda and Tanzania host the continent's championship. Fan zones, watch parties, telco data, food and drink across Africa and the diaspora.",
    "hook": "The whole continent, one screen.",
    "avoid": "Using the tournament's marks or name commercially without rights.",
-   "id": "m079"
+   "id": "m080"
   },
   {
    "start": "2027-06-19",
@@ -1460,7 +1477,7 @@
    "angle": "The continental nations championship returns to East Africa for the first time since 1976, with Kenya, Uganda and Tanzania as the first ever triple hosts. Watch parties, fan zones, nyama choma, betting, telco data, beer, FMCG multipacks. Group stage 19 to 30 June, final 17 July. Plan six months ahead.",
    "hook": "Karibu nyumbani, Afrika.",
    "avoid": "Using the tournament's official name, logos or marks commercially without rights. Build around fans, not the trademark.",
-   "id": "m080"
+   "id": "m081"
   },
   {
    "start": "2027-06-20",
@@ -1476,7 +1493,7 @@
    "angle": "Third Sunday of June in the US, UK, Canada, France, India, Japan, most of Africa. Lands inside the Women's World Cup and the Africa Cup of Nations.",
    "hook": "Dad, the match is yours.",
    "avoid": "",
-   "id": "m081"
+   "id": "m082"
   },
   {
    "start": "2027-06-20",
@@ -1498,7 +1515,7 @@
    "angle": "Lands inside the championship group stage. Dads, football and food in one frame.",
    "hook": "Baba, mechi ni yako leo.",
    "avoid": "",
-   "id": "m082"
+   "id": "m083"
   },
   {
    "start": "2027-06-21",
@@ -1514,7 +1531,7 @@
    "angle": "Longest day in the north, shortest in the south. Wellness, outdoor, travel.",
    "hook": "Longest light.",
    "avoid": "",
-   "id": "m083"
+   "id": "m084"
   },
   {
    "start": "2027-06-24",
@@ -1531,7 +1548,7 @@
    "angle": "Brazil hosts, the first time in South America. 32 teams, eight cities, final at the Maracanã on 25 July. The fastest growing audience in sport.",
    "hook": "Watch her win.",
    "avoid": "Using tournament marks without rights. Treating it as the small version of the men's game.",
-   "id": "m084"
+   "id": "m085"
   },
   {
    "start": "2027-06-25",
@@ -1549,7 +1566,7 @@
    "angle": "A painful date for many young Kenyans. Most brands should stay quiet and pause cheerful posts.",
    "hook": "",
    "avoid": "Promotional content, jokes or borrowing protest imagery.",
-   "id": "m085"
+   "id": "m086"
   },
   {
    "start": "2027-06-28",
@@ -1566,7 +1583,7 @@
    "angle": "Strawberries, queues, rain delays and the most prestigious fortnight in tennis.",
    "hook": "Quiet, please.",
    "avoid": "",
-   "id": "m086"
+   "id": "m087"
   },
   {
    "start": "2027-07-01",
@@ -1582,7 +1599,7 @@
    "angle": "National day. Summer, fireworks, cottages.",
    "hook": "",
    "avoid": "",
-   "id": "m087"
+   "id": "m088"
   },
   {
    "start": "2027-07-01",
@@ -1600,7 +1617,7 @@
    "angle": "65 years. Institutional and proud.",
    "hook": "",
    "avoid": "",
-   "id": "m088"
+   "id": "m089"
   },
   {
    "start": "2027-07-01",
@@ -1616,24 +1633,6 @@
    "category": "Cultural",
    "status": "confirm",
    "angle": "Lunda victory dance at Mwansabombwe. Heritage content.",
-   "hook": "",
-   "avoid": "",
-   "id": "m089"
-  },
-  {
-   "start": "2027-07-01",
-   "end": "2027-07-31",
-   "regions": [
-    "East Africa"
-   ],
-   "countries": [
-    "Tanzania"
-   ],
-   "pack": "East Africa",
-   "title": "Zanzibar film festival season",
-   "category": "Cultural",
-   "status": "confirm",
-   "angle": "Film, art and travel audiences.",
    "hook": "",
    "avoid": "",
    "id": "m090"
@@ -1793,7 +1792,7 @@
    "id": "m099"
   },
   {
-   "start": "2027-07-29",
+   "start": "2027-07-28",
    "end": "2027-08-02",
    "regions": [
     "East Africa"
@@ -1934,6 +1933,25 @@
    "id": "m107"
   },
   {
+   "start": "2027-08-14",
+   "end": "2027-08-15",
+   "regions": [
+    "East Africa"
+   ],
+   "countries": [
+    "Tanzania",
+    "Kenya"
+   ],
+   "pack": "East Africa",
+   "title": "Maulid (Prophet's Birthday)",
+   "category": "Religious",
+   "status": "expected",
+   "angle": "Expected 14 or 15 August by moon sighting. Public holiday in Tanzania. Lamu and the Kenyan coast hold famous Maulid celebrations.",
+   "hook": "Maulid njema.",
+   "avoid": "",
+   "id": "m108"
+  },
+  {
    "start": "2027-08-15",
    "end": "2027-08-15",
    "regions": [
@@ -1948,7 +1966,7 @@
    "angle": "Public holiday in France, Italy, Spain, Poland, much of Latin America. Peak European holiday week.",
    "hook": "",
    "avoid": "",
-   "id": "m108"
+   "id": "m109"
   },
   {
    "start": "2027-08-15",
@@ -1964,7 +1982,7 @@
    "angle": "Tricolour pride. Institutional tone.",
    "hook": "",
    "avoid": "",
-   "id": "m109"
+   "id": "m110"
   },
   {
    "start": "2027-08-15",
@@ -1981,25 +1999,6 @@
    "status": "fixed",
    "angle": "Catholic holiday. Family and faith.",
    "hook": "",
-   "avoid": "",
-   "id": "m110"
-  },
-  {
-   "start": "2027-08-15",
-   "end": "2027-08-15",
-   "regions": [
-    "East Africa"
-   ],
-   "countries": [
-    "Tanzania",
-    "Kenya"
-   ],
-   "pack": "East Africa",
-   "title": "Maulid (Prophet's Birthday)",
-   "category": "Religious",
-   "status": "expected",
-   "angle": "Public holiday in Tanzania. Lamu and the Kenyan coast hold famous Maulid celebrations.",
-   "hook": "Maulid njema.",
    "avoid": "",
    "id": "m111"
   },
@@ -2031,7 +2030,7 @@
    "pack": "Global",
    "title": "Ganesh Chaturthi",
    "category": "Religious",
-   "status": "expected",
+   "status": "fixed",
    "angle": "Ten days of processions and sweets in Maharashtra and beyond.",
    "hook": "",
    "avoid": "",
@@ -2064,7 +2063,7 @@
    "pack": "Global",
    "title": "Mid Autumn Festival and Chuseok",
    "category": "Cultural",
-   "status": "expected",
+   "status": "fixed",
    "angle": "Mooncakes, lanterns and family reunions across China, Vietnam, Korea (Chuseok, 14 to 16 September), Singapore and Malaysia. Premium gifting season.",
    "hook": "Under the same moon.",
    "avoid": "Generic mooncake packaging. This is a premium design moment.",
@@ -2197,7 +2196,7 @@
    "title": "KCSE exams, final ever sitting",
    "category": "Commercial",
    "status": "confirm",
-   "angle": "2027 is expected to be the last KCSE. A once only moment: the final class. Education, telco, FMCG goodwill.",
+   "angle": "KNEC confirms 2027 is the last KCSE. A once only moment: the final class. Education, telco, FMCG goodwill.",
    "hook": "The last class. Make it count.",
    "avoid": "Adding exam pressure. Confirm dates with KNEC.",
    "id": "m123"
@@ -2223,7 +2222,7 @@
    "id": "m124"
   },
   {
-   "start": "2027-10-04",
+   "start": "2027-10-02",
    "end": "2027-11-21",
    "regions": [
     "Africa",
@@ -2445,7 +2444,7 @@
    "pack": "East Africa",
    "title": "Diwali",
    "category": "Religious",
-   "status": "expected",
+   "status": "fixed",
    "angle": "Strong in the South Asian communities of Nairobi, Mombasa, Kampala and Dar. Food, gifting, gold.",
    "hook": "Happy Diwali.",
    "avoid": "",
@@ -2514,7 +2513,7 @@
    "status": "confirm",
    "angle": "Dhow races, donkey races, Swahili heritage. Travel and lifestyle.",
    "hook": "",
-   "avoid": "",
+   "avoid": "Fixing a date early. The 2026 edition moved to December to avoid Maulidi, so confirm 2027 with the county.",
    "id": "m141"
   },
   {
