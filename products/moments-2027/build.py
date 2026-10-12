@@ -14,7 +14,7 @@ json.dump({"edition":2027,"packs":["Global","East Africa"],"moments":rows},open(
 with open('out/Moments-2027.csv','w',newline='') as f:
     w=csv.writer(f); w.writerow(["Start","End","Pack","Regions","Countries","Moment","Category","Date status","Content angle","Sample hook","Avoid"])
     for r in rows: w.writerow([r['start'],r['end'],r['pack'],", ".join(r['regions']),", ".join(r['countries']),r['title'],r['category'],r['status'],r['angle'],r['hook'],r['avoid']])
-def esc(s): return s.replace("\\","\\\\").replace(",","\\,").replace(";","\;").replace("\n","\\n")
+def esc(s): return s.replace("\\","\\\\").replace(",","\\,").replace(";","\\;").replace("\n","\\n")
 L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Bungee//Moments 2027//EN","X-WR-CALNAME:Bungee Moments 2027"]
 for r in rows:
     d0=dt.date.fromisoformat(r['start']); d1=dt.date.fromisoformat(r['end'])+dt.timedelta(days=1)
