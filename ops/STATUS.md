@@ -2,6 +2,16 @@
 
 Newest first. One entry per check in.
 
+## Thu 15 Oct 2026
+
+- Nothing new from you in the roadmap or the Decisions table since Monday. Week 1 and week 2 stay In progress until your accounts, Stitch screens and approvals land. Week 3 set to In progress: I started its Me actions.
+- Website built: `site/`. One landing page (hero with the cord, the six packs, a Moments 2027 section with a chart of all 160 moments by month, bundles, install steps, markets, FAQ, email signup) plus refund, terms and privacy pages generated from `ops/store/POLICIES.md`. Fonts self hosted, works on phone and desktop, no third party brands or event names. `python3 site/build.py` checks the copy and lists what blocks going live: policy blanks, nine checkout links, the email list link. See `site/README.md`.
+- Brand kit in one folder: `brand/kit/` (logo guide, colours, type, font files with licences, app icon). Roadmap item ticked.
+- Moments 2027 calendar test: two real bugs found and fixed. Exported picks landed a day early for anyone east of London, Nairobi included. And every moment showed as busy, which would have blocked buyers' calendars all year. Both fixed and proven in three time zones; files now meet the calendar standard. Report: `ops/tests/moments-2027/2026-10-15/CALENDAR-TEST.md`. Zips rebuilt.
+- Native speaker check list ready: `ops/tests/moments-2027/2026-10-15/NATIVE-SPEAKER-CHECK.md`. 29 Swahili lines, 3 Kinyarwanda, 7 others. Two findings: Swahili hooks are tagged to all five East African markets (should be Kenya and Tanzania), and two Sheng hooks only work in Kenya. Waiting on a Swahili checker before changing data.
+- Blocked on you: CC2 to CC4 (week 3 Studio) wait for your PLAN.md approval. Going live waits on the store, domain and policies.
+- Next: CC2 scaffold as soon as PLAN.md is approved; apply native speaker answers; wire checkout links once products exist; deploy the site once the domain is live.
+
 ## Mon 12 Oct 2026
 
 - Week 1: my actions were already done, so I started week 2's. Week 1 stays In progress until your accounts and Stitch screens are done. Week 2 set to In progress in the roadmap.
