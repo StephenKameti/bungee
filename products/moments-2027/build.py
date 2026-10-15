@@ -15,13 +15,21 @@ with open('out/Moments-2027.csv','w',newline='') as f:
     w=csv.writer(f); w.writerow(["Start","End","Pack","Regions","Countries","Moment","Category","Date status","Content angle","Sample hook","Avoid"])
     for r in rows: w.writerow([r['start'],r['end'],r['pack'],", ".join(r['regions']),", ".join(r['countries']),r['title'],r['category'],r['status'],r['angle'],r['hook'],r['avoid']])
 def esc(s): return s.replace("\\","\\\\").replace(",","\\,").replace(";","\\;").replace("\n","\\n")
-L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Bungee//Moments 2027//EN","X-WR-CALNAME:Bungee Moments 2027"]
+L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Bungee//Moments 2027//EN","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-CALNAME:Bungee Moments 2027"]
 for r in rows:
     d0=dt.date.fromisoformat(r['start']); d1=dt.date.fromisoformat(r['end'])+dt.timedelta(days=1)
     desc=f"{r['angle']}\nHook: {r['hook']}\nAvoid: {r['avoid']}\nRegions: {', '.join(r['regions'])}"+(f"\nMarkets: {', '.join(r['countries'])}" if r['countries'] else "")
-    L+=["BEGIN:VEVENT",f"UID:bungee-2027-{r['id']}@bungee","DTSTAMP:20260928T000000Z",f"DTSTART;VALUE=DATE:{d0:%Y%m%d}",f"DTEND;VALUE=DATE:{d1:%Y%m%d}","SUMMARY:"+esc(("[EA] " if r['pack']!='Global' else "")+r['title']),"DESCRIPTION:"+esc(desc),"CATEGORIES:"+r['category'],"END:VEVENT"]
+    L+=["BEGIN:VEVENT",f"UID:bungee-2027-{r['id']}@bungee","DTSTAMP:20260928T000000Z",f"DTSTART;VALUE=DATE:{d0:%Y%m%d}",f"DTEND;VALUE=DATE:{d1:%Y%m%d}","SUMMARY:"+esc(("[EA] " if r['pack']!='Global' else "")+r['title']),"DESCRIPTION:"+esc(desc),"CATEGORIES:"+r['category'],"TRANSP:TRANSPARENT","END:VEVENT"]
 L.append("END:VCALENDAR")
-open('out/Moments-2027.ics','w').write("\r\n".join(L)+"\r\n")
+def fold(line):
+    # RFC 5545: lines at most 75 octets, continuation lines start with one space, never split a UTF-8 character
+    out,cur,lim=[],b"",75
+    for ch in line:
+        c=ch.encode()
+        if len(cur)+len(c)>lim: out.append(cur); cur=b" "; lim=75
+        cur+=c
+    out.append(cur); return b"\r\n".join(out)
+open('out/Moments-2027.ics','wb').write(b"\r\n".join(fold(x) for x in L)+b"\r\n")
 t=open('template.html').read().replace('/*DATA*/',json.dumps(rows,ensure_ascii=False))
 open('out/Moments-2027.html','w').write(t)
 print(len(rows),"moments", sum(r['pack']=='Global' for r in rows),"global")

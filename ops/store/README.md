@@ -62,7 +62,7 @@ Build with `python3 scripts/build_products.py`. Each pack downloads as `dist/<sl
 
 ## Open points for Stephen
 
-1. **Install wording conflict.** The store pages say any plan works, Free included, with code execution and file creation on. The pack READMEs still say skills need a paid plan. One of them must change before launch.
+1. **Install wording.** Resolved 12 Oct: the pack READMEs now match the store pages (any plan, Free included).
 2. **Refund rule.** `POLICIES.md` proposes a 14 day refund when a product will not install or open, and no refund for a change of mind after download.
 3. **Paystack prices.** Approve the KES figures above.
 4. **Policies.** Fill in the bracketed details (address, contact email, governing law) and have the drafts checked.
