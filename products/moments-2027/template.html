@@ -188,10 +188,14 @@ function fmt(r){const a=d(r.start),b=d(r.end),wd=a.toLocaleDateString("en-GB",{w
 function match(r){return r.regions.some(x=>st.r.has(x))&&st.k.has(r.category)&&(!st.q||JSON.stringify(r).toLowerCase().includes(st.q))}
 function savePicks(){try{localStorage.setItem("bm27",JSON.stringify([...st.picks]))}catch(e){}pk.textContent=`My picks · ${st.picks.size} · Export .ics`;pk.disabled=st.picks.size===0}
 function exportPicks(){const e=s=>s.replace(/\\/g,"\\\\").replace(/,/g,"\\,").replace(/;/g,"\\;").replace(/\n/g,"\\n");
- const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Bungee//Moments 2027 picks//EN","X-WR-CALNAME:My moments 2027"];
- D.filter(r=>st.picks.has(r.id)).forEach(r=>{const a=d(r.start),b=new Date(d(r.end).getTime()+864e5),f=x=>x.toISOString().slice(0,10).replace(/-/g,"");
-  L.push("BEGIN:VEVENT",`UID:bungee-pick-${r.id}@bungee`,`DTSTART;VALUE=DATE:${f(a)}`,`DTEND;VALUE=DATE:${f(b)}`,"SUMMARY:"+e(r.title),"DESCRIPTION:"+e(`${r.angle}\nHook: ${r.hook}\nAvoid: ${r.avoid}`),"END:VEVENT")});
- L.push("END:VCALENDAR");const blob=new Blob([L.join("\r\n")],{type:"text/calendar"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="my-moments-2027.ics";a.click();setTimeout(()=>URL.revokeObjectURL(u),2000)}
+ /* dates stay in UTC from end to end, so the file is right in every time zone */
+ const u8=x=>x.replace(/-/g,""),next=x=>{const t=new Date(x+"T00:00:00Z");t.setUTCDate(t.getUTCDate()+1);return t.toISOString().slice(0,10).replace(/-/g,"")};
+ const stamp=new Date().toISOString().replace(/[-:]/g,"").slice(0,15)+"Z";
+ const fold=l=>{const out=[];let cur="",n=0,lim=75;for(const ch of l){const c=new TextEncoder().encode(ch).length;if(n+c>lim){out.push(cur);cur=" ";n=1}cur+=ch;n+=c}out.push(cur);return out.join("\r\n")};
+ const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Bungee//Moments 2027 picks//EN","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-CALNAME:My moments 2027"];
+ D.filter(r=>st.picks.has(r.id)).forEach(r=>{
+  L.push("BEGIN:VEVENT",`UID:bungee-pick-${r.id}@bungee`,`DTSTAMP:${stamp}`,`DTSTART;VALUE=DATE:${u8(r.start)}`,`DTEND;VALUE=DATE:${next(r.end)}`,"SUMMARY:"+e(r.title),"DESCRIPTION:"+e(`${r.angle}\nHook: ${r.hook}\nAvoid: ${r.avoid}`),"CATEGORIES:"+r.category,"TRANSP:TRANSPARENT","END:VEVENT")});
+ L.push("END:VCALENDAR");const blob=new Blob([L.map(fold).join("\r\n")+"\r\n"],{type:"text/calendar"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="my-moments-2027.ics";a.click();setTimeout(()=>URL.revokeObjectURL(u),2000)}
 
 let io;
 function render(){
