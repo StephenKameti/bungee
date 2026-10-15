@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bungee · Creative skills for Claude</title>
+<meta name="description" content="Six skill packs that make Claude work like a creative studio, plus Moments 2027, the planner's almanac. Any market in the world.">
+<meta property="og:title" content="Bungee · Brief at six. Pitch at nine.">
+<meta property="og:description" content="Six creative skill packs for Claude, plus the Moments 2027 almanac. Any market in the world.">
+<meta property="og:image" content="assets/og.png">
+<meta name="theme-color" content="#F6F6F2">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preload" href="assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{
+  --slate:#3F414B; --slate2:#33353E; --lime:#BEFD50; --paper:#F6F6F2; --hair:#DCDDD6;
+  --muted:#6C6E77; --white:#FFFFFF; --ink:#2A2C33;
+  --holiday:#E0A040; --religious:#B08BDA; --cultural:#4CC39C; --commercial:#F07D63; --sport:#7FA2F5; --seasonal:#BEFD50; --sensitive:#F2F2EC;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,"Segoe UI",sans-serif;
+  --wrap:1200px; --gut:clamp(16px,4vw,40px); --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--slate);font:500 17px/1.55 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.01em}
+em{font-style:italic}
+.eyebrow{font-size:14px;font-weight:600;color:var(--muted);display:inline-flex;gap:10px;align-items:center}
+.eyebrow::before{content:"";width:22px;height:3px;border-radius:3px;background:var(--lime);box-shadow:0 0 0 1px var(--slate) inset}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:1.5px solid var(--slate);transition:transform .2s ease,background .2s ease,color .2s ease;cursor:pointer;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--slate);outline-offset:3px}
+.btn.primary{background:var(--slate);color:var(--white)}
+.btn.primary:hover{background:var(--ink)}
+.btn.lime{background:var(--lime);color:var(--slate)}
+.btn.ghost{background:transparent;color:var(--slate)}
+.btn .arr{transition:transform .2s ease}
+.btn:hover .arr{transform:translateX(3px)}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(246,246,242,.86);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.top.scrolled{border-color:var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.nav .logo img{height:34px;width:auto}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-weight:500;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--slate);opacity:.8}
+.nav ul a:hover{opacity:1}
+.nav .btn{padding:11px 18px;font-size:15px}
+@media (max-width:860px){.nav ul{display:none}}
+
+/* hero */
+.hero{position:relative;padding:clamp(48px,9vw,120px) 0 clamp(56px,8vw,110px)}
+.hero .grid{display:grid;grid-template-columns:1.25fr .9fr;gap:clamp(24px,5vw,72px);align-items:center}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(54px,9.4vw,132px);line-height:.92;letter-spacing:-.025em;margin:18px 0 26px}
+.hero h1 em{display:block}
+.hero h1 .tick{position:relative;white-space:nowrap}
+.hero h1 .tick::after{content:"";position:absolute;left:4%;right:2%;bottom:.16em;height:.11em;background:var(--lime);border-radius:99px;z-index:-1;transform-origin:left;animation:swipe 1s .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes swipe{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero p.lede{font-size:clamp(18px,1.8vw,21px);max-width:34ch;margin:0 0 32px;color:var(--ink)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .note{margin-top:22px;font-size:14px;color:var(--muted)}
+
+/* the cord */
+.rig{position:relative;height:clamp(420px,46vw,560px)}
+.cord{position:absolute;left:50%;top:calc(-1 * clamp(48px,9vw,120px) - 72px);width:4px;margin-left:-2px;background:var(--lime);box-shadow:0 0 0 1.5px var(--slate);border-radius:4px;height:calc(clamp(48px,9vw,120px) + 72px + 64px);transform-origin:top;animation:drop 1.4s .2s cubic-bezier(.25,1.6,.4,1) both}
+@keyframes drop{0%{transform:scaleY(0)}55%{transform:scaleY(1.12)}75%{transform:scaleY(.97)}100%{transform:scaleY(1)}}
+.card-hang{position:absolute;left:50%;top:60px;width:min(380px,90%);transform:translateX(-50%);animation:hang 1.4s .2s cubic-bezier(.25,1.6,.4,1) both;transform-origin:top center}
+@keyframes hang{0%{transform:translate(-50%,-140%)}55%{transform:translate(-50%,18px)}75%{transform:translate(-50%,-4px)}100%{transform:translate(-50%,0)}}
+.card-hang .clip{width:22px;height:22px;border-radius:50%;background:var(--paper);border:3px solid var(--slate);margin:0 auto -11px;position:relative;z-index:2}
+.brief{background:var(--white);border:1.5px solid var(--slate);border-radius:var(--r);padding:26px 26px 22px;box-shadow:0 30px 60px -30px rgba(63,65,75,.45),0 2px 0 var(--slate);animation:sway 7s 1.8s ease-in-out infinite;transform-origin:top center}
+@keyframes sway{0%,100%{transform:rotate(-1.2deg)}50%{transform:rotate(1.2deg)}}
+.brief .row{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);font-weight:600}
+.brief .chip{background:var(--lime);color:var(--slate);border:1px solid var(--slate);padding:4px 10px;border-radius:99px;font-size:12px}
+.brief .hook{font-family:var(--serif);font-size:clamp(30px,3.2vw,40px);line-height:1.02;margin:18px 0 16px;min-height:2.1em}
+.brief .hook span{display:inline-block;transition:opacity .45s ease,transform .45s ease}
+.brief .hook span.out{opacity:0;transform:translateY(10px)}
+.brief .out-line{border-top:1px dashed var(--hair);padding-top:14px;font-size:15px;color:var(--ink)}
+.brief .out-line b{font-weight:600}
+.brief .dots{display:flex;gap:6px;margin-top:16px}
+.brief .dots i{width:8px;height:8px;border-radius:50%;background:var(--hair);transition:background .3s}
+.brief .dots i.on{background:var(--slate)}
+.stamp{position:absolute;right:2%;bottom:6%;width:150px;height:150px;border-radius:50%;background:var(--slate);color:var(--paper);display:grid;place-items:center;text-align:center;font:600 13px/1.25 var(--sans);transform:rotate(-10deg);box-shadow:0 0 0 6px var(--paper),0 0 0 7.5px var(--slate)}
+.stamp b{display:block;font:400 44px/1 var(--serif);color:var(--lime)}
+@media (max-width:900px){.hero .grid{grid-template-columns:1fr}.rig{height:440px;margin-top:8px}.cord{top:0;height:64px}.stamp{width:120px;height:120px;right:0}.stamp b{font-size:36px}}
+
+/* marquee */
+.marquee{background:var(--slate);color:var(--paper);overflow:hidden;border-block:1.5px solid var(--slate)}
+.marquee .track{display:flex;gap:56px;padding:20px 0;width:max-content;animation:scroll 46s linear infinite}
+.marquee span{font:400 clamp(24px,2.6vw,32px)/1 var(--serif);white-space:nowrap;display:inline-flex;align-items:center;gap:56px}
+.marquee span::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--lime)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:clamp(72px,10vw,140px) 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.sec-head h2{font:400 clamp(42px,6vw,80px)/.95 var(--serif);letter-spacing:-.02em;margin:14px 0 0}
+.sec-head p{margin:0;max-width:44ch;color:var(--ink);justify-self:end}
+@media (max-width:800px){.sec-head{grid-template-columns:1fr}.sec-head p{justify-self:start}}
+
+/* packs */
+.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:1000px){.packs{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.packs{grid-template-columns:1fr}}
+.pack{position:relative;background:var(--white);border:1.5px solid var(--slate);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;min-height:440px;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.pack:hover{transform:translateY(-6px) rotate(-.4deg);box-shadow:0 6px 0 var(--slate)}
+.pack .num{font:400 15px/1 var(--serif);color:var(--muted);display:flex;justify-content:space-between}
+.pack .num em{font-size:15px}
+.pack h3{font:600 15px/1.2 var(--sans);margin:28px 0 6px;color:var(--muted)}
+.pack .h{font:400 clamp(30px,2.8vw,38px)/1 var(--serif);margin:0 0 14px;letter-spacing:-.01em}
+.pack p{margin:0 0 16px;color:var(--ink)}
+.pack ul{list-style:none;padding:0;margin:0 0 22px;font-size:15px;color:var(--ink)}
+.pack li{padding:9px 0 9px 26px;border-top:1px solid var(--hair);position:relative}
+.pack li::before{content:"";position:absolute;left:2px;top:16px;width:12px;height:6px;border-left:2.5px solid var(--slate);border-bottom:2.5px solid var(--slate);transform:rotate(-45deg)}
+.pack .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.price{font:400 34px/1 var(--serif)}
+.price small{font:600 13px var(--sans);color:var(--muted);margin-left:4px}
+.pack .btn{padding:11px 16px;font-size:15px}
+.pack .cord-sm{position:absolute;top:-1.5px;right:34px;width:3px;height:0;background:var(--lime);box-shadow:0 0 0 1px var(--slate);border-radius:3px;transition:height .45s cubic-bezier(.25,1.6,.4,1)}
+.pack:hover .cord-sm{height:38px}
+
+/* moments */
+.moments{background:var(--slate);color:var(--paper);position:relative;overflow:hidden}
+.moments .eyebrow{color:#C9CAD0}
+.moments .eyebrow::before{box-shadow:none}
+.moments .sec-head p{color:#E3E3DE}
+.moments h2 em{color:var(--lime)}
+.year{display:grid;grid-template-columns:repeat(12,1fr);gap:10px;align-items:end;min-height:300px;border-bottom:1.5px solid #6B6D77;padding-bottom:14px}
+.month{display:flex;flex-direction:column-reverse;gap:5px;align-items:center}
+.month i{width:clamp(9px,1.4vw,16px);height:clamp(9px,1.4vw,16px);border-radius:50%;display:block;opacity:0;transform:translateY(-30px);transition:opacity .4s ease,transform .6s cubic-bezier(.25,1.6,.4,1)}
+.year.in .month i{opacity:1;transform:none}
+.months{display:grid;grid-template-columns:repeat(12,1fr);gap:10px;margin-top:10px;font-size:13px;color:#C9CAD0;text-align:center;font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin:26px 0 0;font-size:14px;color:#E3E3DE;list-style:none;padding:0}
+.legend li{display:flex;gap:8px;align-items:center}
+.legend i{width:11px;height:11px;border-radius:50%}
+.mstats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:clamp(48px,6vw,80px)}
+.mstat{border-top:1.5px solid var(--lime);padding-top:16px}
+.mstat b{display:block;font:400 clamp(44px,5vw,64px)/1 var(--serif);color:var(--white)}
+.mstat span{font-size:15px;color:#D7D8DC}
+@media (max-width:760px){.mstats{grid-template-columns:repeat(2,1fr)}.year,.months{gap:4px}.months{font-size:11px}}
+.mbuy{margin-top:clamp(40px,5vw,64px);display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;background:var(--slate2);border:1.5px solid #6B6D77;border-radius:var(--r);padding:24px 28px}
+.mbuy .price{color:var(--white)}
+.mbuy .price s{font-size:22px;color:#A6A8B0;margin-left:10px}
+.mbuy p{margin:4px 0 0;color:#D7D8DC;font-size:15px}
+.moments .btn.lime{border-color:var(--lime)}
+
+/* bundles */
+.bundles{display:grid;grid-template-columns:1fr 1.15fr;gap:18px}
+@media (max-width:860px){.bundles{grid-template-columns:1fr}}
+.bundle{border:1.5px solid var(--slate);border-radius:var(--r);padding:clamp(26px,3vw,40px);background:var(--white);display:flex;flex-direction:column;gap:14px}
+.bundle.best{background:var(--lime);box-shadow:0 8px 0 var(--slate)}
+.bundle .tag{align-self:flex-start;font-size:13px;font-weight:600;padding:5px 12px;border-radius:99px;border:1px solid var(--slate);background:var(--paper)}
+.bundle.best .tag{background:var(--slate);color:var(--lime)}
+.bundle h3{font:400 clamp(36px,4vw,52px)/1 var(--serif);margin:6px 0 0}
+.bundle p{margin:0;color:var(--ink)}
+.bundle .price{font-size:clamp(56px,6vw,80px)}
+.bundle .save{font-weight:600;font-size:15px}
+.bundle .btn{align-self:flex-start;margin-top:8px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+@media (max-width:860px){.steps{grid-template-columns:1fr}}
+.step{border-top:1.5px solid var(--slate);padding-top:22px;counter-increment:s}
+.step::before{content:counter(s);font:400 72px/1 var(--serif);display:block;margin-bottom:12px;color:var(--slate)}
+.step h3{font:600 19px/1.3 var(--sans);margin:0 0 8px}
+.step p{margin:0;color:var(--ink)}
+.plan-note{margin-top:36px;display:inline-flex;gap:12px;align-items:center;background:var(--white);border:1.5px solid var(--slate);border-radius:999px;padding:12px 20px;font-size:15px}
+.plan-note::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 1.5px var(--slate)}
+
+/* markets */
+.markets{padding-top:0}
+.cities{display:flex;flex-wrap:wrap;gap:10px 14px;font:400 clamp(30px,4.4vw,60px)/1.1 var(--serif);letter-spacing:-.01em}
+.cities span{white-space:nowrap}
+.cities span:nth-child(even){font-style:italic;color:var(--muted)}
+.cities span::after{content:" /";color:var(--hair)}
+.cities span:last-child::after{content:""}
+.markets p.small{margin-top:26px;color:var(--ink);max-width:60ch}
+
+/* faq */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,72px)}
+@media (max-width:860px){.faq{grid-template-columns:1fr}}
+details{border-top:1.5px solid var(--slate);padding:4px 0}
+details:last-child{border-bottom:1.5px solid var(--slate)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 0;font:400 clamp(22px,2.2vw,28px)/1.15 var(--serif)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:500 26px/1 var(--sans);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 22px;color:var(--ink);max-width:60ch}
+
+/* signup + footer */
+.signup{background:var(--lime);border-block:1.5px solid var(--slate)}
+.signup .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center}
+@media (max-width:860px){.signup .wrap{grid-template-columns:1fr}}
+.signup h2{font:400 clamp(40px,5.4vw,72px)/.95 var(--serif);margin:0;letter-spacing:-.02em}
+.signup p{margin:14px 0 0;color:var(--ink)}
+form.join{display:flex;gap:10px;flex-wrap:wrap}
+form.join input{flex:1 1 220px;min-width:0;padding:15px 20px;border-radius:999px;border:1.5px solid var(--slate);background:var(--paper);font:500 16px var(--sans);color:var(--slate)}
+form.join .msg{flex-basis:100%;font-size:14px;min-height:1.4em;margin:2px 0 0 8px}
+footer{padding:56px 0 40px;font-size:14px;color:var(--muted)}
+footer .f{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-end}
+footer img{height:28px;width:auto;margin-bottom:12px}
+footer ul{list-style:none;margin:0;padding:0;display:flex;gap:20px;flex-wrap:wrap}
+footer a{text-decoration:none}
+footer a:hover{color:var(--slate)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  .year .month i{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#" aria-label="Bungee home"><img src="assets/bungee-logo.png" alt="Bungee" width="109" height="34"></a>
+    <ul>
+      <li><a href="#packs">Skill packs</a></li>
+      <li><a href="#moments">Moments 2027</a></li>
+      <li><a href="#bundles">Bundles</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#faq">Questions</a></li>
+    </ul>
+    <a class="btn primary" href="#bundles">Get the kit <span class="arr" aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Creative skills for Claude</span>
+      <h1 id="hero-title">Brief at six. <em><span class="tick">Pitch at nine.</span></em></h1>
+      <p class="lede">Six skill packs that turn Claude into your creative studio. Plus the almanac that plans your whole 2027. Built for any market on earth.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#bundles">Get everything · USD 149 <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="#packs">See the six packs</a>
+      </div>
+      <p class="note">Works on any Claude plan, Free included. Instant download.</p>
+    </div>
+    <div class="rig" aria-hidden="true">
+      <div class="cord"></div>
+      <div class="card-hang">
+        <div class="clip"></div>
+        <div class="brief">
+          <div class="row"><span>Today's brief</span><span class="chip" id="chip">Key visual</span></div>
+          <div class="hook"><span id="hook">The client wants options. By tomorrow.</span></div>
+          <div class="out-line"><b>Out:</b> <span id="outl">eight routes, prompts, copy and build sheets.</span></div>
+          <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <div class="stamp"><div><b>7</b>products<br>one studio</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track" id="track">
+    <span>The client wants options. By tomorrow.</span><span>Plain shelves sell nothing.</span><span>Your deck looks like a template.</span><span>Thirty days. Nothing planned.</span><span>“Women, 25 to 45” is not a person.</span><span>Board meeting. Monday.</span><span>2027 is already booked.</span>
+  </div>
+</div>
+
+<section id="packs" aria-labelledby="packs-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">The six skill packs</span><h2 id="packs-title">Studio craft. <em>On demand.</em></h2></div>
+      <p>Each pack teaches Claude one job the way a senior team does it. Upload once, then just ask. Every one tested on briefs set in cities from Seoul to Kigali.</p>
+    </div>
+    <div class="packs" id="packgrid"></div>
+  </div>
+</section>
+
+<section class="moments" id="moments" aria-labelledby="moments-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">The planner's almanac</span><h2 id="moments-title">2027 is <em>already booked.</em></h2></div>
+      <p>Every moment that matters, dated, angled and ready to plan. Holidays, faiths, festivals, sport and shopping seasons, with the angle, a hook to copy and what to avoid. Plus the days to say nothing.</p>
+    </div>
+    <div class="reveal">
+      <div class="year" id="year" role="img" aria-label="Chart of the 160 moments in Moments 2027 by month and category. June and October are the busiest months."></div>
+      <div class="months" aria-hidden="true"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span></div>
+      <ul class="legend">
+        <li><i style="background:var(--holiday)"></i>Holiday</li>
+        <li><i style="background:var(--religious)"></i>Religious</li>
+        <li><i style="background:var(--cultural)"></i>Cultural</li>
+        <li><i style="background:var(--commercial)"></i>Commercial</li>
+        <li><i style="background:var(--sport)"></i>Sport</li>
+        <li><i style="background:var(--seasonal)"></i>Seasonal</li>
+        <li><i style="background:var(--sensitive)"></i>Sensitive: go quiet</li>
+      </ul>
+    </div>
+    <div class="mstats reveal">
+      <div class="mstat"><b>160</b><span>dated moments</span></div>
+      <div class="mstat"><b>8</b><span>regions, worldwide to local</span></div>
+      <div class="mstat"><b>3</b><span>notes on each: angle, hook, avoid</span></div>
+      <div class="mstat"><b>1</b><span>click to your calendar app</span></div>
+    </div>
+    <div class="mbuy reveal">
+      <div>
+        <div class="price">USD 29<s>USD 39</s></div>
+        <p>Early bird price until 30 November. Works offline in any browser. No Claude account needed.</p>
+      </div>
+      <a class="btn lime" href="#" data-buy="moments-2027">Get Moments 2027 <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="bundles" aria-labelledby="bundles-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Bundles</span><h2 id="bundles-title">Take the <em>whole studio.</em></h2></div>
+      <p>Plan the year with the almanac, then make the work with the packs. Pick a moment, ask for the calendar or the key visual, and go.</p>
+    </div>
+    <div class="bundles">
+      <div class="bundle reveal">
+        <span class="tag">Save USD 45</span>
+        <h3>All six skill packs</h3>
+        <p>Key visuals, retail displays, designed decks, social calendars, personas and strategy. Six packs, one price.</p>
+        <div class="price">USD 129</div>
+        <span class="save">USD 174 bought one by one</span>
+        <a class="btn primary" href="#" data-buy="bundle-all-six">Get all six <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+      <div class="bundle best reveal">
+        <span class="tag">Best value · save USD 64</span>
+        <h3>Everything</h3>
+        <p>All six skill packs plus Moments 2027. The full year planned, and the craft to fill it.</p>
+        <div class="price">USD 149</div>
+        <span class="save">USD 213 bought one by one</span>
+        <a class="btn primary" href="#" data-buy="bundle-everything">Get everything <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" aria-labelledby="how-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">How it works</span><h2 id="how-title">Three steps. <em>Then just ask.</em></h2></div>
+      <p>Unzip your download first. Each pack has a skill zip, a short guide and your licence.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Switch on file creation</h3><p>In Claude, open Settings, then Capabilities. Turn on code execution and file creation.</p></div>
+      <div class="step reveal"><h3>Upload the skill</h3><p>Go to Customize, then Skills. Tap +, choose Create skill, then Upload a skill, and pick the skill zip.</p></div>
+      <div class="step reveal"><h3>Brief it</h3><p>Switch it on, start a new chat and ask. Claude picks the right skill for the job.</p></div>
+    </div>
+    <div class="plan-note reveal">Any Claude plan works, Free included.</div>
+  </div>
+</section>
+
+<section class="markets" aria-labelledby="markets-title">
+  <div class="wrap">
+    <span class="eyebrow" id="markets-title">Any market. Your market.</span>
+    <div class="cities reveal" style="margin-top:22px">
+      <span>Seoul</span><span>Lisbon</span><span>Mexico City</span><span>Warsaw</span><span>Nairobi</span><span>Kampala</span><span>Kigali</span><span>Dar es Salaam</span><span>yours</span>
+    </div>
+    <p class="small reveal">Name the city and the packs work in its languages, its media, its money and its calendar. Every pack ships with an East Africa module as a fully worked example.</p>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title" style="padding-top:0">
+  <div class="wrap faq">
+    <div class="reveal"><span class="eyebrow">Questions</span><h2 class="serif" id="faq-title" style="font-size:clamp(42px,6vw,80px);line-height:.95;margin:14px 0 0">Good <em>questions.</em></h2></div>
+    <div class="reveal">
+      <details><summary>Do I need a paid Claude plan?</summary><p>No. Any plan works, Free included. Just switch on code execution and file creation in Settings first. Moments 2027 needs no Claude account at all.</p></details>
+      <details><summary>What do I give it?</summary><p>Anything you have. A brief, a deck, a PDF, a logo or a few typed lines. If something is missing, the packs carry on with clear stated assumptions and tell you what to check.</p></details>
+      <details><summary>Does it work outside East Africa?</summary><p>Yes. Every pack is built for any market you name. East Africa is included as a worked regional module, never the default.</p></details>
+      <details><summary>Can my team use it?</summary><p>Each purchase is a single user commercial licence: use it for your own client and personal work, paid work included. Team and agency licences are available. Reply to your receipt.</p></details>
+      <details><summary>Who owns what I make?</summary><p>You do. Everything you make with the packs is yours.</p></details>
+      <details><summary>Can I pay with mobile money?</summary><p>Yes. Card payments run worldwide, and mobile money and local cards are available in Kenya.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="signup" aria-labelledby="join-title" style="padding:clamp(56px,7vw,96px) 0">
+  <div class="wrap">
+    <div>
+      <h2 id="join-title">The week's moments, <em>every Monday.</em></h2>
+      <p>One moment, one angle, one hook. Free, short, and easy to leave.</p>
+    </div>
+    <form class="join" id="join" data-endpoint="">
+      <label for="email" class="visually-hidden" style="position:absolute;left:-9999px">Email address</label>
+      <input id="email" name="email" type="email" required placeholder="you@studio.com" autocomplete="email">
+      <button class="btn primary" type="submit">Join the list</button>
+      <p class="msg" id="joinmsg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap f">
+    <div>
+      <img src="assets/bungee-logo.png" alt="Bungee" width="90" height="28">
+      <div>Creative skills for Claude. Made in Nairobi, for everywhere.</div>
+    </div>
+    <ul>
+      <li><a href="#packs">Skill packs</a></li>
+      <li><a href="#moments">Moments 2027</a></li>
+      <li><a href="#bundles">Bundles</a></li>
+      <li><a href="refunds.html" data-legal>Refunds</a></li>
+      <li><a href="terms.html" data-legal>Terms</a></li>
+      <li><a href="privacy.html" data-legal>Privacy</a></li>
+      <li>© 2026 Bungee</li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+/* Checkout links. Paste each Lemon Squeezy checkout URL here once the products exist. Empty means the button scrolls to the bundles. */
+const CHECKOUT = {
+  "key-visual-builder": "",
+  "fsu-display-units": "",
+  "designed-deck-builder": "",
+  "social-content-calendar-builder": "",
+  "audience-persona-builder": "",
+  "campaign-strategy-builder": "",
+  "moments-2027": "",
+  "bundle-all-six": "",
+  "bundle-everything": ""
+};
+/* Email list form endpoint. Paste the storefront or email tool form URL here. */
+const JOIN_ENDPOINT = "";
+
+const PACKS = [
+  {slug:"key-visual-builder", name:"Key Visual Builder", hook:"The client wants options. By tomorrow.", line:"One brief in. Eight routes out. Every one ready to present.", chip:"Key visual", out:"eight routes, prompts, copy and build sheets.",
+   items:["6 to 8 distinct key visual routes from any brief","A copy ready image prompt and copy suite per route","Channel kit from billboard to vertical story"]},
+  {slug:"fsu-display-units", name:"Retail Display Theatre", hook:"Plain shelves sell nothing.", line:"Turn any aisle into theatre. Any store. Any market.", chip:"Retail", out:"a family of units from floor to counter.",
+   items:["Prompts for floor units, gondolas and counter units","One theatrical device per unit","Clean panels, so client changes never break the render"]},
+  {slug:"designed-deck-builder", name:"Designed Deck Builder", hook:"Your deck looks like a template.", line:"Make it look studio made. Copy, type and all.", chip:"Deck", out:"three design languages, every slide designed.",
+   items:["Fully designed slides with your copy inside","Three design languages made for your brand","Type locked on every slide"]},
+  {slug:"social-content-calendar-builder", name:"Social Content Calendar Builder", hook:"Thirty days. Nothing planned.", line:"A whole month, built by pillar, ready before lunch.", chip:"Social", out:"a full month of posts, captions and motion briefs.",
+   items:["A complete monthly calendar for any market","Captions in the market's own languages","Knows when to post and when to go quiet"]},
+  {slug:"audience-persona-builder", name:"Audience and Persona Builder", hook:"“Women, 25 to 45” is not a person.", line:"Meet the real one. Where she lives, what she earns, how she spends her day.", chip:"Audience", out:"three tiers, real people, a day in the life.",
+   items:["Sharp audience definitions in three tiers","Personas rooted in named neighbourhoods","A day in the life a creative team can brief from"]},
+  {slug:"campaign-strategy-builder", name:"Campaign Strategy Builder", hook:"Board meeting. Monday.", line:"Walk in with the whole strategy. Written at senior planner standard.", chip:"Strategy", out:"a nine section strategy, board ready.",
+   items:["A full strategy in nine sections, in order","Three insight options for you to choose from","Channel map with budget split and funnel"]}
+];
+const MOMENTS = {chip:"Almanac", hook:"2027 is already booked.", out:"160 moments, angled and dated."};
+
+function buyHref(slug){ return CHECKOUT[slug] || "#bundles"; }
+
+/* pack cards */
+const grid = document.getElementById("packgrid");
+PACKS.forEach((p,i)=>{
+  const el = document.createElement("article");
+  el.className = "pack reveal";
+  el.innerHTML = `<span class="cord-sm" aria-hidden="true"></span>
+    <div class="num"><span>0${i+1}</span><em>Skill pack</em></div>
+    <h3>${p.name}</h3>
+    <div class="h">${p.hook}</div>
+    <p>${p.line}</p>
+    <ul>${p.items.map(t=>`<li>${t}</li>`).join("")}</ul>
+    <div class="foot"><div class="price">USD 29</div><a class="btn primary" href="#" data-buy="${p.slug}" aria-label="Get ${p.name}">Get it <span class="arr" aria-hidden="true">→</span></a></div>`;
+  grid.appendChild(el);
+});
+document.querySelectorAll("[data-buy]").forEach(a=>{ a.href = buyHref(a.dataset.buy); });
+
+/* hero brief rotation */
+const deck = [...PACKS.map(p=>({chip:p.chip,hook:p.hook,out:p.out})), MOMENTS];
+const hookEl=document.getElementById("hook"), chipEl=document.getElementById("chip"), outEl=document.getElementById("outl"), dots=[...document.querySelectorAll("#dots i")];
+const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let k=0;
+if(!still) setInterval(()=>{
+  hookEl.classList.add("out");
+  setTimeout(()=>{
+    k=(k+1)%deck.length;
+    hookEl.textContent=deck[k].hook; chipEl.textContent=deck[k].chip; outEl.textContent=deck[k].out;
+    dots.forEach((d,j)=>d.classList.toggle("on",j===k));
+    hookEl.classList.remove("out");
+  },450);
+},3600);
+
+/* marquee: duplicate for a seamless loop */
+const track=document.getElementById("track"); track.innerHTML+=track.innerHTML;
+
+/* almanac chart: one dot per moment, by month and category (from products/moments-2027/out/moments-2027.json) */
+const YEAR=["hhhhhmmmsxx","hhhhrrrrccccmms","hhhhhrrcccccmmme","hhhhrrccmmmssxx","hhhrrrrccmms","hhrccccmmmmmsssssex","hhhhhhcmmsssx","hhhrrrcccmx","hrccccx","hhhhhhhrrrrrrmmmssex","hccmmmmx","hhhhhhrmmmmex"];
+const COL={h:"var(--holiday)",r:"var(--religious)",c:"var(--cultural)",m:"var(--commercial)",s:"var(--sport)",e:"var(--seasonal)",x:"var(--sensitive)"};
+const yearEl=document.getElementById("year");
+YEAR.forEach((m,mi)=>{
+  const col=document.createElement("div"); col.className="month";
+  [...m].forEach((c,ci)=>{ const i=document.createElement("i"); i.style.background=COL[c]; i.style.transitionDelay=(mi*60+ci*35)+"ms"; col.appendChild(i); });
+  yearEl.appendChild(col);
+});
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} }),{threshold:.15});
+document.querySelectorAll(".reveal,#year").forEach(el=>io.observe(el));
+
+/* sticky header rule */
+const hdr=document.getElementById("top");
+addEventListener("scroll",()=>hdr.classList.toggle("scrolled",scrollY>8),{passive:true});
+
+/* email list */
+document.getElementById("join").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const msg=document.getElementById("joinmsg"), email=e.target.email.value;
+  if(!JOIN_ENDPOINT){ msg.textContent="The list opens on launch day. Check back on 3 November."; return; }
+  try{
+    await fetch(JOIN_ENDPOINT,{method:"POST",body:new URLSearchParams({email})});
+    msg.textContent="You are in. See you Monday.";
+    e.target.reset();
+  }catch{ msg.textContent="That did not go through. Try again in a moment."; }
+});
+</script>
+</body>
+</html>
