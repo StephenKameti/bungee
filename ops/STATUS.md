@@ -2,6 +2,16 @@
 
 Newest first. One entry per check in.
 
+## Mon 19 Oct 2026
+
+- Nothing new from you in the roadmap, the Decisions table or the repo since Thursday. PLAN.md is still waiting, so the Studio build (CC2 to CC4) stays on hold. Week 2 and week 3 stay In progress; no other roadmap changes.
+- This is week 2 (19 to 25 Oct). All my week 2 and week 3 sell actions were already done, so I prepared launch week, which is yours to run.
+- Launch kit: `ops/launch/`. Launch day hour by hour in Nairobi time, one skill film a day from Wed 4 Nov, the 50 personal messages in four versions (planner, creative director, agency owner, friend), one follow up, ready replies, and a list template for your 50 names.
+- Two proposals for you in `ops/launch/LAUNCH-PLAN.md`: a launch price for 3 to 9 Nov (one pack USD 24, all six USD 99, Everything USD 119) and a Black Friday offer (Everything USD 99, 27 to 30 Nov, the same day the Moments early bird ends). Post copy is written for both.
+- Monday moment posts: 25 drafts in `ops/launch/monday-posts/`, 9 Nov 2026 to 26 Apr 2027. Each one covers the moments eight weeks ahead, so readers still have time to brief. Trademarked event names swapped for plain words. Built by `ops/launch/monday_posts.py`, which fails if a trademarked name or a dash slips in. Posts that lead with an East Africa hook wait on the native speaker check.
+- Checks: site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes.
+- Next: recheck the KES rate on Thursday (week before launch), CC2 the day PLAN.md is approved, checkout links and deploy once the store and domain exist.
+
 ## Thu 15 Oct 2026
 
 - Nothing new from you in the roadmap or the Decisions table since Monday. Week 1 and week 2 stay In progress until your accounts, Stitch screens and approvals land. Week 3 set to In progress: I started its Me actions.
