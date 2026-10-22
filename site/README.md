@@ -23,8 +23,8 @@ Preview locally: `cd site && python3 -m http.server 8765`, then open http://loca
 ## Before it goes live (Sun 1 Nov)
 
 1. Stephen approves `ops/store/POLICIES.md` and fills the blanks. Rerun `build.py`.
-2. Create the nine products in Lemon Squeezy, then paste each checkout URL into `CHECKOUT` at the top of the script in `index.html`. Empty links fall back to the bundles section.
-3. Paste the email list form URL into `JOIN_ENDPOINT`. Until then the form says the list opens on launch day.
+2. Create the nine products in Lemon Squeezy, then paste each checkout URL into `ops/store/checkout-links.csv`. `build.py` copies them into `CHECKOUT` in `index.html` and fails on anything that is not a plain https link. Empty links fall back to the bundles section.
+3. Paste the email list form URL into the `email-list` row of the same file. Until then the form says the list opens on launch day.
 4. Deploy the `site/` folder to any static host and point the domain at it.
 5. On 1 Dec, change the Moments 2027 block from the early bird price (USD 29, was 39) to USD 39.
 
