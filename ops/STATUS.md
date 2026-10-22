@@ -2,6 +2,18 @@
 
 Newest first. One entry per check in.
 
+## Thu 22 Oct 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. PLAN.md is still waiting, so CC2 to CC4 stay on hold. Weeks 1, 2 and 3 stay In progress.
+- This is week 2 (19 to 25 Oct). My sell actions for weeks 2 to 5 that need no access are done, so this check in cut the time your store setup will take.
+- Store setup guide: `ops/store/SETUP.md`. Your 45 minutes in order: account, the nine products with copy, price and file for each, email list, test purchase, Paystack.
+- Checkout links: paste each one into `ops/store/checkout-links.csv` (editable on GitHub in the browser). `python3 site/build.py` now wires them into the website and fails on anything that is not a plain https link. Tested with sample links.
+- Lemon Squeezy checked: still takes new sign ups, no forced move date to Stripe Managed Payments. That service does not list Kenya as a seller country yet, so Gumroad stays the fallback.
+- KES rate rechecked: 129.86 to the dollar (was 129.75 on 12 Oct). A 0.1 percent move, so the KES prices stand.
+- Roadmap: three finished items in steps 2 and 3 marked Done (store pages, date recheck, Moments store page). Those lists are numbered, not checkboxes, so I added the note in the text.
+- Checks: site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes.
+- Next: wire the checkout links and deploy the site the day the store and domain exist; CC2 the day PLAN.md is approved.
+
 ## Mon 19 Oct 2026
 
 - Nothing new from you in the roadmap, the Decisions table or the repo since Thursday. PLAN.md is still waiting, so the Studio build (CC2 to CC4) stays on hold. Week 2 and week 3 stay In progress; no other roadmap changes.
