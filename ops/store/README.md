@@ -30,7 +30,9 @@ Rate used: **1 USD = 129.75 KES**, mid market, checked Mon 12 Oct 2026 (allrates
 | 129 | 16,738 | 16,500 |
 | 149 | 19,333 | 19,500 |
 
-Recheck the rate the week before launch. If the shilling moves more than 3 percent, reprice.
+Rechecked Thu 22 Oct 2026: **1 USD = 129.86 KES** (exchange-rates.org, 05:00 UTC). That is a 0.1 percent move, so the KES prices stand.
+
+Rule: if the shilling moves more than 3 percent, reprice.
 
 ## Films and posters
 

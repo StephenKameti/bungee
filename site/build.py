@@ -4,11 +4,36 @@ Run from the repo root:  python3 site/build.py
 Exit code 1 if any check fails. Placeholders in square brackets are reported as
 "not ready to deploy" so the site cannot go live with blanks in the policies.
 """
-import html, os, re, sys
+import csv, html, os, re, sys
 from html.parser import HTMLParser
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 POL = os.path.join(ROOT, "..", "ops", "store", "POLICIES.md")
+LINKS = os.path.join(ROOT, "..", "ops", "store", "checkout-links.csv")
+
+
+def wire_links(errors):
+    """Copy the URLs in ops/store/checkout-links.csv into index.html.
+
+    Stephen pastes each checkout URL into the CSV once the products exist.
+    Blank rows leave the page as it is. Bad URLs fail the build.
+    """
+    if not os.path.exists(LINKS): return
+    path = os.path.join(ROOT, "index.html")
+    page = open(path, encoding="utf-8").read(); before = page
+    for row in csv.DictReader(open(LINKS, encoding="utf-8")):
+        slug, url = row["slug"].strip(), (row.get("checkout_url") or "").strip()
+        if not url: continue
+        if not re.fullmatch(r"https://[^\s\"'<>]+", url):
+            errors.append(f"checkout-links.csv: {slug}: not a plain https URL"); continue
+        if slug == "email-list":
+            page = re.sub(r'const JOIN_ENDPOINT = "[^"]*";', f'const JOIN_ENDPOINT = "{url}";', page)
+        elif re.search(rf'"{re.escape(slug)}": "[^"]*"', page):
+            page = re.sub(rf'"{re.escape(slug)}": "[^"]*"', f'"{slug}": "{url}"', page, count=1)
+        else:
+            errors.append(f"checkout-links.csv: unknown slug {slug}")
+    if page != before:
+        open(path, "w", encoding="utf-8").write(page); print("checkout links wired from checkout-links.csv")
 
 PAGES = {"refunds.html": ("Refund policy", "Refunds"),
          "terms.html": ("Terms of sale", "Terms of sale"),
@@ -81,6 +106,7 @@ def visible(path):
 
 def main():
     b = blocks(); errors = []; warnings = []
+    wire_links(errors)
     for fn, (title, key) in PAGES.items():
         if key not in b: errors.append(f"{key}: not found in POLICIES.md"); continue
         body = "\n".join(f"<p>{inline(x)}</p>" for x in b[key])
