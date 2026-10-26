@@ -2,6 +2,15 @@
 
 Newest first. One entry per check in.
 
+## Mon 26 Oct 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Thursday. PLAN.md is still waiting, so CC2 to CC4 stay on hold. Weeks 1, 2 and 3 stay In progress.
+- This is week 3 (26 Oct to 1 Nov). My sell actions (store pages, landing page) were done in week 2. Week 4 and 5 Me actions are done or wait on Studio.
+- Found a launch risk: Lemon Squeezy reviews every new store, typically 2 to 3 business days, and a store cannot take real money until approved. To be safe for Tue 3 Nov the store must be submitted by Tue 27 Oct.
+- Added the clock to `ops/store/SETUP.md`: submit dates against likely approval, build products in test mode while waiting, a go or no go on Sat 31 Oct at 18:00, and two fallbacks (move launch to Tue 10 Nov, or Gumroad on 3 Nov). The two new dates are in `ops/launch/LAUNCH-PLAN.md`.
+- Checks: zips rebuilt, site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes.
+- Next: wire checkout links and deploy the site the day the store and domain exist; switch every date if you choose a fallback; CC2 the day PLAN.md is approved.
+
 ## Thu 22 Oct 2026
 
 - Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. PLAN.md is still waiting, so CC2 to CC4 stay on hold. Weeks 1, 2 and 3 stay In progress.
