@@ -8,6 +8,8 @@ Captions for every film are in `films/CAPTIONS.md`. Personal messages are in `ME
 
 | When | What | Who |
 | --- | --- | --- |
+| Tue 27 Oct | Lemon Squeezy store submitted for review (2 to 3 business days) | You |
+| Sat 31 Oct, 18:00 | Go or no go: store approved? If not, see the end of `ops/store/SETUP.md` | You |
 | By Sun 1 Nov | Store live, test purchase made and refunded | You |
 | By Sun 1 Nov | 50 names in `list-of-50.csv`, a personal line for each | You |
 | Mon 2 Nov | Launch price set up in the store (see below) | You |

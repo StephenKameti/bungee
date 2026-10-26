@@ -4,6 +4,20 @@ Your 45 minutes, step by step. Everything to paste is already written in this fo
 
 Checked Thu 22 Oct 2026: Lemon Squeezy still takes new sign ups. Its move to Stripe Managed Payments has no forced date yet. Stripe Managed Payments does not list Kenya as a seller country so far, so keep Gumroad as the fallback (see the end).
 
+## The clock (checked Mon 26 Oct 2026)
+
+Lemon Squeezy reviews every new store before it can sell. Its help page says approval typically takes 2 to 3 business days, sometimes longer. A store in test mode cannot take real money.
+
+| Submit step 1 by | Approval likely by | Launch Tue 3 Nov |
+| --- | --- | --- |
+| Tue 27 Oct | Fri 30 Oct | Safe, with a weekend spare |
+| Wed 28 Oct | Mon 2 Nov | Tight |
+| Thu 29 Oct or later | Tue 3 Nov or later | At risk |
+
+Build the nine products in test mode while you wait. Each one has a Copy to Live Mode button, so nothing is built twice.
+
+Go or no go: **Sat 31 Oct, 18:00 Nairobi**. If the store is not approved by then, see the end of this page.
+
 ## 1. Lemon Squeezy account (15 minutes, you)
 
 1. Sign up at https://www.lemonsqueezy.com with the Bungee email address once it exists (use your own email for now if the domain is not ready; you can change it later).
@@ -11,7 +25,7 @@ Checked Thu 22 Oct 2026: Lemon Squeezy still takes new sign ups. Its move to Str
 3. Complete the identity check and add your Kenyan bank account for payouts.
 4. Accept the seller terms. This is the step only you can do.
 
-If the store is placed under review, carry on with step 2 anyway: products can be built while the store waits for approval.
+The store will be placed under review. Carry on with step 2 anyway: build the products in test mode while it waits, then copy each one to live mode once approved.
 
 ## 2. The nine products (20 minutes, you or me with you)
 
@@ -47,4 +61,9 @@ Make one payment page per product in your existing Paystack account, priced in K
 
 ## If Lemon Squeezy refuses or stalls
 
-Use Gumroad. Same copy, same files, same prices. Its fee is higher (10 percent plus USD 0.50 on direct sales), but it opens fast. Tell me in the roadmap or the repo and I will switch every link and page.
+Two choices at the Sat 31 Oct go or no go. Pick one in the Decisions table.
+
+1. **Move launch one week, to Tue 10 Nov.** Same plan, every date shifts seven days. The launch price runs 10 to 16 Nov. Black Friday and the Moments early bird stay where they are. Lowest risk, costs a week of almanac season.
+2. **Launch on Gumroad on Tue 3 Nov.** Same copy, same files, same prices. Its fee is higher (10 percent plus USD 0.50 on direct sales), but it opens fast. Check during sign up that it pays out to your Kenyan bank or PayPal before you build anything there.
+
+Tell me in the roadmap or the repo and I will switch every link, page and post date.
