@@ -42,7 +42,7 @@ All six skill packs plus Moments 2027. Plan the whole year, then make the work.
 
 Unzip your download first. Each pack has its own folder with a skill zip, a guide and your licence.
 
-1. In Claude, open **Settings**, then **Capabilities**. Turn on **code execution and file creation**.
+1. In Claude, open **Settings**, then **Capabilities**. Turn on **code execution and file creation**. Newer layouts call it **Create and edit files**.
 2. Go to **Customize**, then **Skills**. Tap **+**, choose **Create skill**, then **Upload a skill**, and pick a skill zip. Repeat for each pack.
 3. Switch them on. Start a new chat and ask. Claude picks the right skill for the job.
 

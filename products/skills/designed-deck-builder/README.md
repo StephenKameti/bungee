@@ -8,7 +8,7 @@ Turn a plain deck into image prompts that generate fully designed slides, copy i
 * `LICENSE.txt`: your licence
 
 ## Install (2 minutes)
-1. Open Claude and go to your Skills settings (skills work on every Claude plan, Free included, with code execution and file creation on).
+1. Open Claude and go to your Skills settings (skills work on every Claude plan, Free included, with code execution and file creation on; newer layouts call it Create and edit files).
 2. Upload `designed-deck-builder.zip`.
 3. Start a new chat. The skill switches on by itself when your request matches.
 
