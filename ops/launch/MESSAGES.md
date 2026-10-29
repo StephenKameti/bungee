@@ -1,6 +1,6 @@
 # Launch messages
 
-For the 50 people on your list. Send on launch day, Tue 3 Nov 2026, from your own accounts. Every message is a starting point: change the first line for each person so it could only be for them. Swap in the store link where it says [link].
+For the 50 people on your list. Send on launch day, Tue 10 Nov 2026, from your own accounts. Every message is a starting point: change the first line for each person so it could only be for them. Swap in the store link where it says [link].
 
 Rules that keep these working: one message per person, no group sends, no attachments, no chasing more than once.
 

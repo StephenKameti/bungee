@@ -1,6 +1,6 @@
 # Launch plan
 
-Products launch Tue 3 Nov 2026. Times are Nairobi time. Everything here is ready to paste; you press send.
+Products launch Tue 10 Nov 2026, one week later than first planned, chosen at the Sat 31 Oct go or no go. Times are Nairobi time. Everything here is ready to paste; you press send.
 
 Captions for every film are in `films/CAPTIONS.md`. Personal messages are in `MESSAGES.md`. Your list goes in `list-of-50.csv`.
 
@@ -9,13 +9,13 @@ Captions for every film are in `films/CAPTIONS.md`. Personal messages are in `ME
 | When | What | Who |
 | --- | --- | --- |
 | Tue 27 Oct | Lemon Squeezy store submitted for review (2 to 3 business days) | You |
-| Sat 31 Oct, 18:00 | Go or no go: store approved? If not, see the end of `ops/store/SETUP.md` | You |
-| By Sun 1 Nov | Store live, test purchase made and refunded | You |
-| By Sun 1 Nov | 50 names in `list-of-50.csv`, a personal line for each | You |
-| Mon 2 Nov | Launch price set up in the store (see below) | You |
-| Mon 2 Nov | Checkout links in the website, site deployed | Me, once the store and domain exist |
+| Sat 31 Oct, 18:00 | Go or no go: launch moved to Tue 10 Nov | You |
+| By Sun 8 Nov | Store live, test purchase made and refunded | You |
+| By Sun 8 Nov | 50 names in `list-of-50.csv`, a personal line for each | You |
+| Mon 9 Nov | Launch price set up in the store (see below) | You |
+| Mon 9 Nov | Checkout links in the website, site deployed | Me, once the store and domain exist |
 
-## Launch day, Tue 3 Nov
+## Launch day, Tue 10 Nov
 
 | Time | What | Where |
 | --- | --- | --- |
@@ -32,27 +32,27 @@ Captions for every film are in `films/CAPTIONS.md`. Personal messages are in `ME
 
 | Day | Film | Files |
 | --- | --- | --- |
-| Wed 4 Nov | Key Visual Builder | kv_9x16.mp4, kv_1x1.mp4 |
-| Thu 5 Nov | Campaign Strategy Builder | strat_9x16.mp4, strat_1x1.mp4 |
-| Fri 6 Nov | Designed Deck Builder | deck_9x16.mp4, deck_1x1.mp4 |
-| Sat 7 Nov | Content Calendar Builder | cal_9x16.mp4, cal_1x1.mp4 |
-| Sun 8 Nov | Audience Persona Builder | persona_9x16.mp4, persona_1x1.mp4 |
-| Mon 9 Nov | Retail Display Theatre, plus the first Monday moment post | fsu_9x16.mp4, fsu_1x1.mp4 |
+| Wed 11 Nov | Key Visual Builder | kv_9x16.mp4, kv_1x1.mp4 |
+| Thu 12 Nov | Campaign Strategy Builder | strat_9x16.mp4, strat_1x1.mp4 |
+| Fri 13 Nov | Designed Deck Builder | deck_9x16.mp4, deck_1x1.mp4 |
+| Sat 14 Nov | Content Calendar Builder | cal_9x16.mp4, cal_1x1.mp4 |
+| Sun 15 Nov | Audience Persona Builder | persona_9x16.mp4, persona_1x1.mp4 |
+| Mon 16 Nov | Retail Display Theatre, plus that week's Monday moment post | fsu_9x16.mp4, fsu_1x1.mp4 |
 
-The strongest films go first, while launch attention is highest. Mon 9 Nov is the last day of the launch price, so that post ends with "Launch price ends tonight."
+The strongest films go first, while launch attention is highest. Mon 16 Nov is the last day of the launch price, so that post ends with "Launch price ends tonight."
 
 ## Launch price, first seven days (your call)
 
 The roadmap asks for a launch price but no figure is decided yet. My proposal:
 
-| Product | Normal | Launch, 3 to 9 Nov | Paystack launch |
+| Product | Normal | Launch, 10 to 16 Nov | Paystack launch |
 | --- | --- | --- | --- |
 | One pack | USD 29 | USD 24 | KES 3,100 |
 | All six packs | USD 129 | USD 99 | KES 12,800 |
 | Everything | USD 149 | USD 119 | KES 15,400 |
 | Moments 2027 | USD 39 | Stays at the USD 29 early bird | KES 3,800 |
 
-Why fixed prices and not a code: no code to remember, it shows on the page, and it ends cleanly. Set them as sale prices in Lemon Squeezy and Paystack on Mon 2 Nov, and set them back on Tue 10 Nov.
+Why fixed prices and not a code: no code to remember, it shows on the page, and it ends cleanly. Set them as sale prices in Lemon Squeezy and Paystack on Mon 9 Nov, and set them back on Tue 17 Nov.
 
 Launch week line for posts and pages:
 
@@ -82,4 +82,4 @@ The credit line is a promise: keep it only if you are happy to refund the differ
 
 ## After launch week
 
-Every Monday from 9 Nov, post the moments eight weeks ahead, ready drafted in `monday-posts/`. Ask the first ten buyers for one line of feedback; only real quotes, with permission, go on the store pages. Sales hour every week: check sales, answer buyers, post.
+Every Monday from 9 Nov, post the moments eight weeks ahead, ready drafted in `monday-posts/`. The 9 Nov post goes out the day before launch, so end it with "Out tomorrow." in place of the link. Ask the first ten buyers for one line of feedback; only real quotes, with permission, go on the store pages. Sales hour every week: check sales, answer buyers, post.

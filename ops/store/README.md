@@ -1,6 +1,6 @@
 # Store copy
 
-Everything for the Lemon Squeezy store, ready to paste. One file per product, two bundles, and the policies. Store goes live Sun 1 Nov 2026; products launch Tue 3 Nov 2026.
+Everything for the Lemon Squeezy store, ready to paste. One file per product, two bundles, and the policies. Store goes live Sun 8 Nov 2026; products launch Tue 10 Nov 2026.
 
 ## Files
 

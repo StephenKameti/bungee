@@ -1,6 +1,6 @@
 # Store and website policies
 
-> **Draft, not legal advice. Stephen to approve.** Have a lawyer check these before the store goes live on Sun 1 Nov 2026. Square brackets mark details only Stephen can fill in.
+> **Draft, not legal advice. Stephen to approve.** Have a lawyer check these before the store goes live on Sun 8 Nov 2026. Square brackets mark details only Stephen can fill in.
 
 ## Refund policy (proposal for Stephen)
 
