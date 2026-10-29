@@ -8,7 +8,7 @@ Sharp audience definitions and personas rooted in real local life for any market
 * `LICENSE.txt`: your licence
 
 ## Install (2 minutes)
-1. Open Claude and go to your Skills settings (skills work on every Claude plan, Free included, with code execution and file creation on).
+1. Open Claude and go to your Skills settings (skills work on every Claude plan, Free included, with code execution and file creation on; newer layouts call it Create and edit files).
 2. Upload `audience-persona-builder.zip`.
 3. Start a new chat. The skill switches on by itself when your request matches.
 

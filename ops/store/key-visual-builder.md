@@ -41,7 +41,7 @@ One brief in. Eight routes out. Every one ready to present.
 
 Unzip your download first. Inside you will find the skill zip, a guide and your licence.
 
-1. In Claude, open **Settings**, then **Capabilities**. Turn on **code execution and file creation**.
+1. In Claude, open **Settings**, then **Capabilities**. Turn on **code execution and file creation**. Newer layouts call it **Create and edit files**.
 2. Go to **Customize**, then **Skills**. Tap **+**, choose **Create skill**, then **Upload a skill**, and pick the skill zip.
 3. Switch it on. Start a new chat and ask.
 
