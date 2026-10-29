@@ -2,6 +2,16 @@
 
 Newest first. One entry per check in.
 
+## Thu 29 Oct 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. No checkout links yet, so I take it the store is not submitted. PLAN.md is still waiting, so CC2 to CC5 stay on hold. Weeks 1, 2 and 3 stay In progress.
+- This is week 3 (26 Oct to 1 Nov). My sell actions are done. Launch on Tue 3 Nov through Lemon Squeezy is now at risk: a store submitted today would likely be approved Mon 2 or Tue 3 Nov.
+- Made both fallbacks ready so the Sat 31 Oct go or no go takes minutes. Plan B (launch Tue 10 Nov): branch `launch/plan-b-10-nov`, every launch week date, message and page moved seven days; merge it and it is done. Gumroad on 3 Nov: steps in `ops/store/GUMROAD.md`. Gumroad pays weekly with a USD 10 minimum; Kenya bank payouts are not confirmed on Gumroad's own pages, so check that first.
+- Monthly install check: Claude's support page now also calls the setting "Create and edit files" in the newer layout. Added that to the install steps in all six READMEs, eight store pages and the site. Zips rebuilt. Free plan still supported.
+- Name check head start for decision 7 (due Fri 30 Oct): `ops/legal/NAME-CHECK.md`. Two live, still pending US filings for BUNGEE, one in class 42 (software services) and one in classes 9 and 35. Not a stop sign on its own; a lawyer should see them. Roadmap step 1 item noted.
+- Checks: site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes, Plan B branch builds too.
+- Next: at your go or no go, merge Plan B or wire Gumroad links; checkout links and deploy the day the store and domain exist; CC2 the day PLAN.md is approved.
+
 ## Mon 26 Oct 2026
 
 - Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Thursday. PLAN.md is still waiting, so CC2 to CC4 stay on hold. Weeks 1, 2 and 3 stay In progress.
