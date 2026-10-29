@@ -18,6 +18,8 @@ Build the nine products in test mode while you wait. Each one has a Copy to Live
 
 Go or no go: **Sat 31 Oct, 18:00 Nairobi**. If the store is not approved by then, see the end of this page.
 
+Rechecked Thu 29 Oct 2026: the review still typically takes 2 to 3 business days. Submitted today means approval around Mon 2 or Tue 3 Nov, which leaves no room for a slow review. Submit anyway: it is the first step of both choices below.
+
 ## 1. Lemon Squeezy account (15 minutes, you)
 
 1. Sign up at https://www.lemonsqueezy.com with the Bungee email address once it exists (use your own email for now if the domain is not ready; you can change it later).
@@ -63,7 +65,7 @@ Make one payment page per product in your existing Paystack account, priced in K
 
 Two choices at the Sat 31 Oct go or no go. Pick one in the Decisions table.
 
-1. **Move launch one week, to Tue 10 Nov.** Same plan, every date shifts seven days. The launch price runs 10 to 16 Nov. Black Friday and the Moments early bird stay where they are. Lowest risk, costs a week of almanac season.
-2. **Launch on Gumroad on Tue 3 Nov.** Same copy, same files, same prices. Its fee is higher (10 percent plus USD 0.50 on direct sales), but it opens fast. Check during sign up that it pays out to your Kenyan bank or PayPal before you build anything there.
+1. **Move launch one week, to Tue 10 Nov.** Same plan, every date shifts seven days. Already done on the branch `launch/plan-b-10-nov`: merge it and every page, message and date moves. The launch price runs 10 to 16 Nov. Black Friday and the Moments early bird stay where they are. Lowest risk, costs a week of almanac season.
+2. **Launch on Gumroad on Tue 3 Nov.** Same copy, same files, same prices. Its fee is higher (10 percent plus USD 0.50 on direct sales), but it opens fast. Check during sign up that it pays out to your Kenyan bank or PayPal before you build anything there. Steps in `GUMROAD.md`.
 
 Tell me in the roadmap or the repo and I will switch every link, page and post date.
