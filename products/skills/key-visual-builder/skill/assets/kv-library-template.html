@@ -109,6 +109,8 @@ section{margin-top:64px}
 .copy .val{font-size:16px}
 .copy .val.hl{font:400 24px/1.15 var(--serif)}
 .copy .val.sw{font:italic 400 20px/1.25 var(--serif);color:var(--accent)}
+.copy .val small{display:block;font:400 14px/1.4 var(--sans);font-style:normal;color:var(--muted);margin-top:4px}
+.copy .flag{margin:12px 0 0;font-size:13.5px;color:var(--muted)}.copy .flag b{color:var(--ink)}
 .mini{border:0;background:none;color:var(--muted);font-size:13px;font-weight:600;padding:3px 0}
 .mini:hover{color:var(--accent)}
 
@@ -271,6 +273,8 @@ section{margin-top:64px}
           <div class="cl"><span class="lbl">Local line</span><span class="val sw txt">{{LOCAL_LINE}}</span><button class="mini" data-copy>Copy</button></div>
           <!-- Radio: only when the spine lists radio. One row per market, in that market's spoken language -->
           <div class="cl"><span class="lbl">Radio, 15 s</span><span class="val txt">{{RADIO_SCRIPT}}</span><button class="mini" data-copy>Copy</button></div>
+          <!-- Flag: suspended or pending claims for this route, so nothing is quietly dropped. Delete if none. -->
+          <p class="flag"><b>Flag.</b> {{FLAG}}</p>
         </div>
 
         <div style="display:grid;gap:20px;align-content:start">
@@ -307,6 +311,8 @@ section{margin-top:64px}
             <dt>Pack lockup</dt><dd>{{ZONE_PACK}}</dd>
             <!-- Price plate: only when price is mandatory. Placeholder per market until the client confirms the figure. -->
             <dt>Price plate</dt><dd>{{ZONE_PRICE}}</dd>
+            <!-- Legal line: only when the brief mandates one. Exact wording, position and minimum size. -->
+            <dt>Legal line</dt><dd>{{ZONE_LEGAL}}</dd>
             <dt>Safe area</dt><dd>{{SAFE_BLEED}}</dd>
             <dt>Colour build</dt><dd>{{COLOUR_BUILD}}</dd>
             <dt class="dont">Do not</dt><dd>{{DO_NOT}}</dd>

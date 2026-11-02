@@ -47,6 +47,8 @@ State the call explicitly on every line of every adaptation kit.
 | Street furniture 6 sheet (bus shelter, metro, mall) | about 2:3 portrait, 1185 x 1750 mm visible | Backlit, read on foot at 2 to 5 m. Usually a crop of the 4:5 master; lift the grade one stop for the lightbox |
 | Wall wrap or building | Bespoke | Confirm the architectural obstructions before designing |
 | Public transport branding | Long horizontal | Assume a third of the artwork is obscured by windows and doors. Build redundancy. Check the market module for the dominant local transport format, minibus, bus, tram, tuk tuk |
+| Vehicle back (minibus, bus, tuk tuk) | About 2:1 landscape around the rear window; confirm per vehicle | **Crop** of the billboard plate. Read from the vehicle behind at 3 to 10 m in traffic. The mechanism, the endline and the price only; keep type off the window |
+| Hand painted wall or shop front | Bespoke | **Designer build.** A sign writer paints it from a flat colour build: two or three solid brand colours, the mechanism as one flat shape, the headline and the price. Nothing photographic. Supply the hex values and a scaled drawing |
 
 Standard sizes vary by market; confirm them with the media owner. 8x3 m is the roadside standard in some European markets; 12x3 m and 40x10 ft are common in parts of Africa and Asia.
 
