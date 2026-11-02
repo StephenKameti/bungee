@@ -2,6 +2,15 @@
 
 Newest first. One entry per check in.
 
+## Mon 2 Nov 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Thursday. No checkout links and no pick at the Sat 31 Oct go or no go. PLAN.md is still waiting, so CC2 to CC5 stay on hold.
+- This is week 4 (2 to 8 Nov), launch week. Launch on Tue 3 Nov cannot take money: there is no store. Do not post or send the 50 messages until a checkout link works.
+- Plan B (Tue 10 Nov) is still the lowest risk. Branch `launch/plan-b-10-nov` rebased on today's main, so it merges cleanly. New clock in `ops/store/SETUP.md`: submit the store by Tue 3 Nov for a safe 10 Nov, Wed 4 Nov at the latest.
+- Monthly pack retest: Key Visual Builder on two new invented briefs, sun care in Melbourne and breakfast flour in Dar es Salaam and Mombasa. First runs 43 and 42 of 44. Five fixes: the route book template now styles the gloss line and has flag and legal slots, vehicle back and painted wall formats in the adaptation kit, a legal line in the build sheet, billboard word cap across both languages, a Kenya coast language rule. Reruns 44 of 44. Results in `ops/tests/key-visual-builder/2026-11-02/`. Zips rebuilt.
+- Week 4 and 5 Me actions: CC5 and CC6 wait on PLAN.md and your keys; the Monday moment posts were done in October. Weeks 1 to 3 stay In progress; week 4 set to In progress.
+- Next: merge Plan B or wire Gumroad the moment you pick; checkout links and deploy the day the store exists; CC2 the day PLAN.md is approved; retest another pack in December.
+
 ## Thu 29 Oct 2026
 
 - Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. No checkout links yet, so I take it the store is not submitted. PLAN.md is still waiting, so CC2 to CC5 stay on hold. Weeks 1, 2 and 3 stay In progress.
