@@ -303,6 +303,7 @@ The handover to the artworker. Per route, exact and unambiguous:
 - **Pack lockup.** Coordinates and scale for dropping the real pack artwork onto the blank label face
 - **Endline lockup.** Position, and whether it sits on the image or on a colour block
 - **Price plate.** When price is mandatory: position, size, currency per market, the recommended retail price line, and a placeholder until the client confirms the figure
+- **Legal line.** When the brief mandates a legal, regulatory or claim line: the exact wording, position, minimum size, and the zone held for it in every prompt's text zone and every motion brief
 - **Safe area and bleed.** For print and OOH formats
 - **Colour build.** Hex list, and the CMYK note if the route goes to print
 - **Do not.** The two or three things that will break this composition if changed

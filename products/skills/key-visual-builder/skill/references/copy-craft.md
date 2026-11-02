@@ -72,7 +72,7 @@ The fastest way to lose a room is a forced or dictionary version of the local la
 
 | Channel | What changes |
 |---|---|
-| Billboard | Seven words maximum, headline plus endline, nothing else. No CTA, nobody is writing it down |
+| Billboard | Seven words maximum, headline plus endline, nothing else. No CTA, nobody is writing it down. When the brief mandates two languages, the seven words cover both: the lead language carries the headline and the second language carries the endline |
 | Shelf talker | Benefit plus price cue. The headline is often the CTA |
 | Gondola end | Headline at eye height, proof callout below, variant names as a list |
 | Social feed | Headline in the image, the argument in the caption, CTA in the caption |

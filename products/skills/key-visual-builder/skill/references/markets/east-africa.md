@@ -78,7 +78,7 @@ Recurring anchors to check for the live year: Jamhuri Day (independence, mid Dec
 
 Set the language order from the country, not from Kenya.
 
-- Kenya: English and Swahili are both official. Business and advertising run in English; the local line is Swahili, with Sheng for young urban audiences in Nairobi.
+- Kenya: English and Swahili are both official. Business and advertising run in English; the local line is Swahili, with Sheng for young urban audiences in Nairobi. On the coast (Mombasa, Kilifi, Kwale, Lamu) Swahili is the everyday street language and coastal speech differs from Nairobi Swahili, so for a coast brief Swahili may lead at equal size with English, and a coast writer checks every line.
 - Uganda: English leads in business and advertising. Swahili is official but is not the household language in Kampala. Luganda leads in Kampala and the central region, and other regions use their own languages (for example Runyankore in the west, Acholi or Lango in the north, Lusoga in the east). Write the local line in Luganda for Kampala and have a native writer check it.
 - Tanzania: Swahili leads in daily life, media, business and advertising. Write Swahili first and English second, if at all. Coastal and Zanzibar Swahili differ from upcountry speech.
 - Rwanda: Kinyarwanda leads, with English and French in business.
