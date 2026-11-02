@@ -20,6 +20,14 @@ Go or no go: **Sat 31 Oct, 18:00 Nairobi**. If the store is not approved by then
 
 Rechecked Thu 29 Oct 2026: the review still typically takes 2 to 3 business days. Submitted today means approval around Mon 2 or Tue 3 Nov, which leaves no room for a slow review. Submit anyway: it is the first step of both choices below.
 
+**Mon 2 Nov 2026: the go or no go passed with no store and no pick.** No checkout links exist, so nothing can sell on Tue 3 Nov. Do not post the launch films or send the 50 messages until a checkout link works: a launch with no way to pay burns the list. The new clock for Plan B:
+
+| Submit step 1 by | Approval likely by | Launch Tue 10 Nov |
+| --- | --- | --- |
+| Tue 3 Nov | Fri 6 Nov | Safe |
+| Wed 4 Nov | Mon 9 Nov | Tight |
+| Thu 5 Nov or later | Tue 10 Nov or later | At risk: Gumroad, or Tue 17 Nov |
+
 ## 1. Lemon Squeezy account (15 minutes, you)
 
 1. Sign up at https://www.lemonsqueezy.com with the Bungee email address once it exists (use your own email for now if the domain is not ready; you can change it later).
