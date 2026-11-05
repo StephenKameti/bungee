@@ -1,6 +1,6 @@
 # Launch kit
 
-Everything for launch week and the weeks after. Products launch Tue 3 Nov 2026.
+Everything for launch week and the weeks after. Products launch Tue 10 Nov 2026.
 
 | File | What |
 | --- | --- |

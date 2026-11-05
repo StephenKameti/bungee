@@ -501,7 +501,7 @@ addEventListener("scroll",()=>hdr.classList.toggle("scrolled",scrollY>8),{passiv
 document.getElementById("join").addEventListener("submit",async e=>{
   e.preventDefault();
   const msg=document.getElementById("joinmsg"), email=e.target.email.value;
-  if(!JOIN_ENDPOINT){ msg.textContent="The list opens on launch day. Check back on 3 November."; return; }
+  if(!JOIN_ENDPOINT){ msg.textContent="The list opens on launch day. Check back on 10 November."; return; }
   try{
     await fetch(JOIN_ENDPOINT,{method:"POST",body:new URLSearchParams({email})});
     msg.textContent="You are in. See you Monday.";
