@@ -28,6 +28,15 @@ Rechecked Thu 29 Oct 2026: the review still typically takes 2 to 3 business days
 | Wed 4 Nov | Mon 9 Nov | Tight |
 | Thu 5 Nov or later | Tue 10 Nov or later | At risk: Gumroad, or Tue 17 Nov |
 
+**Thu 5 Nov 2026: still no store, so Lemon Squeezy cannot make Tue 10 Nov safely.** Two launches are left before the launch price week runs into Black Friday. Both are ready on their own branch; merge one and every date, page and message moves.
+
+| Launch | Store | Your last step | Branch to merge |
+| --- | --- | --- | --- |
+| Tue 10 Nov | Gumroad, no review wait | Gumroad set up by Fri 6 Nov, payouts to Kenya confirmed | `launch/gumroad-10-nov` |
+| Tue 17 Nov | Lemon Squeezy | Store submitted by Tue 10 Nov, approval likely Fri 13 Nov | `launch/lemon-17-nov` |
+
+After Tue 17 Nov the launch price week overlaps Black Friday (27 to 30 Nov), so a later launch needs a fresh call on prices first.
+
 ## 1. Lemon Squeezy account (15 minutes, you)
 
 1. Sign up at https://www.lemonsqueezy.com with the Bungee email address once it exists (use your own email for now if the domain is not ready; you can change it later).
@@ -71,9 +80,11 @@ Make one payment page per product in your existing Paystack account, priced in K
 
 ## If Lemon Squeezy refuses or stalls
 
-Two choices at the Sat 31 Oct go or no go. Pick one in the Decisions table.
+Pick one in the Decisions table, or just merge its branch.
 
-1. **Move launch one week, to Tue 10 Nov.** Same plan, every date shifts seven days. Already done on the branch `launch/plan-b-10-nov`: merge it and every page, message and date moves. The launch price runs 10 to 16 Nov. Black Friday and the Moments early bird stay where they are. Lowest risk, costs a week of almanac season.
-2. **Launch on Gumroad on Tue 3 Nov.** Same copy, same files, same prices. Its fee is higher (10 percent plus USD 0.50 on direct sales), but it opens fast. Check during sign up that it pays out to your Kenyan bank or PayPal before you build anything there. Steps in `GUMROAD.md`.
+1. **Gumroad, launch Tue 10 Nov.** Same copy, same files, same prices. Higher fee (10 percent plus USD 0.50 on direct sales), but no review wait. Check during sign up that it pays out to your Kenyan bank or PayPal before you build anything. Steps in `GUMROAD.md`. Branch: `launch/gumroad-10-nov`.
+2. **Lemon Squeezy, launch Tue 17 Nov.** Submit the store by Tue 10 Nov. The launch price runs 17 to 23 Nov; Black Friday and the Moments early bird stay where they are. Costs two weeks of almanac season. Branch: `launch/lemon-17-nov`.
 
-Tell me in the roadmap or the repo and I will switch every link, page and post date.
+The older branch `launch/plan-b-10-nov` (Lemon Squeezy on 10 Nov) is out of date: do not merge it.
+
+Any other Tuesday up to 17 Nov is one command: `python3 ops/launch/set_launch.py 2026-11-17 --store lemon` (or `--store gumroad`). It moves every launch week date in the plan, the messages, the store notes, the site and CLAUDE.md, and changes nothing else.
