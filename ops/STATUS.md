@@ -2,6 +2,16 @@
 
 Newest first. One entry per check in.
 
+## Thu 5 Nov 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. No store emails in Gmail, so I take it the store is not submitted. PLAN.md is still waiting, so CC2 to CC6 stay on hold.
+- This is week 4 (2 to 8 Nov). Tue 3 Nov passed with no way to pay, and Lemon Squeezy can no longer make Tue 10 Nov safely. Week 4 set to Slipped in the roadmap. Weeks 1 to 3 stay In progress.
+- Two launches are left before the launch price week runs into Black Friday, each ready on its own branch, both checked against today's main. Gumroad on Tue 10 Nov: `launch/gumroad-10-nov`, set up Gumroad by Fri 6 Nov. Lemon Squeezy on Tue 17 Nov: `launch/lemon-17-nov`, submit the store by Tue 10 Nov. The old `launch/plan-b-10-nov` is out of date; do not merge it.
+- New tool: `ops/launch/set_launch.py` moves launch week to any Tuesday up to 17 Nov, for either store, in every file that carries a launch date (plan, messages, store notes, site, CLAUDE.md). Black Friday and the Moments early bird never move. Tested both ways and back to 3 Nov with no leftover change. Clock and choices in `ops/store/SETUP.md`.
+- Any Monday moment post that lands before launch now ends with "Out" plus the launch day in place of the link; the plan says which ones.
+- Checks: site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes, both launch branches build.
+- Next: merge your pick the moment you name it; checkout links and deploy the day the store exists; CC2 the day PLAN.md is approved.
+
 ## Mon 2 Nov 2026
 
 - Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Thursday. No checkout links and no pick at the Sat 31 Oct go or no go. PLAN.md is still waiting, so CC2 to CC5 stay on hold.
