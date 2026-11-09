@@ -37,6 +37,17 @@ Rechecked Thu 29 Oct 2026: the review still typically takes 2 to 3 business days
 
 After Tue 17 Nov the launch price week overlaps Black Friday (27 to 30 Nov), so a later launch needs a fresh call on prices first.
 
+**Mon 9 Nov 2026: no pick by Fri 6 Nov, so Gumroad on Tue 10 Nov is off.** Tue 17 Nov is the last launch with its own price week. It now works with either store, each on its own branch:
+
+| Launch Tue 17 Nov | Your last step | Go or no go | Branch to merge |
+| --- | --- | --- | --- |
+| Lemon Squeezy | Store submitted by **Tue 10 Nov** (tomorrow), approval likely Fri 13 Nov | Sat 14 Nov, 18:00 | `launch/lemon-17-nov` |
+| Gumroad, no review wait | Gumroad set up by **Fri 13 Nov**, payouts to Kenya confirmed | Sat 14 Nov, 18:00 | `launch/gumroad-17-nov` |
+
+Gumroad buys three more days. Lemon Squeezy only if you submit tomorrow. Do not merge `launch/gumroad-10-nov` or `launch/plan-b-10-nov`: both are out of date.
+
+If neither is ready by Sat 14 Nov, one idea for you to approve, not a plan yet: skip a separate launch week and open on Fri 27 Nov with the Black Friday offer as the launch. One price story, one burst of posts, and the Moments early bird still ends 30 Nov. It needs your yes on prices before I move any dates.
+
 ## 1. Lemon Squeezy account (15 minutes, you)
 
 1. Sign up at https://www.lemonsqueezy.com with the Bungee email address once it exists (use your own email for now if the domain is not ready; you can change it later).

@@ -2,6 +2,16 @@
 
 Newest first. One entry per check in.
 
+## Mon 9 Nov 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Thursday. No store emails in Gmail and no pick by Fri 6 Nov, so Gumroad on Tue 10 Nov is off. PLAN.md is still waiting, so CC2 to CC7 stay on hold.
+- This is week 5 (9 to 15 Nov). My sell action, the Monday moment posts, was done in October. Week 5 set to In progress in the roadmap. Week 4 stays Slipped; weeks 1 to 3 stay In progress.
+- Tue 17 Nov is the last launch with its own price week. It now works with either store. New branch `launch/gumroad-17-nov` (Gumroad set up by Fri 13 Nov) beside `launch/lemon-17-nov` (store submitted by Tue 10 Nov). Both checked against today's main. Go or no go for both: Sat 14 Nov, 18:00. Clock in `ops/store/SETUP.md`.
+- One idea for you to approve if 17 Nov is missed too: open on Fri 27 Nov with the Black Friday offer as the launch. Not acted on; it needs your yes on prices.
+- Today's Monday post (`ops/launch/monday-posts/2026-11-09.md`) is safe to post as written: it has no link. If you post it, end it with "Out Tue 17 Nov." only once you have merged a 17 Nov branch.
+- Checks: site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes, both 17 Nov branches build.
+- Next: merge your pick the moment you name it; checkout links and deploy the day the store exists; CC2 the day PLAN.md is approved.
+
 ## Thu 5 Nov 2026
 
 - Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. No store emails in Gmail, so I take it the store is not submitted. PLAN.md is still waiting, so CC2 to CC6 stay on hold.
