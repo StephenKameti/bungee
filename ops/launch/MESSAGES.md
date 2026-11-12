@@ -1,6 +1,6 @@
 # Launch messages
 
-For the 50 people on your list. Send on launch day, Tue 3 Nov 2026, from your own accounts. Every message is a starting point: change the first line for each person so it could only be for them. Swap in the store link where it says [link].
+For the 50 people on your list. Send on launch day, Fri 27 Nov 2026, from your own accounts. Every message is a starting point: change the first line for each person so it could only be for them. Swap in the store link where it says [link].
 
 Rules that keep these working: one message per person, no group sends, no attachments, no chasing more than once.
 
@@ -52,11 +52,11 @@ Pick the one that fits the person. Each fits in a WhatsApp preview or a LinkedIn
 >
 > That is the whole favour. Thank you.
 
-## One follow up, four days later
+## One follow up, two days later
 
 Only to people who replied with interest or asked a question. Never to silence.
 
-> [Name], the launch price ends Monday. If you were thinking about it, now is the moment: [link]
+> [Name], the USD 99 offer ends tomorrow night. If you were thinking about it, now is the moment: [link]
 
 ## Replies to have ready
 
