@@ -2,6 +2,16 @@
 
 Newest first. One entry per check in.
 
+## Mon 16 Nov 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Thursday. No store emails in Gmail, so I take it Gumroad was not set up by Fri 13 Nov: `launch/gumroad-17-nov` is off. PLAN.md is still waiting, so CC2 to CC9 stay on hold.
+- This is week 6 (16 to 22 Nov). Week 6 set to In progress in the roadmap; week 5 stays In progress. My only week 6 and 7 actions are Studio prompts, which wait on PLAN.md.
+- Fri 27 Nov with the Black Friday offer is now the only launch left this year. Branch `launch/black-friday-27-nov` checked against today's main: it still merges cleanly.
+- Settled the Gumroad doubt: Gumroad's own help page lists Kenya for bank payouts in KES. USD 100 minimum, paid on Tuesdays, sales held 7 days, 2 to 7 business days to land. So Gumroad is now the safer pick: no review wait, set up by Mon 23 Nov. Updated `ops/store/GUMROAD.md` and the clock in `ops/store/SETUP.md`.
+- Today's Monday post (`ops/launch/monday-posts/2026-11-16.md`) is not ready: no store link yet and its hook waits on the native speaker check. Hold it.
+- Checks: site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes.
+- Next: merge the Black Friday branch the moment you say yes; checkout links and deploy the day the store exists; CC2 the day PLAN.md is approved. If 27 Nov is missed too, I will propose launching in January beside Studio.
+
 ## Thu 12 Nov 2026
 
 - Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. No store emails in Gmail, so I take it no store was submitted by Tue 10 Nov: `launch/lemon-17-nov` is off. PLAN.md is still waiting, so CC2 to CC7 stay on hold.

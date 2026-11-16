@@ -2,12 +2,12 @@
 
 Use this only if you pick choice 2 at the Sat 31 Oct go or no go (see the end of `SETUP.md`). Same copy, same files, same prices. About 30 minutes, all yours: sign up, payouts and terms.
 
-Checked Thu 29 Oct 2026. Gumroad charges 10 percent plus USD 0.50 on direct sales and handles sales tax and VAT. Payouts go out weekly, every Friday, for sales at least 7 days old, with a USD 10 minimum. Gumroad pays to a bank account where it can and falls back to PayPal elsewhere. One payments guide lists Kenya for direct bank payouts, but Gumroad's own help page does not list countries, so **check the payout settings during sign up before you build anything**. If Kenya is not offered for bank or PayPal, stop and take choice 1 (launch Tue 10 Nov).
+Checked Mon 16 Nov 2026 on Gumroad's own help page (https://gumroad.com/help/article/13-getting-paid). Gumroad charges 10 percent plus USD 0.50 on direct sales and handles sales tax and VAT. **Kenya is listed for direct bank payouts, paid in KES to a local Kenyan bank account.** PayPal and Payoneer are not used for Kenya. Payouts need a balance of at least USD 100, go out on Tuesdays for Kenya, cover sales at least 7 days old, and take 2 to 7 business days to land. You choose weekly, monthly or quarterly and can pause any time. Have a photo ID and proof of address ready for the payout setup. So the first payout from a 27 Nov launch would likely arrive in the week of 7 Dec, once sales pass USD 100.
 
 ## 1. Account (10 minutes, you)
 
 1. Sign up at https://gumroad.com with the Bungee email address, or your own for now.
-2. Open Settings, then Payments. Confirm your Kenyan bank account or PayPal is accepted. This is the go or no go for Gumroad.
+2. Open Settings, then Payments. Add your Kenyan bank account (KES). Gumroad lists Kenya, so this should go through; if it is refused, stop and tell me.
 3. Accept the terms. Only you can do this.
 
 ## 2. The nine products (15 minutes, you)

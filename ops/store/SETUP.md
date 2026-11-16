@@ -57,6 +57,8 @@ If Tue 17 Nov is missed, the Black Friday launch is now ready on its own branch,
 | Lemon Squeezy | Store submitted by **Thu 19 Nov**, approval likely Tue 24 Nov | Tue 24 Nov, 18:00 | `launch/black-friday-27-nov` |
 | Gumroad, no review wait | Gumroad set up by **Mon 23 Nov**, payouts to Kenya confirmed | Tue 24 Nov, 18:00 | `launch/black-friday-27-nov` |
 
+**Mon 16 Nov 2026: no Gumroad by Fri 13 Nov, so `launch/gumroad-17-nov` is off.** Fri 27 Nov is the only launch left this year. Gumroad's own help page now confirms bank payouts to Kenya in KES, so Gumroad is the safer pick: no review wait, set up by **Mon 23 Nov**. Lemon Squeezy still works only if submitted by **Thu 19 Nov**. Either way, merge `launch/black-friday-27-nov` (checked today: merges cleanly) once you say yes to Everything at USD 99. Go or no go Tue 24 Nov, 18:00.
+
 After 27 Nov the early bird and the offer are gone, and December is a slow month for buying. Treat 27 Nov as the last good launch of the year.
 
 ## 1. Lemon Squeezy account (15 minutes, you)
