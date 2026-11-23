@@ -2,6 +2,17 @@
 
 Newest first. One entry per check in.
 
+## Mon 23 Nov 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Thursday. No store emails in Gmail, so no Gumroad yet. PLAN.md is still waiting, so CC2 to CC12 stay on hold.
+- This is week 7 (23 to 29 Nov). Week 7 set to In progress in the roadmap; week 6 stays In progress. My week 7 actions (CC10, CC12, Moments import) are Studio prompts, which wait on PLAN.md.
+- Today is the last day to set up Gumroad for Fri 27 Nov. Go or no go stays Tue 24 Nov, 18:00. Note added to `ops/store/SETUP.md`.
+- So a missed 27 Nov costs no time, option A is built. `ops/launch/set_launch.py` now takes late launch dates (1 to 15 Dec, 5 to 12 Jan). A late launch moves every launch date, turns the Moments early bird lines into a USD 29 launch week price on the site, store pages and messages, and swaps the Black Friday section for a short note. Tested on 8 Dec, 15 Dec and 12 Jan, refuses the holiday pause, a rerun changes nothing. Merged to main.
+- Branch `launch/dec-8`: launch Tue 8 Dec on Gumroad, store set up by Fri 4 Dec, go or no go Sat 5 Dec, 18:00. Not merged: it needs your A and the Moments launch week price. `ops/store/AFTER-27-NOV.md` updated.
+- Branch `launch/black-friday-27-nov` refreshed with today's main (one small README clash fixed) and still merges cleanly.
+- Checks: site build passes on main and both launch branches (same four blockers: policy blanks, checkout links, email list link), posts check passes.
+- Next: Thursday, merge the branch you pick. If you say nothing by Tue 24 Nov 18:00, 27 Nov is off and `launch/dec-8` waits for your A. CC2 the day PLAN.md is approved.
+
 ## Thu 19 Nov 2026
 
 - Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. No store emails in Gmail. PLAN.md is still waiting, so CC2 to CC9 stay on hold.
