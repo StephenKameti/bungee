@@ -9,7 +9,7 @@ Everything for launch week and the weeks after. Products launch Tue 3 Nov 2026.
 | `list-of-50.csv` | Your list: who, where, which message, sent, replied, bought |
 | `monday-posts/` | 25 Monday moment posts, 9 Nov 2026 to 26 Apr 2027, each eight weeks ahead of its moments |
 | `monday_posts.py` | Rebuilds `monday-posts/` from the almanac data and checks for trademarked names and dashes |
-| `set_launch.py` | Moves launch week to any Tuesday up to 17 Nov, for Lemon Squeezy or Gumroad, in every file that carries a launch date |
+| `set_launch.py` | Moves launch week to any Tuesday up to 17 Nov, or a late launch from 1 to 15 Dec or 5 to 12 Jan 2027, for Lemon Squeezy or Gumroad, in every file that carries a launch date or the Moments early bird |
 
 Film captions live in `films/CAPTIONS.md`. Store copy lives in `ops/store/`.
 
