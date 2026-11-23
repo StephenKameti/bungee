@@ -2,6 +2,36 @@
 
 Newest first. One entry per check in.
 
+## Thu 19 Nov 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. No store emails in Gmail. PLAN.md is still waiting, so CC2 to CC9 stay on hold.
+- Still week 6 (16 to 22 Nov). Week 6 stays In progress in the roadmap. My only week 6 and 7 actions are Studio prompts, which wait on PLAN.md.
+- Today is the last day Lemon Squeezy can make Fri 27 Nov. Gumroad set up by Mon 23 Nov is the safer route. Go or no go Tue 24 Nov, 18:00. Note added to `ops/store/SETUP.md`.
+- Branch `launch/black-friday-27-nov` checked against today's main: still merges cleanly.
+- Wrote the proposal I promised for a missed 27 Nov: `ops/store/AFTER-27-NOV.md`. A: launch Tue 8 Dec, when planners lock 2027. B: launch Tue 12 Jan, a week before Studio. My pick is A. Needs your pick and a Moments launch week price.
+- Checks: site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes.
+- Next: merge the Black Friday branch the moment you say yes; checkout links and deploy the day the store exists; build the A or B branch if you pick one; CC2 the day PLAN.md is approved.
+
+## Mon 16 Nov 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Thursday. No store emails in Gmail, so I take it Gumroad was not set up by Fri 13 Nov: `launch/gumroad-17-nov` is off. PLAN.md is still waiting, so CC2 to CC9 stay on hold.
+- This is week 6 (16 to 22 Nov). Week 6 set to In progress in the roadmap; week 5 stays In progress. My only week 6 and 7 actions are Studio prompts, which wait on PLAN.md.
+- Fri 27 Nov with the Black Friday offer is now the only launch left this year. Branch `launch/black-friday-27-nov` checked against today's main: it still merges cleanly.
+- Settled the Gumroad doubt: Gumroad's own help page lists Kenya for bank payouts in KES. USD 100 minimum, paid on Tuesdays, sales held 7 days, 2 to 7 business days to land. So Gumroad is now the safer pick: no review wait, set up by Mon 23 Nov. Updated `ops/store/GUMROAD.md` and the clock in `ops/store/SETUP.md`.
+- Today's Monday post (`ops/launch/monday-posts/2026-11-16.md`) is not ready: no store link yet and its hook waits on the native speaker check. Hold it.
+- Checks: site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes.
+- Next: merge the Black Friday branch the moment you say yes; checkout links and deploy the day the store exists; CC2 the day PLAN.md is approved. If 27 Nov is missed too, I will propose launching in January beside Studio.
+
+## Thu 12 Nov 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. No store emails in Gmail, so I take it no store was submitted by Tue 10 Nov: `launch/lemon-17-nov` is off. PLAN.md is still waiting, so CC2 to CC7 stay on hold.
+- This is week 5 (9 to 15 Nov). My sell action is done; week 5 stays In progress in the roadmap. Week 6 Me actions (CC8, CC9) wait on PLAN.md too.
+- Gumroad on Tue 17 Nov is still possible: set it up by Fri 13 Nov and merge `launch/gumroad-17-nov`. Checked: it still merges cleanly into today's main.
+- Built the fallback I floated on Monday, so it takes minutes if 17 Nov is missed: branch `launch/black-friday-27-nov`. Launch on Fri 27 Nov with the four day offer (Everything USD 99) as the launch. No separate launch week. Suite and Moments films on launch day, one skill film a day from Sat 28 Nov, follow up message moved to two days, Mon 16 and 23 Nov posts end "Out Fri 27 Nov." Dates moved in the plan, messages, store notes, site and CLAUDE.md. Not merged: it needs your yes on the price.
+- New clock in `ops/store/SETUP.md` for 27 Nov: Lemon Squeezy submitted by Thu 19 Nov, or Gumroad set up by Mon 23 Nov. Go or no go Tue 24 Nov, 18:00.
+- Checks: site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes, all three live launch branches merge cleanly.
+- Next: merge your pick the moment you name it; checkout links and deploy the day the store exists; CC2 the day PLAN.md is approved.
+
 ## Mon 9 Nov 2026
 
 - Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Thursday. No store emails in Gmail and no pick by Fri 6 Nov, so Gumroad on Tue 10 Nov is off. PLAN.md is still waiting, so CC2 to CC7 stay on hold.

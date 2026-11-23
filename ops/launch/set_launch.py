@@ -7,9 +7,15 @@ CLAUDE.md) is worked out from the launch date and rewritten in place.
 Black Friday (27 to 30 Nov) and the Moments early bird (to 30 Nov) never move:
 they are Stephen's decisions, not launch week dates.
 
+A launch after 30 Nov (1 to 15 Dec, or 5 to 12 Jan 2027) is a late launch: the
+Black Friday offer and the early bird have lapsed, so the Moments early bird
+lines become a USD 29 launch week price and the Black Friday section becomes a
+short note. A late launch is one way: to go back to a November date, use git.
+
     python3 ops/launch/set_launch.py 2026-11-17              # Lemon Squeezy
     python3 ops/launch/set_launch.py 2026-11-10 --store gumroad
     python3 ops/launch/set_launch.py 2026-11-17 --check      # show, write nothing
+    python3 ops/launch/set_launch.py 2026-12-08 --store gumroad   # late launch, option A
 
 Running it with the date already set changes nothing. Every pattern must match
 exactly once, or nothing is written.
@@ -24,6 +30,10 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 ORIGINAL = dt.date(2026, 11, 3)
 FIRST_MONDAY_POST = dt.date(2026, 11, 9)
 LATEST = dt.date(2026, 11, 17)  # a later launch week runs into Black Friday
+BLACK_FRIDAY_END = dt.date(2026, 11, 30)
+# Late windows: after Black Friday and before the holiday pause, or after the
+# pause and before the Studio launch on Tue 19 Jan 2027.
+LATE_WINDOWS = [(dt.date(2026, 12, 1), dt.date(2026, 12, 15)), (dt.date(2027, 1, 5), dt.date(2027, 1, 12))]
 
 FILMS = [
     ("Key Visual Builder", "kv"),
@@ -34,7 +44,8 @@ FILMS = [
     ("Retail Display Theatre", "fsu"),
 ]
 
-D = r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun) \d{1,2} (?:Oct|Nov|Dec)"
+D = r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun) \d{1,2} (?:Oct|Nov|Dec|Jan)"
+Y = r"\d{4}"
 
 
 def short(d):
@@ -71,20 +82,24 @@ def plan(launch, store):
         early_mondays.append(m)
         m += dt.timedelta(days=7)
     monday = "Every Monday from 9 Nov, post the moments eight weeks ahead, ready drafted in `monday-posts/`."
-    if early_mondays:
+    if len(early_mondays) > 2:
+        monday += f" The Monday posts before launch end with \"Out {L}.\" in place of the link."
+    elif early_mondays:
         names = " and ".join(short(x) for x in early_mondays)
         posts = "post goes" if len(early_mondays) == 1 else "posts go"
         tail = "Out tomorrow." if early_mondays[-1] == day(-1) and len(early_mondays) == 1 else f"Out {L}."
         monday += f" The {names} {posts} out before launch, so end {'it' if len(early_mondays) == 1 else 'them'} with \"{tail}\" in place of the link."
 
-    head = f"Products launch {L} 2026"
+    yr = launch.year
+    late = launch > BLACK_FRIDAY_END
+    head = f"Products launch {L} {yr}"
     if moved:
         head += f", moved from {short(ORIGINAL)} because the store was not ready"
-    key = f"Key dates: store live {short(day(-2))} 2026. Products launch {L} 2026"
+    key = f"Key dates: store live {short(day(-2))} {day(-2).year}. Products launch {L} {yr}"
     if moved:
         key += f" (moved from {ORIGINAL.day} Nov)"
 
-    return {
+    subs = {
         "ops/launch/LAUNCH-PLAN.md": [
             (r"^Products launch .*?\. Times are Nairobi time\.", f"{head}. Times are Nairobi time."),
             (rf"^\| (?:By )?{D} \| (?:Lemon Squeezy store submitted|Gumroad store set up)[^\n]*\| You \|$", submit),
@@ -96,35 +111,80 @@ def plan(launch, store):
             (rf"^## Launch day, {D}$", f"## Launch day, {L}"),
             *films,
             (rf"{D} is the last day of the launch price", f"{short(day(6))} is the last day of the launch price"),
-            (r"\| Launch, \d{1,2} to \d{1,2} (?:Oct|Nov|Dec) \|", f"| Launch, {launch.day} to {day(6).day} {day(6):%b} |"),
+            (r"\| Launch, \d{1,2} to \d{1,2} (?:Oct|Nov|Dec|Jan) \|", f"| Launch, {launch.day} to {day(6).day} {day(6):%b} |"),
             (rf"Set them as sale prices in [A-Za-z ]+? and Paystack on {D}, and set them back on {D}\.",
              f"Set them as sale prices in {shop} and Paystack on {short(day(-1))}, and set them back on {short(day(7))}."),
             (r"^Every Monday from 9 Nov, post the moments eight weeks ahead, ready drafted in `monday-posts/`\."
              r"(?: The [^\"\n]*\"[^\"\n]*\" in place of the link\.)?", monday),
         ],
         "ops/launch/MESSAGES.md": [
-            (r"Send on launch day, [^,]+ \d{4}, from", f"Send on launch day, {L} 2026, from"),
+            (r"Send on launch day, [^,]+ \d{4}, from", f"Send on launch day, {L} {yr}, from"),
         ],
         "ops/launch/README.md": [
-            (rf"Products launch {D} 2026\.", f"Products launch {L} 2026."),
+            (rf"Products launch {D} {Y}\.", f"Products launch {L} {yr}."),
         ],
         "ops/store/POLICIES.md": [
-            (rf"goes live on {D} 2026", f"goes live on {short(day(-2))} 2026"),
+            (rf"goes live on {D} {Y}", f"goes live on {short(day(-2))} {day(-2).year}"),
         ],
         "ops/store/README.md": [
-            (rf"Store goes live {D} 2026; products launch {D} 2026\.",
-             f"Store goes live {short(day(-2))} 2026; products launch {L} 2026."),
+            (rf"Store goes live {D} {Y}; products launch {D} {Y}\.",
+             f"Store goes live {short(day(-2))} {day(-2).year}; products launch {L} {yr}."),
         ],
         "site/README.md": [
             (rf"^## Before it goes live \({D}\)$", f"## Before it goes live ({short(day(-2))})"),
         ],
         "site/index.html": [
-            (r"Check back on \d{1,2} (?:October|November|December)\.", f"Check back on {launch.day} {launch:%B}."),
+            (r"Check back on \d{1,2} (?:October|November|December|January)\.", f"Check back on {launch.day} {launch:%B}."),
         ],
         "CLAUDE.md": [
-            (rf"Key dates: store live {D} 2026\. Products launch {D} 2026(?: \([^)]*\))?", key),
+            (rf"Key dates: store live {D} {Y}\. Products launch {D} {Y}(?: \([^)]*\))?", key),
         ],
     }
+    if late:
+        end = day(6)
+        span = f"{launch.day} to {end.day} {end:%b}" if launch.month == end.month else f"{launch.day} {launch:%b} to {end.day} {end:%b}"
+        late_subs = {
+            "ops/launch/LAUNCH-PLAN.md": [
+                (r"^\| Moments 2027 \| USD 39 \| (?:Stays at the USD 29 early bird|USD 29 for launch week) \| KES 3,800 \|$",
+                 "| Moments 2027 | USD 39 | USD 29 for launch week | KES 3,800 |"),
+                (r"^## Black Friday(?:, Fri 27 to Mon 30 Nov \(your call\))?\n.*?(?=^## After launch week)",
+                 "## Black Friday\n\nNo offer this year. The store was not ready by Fri 27 Nov, so the offer and the Moments early bird "
+                 "(to 30 Nov) lapsed. The Moments launch week price above takes their place.\n\n", re.S),
+            ],
+            "ops/launch/MESSAGES.md": [
+                (r"(?:Early bird is USD 29 until 30 Nov|Launch week price USD 29 until [^.\n]+)\. \[link\]",
+                 f"Launch week price USD 29 until {short(end)}. [link]"),
+                (r"Moments 2027 USD 29 (?:early bird, USD 39 from December|launch week, USD 39 after)\.",
+                 "Moments 2027 USD 29 launch week, USD 39 after."),
+            ],
+            "ops/store/moments-2027.md": [
+                (rf"USD 39, one time\. (?:Early bird USD 29 until Mon 30 Nov 2026|Launch week USD 29 until {D} {Y})",
+                 f"USD 39, one time. Launch week USD 29 until {short(end)} {end.year}"),
+                (r"\((?:early bird|launch week) KES 3,800\)", "(launch week KES 3,800)"),
+                (r"USD 29 (?:early bird|launch week)\. \|", "USD 29 launch week. |"),
+            ],
+            "ops/store/README.md": [
+                (r"\| 39 \((?:early bird 29 to 30 Nov|launch week 29, [^)]+)\) \| 5,000 \((?:early bird|launch week) 3,800\) \|",
+                 f"| 39 (launch week 29, {span}) | 5,000 (launch week 3,800) |"),
+            ],
+            "site/index.html": [
+                (r"(?:Early bird price until 30 November|Launch week price until \d{1,2} (?:December|January))\.",
+                 f"Launch week price until {end.day} {end:%B}."),
+            ],
+            "site/README.md": [
+                (r"^5\. On [^,]+, change the Moments 2027 block from the (?:early bird|launch week) price",
+                 f"5. On {short(day(7))}, change the Moments 2027 block from the launch week price"),
+            ],
+            "CLAUDE.md": [
+                (r"(?:Black Friday offer 27 to 30 Nov|No Black Friday offer this year: the store was not ready)\.",
+                 "No Black Friday offer this year: the store was not ready."),
+                (r"Moments 2027 USD 39 \((?:USD 29 early bird to 30 Nov|USD 29 for launch week, [^)]+)\)",
+                 f"Moments 2027 USD 39 (USD 29 for launch week, {span})"),
+            ],
+        }
+        for rel, extra in late_subs.items():
+            subs.setdefault(rel, []).extend(extra)
+    return subs
 
 
 def main():
@@ -137,25 +197,28 @@ def main():
     launch = dt.date.fromisoformat(a.date)
     if launch.weekday() != 1:
         sys.exit(f"{a.date} is a {launch:%A}. Launch day is a Tuesday.")
-    if not ORIGINAL <= launch <= LATEST:
-        sys.exit(f"Pick a Tuesday from {ORIGINAL} to {LATEST}. Later, the launch price week runs into Black Friday: that needs Stephen's call first.")
+    ok = ORIGINAL <= launch <= LATEST or any(a_ <= launch <= b_ for a_, b_ in LATE_WINDOWS)
+    if not ok:
+        sys.exit(f"Pick a Tuesday from {ORIGINAL} to {LATEST}, from 1 to 15 Dec, or from 5 to 12 Jan 2027. "
+                 "Other weeks run into Black Friday, the holiday pause or the Studio launch.")
 
     errors, changes, new_text = [], [], {}
     for rel, subs in plan(launch, a.store).items():
         path = ROOT / rel
         text = path.read_text(encoding="utf-8")
-        for pat, rep in subs:
-            found = re.findall(pat, text, flags=re.M)
+        for pat, rep, *fl in subs:
+            flags = re.M | (fl[0] if fl else 0)
+            found = re.findall(pat, text, flags=flags)
             if len(found) != 1:
                 errors.append(f"{rel}: pattern matched {len(found)} times: {pat[:70]}")
                 continue
             bare = re.sub(r"`[^`]*`|\w+_\w+\.mp4", "", rep)
             if "—" in bare or "–" in bare or re.search(r"\w-\w", bare):
                 errors.append(f"{rel}: a dash slipped into: {rep[:70]}")
-            old = re.search(pat, text, flags=re.M).group(0)
+            old = re.search(pat, text, flags=flags).group(0)
             if old != rep:
                 changes.append((rel, old, rep))
-            text = re.sub(pat, lambda _m: rep, text, count=1, flags=re.M)
+            text = re.sub(pat, lambda _m: rep, text, count=1, flags=flags)
         new_text[rel] = text
 
     if errors:
@@ -168,7 +231,7 @@ def main():
     if not a.check:
         for rel, text in new_text.items():
             (ROOT / rel).write_text(text, encoding="utf-8")
-        print(f"\n{len(changes)} lines changed. Launch day: {short(launch)} 2026, store: {a.store}.")
+        print(f"\n{len(changes)} lines changed. Launch day: {short(launch)} {launch.year}, store: {a.store}.")
 
 
 if __name__ == "__main__":
