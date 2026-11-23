@@ -1,6 +1,6 @@
 # Launch messages
 
-For the 50 people on your list. Send on launch day, Tue 3 Nov 2026, from your own accounts. Every message is a starting point: change the first line for each person so it could only be for them. Swap in the store link where it says [link].
+For the 50 people on your list. Send on launch day, Tue 8 Dec 2026, from your own accounts. Every message is a starting point: change the first line for each person so it could only be for them. Swap in the store link where it says [link].
 
 Rules that keep these working: one message per person, no group sends, no attachments, no chasing more than once.
 
@@ -16,7 +16,7 @@ Pick the one that fits the person. Each fits in a WhatsApp preview or a LinkedIn
 >
 > 2027 is already booked. Ramadan and Lent overlap. October is the busiest month of the year.
 >
-> Early bird is USD 29 until 30 Nov. [link]
+> Launch week price USD 29 until Mon 14 Dec. [link]
 >
 > Would love to know what you would add.
 
@@ -61,7 +61,7 @@ Only to people who replied with interest or asked a question. Never to silence.
 ## Replies to have ready
 
 **"How much?"**
-One pack USD 29. All six USD 129. Moments 2027 USD 29 early bird, USD 39 from December. Everything together USD 149. Pay by card, or M Pesa through the Kenyan checkout.
+One pack USD 29. All six USD 129. Moments 2027 USD 29 launch week, USD 39 after. Everything together USD 149. Pay by card, or M Pesa through the Kenyan checkout.
 
 **"Does it work outside Kenya?"**
 Everywhere. Every pack is built for any market in the world. East Africa is an extra module, not the default.

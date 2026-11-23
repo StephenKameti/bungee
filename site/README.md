@@ -20,13 +20,13 @@ It fails on any hyphen or dash in visible copy, or a missing asset. It also list
 
 Preview locally: `cd site && python3 -m http.server 8765`, then open http://localhost:8765.
 
-## Before it goes live (Sun 1 Nov)
+## Before it goes live (Sun 6 Dec)
 
 1. Stephen approves `ops/store/POLICIES.md` and fills the blanks. Rerun `build.py`.
 2. Create the nine products in Lemon Squeezy, then paste each checkout URL into `ops/store/checkout-links.csv`. `build.py` copies them into `CHECKOUT` in `index.html` and fails on anything that is not a plain https link. Empty links fall back to the bundles section.
 3. Paste the email list form URL into the `email-list` row of the same file. Until then the form says the list opens on launch day.
 4. Deploy the `site/` folder to any static host and point the domain at it.
-5. On 1 Dec, change the Moments 2027 block from the early bird price (USD 29, was 39) to USD 39.
+5. On Tue 15 Dec, change the Moments 2027 block from the launch week price (USD 29, was 39) to USD 39.
 
 ## Copy rules
 

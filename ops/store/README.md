@@ -1,6 +1,6 @@
 # Store copy
 
-Everything for the Lemon Squeezy store, ready to paste. One file per product, two bundles, and the policies. Store goes live Sun 1 Nov 2026; products launch Tue 3 Nov 2026.
+Everything for the Lemon Squeezy store, ready to paste. One file per product, two bundles, and the policies. Store goes live Sun 6 Dec 2026; products launch Tue 8 Dec 2026.
 
 ## Files
 
@@ -12,7 +12,7 @@ Everything for the Lemon Squeezy store, ready to paste. One file per product, tw
 | `social-content-calendar-builder.md` | Social Content Calendar Builder | 29 | 3,800 | Thirty days. Nothing planned. |
 | `audience-persona-builder.md` | Audience and Persona Builder | 29 | 3,800 | "Women, 25 to 45" is not a person. |
 | `campaign-strategy-builder.md` | Campaign Strategy Builder | 29 | 3,800 | Board meeting. Monday. |
-| `moments-2027.md` | Moments 2027 | 39 (early bird 29 to 30 Nov) | 5,000 (early bird 3,800) | 2027 is already booked. |
+| `moments-2027.md` | Moments 2027 | 39 (launch week 29, 8 to 14 Dec) | 5,000 (launch week 3,800) | 2027 is already booked. |
 | `bundle-all-six.md` | All six skill packs | 129 | 16,500 | Brief at six. Pitch at nine. |
 | `bundle-everything.md` | Everything (six packs plus Moments 2027) | 149 | 19,500 | Brief at six. Pitch at nine. |
 | `POLICIES.md` | Refund policy, terms of sale, privacy notice | | | Draft, not legal advice, Stephen to approve |
