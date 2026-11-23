@@ -61,6 +61,8 @@ If Tue 17 Nov is missed, the Black Friday launch is now ready on its own branch,
 
 **Thu 19 Nov 2026: today is the last day Lemon Squeezy can make 27 Nov.** Submit today or treat it as off. Gumroad is the safer pick: set up by **Mon 23 Nov**, go or no go Tue 24 Nov, 18:00. If 27 Nov is missed, the two ways forward are in `ops/store/AFTER-27-NOV.md`.
 
+**Mon 23 Nov 2026: today is the last day to set up Gumroad for 27 Nov.** No store emails yet. Go or no go stays Tue 24 Nov, 18:00. If 27 Nov is off, option A (Tue 8 Dec) is now built on `launch/dec-8`: Gumroad set up by Fri 4 Dec, go or no go Sat 5 Dec, 18:00. Merge it once you say A and the Moments launch week price (USD 29, 8 to 14 Dec). `launch/black-friday-27-nov` was refreshed against today's main and still merges cleanly.
+
 After 27 Nov the early bird and the offer are gone, and December is a slow month for buying. Treat 27 Nov as the last good launch of the year.
 
 ## 1. Lemon Squeezy account (15 minutes, you)
