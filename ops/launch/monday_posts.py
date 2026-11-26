@@ -56,6 +56,7 @@ BANNED = [
 TEXT_SWAP = {
     "Super Bowl Sunday in the United States": "the biggest American football final in the United States",
     "e-commerce": "online shopping",
+    "the Women's World Cup and the Africa Cup of Nations": "the women's football world championship and Africa's football championship",
 }
 LEAD_ORDER = {"Holiday": 0, "Cultural": 1, "Commercial": 2, "Religious": 3, "Seasonal": 4, "Sport": 5}
 
@@ -93,7 +94,12 @@ def pick_lead(week):
         pool = [m for m in week if m["category"] != "Sensitive"]
     if not pool:
         return None
-    return sorted(pool, key=lambda m: (LEAD_ORDER.get(m["category"], 9), m["start"]))[0]
+    # Lead with a moment brands can act on: one with a hook, never one whose own angle says sit it out.
+    usable = [m for m in pool if m.get("hook", "").strip() and "sit it out" not in m.get("angle", "").lower()]
+    pool = usable or [m for m in pool if "sit it out" not in m.get("angle", "").lower()]
+    if not pool:
+        return None
+    return sorted(pool, key=lambda m: (not m.get("hook", "").strip(), LEAD_ORDER.get(m["category"], 9), m["start"]))[0]
 
 
 def render(monday, start, week):
@@ -101,7 +107,12 @@ def render(monday, start, week):
     lead = pick_lead(week)
     lines = [f"# Monday {day(monday)} {monday.year}", "", f"Moments for the week of {day(start)} {start.year}.", ""]
     if lead is None:
-        lines += ["A quiet week. Post a reminder instead:", "", "> Eight weeks out and nothing on the calendar. That is a gift. Book the next big moment early. [link]", ""]
+        held = [f"{name(m)} on {day(d(m['start']))}" for m in sorted(week, key=lambda m: m["start"])]
+        if held:
+            lines += ["A week to tread lightly. Post this instead:", "", "> Eight weeks out. Some weeks the smartest brief is restraint. Know which dates to sit out before they arrive. [link]", "",
+                      "Leave these out of the post: " + ", ".join(held) + ".", ""]
+        else:
+            lines += ["A quiet week. Post a reminder instead:", "", "> Eight weeks out and nothing on the calendar. That is a gift. Book the next big moment early. [link]", ""]
         return "\n".join(lines)
     when = day(d(lead["start"]))
     if lead["end"] != lead["start"]:
@@ -131,8 +142,9 @@ def render(monday, start, week):
         "",
         f"{title}, {when}.",
         f"The angle: {clean(lead['angle'])}",
-        f"The hook: \"{clean(lead['hook'])}\"",
     ]
+    if lead.get("hook", "").strip():
+        post.append(f"The hook: \"{clean(lead['hook'])}\"")
     if also:
         post.append("Also that week: " + ", ".join(also) + ".")
     if east:
@@ -154,6 +166,8 @@ def check(text, where):
     for word in BANNED:
         if word.lower() in text.lower():
             problems.append(f"{where}: trademarked name '{word}'")
+    if 'The hook: ""' in text:
+        problems.append(f"{where}: empty hook")
     if re.search(r"\w-\w|–|—", text):
         problems.append(f"{where}: hyphen or dash")
     return problems

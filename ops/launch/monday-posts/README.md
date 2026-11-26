@@ -7,7 +7,7 @@ Every Monday from 9 Nov 2026, post the moments eight weeks ahead. One file per M
 | [9 Nov 2026](2026-11-09.md) | 4 Jan 2027 | Back to school |
 | [16 Nov 2026](2026-11-16.md) | 11 Jan 2027 | Zanzibar Revolution Day |
 | [23 Nov 2026](2026-11-23.md) | 18 Jan 2027 | the first tennis major of the year |
-| [30 Nov 2026](2026-11-30.md) | 25 Jan 2027 | NRM Liberation Day |
+| [30 Nov 2026](2026-11-30.md) | 25 Jan 2027 | quiet week |
 | [7 Dec 2026](2026-12-07.md) | 1 Feb 2027 | Lunar New Year, Year of the Goat |
 | [14 Dec 2026](2026-12-14.md) | 8 Feb 2027 | Valentine's Day |
 | [21 Dec 2026](2026-12-21.md) | 15 Feb 2027 | Lantern Festival |
@@ -21,11 +21,11 @@ Every Monday from 9 Nov 2026, post the moments eight weeks ahead. One file per M
 | [15 Feb 2027](2027-02-15.md) | 12 Apr 2027 | Songkran |
 | [22 Feb 2027](2027-02-22.md) | 19 Apr 2027 | Earth Day |
 | [1 Mar 2027](2027-03-01.md) | 26 Apr 2027 | Golden Week (Japan) |
-| [8 Mar 2027](2027-03-08.md) | 3 May 2027 | Cinco de Mayo |
+| [8 Mar 2027](2027-03-08.md) | 3 May 2027 | Mother's Day (most markets) |
 | [15 Mar 2027](2027-03-15.md) | 10 May 2027 | Eid al Adha |
 | [22 Mar 2027](2027-03-22.md) | 17 May 2027 | Vesak |
 | [29 Mar 2027](2027-03-29.md) | 24 May 2027 | Africa Day |
 | [5 Apr 2027](2027-04-05.md) | 31 May 2027 | Pride Month |
 | [12 Apr 2027](2027-04-12.md) | 7 Jun 2027 | Dragon Boat Festival |
-| [19 Apr 2027](2027-04-19.md) | 14 Jun 2027 | Juneteenth |
+| [19 Apr 2027](2027-04-19.md) | 14 Jun 2027 | Father's Day (most markets) |
 | [26 Apr 2027](2027-04-26.md) | 21 Jun 2027 | Summer solstice and International Yoga Day |
