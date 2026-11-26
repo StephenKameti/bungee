@@ -21,7 +21,7 @@ Bungee Launch Roadmap, a Claude Docs doc: https://claude.ai/code/artifact/7429fa
 
 For the docs tools: doc id `7429fab5-408f-432f-bcec-e18d1f8c2c06`, tab `101b4d9f-2ac3`, body node `c4fe92e9-566e`, Status enum `782a8c80-07fd` (Not started, In progress, Done, Slipped). The Weekly tracker table (id `mx6y0ad1sw6.18527`) has a Sell track and a Studio track per week, each action marked Me or You, and a Status dropdown per week. Read the outline first, then only the tables you need.
 
-Key dates: store live Sun 1 Nov 2026. Products launch Tue 3 Nov 2026. Black Friday offer 27 to 30 Nov. Holiday pause 21 Dec to 3 Jan. Studio beta 4 to 10 Jan 2027. Studio launch Tue 19 Jan 2027. 100 paying Studio workspaces by Mon 19 Apr 2027.
+Key dates: store live Sun 10 Jan 2027. Products launch Tue 12 Jan 2027 (moved from 3 Nov). No Black Friday offer this year: the store was not ready. Holiday pause 21 Dec to 3 Jan. Studio beta 4 to 10 Jan 2027. Studio launch Tue 19 Jan 2027. 100 paying Studio workspaces by Mon 19 Apr 2027.
 
 ## Standing rules from Stephen
 
@@ -45,7 +45,7 @@ Key dates: store live Sun 1 Nov 2026. Products launch Tue 3 Nov 2026. Black Frid
 
 1. Order of work: both tracks together. Products launch 3 Nov, Studio launches 19 Jan.
 2. Moments 2027 keeps the real event names.
-3. Prices: one pack USD 29, all six USD 129, Moments 2027 USD 39 (USD 29 early bird to 30 Nov), Everything USD 149.
+3. Prices: one pack USD 29, all six USD 129, Moments 2027 USD 39 (USD 29 for launch week, 12 to 18 Jan), Everything USD 149.
 4. Store: Lemon Squeezy, with Paystack alongside for mobile money.
 5. Reversed logo: made, waiting for Stephen's approval.
 6. Visual Direction Library: stays inside the packs, revisit Feb 2027.

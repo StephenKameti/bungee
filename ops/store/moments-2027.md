@@ -7,10 +7,10 @@ Store copy for Lemon Squeezy. Everything under "Product description" pastes stra
 | Field | Value |
 | --- | --- |
 | Product name | Moments 2027 |
-| Price | USD 39, one time. Early bird USD 29 until Mon 30 Nov 2026 |
-| Paystack price | KES 5,000 (early bird KES 3,800) |
+| Price | USD 39, one time. Launch week USD 29 until Mon 18 Jan 2027 |
+| Paystack price | KES 5,000 (launch week KES 3,800) |
 | SEO title | Moments 2027: the content planner's almanac |
-| Meta description | 160 dated moments for 2027 across 8 regions, each with the angle, a hook and what to avoid. Export to any calendar. USD 29 early bird. |
+| Meta description | 160 dated moments for 2027 across 8 regions, each with the angle, a hook and what to avoid. Export to any calendar. USD 29 launch week. |
 | Film to attach (16:9) | `moments_16x9.mp4` |
 | Poster to attach | `moments_poster.png` |
 | File buyers receive | `Bungee-Moments-2027.zip` |
