@@ -2,6 +2,15 @@
 
 Newest first. One entry per check in.
 
+## Thu 26 Nov 2026
+
+- Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Monday. No store emails in Gmail. PLAN.md is still waiting, so CC2 to CC12 stay on hold.
+- The Tue 24 Nov go or no go passed with no store, so Fri 27 Nov is off and `launch/black-friday-27-nov` is retired. The Black Friday offer and the Moments early bird lapse on 30 Nov. Week 7 set to Slipped in the roadmap.
+- Built option B so both choices are ready: branch `launch/jan-12` (launch Tue 12 Jan on Gumroad, Moments USD 29 for launch week 12 to 18 Jan, store set up by Fri 8 Jan). Not merged. `launch/dec-8` (option A) checked against today's main. Both merge cleanly and pass the site and posts checks. Notes in `ops/store/SETUP.md` and `ops/store/AFTER-27-NOV.md`.
+- Fixed the Monday posts: four posts had an empty hook line, and the 30 Nov post led with a date its own angle says to sit out. Posts now never lead with either, keep trademarked names out of the angle, and the checker flags an empty hook. 30 Nov is now a short restraint post; 8 Mar leads with Mother's Day and 19 Apr with Father's Day. Merged to main.
+- Checks: site build passes (same four blockers: policy blanks, checkout links, email list link), posts check passes.
+- Next: Monday, merge A or B the moment you pick. A needs Gumroad by Fri 4 Dec. CC2 the day PLAN.md is approved. Retest another pack in December.
+
 ## Mon 23 Nov 2026
 
 - Nothing new from you in the roadmap, the Decisions table, its comments or the repo since Thursday. No store emails in Gmail, so no Gumroad yet. PLAN.md is still waiting, so CC2 to CC12 stay on hold.

@@ -63,6 +63,8 @@ If Tue 17 Nov is missed, the Black Friday launch is now ready on its own branch,
 
 **Mon 23 Nov 2026: today is the last day to set up Gumroad for 27 Nov.** No store emails yet. Go or no go stays Tue 24 Nov, 18:00. If 27 Nov is off, option A (Tue 8 Dec) is now built on `launch/dec-8`: Gumroad set up by Fri 4 Dec, go or no go Sat 5 Dec, 18:00. Merge it once you say A and the Moments launch week price (USD 29, 8 to 14 Dec). `launch/black-friday-27-nov` was refreshed against today's main and still merges cleanly.
 
+**Thu 26 Nov 2026: no store by Tue 24 Nov, 18:00, so 27 Nov and `launch/black-friday-27-nov` are off.** The Black Friday offer and the Moments early bird lapse on 30 Nov. Both ways forward are built and merge cleanly into today's main. A, Tue 8 Dec: `launch/dec-8`, Gumroad set up by **Fri 4 Dec**, go or no go Sat 5 Dec, 18:00. B, Tue 12 Jan: `launch/jan-12`, Gumroad set up by Fri 8 Jan, go or no go Sat 9 Jan, 18:00. Say A or B and yes to Moments at USD 29 for launch week, then merge that branch.
+
 After 27 Nov the early bird and the offer are gone, and December is a slow month for buying. Treat 27 Nov as the last good launch of the year.
 
 ## 1. Lemon Squeezy account (15 minutes, you)
